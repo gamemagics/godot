@@ -3066,7 +3066,9 @@ void SceneTreeDock::_feature_profile_changed() {
 		scene_tree->set_can_rename(profile_allow_editing);
 
 	} else {
-		button_3d->set_visible(true);
+		// Game Magics Modified
+		// Hide 3D
+		button_3d->set_visible(false);
 		button_add->set_visible(true);
 		button_instance->set_visible(true);
 		scene_tree->set_can_rename(true);

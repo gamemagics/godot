@@ -4,7 +4,7 @@ on: [push, pull_request]
 # Global Settings
 # SCONS_CACHE for windows must be set in the build environment
 env:
-  GODOT_BASE_BRANCH: 3.4
+  GODOT_BASE_BRANCH: gm
   SCONSFLAGS: verbose=yes warnings=all werror=yes debug_symbols=no
   SCONS_CACHE_MSVC_CONFIG: true
 
@@ -25,12 +25,7 @@ jobs:
             cache-name: windows-editor
             target: release_debug
             tools: true
-            bin: "./bin/godot.windows.opt.tools.64.exe"
-
-          - name: Template (target=release, tools=no)
-            cache-name: windows-template
-            target: release
-            tools: false
+            bin: "./bin/godot.windows.tools.64.mono.exe"
 
     steps:
       - uses: actions/checkout@v2
@@ -38,11 +33,20 @@ jobs:
       - name: Setup Godot build cache
         uses: ./.github/actions/godot-cache
         with:
-          cache-name: ${{ matrix.cache-name }}
+          cache-name: ${{ matrix.cache-name }} 
         continue-on-error: true
 
       - name: Setup python and scons
         uses: ./.github/actions/godot-deps
+      
+      - name: Setup Mono
+        shell: powershell
+        run: |
+          curl.exe https://download.mono-project.com/archive/6.12.0/windows-installer/mono-6.12.0.107-x64-0.msi --output mono-6.12.0.107-x64-0.msi
+          Start-Process -FilePath msiexec -ArgumentList /i, mono-6.12.0.107-x64-0.msi, /qn -Wait
+          [environment]::SetEnvironmentvariable("Path", [environment]::GetEnvironmentvariable("Path", "User") + "C:\Program Files\Mono\bin", "User")
+          [environment]::GetEnvironmentvariable("Path", "User")
+          ls "C:\Program Files\Mono"
 
       - name: Compilation
         uses: ./.github/actions/godot-build
@@ -52,6 +56,7 @@ jobs:
           target: ${{ matrix.target }}
           tools: ${{ matrix.tools }}
           scons-cache-limit: 3072
+          mono-exe: ".exe"
 
       - name: Upload artifact
         uses: ./.github/actions/upload-artifact

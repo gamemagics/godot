@@ -21,6 +21,9 @@ inputs:
   scons-cache-limit:
     description: The scons cache size limit.
     default: 4096
+  mono-exe:
+    description: Add exe surfix after binary file
+    default: ""
 runs:
   using: "composite"
   steps:
@@ -31,6 +34,10 @@ runs:
           SCONS_CACHE: ${{ inputs.scons-cache }}
           SCONS_CACHE_LIMIT: ${{ inputs.scons-cache-limit }}
       run: |
-        echo "Building with flags:" ${{ env.SCONSFLAGS }}
-        scons p=${{ inputs.platform }} target=${{ inputs.target }} tools=${{ inputs.tools }} tests=${{ inputs.tests }} --jobs=2 ${{ env.SCONSFLAGS }}
+        # echo "Generating Glue Program..."
+        # scons p=${{ inputs.platform }} arch=x86_64 target=${{ inputs.target }} tools=yes module_mono_enabled=yes mono_glue=no --jobs=2 ${{ env.SCONSFLAGS }}
+        # ls -l bin/
+        # bin/godot.${{ inputs.platform }}.opt.tools.x86_64.mono${{ inputs.mono-exe }} --generate-mono-glue modules/mono/glue
+        # echo "Packing..."
+        scons p=${{ inputs.platform }} arch=x86_64 target=${{ inputs.target }} tools=yes module_mono_enabled=yes --jobs=2 ${{ env.SCONSFLAGS }}
         ls -l bin/

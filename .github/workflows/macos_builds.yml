@@ -3,7 +3,7 @@ on: [push, pull_request]
 
 # Global Settings
 env:
-  GODOT_BASE_BRANCH: 3.4
+  GODOT_BASE_BRANCH: gm
   SCONSFLAGS: verbose=yes warnings=all werror=yes debug_symbols=no
 
 concurrency:
@@ -22,12 +22,7 @@ jobs:
             cache-name: macos-editor
             target: release_debug
             tools: true
-            bin: "./bin/godot.osx.opt.tools.64"
-
-          - name: Template (target=release, tools=no)
-            cache-name: macos-template
-            target: release
-            tools: false
+            bin: "./bin/godot.osx.tools.64.mono"
 
     steps:
       - uses: actions/checkout@v2
@@ -48,6 +43,13 @@ jobs:
           platform: osx
           target: ${{ matrix.target }}
           tools: ${{ matrix.tools }}
+
+      - name: Build Package
+        run: |
+          cp -r misc/dist/osx_tools.app ./bin/Godot.app
+          mkdir -p ./bin/Godot.app/Contents/MacOS
+          cp bin/godot.osx.opt.tools.x86_64.mono ./bin/Godot.app/Contents/MacOS/Godot
+          chmod +x ./bin/Godot.app/Contents/MacOS/Godot
 
       - name: Upload artifact
         uses: ./.github/actions/upload-artifact

@@ -1,0 +1,282 @@
+using System;
+using System.Diagnostics;
+
+#pragma warning disable CS1591 // Disable warning: 'Missing XML comment for publicly visible type or member'
+#pragma warning disable CS1573 // Disable warning: 'Parameter has no matching param tag in the XML comment'
+
+namespace Godot
+{
+    /// <summary>
+    /// <para>MeshInstance is a node that takes a <see cref="Godot.Mesh"/> resource and adds it to the current scenario by creating an instance of it. This is the class most often used to get 3D geometry rendered and can be used to instance a single <see cref="Godot.Mesh"/> in many places. This allows to reuse geometry and save on resources. When a <see cref="Godot.Mesh"/> has to be instanced more than thousands of times at close proximity, consider using a <see cref="Godot.MultiMesh"/> in a <see cref="Godot.MultiMeshInstance"/> instead.</para>
+    /// </summary>
+    public partial class MeshInstance : GeometryInstance
+    {
+        /// <summary>
+        /// <para>The <see cref="Godot.Mesh"/> resource for the instance.</para>
+        /// </summary>
+        public Mesh Mesh
+        {
+            get
+#pragma warning disable CS0618 // Disable warning about obsolete method
+            {
+                return GetMesh();
+            }
+#pragma warning restore CS0618
+            set
+#pragma warning disable CS0618 // Disable warning about obsolete method
+            {
+                SetMesh(value);
+            }
+#pragma warning restore CS0618
+        }
+
+        /// <summary>
+        /// <para>Sets the skin to be used by this instance.</para>
+        /// </summary>
+        public Skin Skin
+        {
+            get
+#pragma warning disable CS0618 // Disable warning about obsolete method
+            {
+                return GetSkin();
+            }
+#pragma warning restore CS0618
+            set
+#pragma warning disable CS0618 // Disable warning about obsolete method
+            {
+                SetSkin(value);
+            }
+#pragma warning restore CS0618
+        }
+
+        /// <summary>
+        /// <para><see cref="Godot.NodePath"/> to the <see cref="Godot.Skeleton"/> associated with the instance.</para>
+        /// </summary>
+        public NodePath Skeleton
+        {
+            get
+#pragma warning disable CS0618 // Disable warning about obsolete method
+            {
+                return GetSkeletonPath();
+            }
+#pragma warning restore CS0618
+            set
+#pragma warning disable CS0618 // Disable warning about obsolete method
+            {
+                SetSkeletonPath(value);
+            }
+#pragma warning restore CS0618
+        }
+
+        /// <summary>
+        /// <para>If <c>true</c>, normals are transformed when software skinning is used. Set to <c>false</c> when normals are not needed for better performance.</para>
+        /// <para>See  for details about how software skinning is enabled.</para>
+        /// </summary>
+        public bool SoftwareSkinningTransformNormals
+        {
+            get
+#pragma warning disable CS0618 // Disable warning about obsolete method
+            {
+                return IsSoftwareSkinningTransformNormalsEnabled();
+            }
+#pragma warning restore CS0618
+            set
+#pragma warning disable CS0618 // Disable warning about obsolete method
+            {
+                SetSoftwareSkinningTransformNormals(value);
+            }
+#pragma warning restore CS0618
+        }
+
+        private const string nativeName = "MeshInstance";
+
+        public MeshInstance() : this(false)
+        {
+            if (ptr == IntPtr.Zero)
+                ptr = NativeCalls.godot_icall_MeshInstance_Ctor(this);
+        }
+
+        internal MeshInstance(bool memoryOwn) : base(memoryOwn) {}
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private static IntPtr method_bind_0 = Object.godot_icall_Object_ClassDB_get_method(nativeName, "set_mesh");
+
+        [GodotMethod("set_mesh")]
+        [Obsolete("SetMesh is deprecated. Use the Mesh property instead.")]
+        public void SetMesh(Mesh mesh)
+        {
+            NativeCalls.godot_icall_1_24(method_bind_0, Object.GetPtr(this), Object.GetPtr(mesh));
+        }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private static IntPtr method_bind_1 = Object.godot_icall_Object_ClassDB_get_method(nativeName, "get_mesh");
+
+        [GodotMethod("get_mesh")]
+        [Obsolete("GetMesh is deprecated. Use the Mesh property instead.")]
+        public Mesh GetMesh()
+        {
+            return NativeCalls.godot_icall_0_10(method_bind_1, Object.GetPtr(this));
+        }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private static IntPtr method_bind_2 = Object.godot_icall_Object_ClassDB_get_method(nativeName, "set_skeleton_path");
+
+        [GodotMethod("set_skeleton_path")]
+        [Obsolete("SetSkeletonPath is deprecated. Use the Skeleton property instead.")]
+        public void SetSkeletonPath(NodePath skeletonPath)
+        {
+            NativeCalls.godot_icall_1_130(method_bind_2, Object.GetPtr(this), NodePath.GetPtr(skeletonPath));
+        }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private static IntPtr method_bind_3 = Object.godot_icall_Object_ClassDB_get_method(nativeName, "get_skeleton_path");
+
+        [GodotMethod("get_skeleton_path")]
+        [Obsolete("GetSkeletonPath is deprecated. Use the Skeleton property instead.")]
+        public NodePath GetSkeletonPath()
+        {
+            return new NodePath(NativeCalls.godot_icall_0_131(method_bind_3, Object.GetPtr(this)));
+        }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private static IntPtr method_bind_4 = Object.godot_icall_Object_ClassDB_get_method(nativeName, "set_skin");
+
+        [GodotMethod("set_skin")]
+        [Obsolete("SetSkin is deprecated. Use the Skin property instead.")]
+        public void SetSkin(Skin skin)
+        {
+            NativeCalls.godot_icall_1_24(method_bind_4, Object.GetPtr(this), Object.GetPtr(skin));
+        }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private static IntPtr method_bind_5 = Object.godot_icall_Object_ClassDB_get_method(nativeName, "get_skin");
+
+        [GodotMethod("get_skin")]
+        [Obsolete("GetSkin is deprecated. Use the Skin property instead.")]
+        public Skin GetSkin()
+        {
+            return NativeCalls.godot_icall_0_438(method_bind_5, Object.GetPtr(this));
+        }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private static IntPtr method_bind_6 = Object.godot_icall_Object_ClassDB_get_method(nativeName, "get_surface_material_count");
+
+        /// <summary>
+        /// <para>Returns the number of surface materials.</para>
+        /// </summary>
+        [GodotMethod("get_surface_material_count")]
+        public int GetSurfaceMaterialCount()
+        {
+            return NativeCalls.godot_icall_0_5(method_bind_6, Object.GetPtr(this));
+        }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private static IntPtr method_bind_7 = Object.godot_icall_Object_ClassDB_get_method(nativeName, "set_surface_material");
+
+        /// <summary>
+        /// <para>Sets the <see cref="Godot.Material"/> for a surface of the <see cref="Godot.Mesh"/> resource.</para>
+        /// </summary>
+        [GodotMethod("set_surface_material")]
+        public void SetSurfaceMaterial(int surface, Material material)
+        {
+            NativeCalls.godot_icall_2_60(method_bind_7, Object.GetPtr(this), surface, Object.GetPtr(material));
+        }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private static IntPtr method_bind_8 = Object.godot_icall_Object_ClassDB_get_method(nativeName, "get_surface_material");
+
+        /// <summary>
+        /// <para>Returns the <see cref="Godot.Material"/> for a surface of the <see cref="Godot.Mesh"/> resource.</para>
+        /// </summary>
+        [GodotMethod("get_surface_material")]
+        public Material GetSurfaceMaterial(int surface)
+        {
+            return NativeCalls.godot_icall_1_553(method_bind_8, Object.GetPtr(this), surface);
+        }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private static IntPtr method_bind_9 = Object.godot_icall_Object_ClassDB_get_method(nativeName, "get_active_material");
+
+        /// <summary>
+        /// <para>Returns the <see cref="Godot.Material"/> that will be used by the <see cref="Godot.Mesh"/> when drawing. This can return the <see cref="Godot.GeometryInstance.MaterialOverride"/>, the surface override <see cref="Godot.Material"/> defined in this <see cref="Godot.MeshInstance"/>, or the surface <see cref="Godot.Material"/> defined in the <see cref="Godot.Mesh"/>. For example, if <see cref="Godot.GeometryInstance.MaterialOverride"/> is used, all surfaces will return the override material.</para>
+        /// </summary>
+        [GodotMethod("get_active_material")]
+        public Material GetActiveMaterial(int surface)
+        {
+            return NativeCalls.godot_icall_1_553(method_bind_9, Object.GetPtr(this), surface);
+        }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private static IntPtr method_bind_10 = Object.godot_icall_Object_ClassDB_get_method(nativeName, "set_software_skinning_transform_normals");
+
+        [GodotMethod("set_software_skinning_transform_normals")]
+        [Obsolete("SetSoftwareSkinningTransformNormals is deprecated. Use the SoftwareSkinningTransformNormals property instead.")]
+        public void SetSoftwareSkinningTransformNormals(bool enabled)
+        {
+            NativeCalls.godot_icall_1_16(method_bind_10, Object.GetPtr(this), enabled);
+        }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private static IntPtr method_bind_11 = Object.godot_icall_Object_ClassDB_get_method(nativeName, "is_software_skinning_transform_normals_enabled");
+
+        [GodotMethod("is_software_skinning_transform_normals_enabled")]
+        [Obsolete("IsSoftwareSkinningTransformNormalsEnabled is deprecated. Use the SoftwareSkinningTransformNormals property instead.")]
+        public bool IsSoftwareSkinningTransformNormalsEnabled()
+        {
+            return NativeCalls.godot_icall_0_7(method_bind_11, Object.GetPtr(this));
+        }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private static IntPtr method_bind_12 = Object.godot_icall_Object_ClassDB_get_method(nativeName, "create_trimesh_collision");
+
+        /// <summary>
+        /// <para>This helper creates a <see cref="Godot.StaticBody"/> child node with a <see cref="Godot.ConcavePolygonShape"/> collision shape calculated from the mesh geometry. It's mainly used for testing.</para>
+        /// </summary>
+        [GodotMethod("create_trimesh_collision")]
+        public void CreateTrimeshCollision()
+        {
+            NativeCalls.godot_icall_0_3(method_bind_12, Object.GetPtr(this));
+        }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private static IntPtr method_bind_13 = Object.godot_icall_Object_ClassDB_get_method(nativeName, "create_multiple_convex_collisions");
+
+        /// <summary>
+        /// <para>This helper creates a <see cref="Godot.StaticBody"/> child node with multiple <see cref="Godot.ConvexPolygonShape"/> collision shapes calculated from the mesh geometry via convex decomposition. It's mainly used for testing.</para>
+        /// </summary>
+        [GodotMethod("create_multiple_convex_collisions")]
+        public void CreateMultipleConvexCollisions()
+        {
+            NativeCalls.godot_icall_0_3(method_bind_13, Object.GetPtr(this));
+        }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private static IntPtr method_bind_14 = Object.godot_icall_Object_ClassDB_get_method(nativeName, "create_convex_collision");
+
+        /// <summary>
+        /// <para>This helper creates a <see cref="Godot.StaticBody"/> child node with a <see cref="Godot.ConvexPolygonShape"/> collision shape calculated from the mesh geometry. It's mainly used for testing.</para>
+        /// <para>If <c>clean</c> is <c>true</c> (default), duplicate and interior vertices are removed automatically. You can set it to <c>false</c> to make the process faster if not needed.</para>
+        /// <para>If <c>simplify</c> is <c>true</c>, the geometry can be further simplified to reduce the amount of vertices. Disabled by default.</para>
+        /// </summary>
+        [GodotMethod("create_convex_collision")]
+        public void CreateConvexCollision(bool clean = true, bool simplify = false)
+        {
+            NativeCalls.godot_icall_2_564(method_bind_14, Object.GetPtr(this), clean, simplify);
+        }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private static IntPtr method_bind_15 = Object.godot_icall_Object_ClassDB_get_method(nativeName, "create_debug_tangents");
+
+        /// <summary>
+        /// <para>This helper creates a <see cref="Godot.MeshInstance"/> child node with gizmos at every vertex calculated from the mesh geometry. It's mainly used for testing.</para>
+        /// </summary>
+        [GodotMethod("create_debug_tangents")]
+        public void CreateDebugTangents()
+        {
+            NativeCalls.godot_icall_0_3(method_bind_15, Object.GetPtr(this));
+        }
+    }
+}
+
+#pragma warning restore CS1591
+#pragma warning restore CS1573

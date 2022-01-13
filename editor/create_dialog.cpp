@@ -135,6 +135,12 @@ void CreateDialog::add_type(const String &p_type, HashMap<String, TreeItem *> &p
 		return;
 	}
 
+	// Game Magics Modified
+	// Hide 3D types
+	if (ClassDB::is_parent_class(p_type, "Spatial")) {
+		return;
+	}
+
 	bool cpp_type = ClassDB::class_exists(p_type);
 	EditorData &ed = EditorNode::get_editor_data();
 

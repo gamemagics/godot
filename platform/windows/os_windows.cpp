@@ -1568,31 +1568,19 @@ Error OS_Windows::initialize(const VideoMode &p_desired, int p_video_driver, int
 		}
 	}
 
-	while (true) {
-		if (gles3_context) {
-			if (RasterizerGLES3::is_viable() == OK) {
-				RasterizerGLES3::register_config();
-				RasterizerGLES3::make_current();
-				break;
-			} else {
-				if (GLOBAL_GET("rendering/quality/driver/fallback_to_gles2") || editor) {
-					p_video_driver = VIDEO_DRIVER_GLES2;
-					gles3_context = false;
-					continue;
-				} else {
-					gl_initialization_error = true;
-					break;
-				}
-			}
-		} else {
-			if (RasterizerGLES2::is_viable() == OK) {
-				RasterizerGLES2::register_config();
-				RasterizerGLES2::make_current();
-				break;
-			} else {
-				gl_initialization_error = true;
-				break;
-			}
+	// Game Magics Modified
+	if (gles3_context && RasterizerGLES3::is_viable() == OK) {
+		RasterizerGLES3::register_config();
+		RasterizerGLES3::make_current();
+	} else {
+		gles3_context = false;
+		p_video_driver = VIDEO_DRIVER_GLES2;
+
+		if (RasterizerGLES2::is_viable() == OK) {
+			RasterizerGLES2::register_config();
+			RasterizerGLES2::make_current();
+		} else  {
+			gl_initialization_error = true;
 		}
 	}
 
@@ -1793,7 +1781,9 @@ void OS_Windows::alert(const String &p_alert, const String &p_title) {
 		return;
 	}
 
-	MessageBoxW(NULL, p_alert.c_str(), p_title.c_str(), MB_OK | MB_ICONEXCLAMATION | MB_TASKMODAL);
+	// Game Magics Modified
+	// No message box allowed for CI 
+	// MessageBoxW(NULL, p_alert.c_str(), p_title.c_str(), MB_OK | MB_ICONEXCLAMATION | MB_TASKMODAL);
 }
 
 void OS_Windows::set_mouse_mode(MouseMode p_mode) {

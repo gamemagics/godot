@@ -5545,8 +5545,11 @@ void EditorNode::_feature_profile_changed() {
 		import_dock->set_visible(true);
 		node_dock->set_visible(true);
 		filesystem_dock->set_visible(true);
-		main_editor_buttons[EDITOR_3D]->set_visible(true);
-		main_editor_buttons[EDITOR_SCRIPT]->set_visible(true);
+
+		// Game Magics Modified
+		// We need no 3D or script so far
+		main_editor_buttons[EDITOR_3D]->set_visible(false);
+		main_editor_buttons[EDITOR_SCRIPT]->set_visible(false);
 		if (StreamPeerSSL::is_available()) {
 			main_editor_buttons[EDITOR_ASSETLIB]->set_visible(true);
 		}

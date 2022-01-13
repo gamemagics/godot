@@ -47,6 +47,9 @@ static _VisualScriptEditor *vs_editor_singleton = nullptr;
 #endif
 
 void register_visual_script_types() {
+	// Game Magics Modified
+	// No need for GD Script and Visual Script
+	return;
 	visual_script_language = memnew(VisualScriptLanguage);
 	//script_language_gd->init();
 	ScriptServer::register_language(visual_script_language);
@@ -124,6 +127,9 @@ void register_visual_script_types() {
 }
 
 void unregister_visual_script_types() {
+	// Game Magics Modified
+	// No need for GD Script and Visual Script
+	return;
 	unregister_visual_script_nodes();
 
 	ScriptServer::unregister_language(visual_script_language);

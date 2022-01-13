@@ -144,6 +144,13 @@ void EditorFeatureProfile::set_disable_feature(Feature p_feature, bool p_disable
 }
 bool EditorFeatureProfile::is_feature_disabled(Feature p_feature) const {
 	ERR_FAIL_INDEX_V(p_feature, FEATURE_MAX, false);
+	// Game Magics Modified
+	// We need no 3D or script so far
+	if (p_feature == EditorFeatureProfile::FEATURE_3D ||
+			p_feature == EditorFeatureProfile::FEATURE_SCRIPT) {
+		return true;
+	}
+
 	return features_disabled[p_feature];
 }
 

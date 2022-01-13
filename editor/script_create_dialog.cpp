@@ -811,13 +811,12 @@ ScriptCreateDialog::ScriptCreateDialog() {
 	gc->add_child(memnew(Label(TTR("Language:"))));
 	gc->add_child(language_menu);
 
-	default_language = -1;
+	// Game Magics Modified
+	// No need for GD Script and Visual Script
+	default_language = 0;
 	for (int i = 0; i < ScriptServer::get_language_count(); i++) {
 		String lang = ScriptServer::get_language(i)->get_name();
 		language_menu->add_item(lang);
-		if (lang == "GDScript") {
-			default_language = i;
-		}
 	}
 	if (default_language >= 0) {
 		language_menu->select(default_language);
