@@ -136,8 +136,28 @@ void CreateDialog::add_type(const String &p_type, HashMap<String, TreeItem *> &p
 	}
 
 	// Game Magics Modified
-	// Hide 3D types
+	// Hide 3D & Visual types
 	if (ClassDB::is_parent_class(p_type, "Spatial")) {
+		return;
+	}
+
+	if (ClassDB::is_parent_class(p_type, "Mesh")) {
+		return;
+	}
+
+	if (ClassDB::is_parent_class(p_type, "Sky")) {
+		return;
+	}
+
+	if (p_type == "MeshLibrary" || p_type == "MultiMesh" || p_type == "NavigationMesh") {
+		return;
+	}
+
+	if (ClassDB::is_parent_class(p_type, "VisualScriptNode")) {
+		return;
+	}
+
+	if (ClassDB::is_parent_class(p_type, "VisualShaderNode")) {
 		return;
 	}
 
