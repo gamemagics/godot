@@ -34,10 +34,6 @@ runs:
           SCONS_CACHE: ${{ inputs.scons-cache }}
           SCONS_CACHE_LIMIT: ${{ inputs.scons-cache-limit }}
       run: |
-        # echo "Generating Glue Program..."
-        # scons p=${{ inputs.platform }} arch=x86_64 target=${{ inputs.target }} tools=yes module_mono_enabled=yes mono_glue=no --jobs=2 ${{ env.SCONSFLAGS }}
-        # ls -l bin/
-        # bin/godot.${{ inputs.platform }}.opt.tools.x86_64.mono${{ inputs.mono-exe }} --generate-mono-glue modules/mono/glue
-        # echo "Packing..."
         scons p=${{ inputs.platform }} arch=x86_64 target=${{ inputs.target }} tools=yes module_mono_enabled=yes --jobs=2 ${{ env.SCONSFLAGS }}
+        scons p=${{ inputs.platform }} arch=x86_64 target=release tools=no module_mono_enabled=yes --jobs=2 ${{ env.SCONSFLAGS }}
         ls -l bin/
