@@ -2271,6 +2271,17 @@ void ScriptEditor::_add_callback(Object *p_obj, const String &p_function, const 
 
 	editor->push_item(script.ptr());
 
+	// Game Magics Modified
+	// Add signal process function to C# scripts automatically
+	auto script_ptr = script.ptr();
+	auto script_language = script_ptr->get_language()->get_name();
+	if (script_language == "C#") {
+		_attach_signal_to_c_sharp(script_ptr->get_path(), p_function, p_args);
+	}
+	else {
+		print_error("You are trying to add a signal to non-C# script.");
+	}
+
 	for (int i = 0; i < tab_container->get_child_count(); i++) {
 		ScriptEditorBase *se = Object::cast_to<ScriptEditorBase>(tab_container->get_child(i));
 		if (!se) {
@@ -2293,6 +2304,74 @@ void ScriptEditor::_add_callback(Object *p_obj, const String &p_function, const 
 
 		break;
 	}
+}
+
+void ScriptEditor::_attach_signal_to_c_sharp(const String &path, const String &p_function, const PoolStringArray &p_args) {
+	Error err;
+	auto content = _load_text_file(path, &err);
+	if (err != Error::OK) {
+		print_error("Can't open file " + path);
+		return;
+	}
+
+	auto* content_ptr = content.ptr();
+	auto str = content_ptr->get_text();
+
+	int pos = str.find("public class ") + String("public class ").length();
+	int stack = 0, length = str.length(), insert_pos = -1;
+	for (int i = pos; i < length; ++i) {
+		// Skip all comments.
+		if (str[i] == '/' && i + 1 < length && str[i + 1] == '/') {
+			int next = str.find("\n", i + 2);
+			if (next > i + 2) {
+				i = next;
+			}
+
+			continue;
+		} else if (str[i] == '/' && i + 1 < length && str[i + 1] == '*') {
+			int next = str.find("*/", i + 2);
+			if (next > i + 2) {
+				i = next;
+			}
+
+			continue;
+		}
+
+		// Find the last one '}' for the class.
+		if (str[i] == '{') {
+			++stack;
+		} else if (str[i] == '}') {
+			--stack;
+			if (stack == 0) {
+				insert_pos = i - 1;
+				break;
+			}
+		}
+	}
+
+	if (insert_pos < 0) {
+		print_error("Can't insert function.");
+		return;
+	}
+	String function_str = "\n	public void " + p_function + "(";
+	for (int i = 0; i < p_args.size(); ++i) {
+		auto arg = p_args[i];
+		int split = arg.find(":");
+		auto name = arg.substr(0, split);
+		auto type = arg.substr(split + 1);
+
+		if (i > 0) {
+			function_str += ", ";
+		}
+
+		function_str += (type + " " + name);
+	}
+
+	function_str += ") {}";
+	str = str.insert(insert_pos, function_str);
+
+	content_ptr->set_text(str);
+	_save_text_file(content, path);
 }
 
 void ScriptEditor::_save_layout() {

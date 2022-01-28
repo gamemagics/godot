@@ -409,6 +409,8 @@ class ScriptEditor : public PanelContainer {
 
 	static void _open_script_request(const String &p_path);
 
+	void _attach_signal_to_c_sharp(const String &path, const String &p_function, const PoolStringArray &p_args);
+
 	static ScriptEditor *script_editor;
 
 protected:
