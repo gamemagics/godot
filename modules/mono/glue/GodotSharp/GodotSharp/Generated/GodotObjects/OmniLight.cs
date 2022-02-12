@@ -139,7 +139,7 @@ namespace Godot
         [Obsolete("GetShadowMode is deprecated. Use the OmniShadowMode property instead.")]
         public OmniLight.ShadowMode GetShadowMode()
         {
-            return (OmniLight.ShadowMode)NativeCalls.godot_icall_0_622(method_bind_1, Object.GetPtr(this));
+            return (OmniLight.ShadowMode)NativeCalls.godot_icall_0_625(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -159,7 +159,7 @@ namespace Godot
         [Obsolete("GetShadowDetail is deprecated. Use the OmniShadowDetail property instead.")]
         public OmniLight.ShadowDetail GetShadowDetail()
         {
-            return (OmniLight.ShadowDetail)NativeCalls.godot_icall_0_623(method_bind_3, Object.GetPtr(this));
+            return (OmniLight.ShadowDetail)NativeCalls.godot_icall_0_626(method_bind_3, Object.GetPtr(this));
         }
     }
 }

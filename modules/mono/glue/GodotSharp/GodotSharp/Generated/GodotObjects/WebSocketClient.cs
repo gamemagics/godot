@@ -82,7 +82,7 @@ namespace Godot
         {
             string[] protocols_in = protocols != null ? protocols : Array.Empty<string>();
             string[] customHeaders_in = customHeaders != null ? customHeaders : Array.Empty<string>();
-            return (Error)NativeCalls.godot_icall_4_1043(method_bind_0, Object.GetPtr(this), url, protocols_in, gdMpApi, customHeaders_in);
+            return (Error)NativeCalls.godot_icall_4_1046(method_bind_0, Object.GetPtr(this), url, protocols_in, gdMpApi, customHeaders_in);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -118,7 +118,7 @@ namespace Godot
         [GodotMethod("get_connected_port")]
         public ushort GetConnectedPort()
         {
-            return NativeCalls.godot_icall_0_821(method_bind_3, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_824(method_bind_3, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -148,7 +148,7 @@ namespace Godot
         [Obsolete("GetTrustedSslCertificate is deprecated. Use the TrustedSslCertificate property instead.")]
         public X509Certificate GetTrustedSslCertificate()
         {
-            return NativeCalls.godot_icall_0_1044(method_bind_6, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_1047(method_bind_6, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

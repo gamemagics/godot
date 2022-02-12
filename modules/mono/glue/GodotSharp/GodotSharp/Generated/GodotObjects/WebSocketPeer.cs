@@ -43,7 +43,7 @@ namespace Godot
         [GodotMethod("get_write_mode")]
         public WebSocketPeer.WriteMode GetWriteMode()
         {
-            return (WebSocketPeer.WriteMode)NativeCalls.godot_icall_0_1047(method_bind_0, Object.GetPtr(this));
+            return (WebSocketPeer.WriteMode)NativeCalls.godot_icall_0_1050(method_bind_0, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -119,7 +119,7 @@ namespace Godot
         [GodotMethod("get_connected_port")]
         public ushort GetConnectedPort()
         {
-            return NativeCalls.godot_icall_0_821(method_bind_6, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_824(method_bind_6, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

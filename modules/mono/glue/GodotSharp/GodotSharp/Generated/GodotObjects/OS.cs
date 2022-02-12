@@ -688,7 +688,7 @@ namespace Godot
         [GodotMethod("global_menu_add_item")]
         public static void GlobalMenuAddItem(string menu, string label, object id, object meta)
         {
-            NativeCalls.godot_icall_4_1098(method_bind_2, ptr, menu, label, id, meta);
+            NativeCalls.godot_icall_4_1101(method_bind_2, ptr, menu, label, id, meta);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -763,7 +763,7 @@ namespace Godot
         [GodotMethod("get_current_video_driver")]
         public static OS.VideoDriver GetCurrentVideoDriver()
         {
-            return (OS.VideoDriver)NativeCalls.godot_icall_0_1099(method_bind_8, ptr);
+            return (OS.VideoDriver)NativeCalls.godot_icall_0_1102(method_bind_8, ptr);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1207,7 +1207,7 @@ namespace Godot
         [GodotMethod("get_native_handle")]
         public static long GetNativeHandle(OS.HandleType handleType)
         {
-            return NativeCalls.godot_icall_1_1100(method_bind_46, ptr, (int)handleType);
+            return NativeCalls.godot_icall_1_1103(method_bind_46, ptr, (int)handleType);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1324,7 +1324,7 @@ namespace Godot
         [Obsolete("GetScreenOrientation is deprecated. Use the ScreenOrientation property instead.")]
         public static OS.ScreenOrientationEnum GetScreenOrientation()
         {
-            return (OS.ScreenOrientationEnum)NativeCalls.godot_icall_0_1101(method_bind_56, ptr);
+            return (OS.ScreenOrientationEnum)NativeCalls.godot_icall_0_1104(method_bind_56, ptr);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1492,7 +1492,7 @@ namespace Godot
         public static int Execute(string path, string[] arguments, bool blocking = true, Godot.Collections.Array output = null, bool readStderr = false)
         {
             Godot.Collections.Array output_in = output != null ? output : new Godot.Collections.Array { };
-            return NativeCalls.godot_icall_5_1102(method_bind_68, ptr, path, arguments, blocking, output_in.GetPtr(), readStderr);
+            return NativeCalls.godot_icall_5_1105(method_bind_68, ptr, path, arguments, blocking, output_in.GetPtr(), readStderr);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1506,7 +1506,7 @@ namespace Godot
         [GodotMethod("kill")]
         public static Error Kill(int pid)
         {
-            return (Error)NativeCalls.godot_icall_1_465(method_bind_69, ptr, pid);
+            return (Error)NativeCalls.godot_icall_1_468(method_bind_69, ptr, pid);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1622,7 +1622,7 @@ namespace Godot
         [GodotMethod("get_datetime")]
         public static Godot.Collections.Dictionary GetDatetime(bool utc = false)
         {
-            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_1_503(method_bind_77, ptr, utc));
+            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_1_506(method_bind_77, ptr, utc));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1634,7 +1634,7 @@ namespace Godot
         [GodotMethod("get_date")]
         public static Godot.Collections.Dictionary GetDate(bool utc = false)
         {
-            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_1_503(method_bind_78, ptr, utc));
+            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_1_506(method_bind_78, ptr, utc));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1646,7 +1646,7 @@ namespace Godot
         [GodotMethod("get_time")]
         public static Godot.Collections.Dictionary GetTime(bool utc = false)
         {
-            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_1_503(method_bind_79, ptr, utc));
+            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_1_506(method_bind_79, ptr, utc));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1684,7 +1684,7 @@ namespace Godot
         [GodotMethod("get_datetime_from_unix_time")]
         public static Godot.Collections.Dictionary GetDatetimeFromUnixTime(long unixTimeVal)
         {
-            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_1_1103(method_bind_82, ptr, unixTimeVal));
+            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_1_1106(method_bind_82, ptr, unixTimeVal));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1699,7 +1699,7 @@ namespace Godot
         [GodotMethod("get_unix_time_from_datetime")]
         public static long GetUnixTimeFromDatetime(Godot.Collections.Dictionary datetime)
         {
-            return NativeCalls.godot_icall_1_1104(method_bind_83, ptr, datetime.GetPtr());
+            return NativeCalls.godot_icall_1_1107(method_bind_83, ptr, datetime.GetPtr());
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2188,7 +2188,7 @@ namespace Godot
         [GodotMethod("get_system_dir")]
         public static string GetSystemDir(OS.SystemDir dir, bool sharedStorage = true)
         {
-            return NativeCalls.godot_icall_2_1105(method_bind_121, ptr, (int)dir, sharedStorage);
+            return NativeCalls.godot_icall_2_1108(method_bind_121, ptr, (int)dir, sharedStorage);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2290,7 +2290,7 @@ namespace Godot
         [GodotMethod("native_video_play")]
         public static Error NativeVideoPlay(string path, float volume, string audioTrack, string subtitleTrack)
         {
-            return (Error)NativeCalls.godot_icall_4_1106(method_bind_129, ptr, path, volume, audioTrack, subtitleTrack);
+            return (Error)NativeCalls.godot_icall_4_1109(method_bind_129, ptr, path, volume, audioTrack, subtitleTrack);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2355,7 +2355,7 @@ namespace Godot
         [GodotMethod("get_scancode_string")]
         public static string GetScancodeString(uint code)
         {
-            return NativeCalls.godot_icall_1_1107(method_bind_134, ptr, code);
+            return NativeCalls.godot_icall_1_1110(method_bind_134, ptr, code);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2514,7 +2514,7 @@ namespace Godot
         [GodotMethod("get_power_state")]
         public static OS.PowerState GetPowerState()
         {
-            return (OS.PowerState)NativeCalls.godot_icall_0_1108(method_bind_148, ptr);
+            return (OS.PowerState)NativeCalls.godot_icall_0_1111(method_bind_148, ptr);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

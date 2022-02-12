@@ -243,7 +243,7 @@ namespace Godot
         public Image GetImage(int width, int height, Nullable<Vector2> noiseOffset = null)
         {
             Vector2 noiseOffset_in = noiseOffset.HasValue ? noiseOffset.Value : new Vector2(0, 0);
-            return NativeCalls.godot_icall_3_624(method_bind_10, Object.GetPtr(this), width, height, ref noiseOffset_in);
+            return NativeCalls.godot_icall_3_627(method_bind_10, Object.GetPtr(this), width, height, ref noiseOffset_in);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -281,7 +281,7 @@ namespace Godot
         [GodotMethod("get_noise_2d")]
         public float GetNoise2d(float x, float y)
         {
-            return NativeCalls.godot_icall_2_625(method_bind_13, Object.GetPtr(this), x, y);
+            return NativeCalls.godot_icall_2_628(method_bind_13, Object.GetPtr(this), x, y);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -293,7 +293,7 @@ namespace Godot
         [GodotMethod("get_noise_3d")]
         public float GetNoise3d(float x, float y, float z)
         {
-            return NativeCalls.godot_icall_3_626(method_bind_14, Object.GetPtr(this), x, y, z);
+            return NativeCalls.godot_icall_3_629(method_bind_14, Object.GetPtr(this), x, y, z);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -305,7 +305,7 @@ namespace Godot
         [GodotMethod("get_noise_4d")]
         public float GetNoise4d(float x, float y, float z, float w)
         {
-            return NativeCalls.godot_icall_4_627(method_bind_15, Object.GetPtr(this), x, y, z, w);
+            return NativeCalls.godot_icall_4_630(method_bind_15, Object.GetPtr(this), x, y, z, w);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

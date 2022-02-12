@@ -686,7 +686,7 @@ namespace Godot
         [Obsolete("GetDrawOrder is deprecated. Use the DrawOrder property instead.")]
         public Particles.DrawOrderEnum GetDrawOrder()
         {
-            return (Particles.DrawOrderEnum)NativeCalls.godot_icall_0_641(method_bind_27, Object.GetPtr(this));
+            return (Particles.DrawOrderEnum)NativeCalls.godot_icall_0_644(method_bind_27, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -732,7 +732,7 @@ namespace Godot
         [Obsolete("GetDrawPassMesh is deprecated. Use the DrawPass4 property instead.")]
         public Mesh GetDrawPassMesh(int pass)
         {
-            return NativeCalls.godot_icall_1_567(method_bind_31, Object.GetPtr(this), pass);
+            return NativeCalls.godot_icall_1_570(method_bind_31, Object.GetPtr(this), pass);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

@@ -110,7 +110,7 @@ namespace Godot
         [GodotMethod("open_encrypted")]
         public Error OpenEncrypted(string path, File.ModeFlags modeFlags, byte[] key)
         {
-            return (Error)NativeCalls.godot_icall_3_1064(method_bind_0, Object.GetPtr(this), path, (int)modeFlags, key);
+            return (Error)NativeCalls.godot_icall_3_1067(method_bind_0, Object.GetPtr(this), path, (int)modeFlags, key);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -122,7 +122,7 @@ namespace Godot
         [GodotMethod("open_encrypted_with_pass")]
         public Error OpenEncryptedWithPass(string path, File.ModeFlags modeFlags, string pass)
         {
-            return (Error)NativeCalls.godot_icall_3_1041(method_bind_1, Object.GetPtr(this), path, (int)modeFlags, pass);
+            return (Error)NativeCalls.godot_icall_3_1044(method_bind_1, Object.GetPtr(this), path, (int)modeFlags, pass);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -135,7 +135,7 @@ namespace Godot
         [GodotMethod("open_compressed")]
         public Error OpenCompressed(string path, File.ModeFlags modeFlags, File.CompressionMode compressionMode = (File.CompressionMode)0)
         {
-            return (Error)NativeCalls.godot_icall_3_1065(method_bind_2, Object.GetPtr(this), path, (int)modeFlags, (int)compressionMode);
+            return (Error)NativeCalls.godot_icall_3_1068(method_bind_2, Object.GetPtr(this), path, (int)modeFlags, (int)compressionMode);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -147,7 +147,7 @@ namespace Godot
         [GodotMethod("open")]
         public Error Open(string path, File.ModeFlags flags)
         {
-            return (Error)NativeCalls.godot_icall_2_629(method_bind_3, Object.GetPtr(this), path, (int)flags);
+            return (Error)NativeCalls.godot_icall_2_632(method_bind_3, Object.GetPtr(this), path, (int)flags);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -220,7 +220,7 @@ namespace Godot
         [GodotMethod("seek")]
         public void Seek(long position)
         {
-            NativeCalls.godot_icall_1_816(method_bind_9, Object.GetPtr(this), position);
+            NativeCalls.godot_icall_1_819(method_bind_9, Object.GetPtr(this), position);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -233,7 +233,7 @@ namespace Godot
         [GodotMethod("seek_end")]
         public void SeekEnd(long position = (long)0)
         {
-            NativeCalls.godot_icall_1_816(method_bind_10, Object.GetPtr(this), position);
+            NativeCalls.godot_icall_1_819(method_bind_10, Object.GetPtr(this), position);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -286,7 +286,7 @@ namespace Godot
         [GodotMethod("get_8")]
         public byte Get8()
         {
-            return NativeCalls.godot_icall_0_819(method_bind_14, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_822(method_bind_14, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -298,7 +298,7 @@ namespace Godot
         [GodotMethod("get_16")]
         public ushort Get16()
         {
-            return NativeCalls.godot_icall_0_821(method_bind_15, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_824(method_bind_15, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -370,7 +370,7 @@ namespace Godot
         [GodotMethod("get_buffer")]
         public byte[] GetBuffer(long len)
         {
-            return NativeCalls.godot_icall_1_1066(method_bind_21, Object.GetPtr(this), len);
+            return NativeCalls.godot_icall_1_1069(method_bind_21, Object.GetPtr(this), len);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -485,7 +485,7 @@ namespace Godot
         [GodotMethod("get_var")]
         public object GetVar(bool allowObjects = false)
         {
-            return NativeCalls.godot_icall_1_636(method_bind_30, Object.GetPtr(this), allowObjects);
+            return NativeCalls.godot_icall_1_639(method_bind_30, Object.GetPtr(this), allowObjects);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -499,7 +499,7 @@ namespace Godot
         [GodotMethod("store_8")]
         public void Store8(byte value)
         {
-            NativeCalls.godot_icall_1_813(method_bind_31, Object.GetPtr(this), value);
+            NativeCalls.godot_icall_1_816(method_bind_31, Object.GetPtr(this), value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -531,7 +531,7 @@ namespace Godot
         [GodotMethod("store_16")]
         public void Store16(ushort value)
         {
-            NativeCalls.godot_icall_1_815(method_bind_32, Object.GetPtr(this), value);
+            NativeCalls.godot_icall_1_818(method_bind_32, Object.GetPtr(this), value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -582,7 +582,7 @@ namespace Godot
         [GodotMethod("store_double")]
         public void StoreDouble(double value)
         {
-            NativeCalls.godot_icall_1_747(method_bind_36, Object.GetPtr(this), value);
+            NativeCalls.godot_icall_1_750(method_bind_36, Object.GetPtr(this), value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -631,7 +631,7 @@ namespace Godot
         [GodotMethod("store_csv_line")]
         public void StoreCsvLine(string[] values, string delim = ",")
         {
-            NativeCalls.godot_icall_2_1067(method_bind_40, Object.GetPtr(this), values, delim);
+            NativeCalls.godot_icall_2_1070(method_bind_40, Object.GetPtr(this), values, delim);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -657,7 +657,7 @@ namespace Godot
         [GodotMethod("store_var")]
         public void StoreVar(object value, bool fullObjects = false)
         {
-            NativeCalls.godot_icall_2_817(method_bind_42, Object.GetPtr(this), value, fullObjects);
+            NativeCalls.godot_icall_2_820(method_bind_42, Object.GetPtr(this), value, fullObjects);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -708,7 +708,7 @@ namespace Godot
         [GodotMethod("get_modified_time")]
         public ulong GetModifiedTime(string file)
         {
-            return NativeCalls.godot_icall_1_1068(method_bind_46, Object.GetPtr(this), file);
+            return NativeCalls.godot_icall_1_1071(method_bind_46, Object.GetPtr(this), file);
         }
     }
 }

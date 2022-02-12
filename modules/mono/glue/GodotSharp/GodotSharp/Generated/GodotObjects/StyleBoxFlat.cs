@@ -651,7 +651,7 @@ namespace Godot
         [GodotMethod("set_expand_margin_individual")]
         public void SetExpandMarginIndividual(float sizeLeft, float sizeTop, float sizeRight, float sizeBottom)
         {
-            NativeCalls.godot_icall_4_829(method_bind_16, Object.GetPtr(this), sizeLeft, sizeTop, sizeRight, sizeBottom);
+            NativeCalls.godot_icall_4_832(method_bind_16, Object.GetPtr(this), sizeLeft, sizeTop, sizeRight, sizeBottom);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

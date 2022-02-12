@@ -288,7 +288,7 @@ namespace Godot
         [GodotMethod("add_item")]
         public void AddItem(string text, Texture icon = null, bool selectable = true)
         {
-            NativeCalls.godot_icall_3_505(method_bind_0, Object.GetPtr(this), text, Object.GetPtr(icon), selectable);
+            NativeCalls.godot_icall_3_508(method_bind_0, Object.GetPtr(this), text, Object.GetPtr(icon), selectable);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -300,7 +300,7 @@ namespace Godot
         [GodotMethod("add_icon_item")]
         public void AddIconItem(Texture icon, bool selectable = true)
         {
-            NativeCalls.godot_icall_2_506(method_bind_1, Object.GetPtr(this), Object.GetPtr(icon), selectable);
+            NativeCalls.godot_icall_2_509(method_bind_1, Object.GetPtr(this), Object.GetPtr(icon), selectable);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -396,7 +396,7 @@ namespace Godot
         [GodotMethod("get_item_icon_region")]
         public Rect2 GetItemIconRegion(int idx)
         {
-            NativeCalls.godot_icall_1_507(method_bind_9, Object.GetPtr(this), idx, out Rect2 argRet); return (Rect2)argRet;
+            NativeCalls.godot_icall_1_510(method_bind_9, Object.GetPtr(this), idx, out Rect2 argRet); return (Rect2)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -408,7 +408,7 @@ namespace Godot
         [GodotMethod("set_item_icon_modulate")]
         public void SetItemIconModulate(int idx, Color modulate)
         {
-            NativeCalls.godot_icall_2_445(method_bind_10, Object.GetPtr(this), idx, ref modulate);
+            NativeCalls.godot_icall_2_448(method_bind_10, Object.GetPtr(this), idx, ref modulate);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -420,7 +420,7 @@ namespace Godot
         [GodotMethod("get_item_icon_modulate")]
         public Color GetItemIconModulate(int idx)
         {
-            NativeCalls.godot_icall_1_446(method_bind_11, Object.GetPtr(this), idx, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_1_449(method_bind_11, Object.GetPtr(this), idx, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -481,7 +481,7 @@ namespace Godot
         [GodotMethod("set_item_metadata")]
         public void SetItemMetadata(int idx, object metadata)
         {
-            NativeCalls.godot_icall_2_508(method_bind_16, Object.GetPtr(this), idx, metadata);
+            NativeCalls.godot_icall_2_511(method_bind_16, Object.GetPtr(this), idx, metadata);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -493,7 +493,7 @@ namespace Godot
         [GodotMethod("get_item_metadata")]
         public object GetItemMetadata(int idx)
         {
-            return NativeCalls.godot_icall_1_509(method_bind_17, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_512(method_bind_17, Object.GetPtr(this), idx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -505,7 +505,7 @@ namespace Godot
         [GodotMethod("set_item_custom_bg_color")]
         public void SetItemCustomBgColor(int idx, Color customBgColor)
         {
-            NativeCalls.godot_icall_2_445(method_bind_18, Object.GetPtr(this), idx, ref customBgColor);
+            NativeCalls.godot_icall_2_448(method_bind_18, Object.GetPtr(this), idx, ref customBgColor);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -517,7 +517,7 @@ namespace Godot
         [GodotMethod("get_item_custom_bg_color")]
         public Color GetItemCustomBgColor(int idx)
         {
-            NativeCalls.godot_icall_1_446(method_bind_19, Object.GetPtr(this), idx, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_1_449(method_bind_19, Object.GetPtr(this), idx, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -529,7 +529,7 @@ namespace Godot
         [GodotMethod("set_item_custom_fg_color")]
         public void SetItemCustomFgColor(int idx, Color customFgColor)
         {
-            NativeCalls.godot_icall_2_445(method_bind_20, Object.GetPtr(this), idx, ref customFgColor);
+            NativeCalls.godot_icall_2_448(method_bind_20, Object.GetPtr(this), idx, ref customFgColor);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -541,7 +541,7 @@ namespace Godot
         [GodotMethod("get_item_custom_fg_color")]
         public Color GetItemCustomFgColor(int idx)
         {
-            NativeCalls.godot_icall_1_446(method_bind_21, Object.GetPtr(this), idx, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_1_449(method_bind_21, Object.GetPtr(this), idx, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -810,7 +810,7 @@ namespace Godot
         [Obsolete("GetSelectMode is deprecated. Use the SelectMode property instead.")]
         public ItemList.SelectModeEnum GetSelectMode()
         {
-            return (ItemList.SelectModeEnum)NativeCalls.godot_icall_0_510(method_bind_45, Object.GetPtr(this));
+            return (ItemList.SelectModeEnum)NativeCalls.godot_icall_0_513(method_bind_45, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -830,7 +830,7 @@ namespace Godot
         [Obsolete("GetIconMode is deprecated. Use the IconMode property instead.")]
         public ItemList.IconModeEnum GetIconMode()
         {
-            return (ItemList.IconModeEnum)NativeCalls.godot_icall_0_511(method_bind_47, Object.GetPtr(this));
+            return (ItemList.IconModeEnum)NativeCalls.godot_icall_0_514(method_bind_47, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -980,7 +980,7 @@ namespace Godot
         [GodotMethod("get_v_scroll")]
         public VScrollBar GetVScroll()
         {
-            return NativeCalls.godot_icall_0_512(method_bind_61, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_515(method_bind_61, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

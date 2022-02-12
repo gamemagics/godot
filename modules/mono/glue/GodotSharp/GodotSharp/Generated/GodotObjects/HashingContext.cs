@@ -69,7 +69,7 @@ namespace Godot
         [GodotMethod("start")]
         public Error Start(HashingContext.HashType type)
         {
-            return (Error)NativeCalls.godot_icall_1_465(method_bind_0, Object.GetPtr(this), (int)type);
+            return (Error)NativeCalls.godot_icall_1_468(method_bind_0, Object.GetPtr(this), (int)type);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -81,7 +81,7 @@ namespace Godot
         [GodotMethod("update")]
         public Error Update(byte[] chunk)
         {
-            return (Error)NativeCalls.godot_icall_1_456(method_bind_1, Object.GetPtr(this), chunk);
+            return (Error)NativeCalls.godot_icall_1_459(method_bind_1, Object.GetPtr(this), chunk);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

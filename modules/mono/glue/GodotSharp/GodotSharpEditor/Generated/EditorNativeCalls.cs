@@ -5,7 +5,7 @@ namespace Godot
 {
     internal static class EditorNativeCalls
     {
-        internal static ulong godot_api_hash = 14496881911689160503;
+        internal static ulong godot_api_hash = 6556070434402148854;
         internal static uint bindings_version = 13;
         internal static uint cs_glue_version = 1642044651;
 
@@ -218,6 +218,6 @@ namespace Godot
         internal static extern SpatialMaterial godot_icall_2_411(IntPtr method, IntPtr ptr, string arg1, IntPtr arg2);
 
         [MethodImpl(MethodImplOptions.InternalCall)]
-        internal static extern void godot_icall_4_775(IntPtr method, IntPtr ptr, string arg1, string arg2, bool arg3, bool arg4);
+        internal static extern void godot_icall_4_778(IntPtr method, IntPtr ptr, string arg1, string arg2, bool arg3, bool arg4);
     }
 }

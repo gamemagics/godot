@@ -199,7 +199,7 @@ namespace Godot
         [Obsolete("GetNoise is deprecated. Use the Noise property instead.")]
         public OpenSimplexNoise GetNoise()
         {
-            return NativeCalls.godot_icall_0_610(method_bind_3, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_613(method_bind_3, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

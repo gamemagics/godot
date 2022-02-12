@@ -252,7 +252,7 @@ namespace Godot
         [Obsolete("GetTweenProcessMode is deprecated. Use the PlaybackProcessMode property instead.")]
         public Tween.TweenProcessMode GetTweenProcessMode()
         {
-            return (Tween.TweenProcessMode)NativeCalls.godot_icall_0_907(method_bind_7, Object.GetPtr(this));
+            return (Tween.TweenProcessMode)NativeCalls.godot_icall_0_910(method_bind_7, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -276,7 +276,7 @@ namespace Godot
         [GodotMethod("reset")]
         public bool Reset(Object @object, string key = "")
         {
-            return NativeCalls.godot_icall_2_908(method_bind_9, Object.GetPtr(this), Object.GetPtr(@object), key);
+            return NativeCalls.godot_icall_2_911(method_bind_9, Object.GetPtr(this), Object.GetPtr(@object), key);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -300,7 +300,7 @@ namespace Godot
         [GodotMethod("stop")]
         public bool Stop(Object @object, string key = "")
         {
-            return NativeCalls.godot_icall_2_908(method_bind_11, Object.GetPtr(this), Object.GetPtr(@object), key);
+            return NativeCalls.godot_icall_2_911(method_bind_11, Object.GetPtr(this), Object.GetPtr(@object), key);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -324,7 +324,7 @@ namespace Godot
         [GodotMethod("resume")]
         public bool Resume(Object @object, string key = "")
         {
-            return NativeCalls.godot_icall_2_908(method_bind_13, Object.GetPtr(this), Object.GetPtr(@object), key);
+            return NativeCalls.godot_icall_2_911(method_bind_13, Object.GetPtr(this), Object.GetPtr(@object), key);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -348,7 +348,7 @@ namespace Godot
         [GodotMethod("remove")]
         public bool Remove(Object @object, string key = "")
         {
-            return NativeCalls.godot_icall_2_908(method_bind_15, Object.GetPtr(this), Object.GetPtr(@object), key);
+            return NativeCalls.godot_icall_2_911(method_bind_15, Object.GetPtr(this), Object.GetPtr(@object), key);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -372,7 +372,7 @@ namespace Godot
         [GodotMethod("seek")]
         public bool Seek(float time)
         {
-            return NativeCalls.godot_icall_1_552(method_bind_17, Object.GetPtr(this), time);
+            return NativeCalls.godot_icall_1_555(method_bind_17, Object.GetPtr(this), time);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -409,7 +409,7 @@ namespace Godot
         [GodotMethod("interpolate_property")]
         public bool InterpolateProperty(Object @object, NodePath property, object initialVal, object finalVal, float duration, Tween.TransitionType transType = (Tween.TransitionType)0, Tween.EaseType easeType = (Tween.EaseType)2, float delay = (float)0)
         {
-            return NativeCalls.godot_icall_8_909(method_bind_20, Object.GetPtr(this), Object.GetPtr(@object), NodePath.GetPtr(property), initialVal, finalVal, duration, (int)transType, (int)easeType, delay);
+            return NativeCalls.godot_icall_8_912(method_bind_20, Object.GetPtr(this), Object.GetPtr(@object), NodePath.GetPtr(property), initialVal, finalVal, duration, (int)transType, (int)easeType, delay);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -422,7 +422,7 @@ namespace Godot
         [GodotMethod("interpolate_method")]
         public bool InterpolateMethod(Object @object, string method, object initialVal, object finalVal, float duration, Tween.TransitionType transType = (Tween.TransitionType)0, Tween.EaseType easeType = (Tween.EaseType)2, float delay = (float)0)
         {
-            return NativeCalls.godot_icall_8_910(method_bind_21, Object.GetPtr(this), Object.GetPtr(@object), method, initialVal, finalVal, duration, (int)transType, (int)easeType, delay);
+            return NativeCalls.godot_icall_8_913(method_bind_21, Object.GetPtr(this), Object.GetPtr(@object), method, initialVal, finalVal, duration, (int)transType, (int)easeType, delay);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -434,7 +434,7 @@ namespace Godot
         [GodotMethod("interpolate_callback")]
         public bool InterpolateCallback(Object @object, float duration, string callback, object arg1 = null, object arg2 = null, object arg3 = null, object arg4 = null, object arg5 = null)
         {
-            return NativeCalls.godot_icall_8_911(method_bind_22, Object.GetPtr(this), Object.GetPtr(@object), duration, callback, arg1, arg2, arg3, arg4, arg5);
+            return NativeCalls.godot_icall_8_914(method_bind_22, Object.GetPtr(this), Object.GetPtr(@object), duration, callback, arg1, arg2, arg3, arg4, arg5);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -446,7 +446,7 @@ namespace Godot
         [GodotMethod("interpolate_deferred_callback")]
         public bool InterpolateDeferredCallback(Object @object, float duration, string callback, object arg1 = null, object arg2 = null, object arg3 = null, object arg4 = null, object arg5 = null)
         {
-            return NativeCalls.godot_icall_8_911(method_bind_23, Object.GetPtr(this), Object.GetPtr(@object), duration, callback, arg1, arg2, arg3, arg4, arg5);
+            return NativeCalls.godot_icall_8_914(method_bind_23, Object.GetPtr(this), Object.GetPtr(@object), duration, callback, arg1, arg2, arg3, arg4, arg5);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -459,7 +459,7 @@ namespace Godot
         [GodotMethod("follow_property")]
         public bool FollowProperty(Object @object, NodePath property, object initialVal, Object target, NodePath targetProperty, float duration, Tween.TransitionType transType = (Tween.TransitionType)0, Tween.EaseType easeType = (Tween.EaseType)2, float delay = (float)0)
         {
-            return NativeCalls.godot_icall_9_912(method_bind_24, Object.GetPtr(this), Object.GetPtr(@object), NodePath.GetPtr(property), initialVal, Object.GetPtr(target), NodePath.GetPtr(targetProperty), duration, (int)transType, (int)easeType, delay);
+            return NativeCalls.godot_icall_9_915(method_bind_24, Object.GetPtr(this), Object.GetPtr(@object), NodePath.GetPtr(property), initialVal, Object.GetPtr(target), NodePath.GetPtr(targetProperty), duration, (int)transType, (int)easeType, delay);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -472,7 +472,7 @@ namespace Godot
         [GodotMethod("follow_method")]
         public bool FollowMethod(Object @object, string method, object initialVal, Object target, string targetMethod, float duration, Tween.TransitionType transType = (Tween.TransitionType)0, Tween.EaseType easeType = (Tween.EaseType)2, float delay = (float)0)
         {
-            return NativeCalls.godot_icall_9_913(method_bind_25, Object.GetPtr(this), Object.GetPtr(@object), method, initialVal, Object.GetPtr(target), targetMethod, duration, (int)transType, (int)easeType, delay);
+            return NativeCalls.godot_icall_9_916(method_bind_25, Object.GetPtr(this), Object.GetPtr(@object), method, initialVal, Object.GetPtr(target), targetMethod, duration, (int)transType, (int)easeType, delay);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -485,7 +485,7 @@ namespace Godot
         [GodotMethod("targeting_property")]
         public bool TargetingProperty(Object @object, NodePath property, Object initial, NodePath initialVal, object finalVal, float duration, Tween.TransitionType transType = (Tween.TransitionType)0, Tween.EaseType easeType = (Tween.EaseType)2, float delay = (float)0)
         {
-            return NativeCalls.godot_icall_9_914(method_bind_26, Object.GetPtr(this), Object.GetPtr(@object), NodePath.GetPtr(property), Object.GetPtr(initial), NodePath.GetPtr(initialVal), finalVal, duration, (int)transType, (int)easeType, delay);
+            return NativeCalls.godot_icall_9_917(method_bind_26, Object.GetPtr(this), Object.GetPtr(@object), NodePath.GetPtr(property), Object.GetPtr(initial), NodePath.GetPtr(initialVal), finalVal, duration, (int)transType, (int)easeType, delay);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -498,7 +498,7 @@ namespace Godot
         [GodotMethod("targeting_method")]
         public bool TargetingMethod(Object @object, string method, Object initial, string initialMethod, object finalVal, float duration, Tween.TransitionType transType = (Tween.TransitionType)0, Tween.EaseType easeType = (Tween.EaseType)2, float delay = (float)0)
         {
-            return NativeCalls.godot_icall_9_915(method_bind_27, Object.GetPtr(this), Object.GetPtr(@object), method, Object.GetPtr(initial), initialMethod, finalVal, duration, (int)transType, (int)easeType, delay);
+            return NativeCalls.godot_icall_9_918(method_bind_27, Object.GetPtr(this), Object.GetPtr(@object), method, Object.GetPtr(initial), initialMethod, finalVal, duration, (int)transType, (int)easeType, delay);
         }
     }
 }

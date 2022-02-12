@@ -35,7 +35,7 @@ namespace Godot
         [GodotMethod("variant_to_base64")]
         public static string VariantToBase64(object variant, bool fullObjects = false)
         {
-            return NativeCalls.godot_icall_2_1095(method_bind_0, ptr, variant, fullObjects);
+            return NativeCalls.godot_icall_2_1098(method_bind_0, ptr, variant, fullObjects);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -48,7 +48,7 @@ namespace Godot
         [GodotMethod("base64_to_variant")]
         public static object Base64ToVariant(string base64Str, bool allowObjects = false)
         {
-            return NativeCalls.godot_icall_2_521(method_bind_1, ptr, base64Str, allowObjects);
+            return NativeCalls.godot_icall_2_524(method_bind_1, ptr, base64Str, allowObjects);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -60,7 +60,7 @@ namespace Godot
         [GodotMethod("raw_to_base64")]
         public static string RawToBase64(byte[] array)
         {
-            return NativeCalls.godot_icall_1_1096(method_bind_2, ptr, array);
+            return NativeCalls.godot_icall_1_1099(method_bind_2, ptr, array);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -72,7 +72,7 @@ namespace Godot
         [GodotMethod("base64_to_raw")]
         public static byte[] Base64ToRaw(string base64Str)
         {
-            return NativeCalls.godot_icall_1_1097(method_bind_3, ptr, base64Str);
+            return NativeCalls.godot_icall_1_1100(method_bind_3, ptr, base64Str);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

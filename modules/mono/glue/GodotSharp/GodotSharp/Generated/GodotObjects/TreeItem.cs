@@ -133,7 +133,7 @@ namespace Godot
         [GodotMethod("get_cell_mode")]
         public TreeItem.TreeCellMode GetCellMode(int column)
         {
-            return (TreeItem.TreeCellMode)NativeCalls.godot_icall_1_896(method_bind_1, Object.GetPtr(this), column);
+            return (TreeItem.TreeCellMode)NativeCalls.godot_icall_1_899(method_bind_1, Object.GetPtr(this), column);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -253,7 +253,7 @@ namespace Godot
         [GodotMethod("get_icon_region")]
         public Rect2 GetIconRegion(int column)
         {
-            NativeCalls.godot_icall_1_507(method_bind_11, Object.GetPtr(this), column, out Rect2 argRet); return (Rect2)argRet;
+            NativeCalls.godot_icall_1_510(method_bind_11, Object.GetPtr(this), column, out Rect2 argRet); return (Rect2)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -289,7 +289,7 @@ namespace Godot
         [GodotMethod("set_icon_modulate")]
         public void SetIconModulate(int column, Color modulate)
         {
-            NativeCalls.godot_icall_2_445(method_bind_14, Object.GetPtr(this), column, ref modulate);
+            NativeCalls.godot_icall_2_448(method_bind_14, Object.GetPtr(this), column, ref modulate);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -301,7 +301,7 @@ namespace Godot
         [GodotMethod("get_icon_modulate")]
         public Color GetIconModulate(int column)
         {
-            NativeCalls.godot_icall_1_446(method_bind_15, Object.GetPtr(this), column, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_1_449(method_bind_15, Object.GetPtr(this), column, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -313,7 +313,7 @@ namespace Godot
         [GodotMethod("set_range")]
         public void SetRange(int column, double value)
         {
-            NativeCalls.godot_icall_2_897(method_bind_16, Object.GetPtr(this), column, value);
+            NativeCalls.godot_icall_2_900(method_bind_16, Object.GetPtr(this), column, value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -325,7 +325,7 @@ namespace Godot
         [GodotMethod("get_range")]
         public double GetRange(int column)
         {
-            return NativeCalls.godot_icall_1_898(method_bind_17, Object.GetPtr(this), column);
+            return NativeCalls.godot_icall_1_901(method_bind_17, Object.GetPtr(this), column);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -338,7 +338,7 @@ namespace Godot
         [GodotMethod("set_range_config")]
         public void SetRangeConfig(int column, double min, double max, double step, bool expr = false)
         {
-            NativeCalls.godot_icall_5_899(method_bind_18, Object.GetPtr(this), column, min, max, step, expr);
+            NativeCalls.godot_icall_5_902(method_bind_18, Object.GetPtr(this), column, min, max, step, expr);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -350,7 +350,7 @@ namespace Godot
         [GodotMethod("get_range_config")]
         public Godot.Collections.Dictionary GetRangeConfig(int column)
         {
-            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_1_900(method_bind_19, Object.GetPtr(this), column));
+            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_1_903(method_bind_19, Object.GetPtr(this), column));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -362,7 +362,7 @@ namespace Godot
         [GodotMethod("set_metadata")]
         public void SetMetadata(int column, object meta)
         {
-            NativeCalls.godot_icall_2_508(method_bind_20, Object.GetPtr(this), column, meta);
+            NativeCalls.godot_icall_2_511(method_bind_20, Object.GetPtr(this), column, meta);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -374,7 +374,7 @@ namespace Godot
         [GodotMethod("get_metadata")]
         public object GetMetadata(int column)
         {
-            return NativeCalls.godot_icall_1_509(method_bind_21, Object.GetPtr(this), column);
+            return NativeCalls.godot_icall_1_512(method_bind_21, Object.GetPtr(this), column);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -387,7 +387,7 @@ namespace Godot
         [GodotMethod("set_custom_draw")]
         public void SetCustomDraw(int column, Object @object, string callback)
         {
-            NativeCalls.godot_icall_3_901(method_bind_22, Object.GetPtr(this), column, Object.GetPtr(@object), callback);
+            NativeCalls.godot_icall_3_904(method_bind_22, Object.GetPtr(this), column, Object.GetPtr(@object), callback);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -439,7 +439,7 @@ namespace Godot
         [GodotMethod("get_next")]
         public TreeItem GetNext()
         {
-            return NativeCalls.godot_icall_0_891(method_bind_27, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_894(method_bind_27, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -451,7 +451,7 @@ namespace Godot
         [GodotMethod("get_prev")]
         public TreeItem GetPrev()
         {
-            return NativeCalls.godot_icall_0_891(method_bind_28, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_894(method_bind_28, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -463,7 +463,7 @@ namespace Godot
         [GodotMethod("get_parent")]
         public TreeItem GetParent()
         {
-            return NativeCalls.godot_icall_0_891(method_bind_29, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_894(method_bind_29, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -475,7 +475,7 @@ namespace Godot
         [GodotMethod("get_children")]
         public TreeItem GetChildren()
         {
-            return NativeCalls.godot_icall_0_891(method_bind_30, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_894(method_bind_30, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -488,7 +488,7 @@ namespace Godot
         [GodotMethod("get_next_visible")]
         public TreeItem GetNextVisible(bool wrap = false)
         {
-            return NativeCalls.godot_icall_1_902(method_bind_31, Object.GetPtr(this), wrap);
+            return NativeCalls.godot_icall_1_905(method_bind_31, Object.GetPtr(this), wrap);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -501,7 +501,7 @@ namespace Godot
         [GodotMethod("get_prev_visible")]
         public TreeItem GetPrevVisible(bool wrap = false)
         {
-            return NativeCalls.godot_icall_1_902(method_bind_32, Object.GetPtr(this), wrap);
+            return NativeCalls.godot_icall_1_905(method_bind_32, Object.GetPtr(this), wrap);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -609,7 +609,7 @@ namespace Godot
         [GodotMethod("set_custom_color")]
         public void SetCustomColor(int column, Color color)
         {
-            NativeCalls.godot_icall_2_445(method_bind_41, Object.GetPtr(this), column, ref color);
+            NativeCalls.godot_icall_2_448(method_bind_41, Object.GetPtr(this), column, ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -633,7 +633,7 @@ namespace Godot
         [GodotMethod("get_custom_color")]
         public Color GetCustomColor(int column)
         {
-            NativeCalls.godot_icall_1_446(method_bind_43, Object.GetPtr(this), column, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_1_449(method_bind_43, Object.GetPtr(this), column, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -645,7 +645,7 @@ namespace Godot
         [GodotMethod("set_custom_bg_color")]
         public void SetCustomBgColor(int column, Color color, bool justOutline = false)
         {
-            NativeCalls.godot_icall_3_903(method_bind_44, Object.GetPtr(this), column, ref color, justOutline);
+            NativeCalls.godot_icall_3_906(method_bind_44, Object.GetPtr(this), column, ref color, justOutline);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -669,7 +669,7 @@ namespace Godot
         [GodotMethod("get_custom_bg_color")]
         public Color GetCustomBgColor(int column)
         {
-            NativeCalls.godot_icall_1_446(method_bind_46, Object.GetPtr(this), column, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_1_449(method_bind_46, Object.GetPtr(this), column, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -699,7 +699,7 @@ namespace Godot
         [GodotMethod("add_button")]
         public void AddButton(int column, Texture button, int buttonIdx = -1, bool disabled = false, string tooltip = "")
         {
-            NativeCalls.godot_icall_5_904(method_bind_49, Object.GetPtr(this), column, Object.GetPtr(button), buttonIdx, disabled, tooltip);
+            NativeCalls.godot_icall_5_907(method_bind_49, Object.GetPtr(this), column, Object.GetPtr(button), buttonIdx, disabled, tooltip);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -735,7 +735,7 @@ namespace Godot
         [GodotMethod("get_button")]
         public Texture GetButton(int column, int buttonIdx)
         {
-            return NativeCalls.godot_icall_2_905(method_bind_52, Object.GetPtr(this), column, buttonIdx);
+            return NativeCalls.godot_icall_2_908(method_bind_52, Object.GetPtr(this), column, buttonIdx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -855,7 +855,7 @@ namespace Godot
         [GodotMethod("get_text_align")]
         public TreeItem.TextAlign GetTextAlign(int column)
         {
-            return (TreeItem.TextAlign)NativeCalls.godot_icall_1_906(method_bind_62, Object.GetPtr(this), column);
+            return (TreeItem.TextAlign)NativeCalls.godot_icall_1_909(method_bind_62, Object.GetPtr(this), column);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -911,7 +911,7 @@ namespace Godot
         [GodotMethod("call_recursive")]
         public object CallRecursive(string method, params object[] @args)
         {
-            return NativeCalls.godot_icall_2_524(method_bind_67, Object.GetPtr(this), method, @args);
+            return NativeCalls.godot_icall_2_527(method_bind_67, Object.GetPtr(this), method, @args);
         }
     }
 }

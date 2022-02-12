@@ -42,7 +42,7 @@ namespace Godot
         [GodotMethod("get_bone")]
         public Bone2D GetBone(int idx)
         {
-            return NativeCalls.godot_icall_1_788(method_bind_1, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_791(method_bind_1, Object.GetPtr(this), idx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

@@ -66,7 +66,7 @@ namespace Godot
         [GodotMethod("get_debug_mesh")]
         public ArrayMesh GetDebugMesh()
         {
-            return NativeCalls.godot_icall_0_433(method_bind_2, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_436(method_bind_2, Object.GetPtr(this));
         }
     }
 }

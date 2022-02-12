@@ -127,7 +127,7 @@ namespace Godot
         [Obsolete("GetConfigFile is deprecated. Use the ConfigFile property instead.")]
         public ConfigFile GetConfigFile()
         {
-            return NativeCalls.godot_icall_0_436(method_bind_0, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_431(method_bind_0, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

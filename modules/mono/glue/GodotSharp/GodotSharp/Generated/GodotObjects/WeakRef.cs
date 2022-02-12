@@ -30,7 +30,7 @@ namespace Godot
         [GodotMethod("get_ref")]
         public object GetRef()
         {
-            return NativeCalls.godot_icall_0_513(method_bind_0, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_516(method_bind_0, Object.GetPtr(this));
         }
     }
 }

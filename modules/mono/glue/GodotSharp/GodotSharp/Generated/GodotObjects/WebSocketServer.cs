@@ -144,7 +144,7 @@ namespace Godot
         public Error Listen(int port, string[] protocols = null, bool gdMpApi = false)
         {
             string[] protocols_in = protocols != null ? protocols : Array.Empty<string>();
-            return (Error)NativeCalls.godot_icall_3_1048(method_bind_1, Object.GetPtr(this), port, protocols_in, gdMpApi);
+            return (Error)NativeCalls.godot_icall_3_1051(method_bind_1, Object.GetPtr(this), port, protocols_in, gdMpApi);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -234,7 +234,7 @@ namespace Godot
         [Obsolete("GetPrivateKey is deprecated. Use the PrivateKey property instead.")]
         public CryptoKey GetPrivateKey()
         {
-            return NativeCalls.godot_icall_0_1049(method_bind_9, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_1052(method_bind_9, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -254,7 +254,7 @@ namespace Godot
         [Obsolete("GetSslCertificate is deprecated. Use the SslCertificate property instead.")]
         public X509Certificate GetSslCertificate()
         {
-            return NativeCalls.godot_icall_0_1044(method_bind_11, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_1047(method_bind_11, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -274,7 +274,7 @@ namespace Godot
         [Obsolete("GetCaChain is deprecated. Use the CaChain property instead.")]
         public X509Certificate GetCaChain()
         {
-            return NativeCalls.godot_icall_0_1044(method_bind_13, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_1047(method_bind_13, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

@@ -66,7 +66,7 @@ namespace Godot
         [GodotMethod("collide")]
         public bool Collide(Transform2D localXform, Shape2D withShape, Transform2D shapeXform)
         {
-            return NativeCalls.godot_icall_3_780(method_bind_2, Object.GetPtr(this), ref localXform, Object.GetPtr(withShape), ref shapeXform);
+            return NativeCalls.godot_icall_3_783(method_bind_2, Object.GetPtr(this), ref localXform, Object.GetPtr(withShape), ref shapeXform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -79,7 +79,7 @@ namespace Godot
         [GodotMethod("collide_with_motion")]
         public bool CollideWithMotion(Transform2D localXform, Vector2 localMotion, Shape2D withShape, Transform2D shapeXform, Vector2 shapeMotion)
         {
-            return NativeCalls.godot_icall_5_781(method_bind_3, Object.GetPtr(this), ref localXform, ref localMotion, Object.GetPtr(withShape), ref shapeXform, ref shapeMotion);
+            return NativeCalls.godot_icall_5_784(method_bind_3, Object.GetPtr(this), ref localXform, ref localMotion, Object.GetPtr(withShape), ref shapeXform, ref shapeMotion);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -92,7 +92,7 @@ namespace Godot
         [GodotMethod("collide_and_get_contacts")]
         public Godot.Collections.Array CollideAndGetContacts(Transform2D localXform, Shape2D withShape, Transform2D shapeXform)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_3_782(method_bind_4, Object.GetPtr(this), ref localXform, Object.GetPtr(withShape), ref shapeXform));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_3_785(method_bind_4, Object.GetPtr(this), ref localXform, Object.GetPtr(withShape), ref shapeXform));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -105,7 +105,7 @@ namespace Godot
         [GodotMethod("collide_with_motion_and_get_contacts")]
         public Godot.Collections.Array CollideWithMotionAndGetContacts(Transform2D localXform, Vector2 localMotion, Shape2D withShape, Transform2D shapeXform, Vector2 shapeMotion)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_5_783(method_bind_5, Object.GetPtr(this), ref localXform, ref localMotion, Object.GetPtr(withShape), ref shapeXform, ref shapeMotion));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_5_786(method_bind_5, Object.GetPtr(this), ref localXform, ref localMotion, Object.GetPtr(withShape), ref shapeXform, ref shapeMotion));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -117,7 +117,7 @@ namespace Godot
         [GodotMethod("draw")]
         public void Draw(RID canvasItem, Color color)
         {
-            NativeCalls.godot_icall_2_784(method_bind_6, Object.GetPtr(this), RID.GetPtr(canvasItem), ref color);
+            NativeCalls.godot_icall_2_787(method_bind_6, Object.GetPtr(this), RID.GetPtr(canvasItem), ref color);
         }
     }
 }

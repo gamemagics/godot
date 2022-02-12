@@ -40,7 +40,7 @@ namespace Godot
         [GodotMethod("setup")]
         public void Setup(Vector2[] points, int[] connections)
         {
-            NativeCalls.godot_icall_2_732(method_bind_0, Object.GetPtr(this), points, connections);
+            NativeCalls.godot_icall_2_735(method_bind_0, Object.GetPtr(this), points, connections);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -49,7 +49,7 @@ namespace Godot
         [GodotMethod("find_path")]
         public Vector2[] FindPath(Vector2 from, Vector2 to)
         {
-            return NativeCalls.godot_icall_2_733(method_bind_1, Object.GetPtr(this), ref from, ref to);
+            return NativeCalls.godot_icall_2_736(method_bind_1, Object.GetPtr(this), ref from, ref to);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -58,7 +58,7 @@ namespace Godot
         [GodotMethod("get_intersections")]
         public Vector2[] GetIntersections(Vector2 from, Vector2 to)
         {
-            return NativeCalls.godot_icall_2_733(method_bind_2, Object.GetPtr(this), ref from, ref to);
+            return NativeCalls.godot_icall_2_736(method_bind_2, Object.GetPtr(this), ref from, ref to);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

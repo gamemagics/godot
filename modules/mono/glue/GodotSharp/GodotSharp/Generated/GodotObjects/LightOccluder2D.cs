@@ -76,7 +76,7 @@ namespace Godot
         [Obsolete("GetOccluderPolygon is deprecated. Use the Occluder property instead.")]
         public OccluderPolygon2D GetOccluderPolygon()
         {
-            return NativeCalls.godot_icall_0_544(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_547(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

@@ -270,7 +270,7 @@ namespace Godot
         [Obsolete("GetAlign is deprecated. Use the Align property instead.")]
         public Label.AlignEnum GetAlign()
         {
-            return (Label.AlignEnum)NativeCalls.godot_icall_0_538(method_bind_1, Object.GetPtr(this));
+            return (Label.AlignEnum)NativeCalls.godot_icall_0_541(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -290,7 +290,7 @@ namespace Godot
         [Obsolete("GetValign is deprecated. Use the Valign property instead.")]
         public Label.VAlign GetValign()
         {
-            return (Label.VAlign)NativeCalls.godot_icall_0_539(method_bind_3, Object.GetPtr(this));
+            return (Label.VAlign)NativeCalls.godot_icall_0_542(method_bind_3, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

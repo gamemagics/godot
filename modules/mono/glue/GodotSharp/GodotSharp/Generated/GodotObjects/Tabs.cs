@@ -313,7 +313,7 @@ namespace Godot
         [Obsolete("GetTabAlign is deprecated. Use the TabAlign property instead.")]
         public Tabs.TabAlignEnum GetTabAlign()
         {
-            return (Tabs.TabAlignEnum)NativeCalls.godot_icall_0_842(method_bind_13, Object.GetPtr(this));
+            return (Tabs.TabAlignEnum)NativeCalls.godot_icall_0_845(method_bind_13, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -361,7 +361,7 @@ namespace Godot
         [GodotMethod("get_tab_rect")]
         public Rect2 GetTabRect(int tabIdx)
         {
-            NativeCalls.godot_icall_1_507(method_bind_17, Object.GetPtr(this), tabIdx, out Rect2 argRet); return (Rect2)argRet;
+            NativeCalls.godot_icall_1_510(method_bind_17, Object.GetPtr(this), tabIdx, out Rect2 argRet); return (Rect2)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -393,7 +393,7 @@ namespace Godot
         [Obsolete("GetTabCloseDisplayPolicy is deprecated. Use the TabCloseDisplayPolicy property instead.")]
         public Tabs.CloseButtonDisplayPolicy GetTabCloseDisplayPolicy()
         {
-            return (Tabs.CloseButtonDisplayPolicy)NativeCalls.godot_icall_0_843(method_bind_20, Object.GetPtr(this));
+            return (Tabs.CloseButtonDisplayPolicy)NativeCalls.godot_icall_0_846(method_bind_20, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

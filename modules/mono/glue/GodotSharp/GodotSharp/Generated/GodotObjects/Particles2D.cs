@@ -621,7 +621,7 @@ namespace Godot
         [Obsolete("GetDrawOrder is deprecated. Use the DrawOrder property instead.")]
         public Particles2D.DrawOrderEnum GetDrawOrder()
         {
-            return (Particles2D.DrawOrderEnum)NativeCalls.godot_icall_0_642(method_bind_27, Object.GetPtr(this));
+            return (Particles2D.DrawOrderEnum)NativeCalls.godot_icall_0_645(method_bind_27, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

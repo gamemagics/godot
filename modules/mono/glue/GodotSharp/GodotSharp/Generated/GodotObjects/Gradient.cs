@@ -68,7 +68,7 @@ namespace Godot
         [GodotMethod("add_point")]
         public void AddPoint(float offset, Color color)
         {
-            NativeCalls.godot_icall_2_444(method_bind_0, Object.GetPtr(this), offset, ref color);
+            NativeCalls.godot_icall_2_447(method_bind_0, Object.GetPtr(this), offset, ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -116,7 +116,7 @@ namespace Godot
         [GodotMethod("set_color")]
         public void SetColor(int point, Color color)
         {
-            NativeCalls.godot_icall_2_445(method_bind_4, Object.GetPtr(this), point, ref color);
+            NativeCalls.godot_icall_2_448(method_bind_4, Object.GetPtr(this), point, ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -128,7 +128,7 @@ namespace Godot
         [GodotMethod("get_color")]
         public Color GetColor(int point)
         {
-            NativeCalls.godot_icall_1_446(method_bind_5, Object.GetPtr(this), point, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_1_449(method_bind_5, Object.GetPtr(this), point, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -140,7 +140,7 @@ namespace Godot
         [GodotMethod("interpolate")]
         public Color Interpolate(float offset)
         {
-            NativeCalls.godot_icall_1_447(method_bind_6, Object.GetPtr(this), offset, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_1_450(method_bind_6, Object.GetPtr(this), offset, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -162,7 +162,7 @@ namespace Godot
         [Obsolete("SetOffsets is deprecated. Use the Offsets property instead.")]
         public void SetOffsets(float[] offsets)
         {
-            NativeCalls.godot_icall_1_432(method_bind_8, Object.GetPtr(this), offsets);
+            NativeCalls.godot_icall_1_435(method_bind_8, Object.GetPtr(this), offsets);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

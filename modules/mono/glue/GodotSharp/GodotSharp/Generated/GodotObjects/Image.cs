@@ -359,7 +359,7 @@ namespace Godot
         [GodotMethod("get_format")]
         public Image.Format GetFormat()
         {
-            return (Image.Format)NativeCalls.godot_icall_0_470(method_bind_4, Object.GetPtr(this));
+            return (Image.Format)NativeCalls.godot_icall_0_473(method_bind_4, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -407,7 +407,7 @@ namespace Godot
         [GodotMethod("resize_to_po2")]
         public void ResizeToPo2(bool square = false, Image.Interpolation interpolation = (Image.Interpolation)1)
         {
-            NativeCalls.godot_icall_2_471(method_bind_8, Object.GetPtr(this), square, (int)interpolation);
+            NativeCalls.godot_icall_2_474(method_bind_8, Object.GetPtr(this), square, (int)interpolation);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -492,7 +492,7 @@ namespace Godot
         [GodotMethod("generate_mipmaps")]
         public Error GenerateMipmaps(bool renormalize = false)
         {
-            return (Error)NativeCalls.godot_icall_1_472(method_bind_15, Object.GetPtr(this), renormalize);
+            return (Error)NativeCalls.godot_icall_1_475(method_bind_15, Object.GetPtr(this), renormalize);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -516,7 +516,7 @@ namespace Godot
         [GodotMethod("create")]
         public void Create(int width, int height, bool useMipmaps, Image.Format format)
         {
-            NativeCalls.godot_icall_4_473(method_bind_17, Object.GetPtr(this), width, height, useMipmaps, (int)format);
+            NativeCalls.godot_icall_4_476(method_bind_17, Object.GetPtr(this), width, height, useMipmaps, (int)format);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -528,7 +528,7 @@ namespace Godot
         [GodotMethod("create_from_data")]
         public void CreateFromData(int width, int height, bool useMipmaps, Image.Format format, byte[] data)
         {
-            NativeCalls.godot_icall_5_474(method_bind_18, Object.GetPtr(this), width, height, useMipmaps, (int)format, data);
+            NativeCalls.godot_icall_5_477(method_bind_18, Object.GetPtr(this), width, height, useMipmaps, (int)format, data);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -600,7 +600,7 @@ namespace Godot
         [GodotMethod("detect_alpha")]
         public Image.AlphaMode DetectAlpha()
         {
-            return (Image.AlphaMode)NativeCalls.godot_icall_0_475(method_bind_24, Object.GetPtr(this));
+            return (Image.AlphaMode)NativeCalls.godot_icall_0_478(method_bind_24, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -624,7 +624,7 @@ namespace Godot
         [GodotMethod("compress")]
         public Error Compress(Image.CompressMode mode, Image.CompressSource source, float lossyQuality)
         {
-            return (Error)NativeCalls.godot_icall_3_476(method_bind_26, Object.GetPtr(this), (int)mode, (int)source, lossyQuality);
+            return (Error)NativeCalls.godot_icall_3_479(method_bind_26, Object.GetPtr(this), (int)mode, (int)source, lossyQuality);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -708,7 +708,7 @@ namespace Godot
         [GodotMethod("rgbe_to_srgb")]
         public Image RgbeToSrgb()
         {
-            return NativeCalls.godot_icall_0_439(method_bind_33, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_442(method_bind_33, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -732,7 +732,7 @@ namespace Godot
         [GodotMethod("blit_rect")]
         public void BlitRect(Image src, Rect2 srcRect, Vector2 dst)
         {
-            NativeCalls.godot_icall_3_477(method_bind_35, Object.GetPtr(this), Object.GetPtr(src), ref srcRect, ref dst);
+            NativeCalls.godot_icall_3_480(method_bind_35, Object.GetPtr(this), Object.GetPtr(src), ref srcRect, ref dst);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -744,7 +744,7 @@ namespace Godot
         [GodotMethod("blit_rect_mask")]
         public void BlitRectMask(Image src, Image mask, Rect2 srcRect, Vector2 dst)
         {
-            NativeCalls.godot_icall_4_478(method_bind_36, Object.GetPtr(this), Object.GetPtr(src), Object.GetPtr(mask), ref srcRect, ref dst);
+            NativeCalls.godot_icall_4_481(method_bind_36, Object.GetPtr(this), Object.GetPtr(src), Object.GetPtr(mask), ref srcRect, ref dst);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -756,7 +756,7 @@ namespace Godot
         [GodotMethod("blend_rect")]
         public void BlendRect(Image src, Rect2 srcRect, Vector2 dst)
         {
-            NativeCalls.godot_icall_3_477(method_bind_37, Object.GetPtr(this), Object.GetPtr(src), ref srcRect, ref dst);
+            NativeCalls.godot_icall_3_480(method_bind_37, Object.GetPtr(this), Object.GetPtr(src), ref srcRect, ref dst);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -768,7 +768,7 @@ namespace Godot
         [GodotMethod("blend_rect_mask")]
         public void BlendRectMask(Image src, Image mask, Rect2 srcRect, Vector2 dst)
         {
-            NativeCalls.godot_icall_4_478(method_bind_38, Object.GetPtr(this), Object.GetPtr(src), Object.GetPtr(mask), ref srcRect, ref dst);
+            NativeCalls.godot_icall_4_481(method_bind_38, Object.GetPtr(this), Object.GetPtr(src), Object.GetPtr(mask), ref srcRect, ref dst);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -804,7 +804,7 @@ namespace Godot
         [GodotMethod("get_rect")]
         public Image GetRect(Rect2 rect)
         {
-            return NativeCalls.godot_icall_1_479(method_bind_41, Object.GetPtr(this), ref rect);
+            return NativeCalls.godot_icall_1_482(method_bind_41, Object.GetPtr(this), ref rect);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -870,7 +870,7 @@ namespace Godot
         [GodotMethod("get_pixelv")]
         public Color GetPixelv(Vector2 src)
         {
-            NativeCalls.godot_icall_1_480(method_bind_47, Object.GetPtr(this), ref src, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_1_483(method_bind_47, Object.GetPtr(this), ref src, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -882,7 +882,7 @@ namespace Godot
         [GodotMethod("get_pixel")]
         public Color GetPixel(int x, int y)
         {
-            NativeCalls.godot_icall_2_481(method_bind_48, Object.GetPtr(this), x, y, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_2_484(method_bind_48, Object.GetPtr(this), x, y, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -902,7 +902,7 @@ namespace Godot
         [GodotMethod("set_pixelv")]
         public void SetPixelv(Vector2 dst, Color color)
         {
-            NativeCalls.godot_icall_2_482(method_bind_49, Object.GetPtr(this), ref dst, ref color);
+            NativeCalls.godot_icall_2_485(method_bind_49, Object.GetPtr(this), ref dst, ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -922,7 +922,7 @@ namespace Godot
         [GodotMethod("set_pixel")]
         public void SetPixel(int x, int y, Color color)
         {
-            NativeCalls.godot_icall_3_483(method_bind_50, Object.GetPtr(this), x, y, ref color);
+            NativeCalls.godot_icall_3_486(method_bind_50, Object.GetPtr(this), x, y, ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -934,7 +934,7 @@ namespace Godot
         [GodotMethod("load_png_from_buffer")]
         public Error LoadPngFromBuffer(byte[] buffer)
         {
-            return (Error)NativeCalls.godot_icall_1_456(method_bind_51, Object.GetPtr(this), buffer);
+            return (Error)NativeCalls.godot_icall_1_459(method_bind_51, Object.GetPtr(this), buffer);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -946,7 +946,7 @@ namespace Godot
         [GodotMethod("load_jpg_from_buffer")]
         public Error LoadJpgFromBuffer(byte[] buffer)
         {
-            return (Error)NativeCalls.godot_icall_1_456(method_bind_52, Object.GetPtr(this), buffer);
+            return (Error)NativeCalls.godot_icall_1_459(method_bind_52, Object.GetPtr(this), buffer);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -958,7 +958,7 @@ namespace Godot
         [GodotMethod("load_webp_from_buffer")]
         public Error LoadWebpFromBuffer(byte[] buffer)
         {
-            return (Error)NativeCalls.godot_icall_1_456(method_bind_53, Object.GetPtr(this), buffer);
+            return (Error)NativeCalls.godot_icall_1_459(method_bind_53, Object.GetPtr(this), buffer);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -970,7 +970,7 @@ namespace Godot
         [GodotMethod("load_tga_from_buffer")]
         public Error LoadTgaFromBuffer(byte[] buffer)
         {
-            return (Error)NativeCalls.godot_icall_1_456(method_bind_54, Object.GetPtr(this), buffer);
+            return (Error)NativeCalls.godot_icall_1_459(method_bind_54, Object.GetPtr(this), buffer);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -983,7 +983,7 @@ namespace Godot
         [GodotMethod("load_bmp_from_buffer")]
         public Error LoadBmpFromBuffer(byte[] buffer)
         {
-            return (Error)NativeCalls.godot_icall_1_456(method_bind_55, Object.GetPtr(this), buffer);
+            return (Error)NativeCalls.godot_icall_1_459(method_bind_55, Object.GetPtr(this), buffer);
         }
     }
 }

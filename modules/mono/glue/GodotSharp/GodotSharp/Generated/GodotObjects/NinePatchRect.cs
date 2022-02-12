@@ -313,7 +313,7 @@ namespace Godot
         [Obsolete("GetHAxisStretchMode is deprecated. Use the AxisStretchHorizontal property instead.")]
         public NinePatchRect.AxisStretchMode GetHAxisStretchMode()
         {
-            return (NinePatchRect.AxisStretchMode)NativeCalls.godot_icall_0_594(method_bind_9, Object.GetPtr(this));
+            return (NinePatchRect.AxisStretchMode)NativeCalls.godot_icall_0_597(method_bind_9, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -333,7 +333,7 @@ namespace Godot
         [Obsolete("GetVAxisStretchMode is deprecated. Use the AxisStretchVertical property instead.")]
         public NinePatchRect.AxisStretchMode GetVAxisStretchMode()
         {
-            return (NinePatchRect.AxisStretchMode)NativeCalls.godot_icall_0_594(method_bind_11, Object.GetPtr(this));
+            return (NinePatchRect.AxisStretchMode)NativeCalls.godot_icall_0_597(method_bind_11, Object.GetPtr(this));
         }
     }
 }

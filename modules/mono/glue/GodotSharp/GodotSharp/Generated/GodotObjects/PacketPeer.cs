@@ -68,7 +68,7 @@ namespace Godot
         [GodotMethod("get_var")]
         public object GetVar(bool allowObjects = false)
         {
-            return NativeCalls.godot_icall_1_636(method_bind_0, Object.GetPtr(this), allowObjects);
+            return NativeCalls.godot_icall_1_639(method_bind_0, Object.GetPtr(this), allowObjects);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -80,7 +80,7 @@ namespace Godot
         [GodotMethod("put_var")]
         public Error PutVar(object var, bool fullObjects = false)
         {
-            return (Error)NativeCalls.godot_icall_2_637(method_bind_1, Object.GetPtr(this), var, fullObjects);
+            return (Error)NativeCalls.godot_icall_2_640(method_bind_1, Object.GetPtr(this), var, fullObjects);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -104,7 +104,7 @@ namespace Godot
         [GodotMethod("put_packet")]
         public Error PutPacket(byte[] buffer)
         {
-            return (Error)NativeCalls.godot_icall_1_456(method_bind_3, Object.GetPtr(this), buffer);
+            return (Error)NativeCalls.godot_icall_1_459(method_bind_3, Object.GetPtr(this), buffer);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

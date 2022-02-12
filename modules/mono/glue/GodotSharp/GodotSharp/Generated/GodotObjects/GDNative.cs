@@ -51,7 +51,7 @@ namespace Godot
         [Obsolete("GetLibrary is deprecated. Use the Library property instead.")]
         public GDNativeLibrary GetLibrary()
         {
-            return NativeCalls.godot_icall_0_434(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_429(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -78,7 +78,7 @@ namespace Godot
         [GodotMethod("call_native")]
         public object CallNative(string callingType, string procedureName, Godot.Collections.Array arguments)
         {
-            return NativeCalls.godot_icall_3_435(method_bind_4, Object.GetPtr(this), callingType, procedureName, arguments.GetPtr());
+            return NativeCalls.godot_icall_3_430(method_bind_4, Object.GetPtr(this), callingType, procedureName, arguments.GetPtr());
         }
     }
 }

@@ -31,7 +31,7 @@ namespace Godot
         [GodotMethod("create")]
         public void Create(uint width, uint height, uint depth, Image.Format format, uint flags = (uint)4)
         {
-            NativeCalls.godot_icall_5_852(method_bind_0, Object.GetPtr(this), width, height, depth, (int)format, flags);
+            NativeCalls.godot_icall_5_855(method_bind_0, Object.GetPtr(this), width, height, depth, (int)format, flags);
         }
     }
 }

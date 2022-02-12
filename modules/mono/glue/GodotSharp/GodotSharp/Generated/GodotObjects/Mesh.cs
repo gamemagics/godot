@@ -274,7 +274,7 @@ namespace Godot
         [GodotMethod("surface_get_arrays")]
         public Godot.Collections.Array SurfaceGetArrays(int surfIdx)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_1_469(method_bind_4, Object.GetPtr(this), surfIdx));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_1_472(method_bind_4, Object.GetPtr(this), surfIdx));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -286,7 +286,7 @@ namespace Godot
         [GodotMethod("surface_get_blend_shape_arrays")]
         public Godot.Collections.Array SurfaceGetBlendShapeArrays(int surfIdx)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_1_469(method_bind_5, Object.GetPtr(this), surfIdx));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_1_472(method_bind_5, Object.GetPtr(this), surfIdx));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -310,7 +310,7 @@ namespace Godot
         [GodotMethod("surface_get_material")]
         public Material SurfaceGetMaterial(int surfIdx)
         {
-            return NativeCalls.godot_icall_1_553(method_bind_7, Object.GetPtr(this), surfIdx);
+            return NativeCalls.godot_icall_1_556(method_bind_7, Object.GetPtr(this), surfIdx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -336,7 +336,7 @@ namespace Godot
         [GodotMethod("create_convex_shape")]
         public Shape CreateConvexShape(bool clean = true, bool simplify = false)
         {
-            return NativeCalls.godot_icall_2_554(method_bind_9, Object.GetPtr(this), clean, simplify);
+            return NativeCalls.godot_icall_2_557(method_bind_9, Object.GetPtr(this), clean, simplify);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -349,7 +349,7 @@ namespace Godot
         [GodotMethod("create_outline")]
         public Mesh CreateOutline(float margin)
         {
-            return NativeCalls.godot_icall_1_555(method_bind_10, Object.GetPtr(this), margin);
+            return NativeCalls.godot_icall_1_558(method_bind_10, Object.GetPtr(this), margin);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -373,7 +373,7 @@ namespace Godot
         [GodotMethod("generate_triangle_mesh")]
         public TriangleMesh GenerateTriangleMesh()
         {
-            return NativeCalls.godot_icall_0_556(method_bind_12, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_559(method_bind_12, Object.GetPtr(this));
         }
     }
 }

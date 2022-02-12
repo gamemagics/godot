@@ -99,7 +99,7 @@ namespace Godot
         [GodotMethod("pack")]
         public Error Pack(Node path)
         {
-            return (Error)NativeCalls.godot_icall_1_631(method_bind_0, Object.GetPtr(this), Object.GetPtr(path));
+            return (Error)NativeCalls.godot_icall_1_634(method_bind_0, Object.GetPtr(this), Object.GetPtr(path));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -111,7 +111,7 @@ namespace Godot
         [GodotMethod("instance")]
         public Node Instance(PackedScene.GenEditState editState = (PackedScene.GenEditState)0)
         {
-            return NativeCalls.godot_icall_1_441(method_bind_1, Object.GetPtr(this), (int)editState);
+            return NativeCalls.godot_icall_1_444(method_bind_1, Object.GetPtr(this), (int)editState);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -153,7 +153,7 @@ namespace Godot
         [GodotMethod("get_state")]
         public SceneState GetState()
         {
-            return NativeCalls.godot_icall_0_632(method_bind_5, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_635(method_bind_5, Object.GetPtr(this));
         }
     }
 }

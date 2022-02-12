@@ -64,7 +64,7 @@ namespace Godot
         [GodotMethod("create_from_surface")]
         public Error CreateFromSurface(ArrayMesh mesh, int surface)
         {
-            return (Error)NativeCalls.godot_icall_2_557(method_bind_1, Object.GetPtr(this), Object.GetPtr(mesh), surface);
+            return (Error)NativeCalls.godot_icall_2_560(method_bind_1, Object.GetPtr(this), Object.GetPtr(mesh), surface);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -76,7 +76,7 @@ namespace Godot
         [GodotMethod("commit_to_surface")]
         public Error CommitToSurface(ArrayMesh mesh)
         {
-            return (Error)NativeCalls.godot_icall_1_558(method_bind_2, Object.GetPtr(this), Object.GetPtr(mesh));
+            return (Error)NativeCalls.godot_icall_1_561(method_bind_2, Object.GetPtr(this), Object.GetPtr(mesh));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -185,7 +185,7 @@ namespace Godot
         [GodotMethod("set_vertex_tangent")]
         public void SetVertexTangent(int idx, Plane tangent)
         {
-            NativeCalls.godot_icall_2_559(method_bind_11, Object.GetPtr(this), idx, ref tangent);
+            NativeCalls.godot_icall_2_562(method_bind_11, Object.GetPtr(this), idx, ref tangent);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -197,7 +197,7 @@ namespace Godot
         [GodotMethod("get_vertex_tangent")]
         public Plane GetVertexTangent(int idx)
         {
-            NativeCalls.godot_icall_1_560(method_bind_12, Object.GetPtr(this), idx, out Plane argRet); return (Plane)argRet;
+            NativeCalls.godot_icall_1_563(method_bind_12, Object.GetPtr(this), idx, out Plane argRet); return (Plane)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -257,7 +257,7 @@ namespace Godot
         [GodotMethod("set_vertex_color")]
         public void SetVertexColor(int idx, Color color)
         {
-            NativeCalls.godot_icall_2_445(method_bind_17, Object.GetPtr(this), idx, ref color);
+            NativeCalls.godot_icall_2_448(method_bind_17, Object.GetPtr(this), idx, ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -269,7 +269,7 @@ namespace Godot
         [GodotMethod("get_vertex_color")]
         public Color GetVertexColor(int idx)
         {
-            NativeCalls.godot_icall_1_446(method_bind_18, Object.GetPtr(this), idx, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_1_449(method_bind_18, Object.GetPtr(this), idx, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -281,7 +281,7 @@ namespace Godot
         [GodotMethod("set_vertex_bones")]
         public void SetVertexBones(int idx, int[] bones)
         {
-            NativeCalls.godot_icall_2_561(method_bind_19, Object.GetPtr(this), idx, bones);
+            NativeCalls.godot_icall_2_564(method_bind_19, Object.GetPtr(this), idx, bones);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -305,7 +305,7 @@ namespace Godot
         [GodotMethod("set_vertex_weights")]
         public void SetVertexWeights(int idx, float[] weights)
         {
-            NativeCalls.godot_icall_2_562(method_bind_21, Object.GetPtr(this), idx, weights);
+            NativeCalls.godot_icall_2_565(method_bind_21, Object.GetPtr(this), idx, weights);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -317,7 +317,7 @@ namespace Godot
         [GodotMethod("get_vertex_weights")]
         public float[] GetVertexWeights(int idx)
         {
-            return NativeCalls.godot_icall_1_563(method_bind_22, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_566(method_bind_22, Object.GetPtr(this), idx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -329,7 +329,7 @@ namespace Godot
         [GodotMethod("set_vertex_meta")]
         public void SetVertexMeta(int idx, object meta)
         {
-            NativeCalls.godot_icall_2_508(method_bind_23, Object.GetPtr(this), idx, meta);
+            NativeCalls.godot_icall_2_511(method_bind_23, Object.GetPtr(this), idx, meta);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -341,7 +341,7 @@ namespace Godot
         [GodotMethod("get_vertex_meta")]
         public object GetVertexMeta(int idx)
         {
-            return NativeCalls.godot_icall_1_509(method_bind_24, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_512(method_bind_24, Object.GetPtr(this), idx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -402,7 +402,7 @@ namespace Godot
         [GodotMethod("set_edge_meta")]
         public void SetEdgeMeta(int idx, object meta)
         {
-            NativeCalls.godot_icall_2_508(method_bind_29, Object.GetPtr(this), idx, meta);
+            NativeCalls.godot_icall_2_511(method_bind_29, Object.GetPtr(this), idx, meta);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -414,7 +414,7 @@ namespace Godot
         [GodotMethod("get_edge_meta")]
         public object GetEdgeMeta(int idx)
         {
-            return NativeCalls.godot_icall_1_509(method_bind_30, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_512(method_bind_30, Object.GetPtr(this), idx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -452,7 +452,7 @@ namespace Godot
         [GodotMethod("set_face_meta")]
         public void SetFaceMeta(int idx, object meta)
         {
-            NativeCalls.godot_icall_2_508(method_bind_33, Object.GetPtr(this), idx, meta);
+            NativeCalls.godot_icall_2_511(method_bind_33, Object.GetPtr(this), idx, meta);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -464,7 +464,7 @@ namespace Godot
         [GodotMethod("get_face_meta")]
         public object GetFaceMeta(int idx)
         {
-            return NativeCalls.godot_icall_1_509(method_bind_34, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_512(method_bind_34, Object.GetPtr(this), idx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

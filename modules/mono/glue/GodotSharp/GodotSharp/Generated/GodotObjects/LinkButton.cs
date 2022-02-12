@@ -113,7 +113,7 @@ namespace Godot
         [Obsolete("GetUnderlineMode is deprecated. Use the Underline property instead.")]
         public LinkButton.UnderlineMode GetUnderlineMode()
         {
-            return (LinkButton.UnderlineMode)NativeCalls.godot_icall_0_551(method_bind_3, Object.GetPtr(this));
+            return (LinkButton.UnderlineMode)NativeCalls.godot_icall_0_554(method_bind_3, Object.GetPtr(this));
         }
     }
 }

@@ -217,7 +217,7 @@ namespace Godot
         [Obsolete("GetPhysicsMaterialOverride is deprecated. Use the PhysicsMaterialOverride property instead.")]
         public PhysicsMaterial GetPhysicsMaterialOverride()
         {
-            return NativeCalls.godot_icall_0_760(method_bind_9, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_763(method_bind_9, Object.GetPtr(this));
         }
     }
 }

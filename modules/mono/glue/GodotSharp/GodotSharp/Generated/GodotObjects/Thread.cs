@@ -48,7 +48,7 @@ namespace Godot
         [GodotMethod("start")]
         public Error Start(Object instance, string method, object userdata = null, Thread.Priority priority = (Thread.Priority)1)
         {
-            return (Error)NativeCalls.godot_icall_4_1113(method_bind_0, Object.GetPtr(this), Object.GetPtr(instance), method, userdata, (int)priority);
+            return (Error)NativeCalls.godot_icall_4_1116(method_bind_0, Object.GetPtr(this), Object.GetPtr(instance), method, userdata, (int)priority);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -100,7 +100,7 @@ namespace Godot
         [GodotMethod("wait_to_finish")]
         public object WaitToFinish()
         {
-            return NativeCalls.godot_icall_0_513(method_bind_4, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_516(method_bind_4, Object.GetPtr(this));
         }
     }
 }

@@ -96,7 +96,7 @@ namespace Godot
         [GodotMethod("resolve_hostname_addresses")]
         public static Godot.Collections.Array ResolveHostnameAddresses(string host, IP.Type ipType = (IP.Type)3)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_2_466(method_bind_1, ptr, host, (int)ipType));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_2_469(method_bind_1, ptr, host, (int)ipType));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -108,7 +108,7 @@ namespace Godot
         [GodotMethod("resolve_hostname_queue_item")]
         public static int ResolveHostnameQueueItem(string host, IP.Type ipType = (IP.Type)3)
         {
-            return NativeCalls.godot_icall_2_467(method_bind_2, ptr, host, (int)ipType);
+            return NativeCalls.godot_icall_2_470(method_bind_2, ptr, host, (int)ipType);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -120,7 +120,7 @@ namespace Godot
         [GodotMethod("get_resolve_item_status")]
         public static IP.ResolverStatus GetResolveItemStatus(int id)
         {
-            return (IP.ResolverStatus)NativeCalls.godot_icall_1_468(method_bind_3, ptr, id);
+            return (IP.ResolverStatus)NativeCalls.godot_icall_1_471(method_bind_3, ptr, id);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -144,7 +144,7 @@ namespace Godot
         [GodotMethod("get_resolve_item_addresses")]
         public static Godot.Collections.Array GetResolveItemAddresses(int id)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_1_469(method_bind_5, ptr, id));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_1_472(method_bind_5, ptr, id));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

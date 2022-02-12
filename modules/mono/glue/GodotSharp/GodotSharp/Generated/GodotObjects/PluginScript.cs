@@ -27,7 +27,7 @@ namespace Godot
         [GodotMethod("new")]
         public object New(params object[] @args)
         {
-            return NativeCalls.godot_icall_1_241(method_bind_0, Object.GetPtr(this), @args);
+            return NativeCalls.godot_icall_1_236(method_bind_0, Object.GetPtr(this), @args);
         }
     }
 }

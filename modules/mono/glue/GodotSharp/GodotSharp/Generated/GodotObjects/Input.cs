@@ -177,7 +177,7 @@ namespace Godot
         [GodotMethod("is_action_pressed")]
         public static bool IsActionPressed(string action, bool exact = false)
         {
-            return NativeCalls.godot_icall_2_489(method_bind_4, ptr, action, exact);
+            return NativeCalls.godot_icall_2_492(method_bind_4, ptr, action, exact);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -191,7 +191,7 @@ namespace Godot
         [GodotMethod("is_action_just_pressed")]
         public static bool IsActionJustPressed(string action, bool exact = false)
         {
-            return NativeCalls.godot_icall_2_489(method_bind_5, ptr, action, exact);
+            return NativeCalls.godot_icall_2_492(method_bind_5, ptr, action, exact);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -204,7 +204,7 @@ namespace Godot
         [GodotMethod("is_action_just_released")]
         public static bool IsActionJustReleased(string action, bool exact = false)
         {
-            return NativeCalls.godot_icall_2_489(method_bind_6, ptr, action, exact);
+            return NativeCalls.godot_icall_2_492(method_bind_6, ptr, action, exact);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -217,7 +217,7 @@ namespace Godot
         [GodotMethod("get_action_strength")]
         public static float GetActionStrength(string action, bool exact = false)
         {
-            return NativeCalls.godot_icall_2_490(method_bind_7, ptr, action, exact);
+            return NativeCalls.godot_icall_2_493(method_bind_7, ptr, action, exact);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -230,7 +230,7 @@ namespace Godot
         [GodotMethod("get_action_raw_strength")]
         public static float GetActionRawStrength(string action, bool exact = false)
         {
-            return NativeCalls.godot_icall_2_490(method_bind_8, ptr, action, exact);
+            return NativeCalls.godot_icall_2_493(method_bind_8, ptr, action, exact);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -257,7 +257,7 @@ namespace Godot
         [GodotMethod("get_vector")]
         public static Vector2 GetVector(string negativeX, string positiveX, string negativeY, string positiveY, float deadzone = -1f)
         {
-            NativeCalls.godot_icall_5_491(method_bind_10, ptr, negativeX, positiveX, negativeY, positiveY, deadzone, out Vector2 argRet); return (Vector2)argRet;
+            NativeCalls.godot_icall_5_494(method_bind_10, ptr, negativeX, positiveX, negativeY, positiveY, deadzone, out Vector2 argRet); return (Vector2)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -294,7 +294,7 @@ namespace Godot
         [GodotMethod("joy_connection_changed")]
         public static void JoyConnectionChanged(int device, bool connected, string name, string guid)
         {
-            NativeCalls.godot_icall_4_492(method_bind_13, ptr, device, connected, name, guid);
+            NativeCalls.godot_icall_4_495(method_bind_13, ptr, device, connected, name, guid);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -439,7 +439,7 @@ namespace Godot
         [GodotMethod("start_joy_vibration")]
         public static void StartJoyVibration(int device, float weakMagnitude, float strongMagnitude, float duration = (float)0)
         {
-            NativeCalls.godot_icall_4_493(method_bind_25, ptr, device, weakMagnitude, strongMagnitude, duration);
+            NativeCalls.godot_icall_4_496(method_bind_25, ptr, device, weakMagnitude, strongMagnitude, duration);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -617,7 +617,7 @@ namespace Godot
         [GodotMethod("get_mouse_mode")]
         public static Input.MouseMode GetMouseMode()
         {
-            return (Input.MouseMode)NativeCalls.godot_icall_0_494(method_bind_39, ptr);
+            return (Input.MouseMode)NativeCalls.godot_icall_0_497(method_bind_39, ptr);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -681,7 +681,7 @@ namespace Godot
         [GodotMethod("get_current_cursor_shape")]
         public static Input.CursorShape GetCurrentCursorShape()
         {
-            return (Input.CursorShape)NativeCalls.godot_icall_0_495(method_bind_44, ptr);
+            return (Input.CursorShape)NativeCalls.godot_icall_0_498(method_bind_44, ptr);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -699,7 +699,7 @@ namespace Godot
         public static void SetCustomMouseCursor(Resource image, Input.CursorShape shape = (Input.CursorShape)0, Nullable<Vector2> hotspot = null)
         {
             Vector2 hotspot_in = hotspot.HasValue ? hotspot.Value : new Vector2(0, 0);
-            NativeCalls.godot_icall_3_496(method_bind_45, ptr, Object.GetPtr(image), (int)shape, ref hotspot_in);
+            NativeCalls.godot_icall_3_499(method_bind_45, ptr, Object.GetPtr(image), (int)shape, ref hotspot_in);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

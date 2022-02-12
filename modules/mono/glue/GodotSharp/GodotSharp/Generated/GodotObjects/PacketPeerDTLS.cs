@@ -67,7 +67,7 @@ namespace Godot
         [GodotMethod("connect_to_peer")]
         public Error ConnectToPeer(PacketPeerUDP packetPeer, bool validateCerts = true, string forHostname = "", X509Certificate validCertificate = null)
         {
-            return (Error)NativeCalls.godot_icall_4_638(method_bind_1, Object.GetPtr(this), Object.GetPtr(packetPeer), validateCerts, forHostname, Object.GetPtr(validCertificate));
+            return (Error)NativeCalls.godot_icall_4_641(method_bind_1, Object.GetPtr(this), Object.GetPtr(packetPeer), validateCerts, forHostname, Object.GetPtr(validCertificate));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -79,7 +79,7 @@ namespace Godot
         [GodotMethod("get_status")]
         public PacketPeerDTLS.Status GetStatus()
         {
-            return (PacketPeerDTLS.Status)NativeCalls.godot_icall_0_639(method_bind_2, Object.GetPtr(this));
+            return (PacketPeerDTLS.Status)NativeCalls.godot_icall_0_642(method_bind_2, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

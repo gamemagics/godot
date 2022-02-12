@@ -131,7 +131,7 @@ namespace Godot
         [GodotMethod("autotile_set_subtile_priority")]
         public void AutotileSetSubtilePriority(int id, Vector2 coord, int priority)
         {
-            NativeCalls.godot_icall_3_872(method_bind_4, Object.GetPtr(this), id, ref coord, priority);
+            NativeCalls.godot_icall_3_875(method_bind_4, Object.GetPtr(this), id, ref coord, priority);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -144,7 +144,7 @@ namespace Godot
         [GodotMethod("autotile_get_subtile_priority")]
         public int AutotileGetSubtilePriority(int id, Vector2 coord)
         {
-            return NativeCalls.godot_icall_2_873(method_bind_5, Object.GetPtr(this), id, ref coord);
+            return NativeCalls.godot_icall_2_876(method_bind_5, Object.GetPtr(this), id, ref coord);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -156,7 +156,7 @@ namespace Godot
         [GodotMethod("autotile_set_z_index")]
         public void AutotileSetZIndex(int id, Vector2 coord, int zIndex)
         {
-            NativeCalls.godot_icall_3_872(method_bind_6, Object.GetPtr(this), id, ref coord, zIndex);
+            NativeCalls.godot_icall_3_875(method_bind_6, Object.GetPtr(this), id, ref coord, zIndex);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -168,7 +168,7 @@ namespace Godot
         [GodotMethod("autotile_get_z_index")]
         public int AutotileGetZIndex(int id, Vector2 coord)
         {
-            return NativeCalls.godot_icall_2_873(method_bind_7, Object.GetPtr(this), id, ref coord);
+            return NativeCalls.godot_icall_2_876(method_bind_7, Object.GetPtr(this), id, ref coord);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -180,7 +180,7 @@ namespace Godot
         [GodotMethod("autotile_set_light_occluder")]
         public void AutotileSetLightOccluder(int id, OccluderPolygon2D lightOccluder, Vector2 coord)
         {
-            NativeCalls.godot_icall_3_874(method_bind_8, Object.GetPtr(this), id, Object.GetPtr(lightOccluder), ref coord);
+            NativeCalls.godot_icall_3_877(method_bind_8, Object.GetPtr(this), id, Object.GetPtr(lightOccluder), ref coord);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -192,7 +192,7 @@ namespace Godot
         [GodotMethod("autotile_get_light_occluder")]
         public OccluderPolygon2D AutotileGetLightOccluder(int id, Vector2 coord)
         {
-            return NativeCalls.godot_icall_2_875(method_bind_9, Object.GetPtr(this), id, ref coord);
+            return NativeCalls.godot_icall_2_878(method_bind_9, Object.GetPtr(this), id, ref coord);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -204,7 +204,7 @@ namespace Godot
         [GodotMethod("autotile_set_navigation_polygon")]
         public void AutotileSetNavigationPolygon(int id, NavigationPolygon navigationPolygon, Vector2 coord)
         {
-            NativeCalls.godot_icall_3_874(method_bind_10, Object.GetPtr(this), id, Object.GetPtr(navigationPolygon), ref coord);
+            NativeCalls.godot_icall_3_877(method_bind_10, Object.GetPtr(this), id, Object.GetPtr(navigationPolygon), ref coord);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -216,7 +216,7 @@ namespace Godot
         [GodotMethod("autotile_get_navigation_polygon")]
         public NavigationPolygon AutotileGetNavigationPolygon(int id, Vector2 coord)
         {
-            return NativeCalls.godot_icall_2_876(method_bind_11, Object.GetPtr(this), id, ref coord);
+            return NativeCalls.godot_icall_2_879(method_bind_11, Object.GetPtr(this), id, ref coord);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -229,7 +229,7 @@ namespace Godot
         [GodotMethod("autotile_set_bitmask")]
         public void AutotileSetBitmask(int id, Vector2 bitmask, uint flag)
         {
-            NativeCalls.godot_icall_3_877(method_bind_12, Object.GetPtr(this), id, ref bitmask, flag);
+            NativeCalls.godot_icall_3_880(method_bind_12, Object.GetPtr(this), id, ref bitmask, flag);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -242,7 +242,7 @@ namespace Godot
         [GodotMethod("autotile_get_bitmask")]
         public uint AutotileGetBitmask(int id, Vector2 coord)
         {
-            return NativeCalls.godot_icall_2_878(method_bind_13, Object.GetPtr(this), id, ref coord);
+            return NativeCalls.godot_icall_2_881(method_bind_13, Object.GetPtr(this), id, ref coord);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -266,7 +266,7 @@ namespace Godot
         [GodotMethod("autotile_get_bitmask_mode")]
         public TileSet.BitmaskMode AutotileGetBitmaskMode(int id)
         {
-            return (TileSet.BitmaskMode)NativeCalls.godot_icall_1_879(method_bind_15, Object.GetPtr(this), id);
+            return (TileSet.BitmaskMode)NativeCalls.godot_icall_1_882(method_bind_15, Object.GetPtr(this), id);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -411,7 +411,7 @@ namespace Godot
         [GodotMethod("tile_get_material")]
         public ShaderMaterial TileGetMaterial(int id)
         {
-            return NativeCalls.godot_icall_1_880(method_bind_27, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_883(method_bind_27, Object.GetPtr(this), id);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -423,7 +423,7 @@ namespace Godot
         [GodotMethod("tile_set_modulate")]
         public void TileSetModulate(int id, Color color)
         {
-            NativeCalls.godot_icall_2_445(method_bind_28, Object.GetPtr(this), id, ref color);
+            NativeCalls.godot_icall_2_448(method_bind_28, Object.GetPtr(this), id, ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -435,7 +435,7 @@ namespace Godot
         [GodotMethod("tile_get_modulate")]
         public Color TileGetModulate(int id)
         {
-            NativeCalls.godot_icall_1_446(method_bind_29, Object.GetPtr(this), id, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_1_449(method_bind_29, Object.GetPtr(this), id, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -483,7 +483,7 @@ namespace Godot
         [GodotMethod("tile_get_region")]
         public Rect2 TileGetRegion(int id)
         {
-            NativeCalls.godot_icall_1_507(method_bind_33, Object.GetPtr(this), id, out Rect2 argRet); return (Rect2)argRet;
+            NativeCalls.godot_icall_1_510(method_bind_33, Object.GetPtr(this), id, out Rect2 argRet); return (Rect2)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -507,7 +507,7 @@ namespace Godot
         [GodotMethod("tile_get_shape")]
         public Shape2D TileGetShape(int id, int shapeId)
         {
-            return NativeCalls.godot_icall_2_881(method_bind_35, Object.GetPtr(this), id, shapeId);
+            return NativeCalls.godot_icall_2_884(method_bind_35, Object.GetPtr(this), id, shapeId);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -543,7 +543,7 @@ namespace Godot
         [GodotMethod("tile_set_shape_transform")]
         public void TileSetShapeTransform(int id, int shapeId, Transform2D shapeTransform)
         {
-            NativeCalls.godot_icall_3_882(method_bind_38, Object.GetPtr(this), id, shapeId, ref shapeTransform);
+            NativeCalls.godot_icall_3_885(method_bind_38, Object.GetPtr(this), id, shapeId, ref shapeTransform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -555,7 +555,7 @@ namespace Godot
         [GodotMethod("tile_get_shape_transform")]
         public Transform2D TileGetShapeTransform(int id, int shapeId)
         {
-            NativeCalls.godot_icall_2_883(method_bind_39, Object.GetPtr(this), id, shapeId, out Transform2D argRet); return (Transform2D)argRet;
+            NativeCalls.godot_icall_2_886(method_bind_39, Object.GetPtr(this), id, shapeId, out Transform2D argRet); return (Transform2D)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -611,7 +611,7 @@ namespace Godot
         public void TileAddShape(int id, Shape2D shape, Transform2D shapeTransform, bool oneWay = false, Nullable<Vector2> autotileCoord = null)
         {
             Vector2 autotileCoord_in = autotileCoord.HasValue ? autotileCoord.Value : new Vector2(0, 0);
-            NativeCalls.godot_icall_5_884(method_bind_44, Object.GetPtr(this), id, Object.GetPtr(shape), ref shapeTransform, oneWay, ref autotileCoord_in);
+            NativeCalls.godot_icall_5_887(method_bind_44, Object.GetPtr(this), id, Object.GetPtr(shape), ref shapeTransform, oneWay, ref autotileCoord_in);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -635,7 +635,7 @@ namespace Godot
         [GodotMethod("tile_set_shapes")]
         public void TileSetShapes(int id, Godot.Collections.Array shapes)
         {
-            NativeCalls.godot_icall_2_566(method_bind_46, Object.GetPtr(this), id, shapes.GetPtr());
+            NativeCalls.godot_icall_2_569(method_bind_46, Object.GetPtr(this), id, shapes.GetPtr());
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -657,7 +657,7 @@ namespace Godot
         [GodotMethod("tile_get_shapes")]
         public Godot.Collections.Array TileGetShapes(int id)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_1_469(method_bind_47, Object.GetPtr(this), id));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_1_472(method_bind_47, Object.GetPtr(this), id));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -681,7 +681,7 @@ namespace Godot
         [GodotMethod("tile_get_tile_mode")]
         public TileSet.TileMode TileGetTileMode(int id)
         {
-            return (TileSet.TileMode)NativeCalls.godot_icall_1_885(method_bind_49, Object.GetPtr(this), id);
+            return (TileSet.TileMode)NativeCalls.godot_icall_1_888(method_bind_49, Object.GetPtr(this), id);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -705,7 +705,7 @@ namespace Godot
         [GodotMethod("tile_get_navigation_polygon")]
         public NavigationPolygon TileGetNavigationPolygon(int id)
         {
-            return NativeCalls.godot_icall_1_886(method_bind_51, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_889(method_bind_51, Object.GetPtr(this), id);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -753,7 +753,7 @@ namespace Godot
         [GodotMethod("tile_get_light_occluder")]
         public OccluderPolygon2D TileGetLightOccluder(int id)
         {
-            return NativeCalls.godot_icall_1_887(method_bind_55, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_890(method_bind_55, Object.GetPtr(this), id);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

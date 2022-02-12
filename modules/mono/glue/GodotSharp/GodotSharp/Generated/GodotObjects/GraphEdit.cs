@@ -259,7 +259,7 @@ namespace Godot
         [GodotMethod("connect_node")]
         public Error ConnectNode(string from, int fromPort, string to, int toPort)
         {
-            return (Error)NativeCalls.godot_icall_4_448(method_bind_0, Object.GetPtr(this), from, fromPort, to, toPort);
+            return (Error)NativeCalls.godot_icall_4_451(method_bind_0, Object.GetPtr(this), from, fromPort, to, toPort);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -271,7 +271,7 @@ namespace Godot
         [GodotMethod("is_node_connected")]
         public bool IsNodeConnected(string from, int fromPort, string to, int toPort)
         {
-            return NativeCalls.godot_icall_4_449(method_bind_1, Object.GetPtr(this), from, fromPort, to, toPort);
+            return NativeCalls.godot_icall_4_452(method_bind_1, Object.GetPtr(this), from, fromPort, to, toPort);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -283,7 +283,7 @@ namespace Godot
         [GodotMethod("disconnect_node")]
         public void DisconnectNode(string from, int fromPort, string to, int toPort)
         {
-            NativeCalls.godot_icall_4_450(method_bind_2, Object.GetPtr(this), from, fromPort, to, toPort);
+            NativeCalls.godot_icall_4_453(method_bind_2, Object.GetPtr(this), from, fromPort, to, toPort);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -295,7 +295,7 @@ namespace Godot
         [GodotMethod("set_connection_activity")]
         public void SetConnectionActivity(string from, int fromPort, string to, int toPort, float amount)
         {
-            NativeCalls.godot_icall_5_451(method_bind_3, Object.GetPtr(this), from, fromPort, to, toPort, amount);
+            NativeCalls.godot_icall_5_454(method_bind_3, Object.GetPtr(this), from, fromPort, to, toPort, amount);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -656,7 +656,7 @@ namespace Godot
         [GodotMethod("get_zoom_hbox")]
         public HBoxContainer GetZoomHbox()
         {
-            return NativeCalls.godot_icall_0_452(method_bind_37, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_455(method_bind_37, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

@@ -181,7 +181,7 @@ namespace Godot
         [GodotMethod("add_outline_at_index")]
         public void AddOutlineAtIndex(Vector2[] outline, int index)
         {
-            NativeCalls.godot_icall_2_589(method_bind_7, Object.GetPtr(this), outline, index);
+            NativeCalls.godot_icall_2_592(method_bind_7, Object.GetPtr(this), outline, index);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -205,7 +205,7 @@ namespace Godot
         [GodotMethod("set_outline")]
         public void SetOutline(int idx, Vector2[] outline)
         {
-            NativeCalls.godot_icall_2_590(method_bind_9, Object.GetPtr(this), idx, outline);
+            NativeCalls.godot_icall_2_593(method_bind_9, Object.GetPtr(this), idx, outline);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

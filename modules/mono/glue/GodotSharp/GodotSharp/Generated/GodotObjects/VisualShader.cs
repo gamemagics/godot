@@ -85,7 +85,7 @@ namespace Godot
         [GodotMethod("add_node")]
         public void AddNode(VisualShader.Type type, VisualShaderNode node, Vector2 position, int id)
         {
-            NativeCalls.godot_icall_4_1008(method_bind_1, Object.GetPtr(this), (int)type, Object.GetPtr(node), ref position, id);
+            NativeCalls.godot_icall_4_1011(method_bind_1, Object.GetPtr(this), (int)type, Object.GetPtr(node), ref position, id);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -97,7 +97,7 @@ namespace Godot
         [GodotMethod("get_node")]
         public VisualShaderNode GetNode(VisualShader.Type type, int id)
         {
-            return NativeCalls.godot_icall_2_1009(method_bind_2, Object.GetPtr(this), (int)type, id);
+            return NativeCalls.godot_icall_2_1012(method_bind_2, Object.GetPtr(this), (int)type, id);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -166,7 +166,7 @@ namespace Godot
         [GodotMethod("is_node_connection")]
         public bool IsNodeConnection(VisualShader.Type type, int fromNode, int fromPort, int toNode, int toPort)
         {
-            return NativeCalls.godot_icall_5_1010(method_bind_8, Object.GetPtr(this), (int)type, fromNode, fromPort, toNode, toPort);
+            return NativeCalls.godot_icall_5_1013(method_bind_8, Object.GetPtr(this), (int)type, fromNode, fromPort, toNode, toPort);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -178,7 +178,7 @@ namespace Godot
         [GodotMethod("can_connect_nodes")]
         public bool CanConnectNodes(VisualShader.Type type, int fromNode, int fromPort, int toNode, int toPort)
         {
-            return NativeCalls.godot_icall_5_1010(method_bind_9, Object.GetPtr(this), (int)type, fromNode, fromPort, toNode, toPort);
+            return NativeCalls.godot_icall_5_1013(method_bind_9, Object.GetPtr(this), (int)type, fromNode, fromPort, toNode, toPort);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -190,7 +190,7 @@ namespace Godot
         [GodotMethod("connect_nodes")]
         public Error ConnectNodes(VisualShader.Type type, int fromNode, int fromPort, int toNode, int toPort)
         {
-            return (Error)NativeCalls.godot_icall_5_1011(method_bind_10, Object.GetPtr(this), (int)type, fromNode, fromPort, toNode, toPort);
+            return (Error)NativeCalls.godot_icall_5_1014(method_bind_10, Object.GetPtr(this), (int)type, fromNode, fromPort, toNode, toPort);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -202,7 +202,7 @@ namespace Godot
         [GodotMethod("disconnect_nodes")]
         public void DisconnectNodes(VisualShader.Type type, int fromNode, int fromPort, int toNode, int toPort)
         {
-            NativeCalls.godot_icall_5_1012(method_bind_11, Object.GetPtr(this), (int)type, fromNode, fromPort, toNode, toPort);
+            NativeCalls.godot_icall_5_1015(method_bind_11, Object.GetPtr(this), (int)type, fromNode, fromPort, toNode, toPort);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -214,7 +214,7 @@ namespace Godot
         [GodotMethod("connect_nodes_forced")]
         public void ConnectNodesForced(VisualShader.Type type, int fromNode, int fromPort, int toNode, int toPort)
         {
-            NativeCalls.godot_icall_5_1012(method_bind_12, Object.GetPtr(this), (int)type, fromNode, fromPort, toNode, toPort);
+            NativeCalls.godot_icall_5_1015(method_bind_12, Object.GetPtr(this), (int)type, fromNode, fromPort, toNode, toPort);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -226,7 +226,7 @@ namespace Godot
         [GodotMethod("get_node_connections")]
         public Godot.Collections.Array GetNodeConnections(VisualShader.Type type)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_1_469(method_bind_13, Object.GetPtr(this), (int)type));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_1_472(method_bind_13, Object.GetPtr(this), (int)type));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

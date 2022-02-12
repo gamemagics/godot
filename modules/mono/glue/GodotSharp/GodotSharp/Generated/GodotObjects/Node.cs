@@ -483,7 +483,7 @@ namespace Godot
         [GodotMethod("add_child_below_node")]
         public void AddChildBelowNode(Node node, Node childNode, bool legibleUniqueName = false)
         {
-            NativeCalls.godot_icall_3_595(method_bind_0, Object.GetPtr(this), Object.GetPtr(node), Object.GetPtr(childNode), legibleUniqueName);
+            NativeCalls.godot_icall_3_598(method_bind_0, Object.GetPtr(this), Object.GetPtr(node), Object.GetPtr(childNode), legibleUniqueName);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -523,7 +523,7 @@ namespace Godot
         [GodotMethod("add_child")]
         public void AddChild(Node node, bool legibleUniqueName = false)
         {
-            NativeCalls.godot_icall_2_431(method_bind_3, Object.GetPtr(this), Object.GetPtr(node), legibleUniqueName);
+            NativeCalls.godot_icall_2_434(method_bind_3, Object.GetPtr(this), Object.GetPtr(node), legibleUniqueName);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -573,7 +573,7 @@ namespace Godot
         [GodotMethod("get_child")]
         public Node GetChild(int idx)
         {
-            return NativeCalls.godot_icall_1_441(method_bind_7, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_444(method_bind_7, Object.GetPtr(this), idx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -616,7 +616,7 @@ namespace Godot
         [GodotMethod("get_node")]
         public Node GetNode(NodePath path)
         {
-            return NativeCalls.godot_icall_1_596(method_bind_9, Object.GetPtr(this), NodePath.GetPtr(path));
+            return NativeCalls.godot_icall_1_599(method_bind_9, Object.GetPtr(this), NodePath.GetPtr(path));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -628,7 +628,7 @@ namespace Godot
         [GodotMethod("get_node_or_null")]
         public Node GetNodeOrNull(NodePath path)
         {
-            return NativeCalls.godot_icall_1_596(method_bind_10, Object.GetPtr(this), NodePath.GetPtr(path));
+            return NativeCalls.godot_icall_1_599(method_bind_10, Object.GetPtr(this), NodePath.GetPtr(path));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -655,7 +655,7 @@ namespace Godot
         [GodotMethod("find_node")]
         public Node FindNode(string mask, bool recursive = true, bool owned = true)
         {
-            return NativeCalls.godot_icall_3_597(method_bind_12, Object.GetPtr(this), mask, recursive, owned);
+            return NativeCalls.godot_icall_3_600(method_bind_12, Object.GetPtr(this), mask, recursive, owned);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -669,7 +669,7 @@ namespace Godot
         [GodotMethod("find_parent")]
         public Node FindParent(string mask)
         {
-            return NativeCalls.godot_icall_1_598(method_bind_13, Object.GetPtr(this), mask);
+            return NativeCalls.godot_icall_1_601(method_bind_13, Object.GetPtr(this), mask);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -700,7 +700,7 @@ namespace Godot
         [GodotMethod("get_node_and_resource")]
         public Godot.Collections.Array GetNodeAndResource(NodePath path)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_1_599(method_bind_15, Object.GetPtr(this), NodePath.GetPtr(path)));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_1_602(method_bind_15, Object.GetPtr(this), NodePath.GetPtr(path)));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -760,7 +760,7 @@ namespace Godot
         [GodotMethod("get_path_to")]
         public NodePath GetPathTo(Node node)
         {
-            return new NodePath(NativeCalls.godot_icall_1_600(method_bind_20, Object.GetPtr(this), Object.GetPtr(node)));
+            return new NodePath(NativeCalls.godot_icall_1_603(method_bind_20, Object.GetPtr(this), Object.GetPtr(node)));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -810,7 +810,7 @@ namespace Godot
         [GodotMethod("move_child")]
         public void MoveChild(Node childNode, int toPosition)
         {
-            NativeCalls.godot_icall_2_601(method_bind_24, Object.GetPtr(this), Object.GetPtr(childNode), toPosition);
+            NativeCalls.godot_icall_2_604(method_bind_24, Object.GetPtr(this), Object.GetPtr(childNode), toPosition);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -975,7 +975,7 @@ namespace Godot
         public void PropagateCall(string method, Godot.Collections.Array args = null, bool parentFirst = false)
         {
             Godot.Collections.Array args_in = args != null ? args : new Godot.Collections.Array { };
-            NativeCalls.godot_icall_3_602(method_bind_36, Object.GetPtr(this), method, args_in.GetPtr(), parentFirst);
+            NativeCalls.godot_icall_3_605(method_bind_36, Object.GetPtr(this), method, args_in.GetPtr(), parentFirst);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1159,7 +1159,7 @@ namespace Godot
         [Obsolete("GetPauseMode is deprecated. Use the PauseMode property instead.")]
         public Node.PauseModeEnum GetPauseMode()
         {
-            return (Node.PauseModeEnum)NativeCalls.godot_icall_0_603(method_bind_52, Object.GetPtr(this));
+            return (Node.PauseModeEnum)NativeCalls.godot_icall_0_606(method_bind_52, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1281,7 +1281,7 @@ namespace Godot
         [GodotMethod("get_tree")]
         public SceneTree GetTree()
         {
-            return NativeCalls.godot_icall_0_604(method_bind_62, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_607(method_bind_62, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1295,7 +1295,7 @@ namespace Godot
         [GodotMethod("duplicate")]
         public Node Duplicate(int flags = 15)
         {
-            return NativeCalls.godot_icall_1_441(method_bind_63, Object.GetPtr(this), flags);
+            return NativeCalls.godot_icall_1_444(method_bind_63, Object.GetPtr(this), flags);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1308,7 +1308,7 @@ namespace Godot
         [GodotMethod("replace_by")]
         public void ReplaceBy(Node node, bool keepData = false)
         {
-            NativeCalls.godot_icall_2_431(method_bind_64, Object.GetPtr(this), Object.GetPtr(node), keepData);
+            NativeCalls.godot_icall_2_434(method_bind_64, Object.GetPtr(this), Object.GetPtr(node), keepData);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1344,7 +1344,7 @@ namespace Godot
         [GodotMethod("get_viewport")]
         public Viewport GetViewport()
         {
-            return NativeCalls.godot_icall_0_605(method_bind_67, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_608(method_bind_67, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1415,7 +1415,7 @@ namespace Godot
         [Obsolete("GetMultiplayer is deprecated. Use the Multiplayer property instead.")]
         public MultiplayerAPI GetMultiplayer()
         {
-            return NativeCalls.godot_icall_0_606(method_bind_73, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_609(method_bind_73, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1425,7 +1425,7 @@ namespace Godot
         [Obsolete("GetCustomMultiplayer is deprecated. Use the CustomMultiplayer property instead.")]
         public MultiplayerAPI GetCustomMultiplayer()
         {
-            return NativeCalls.godot_icall_0_606(method_bind_74, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_609(method_bind_74, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1508,7 +1508,7 @@ namespace Godot
         [GodotMethod("rpc")]
         public object Rpc(string method, params object[] @args)
         {
-            return NativeCalls.godot_icall_2_524(method_bind_82, Object.GetPtr(this), method, @args);
+            return NativeCalls.godot_icall_2_527(method_bind_82, Object.GetPtr(this), method, @args);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1520,7 +1520,7 @@ namespace Godot
         [GodotMethod("rpc_unreliable")]
         public object RpcUnreliable(string method, params object[] @args)
         {
-            return NativeCalls.godot_icall_2_524(method_bind_83, Object.GetPtr(this), method, @args);
+            return NativeCalls.godot_icall_2_527(method_bind_83, Object.GetPtr(this), method, @args);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1532,7 +1532,7 @@ namespace Godot
         [GodotMethod("rpc_id")]
         public object RpcId(int peerId, string method, params object[] @args)
         {
-            return NativeCalls.godot_icall_3_607(method_bind_84, Object.GetPtr(this), peerId, method, @args);
+            return NativeCalls.godot_icall_3_610(method_bind_84, Object.GetPtr(this), peerId, method, @args);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1544,7 +1544,7 @@ namespace Godot
         [GodotMethod("rpc_unreliable_id")]
         public object RpcUnreliableId(int peerId, string method, params object[] @args)
         {
-            return NativeCalls.godot_icall_3_607(method_bind_85, Object.GetPtr(this), peerId, method, @args);
+            return NativeCalls.godot_icall_3_610(method_bind_85, Object.GetPtr(this), peerId, method, @args);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1568,7 +1568,7 @@ namespace Godot
         [GodotMethod("rset_id")]
         public void RsetId(int peerId, string property, object value)
         {
-            NativeCalls.godot_icall_3_608(method_bind_87, Object.GetPtr(this), peerId, property, value);
+            NativeCalls.godot_icall_3_611(method_bind_87, Object.GetPtr(this), peerId, property, value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1592,7 +1592,7 @@ namespace Godot
         [GodotMethod("rset_unreliable_id")]
         public void RsetUnreliableId(int peerId, string property, object value)
         {
-            NativeCalls.godot_icall_3_608(method_bind_89, Object.GetPtr(this), peerId, property, value);
+            NativeCalls.godot_icall_3_611(method_bind_89, Object.GetPtr(this), peerId, property, value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

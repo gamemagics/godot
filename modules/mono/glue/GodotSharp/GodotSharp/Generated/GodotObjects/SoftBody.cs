@@ -635,7 +635,7 @@ namespace Godot
         public void SetPointPinned(int pointIndex, bool pinned, NodePath attachmentPath = null)
         {
             NodePath attachmentPath_in = attachmentPath != null ? attachmentPath : (NodePath)"";
-            NativeCalls.godot_icall_3_790(method_bind_34, Object.GetPtr(this), pointIndex, pinned, NodePath.GetPtr(attachmentPath_in));
+            NativeCalls.godot_icall_3_793(method_bind_34, Object.GetPtr(this), pointIndex, pinned, NodePath.GetPtr(attachmentPath_in));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

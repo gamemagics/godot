@@ -93,7 +93,7 @@ namespace Godot
         [Obsolete("GetRadianceSize is deprecated. Use the RadianceSize property instead.")]
         public Sky.RadianceSizeEnum GetRadianceSize()
         {
-            return (Sky.RadianceSizeEnum)NativeCalls.godot_icall_0_789(method_bind_1, Object.GetPtr(this));
+            return (Sky.RadianceSizeEnum)NativeCalls.godot_icall_0_792(method_bind_1, Object.GetPtr(this));
         }
     }
 }

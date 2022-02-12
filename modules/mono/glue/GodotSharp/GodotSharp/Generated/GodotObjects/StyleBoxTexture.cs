@@ -432,7 +432,7 @@ namespace Godot
         [GodotMethod("set_expand_margin_individual")]
         public void SetExpandMarginIndividual(float sizeLeft, float sizeTop, float sizeRight, float sizeBottom)
         {
-            NativeCalls.godot_icall_4_829(method_bind_8, Object.GetPtr(this), sizeLeft, sizeTop, sizeRight, sizeBottom);
+            NativeCalls.godot_icall_4_832(method_bind_8, Object.GetPtr(this), sizeLeft, sizeTop, sizeRight, sizeBottom);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -525,7 +525,7 @@ namespace Godot
         [Obsolete("GetHAxisStretchMode is deprecated. Use the AxisStretchHorizontal property instead.")]
         public StyleBoxTexture.AxisStretchMode GetHAxisStretchMode()
         {
-            return (StyleBoxTexture.AxisStretchMode)NativeCalls.godot_icall_0_830(method_bind_17, Object.GetPtr(this));
+            return (StyleBoxTexture.AxisStretchMode)NativeCalls.godot_icall_0_833(method_bind_17, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -545,7 +545,7 @@ namespace Godot
         [Obsolete("GetVAxisStretchMode is deprecated. Use the AxisStretchVertical property instead.")]
         public StyleBoxTexture.AxisStretchMode GetVAxisStretchMode()
         {
-            return (StyleBoxTexture.AxisStretchMode)NativeCalls.godot_icall_0_830(method_bind_19, Object.GetPtr(this));
+            return (StyleBoxTexture.AxisStretchMode)NativeCalls.godot_icall_0_833(method_bind_19, Object.GetPtr(this));
         }
     }
 }

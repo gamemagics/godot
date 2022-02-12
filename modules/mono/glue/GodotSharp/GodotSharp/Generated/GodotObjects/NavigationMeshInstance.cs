@@ -76,7 +76,7 @@ namespace Godot
         [Obsolete("GetNavigationMesh is deprecated. Use the Navmesh property instead.")]
         public NavigationMesh GetNavigationMesh()
         {
-            return NativeCalls.godot_icall_0_588(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_591(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

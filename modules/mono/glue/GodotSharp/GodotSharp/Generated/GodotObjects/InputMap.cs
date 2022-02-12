@@ -120,7 +120,7 @@ namespace Godot
         [GodotMethod("action_has_event")]
         public static bool ActionHasEvent(string action, InputEvent @event)
         {
-            return NativeCalls.godot_icall_2_501(method_bind_7, ptr, action, Object.GetPtr(@event));
+            return NativeCalls.godot_icall_2_504(method_bind_7, ptr, action, Object.GetPtr(@event));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -169,7 +169,7 @@ namespace Godot
         [GodotMethod("event_is_action")]
         public static bool EventIsAction(InputEvent @event, string action, bool exactMatch = false)
         {
-            return NativeCalls.godot_icall_3_502(method_bind_11, ptr, Object.GetPtr(@event), action, exactMatch);
+            return NativeCalls.godot_icall_3_505(method_bind_11, ptr, Object.GetPtr(@event), action, exactMatch);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

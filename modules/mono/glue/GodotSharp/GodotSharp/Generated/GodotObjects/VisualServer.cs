@@ -1139,7 +1139,7 @@ namespace Godot
         [GodotMethod("force_draw")]
         public static void ForceDraw(bool swapBuffers = true, double frameStep = 0)
         {
-            NativeCalls.godot_icall_2_929(method_bind_1, ptr, swapBuffers, frameStep);
+            NativeCalls.godot_icall_2_932(method_bind_1, ptr, swapBuffers, frameStep);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1163,7 +1163,7 @@ namespace Godot
         [GodotMethod("draw")]
         public static void Draw(bool swapBuffers = true, double frameStep = 0)
         {
-            NativeCalls.godot_icall_2_929(method_bind_3, ptr, swapBuffers, frameStep);
+            NativeCalls.godot_icall_2_932(method_bind_3, ptr, swapBuffers, frameStep);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1188,7 +1188,7 @@ namespace Godot
         [GodotMethod("texture_create_from_image")]
         public static RID TextureCreateFromImage(Image image, uint flags = (uint)7)
         {
-            return new RID(NativeCalls.godot_icall_2_930(method_bind_5, ptr, Object.GetPtr(image), flags));
+            return new RID(NativeCalls.godot_icall_2_933(method_bind_5, ptr, Object.GetPtr(image), flags));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1200,7 +1200,7 @@ namespace Godot
         [GodotMethod("texture_allocate")]
         public static void TextureAllocate(RID texture, int width, int height, int depth3d, Image.Format format, VisualServer.TextureType type, uint flags = (uint)7)
         {
-            NativeCalls.godot_icall_7_931(method_bind_6, ptr, RID.GetPtr(texture), width, height, depth3d, (int)format, (int)type, flags);
+            NativeCalls.godot_icall_7_934(method_bind_6, ptr, RID.GetPtr(texture), width, height, depth3d, (int)format, (int)type, flags);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1212,7 +1212,7 @@ namespace Godot
         [GodotMethod("texture_set_data")]
         public static void TextureSetData(RID texture, Image image, int layer = 0)
         {
-            NativeCalls.godot_icall_3_932(method_bind_7, ptr, RID.GetPtr(texture), Object.GetPtr(image), layer);
+            NativeCalls.godot_icall_3_935(method_bind_7, ptr, RID.GetPtr(texture), Object.GetPtr(image), layer);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1224,7 +1224,7 @@ namespace Godot
         [GodotMethod("texture_set_data_partial")]
         public static void TextureSetDataPartial(RID texture, Image image, int srcX, int srcY, int srcW, int srcH, int dstX, int dstY, int dstMip, int layer = 0)
         {
-            NativeCalls.godot_icall_10_933(method_bind_8, ptr, RID.GetPtr(texture), Object.GetPtr(image), srcX, srcY, srcW, srcH, dstX, dstY, dstMip, layer);
+            NativeCalls.godot_icall_10_936(method_bind_8, ptr, RID.GetPtr(texture), Object.GetPtr(image), srcX, srcY, srcW, srcH, dstX, dstY, dstMip, layer);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1236,7 +1236,7 @@ namespace Godot
         [GodotMethod("texture_get_data")]
         public static Image TextureGetData(RID texture, int cubeSide = 0)
         {
-            return NativeCalls.godot_icall_2_934(method_bind_9, ptr, RID.GetPtr(texture), cubeSide);
+            return NativeCalls.godot_icall_2_937(method_bind_9, ptr, RID.GetPtr(texture), cubeSide);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1248,7 +1248,7 @@ namespace Godot
         [GodotMethod("texture_set_flags")]
         public static void TextureSetFlags(RID texture, uint flags)
         {
-            NativeCalls.godot_icall_2_681(method_bind_10, ptr, RID.GetPtr(texture), flags);
+            NativeCalls.godot_icall_2_684(method_bind_10, ptr, RID.GetPtr(texture), flags);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1260,7 +1260,7 @@ namespace Godot
         [GodotMethod("texture_get_flags")]
         public static uint TextureGetFlags(RID texture)
         {
-            return NativeCalls.godot_icall_1_691(method_bind_11, ptr, RID.GetPtr(texture));
+            return NativeCalls.godot_icall_1_694(method_bind_11, ptr, RID.GetPtr(texture));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1272,7 +1272,7 @@ namespace Godot
         [GodotMethod("texture_get_format")]
         public static Image.Format TextureGetFormat(RID texture)
         {
-            return (Image.Format)NativeCalls.godot_icall_1_935(method_bind_12, ptr, RID.GetPtr(texture));
+            return (Image.Format)NativeCalls.godot_icall_1_938(method_bind_12, ptr, RID.GetPtr(texture));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1284,7 +1284,7 @@ namespace Godot
         [GodotMethod("texture_get_type")]
         public static VisualServer.TextureType TextureGetType(RID texture)
         {
-            return (VisualServer.TextureType)NativeCalls.godot_icall_1_936(method_bind_13, ptr, RID.GetPtr(texture));
+            return (VisualServer.TextureType)NativeCalls.godot_icall_1_939(method_bind_13, ptr, RID.GetPtr(texture));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1296,7 +1296,7 @@ namespace Godot
         [GodotMethod("texture_get_texid")]
         public static uint TextureGetTexid(RID texture)
         {
-            return NativeCalls.godot_icall_1_691(method_bind_14, ptr, RID.GetPtr(texture));
+            return NativeCalls.godot_icall_1_694(method_bind_14, ptr, RID.GetPtr(texture));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1308,7 +1308,7 @@ namespace Godot
         [GodotMethod("texture_get_width")]
         public static uint TextureGetWidth(RID texture)
         {
-            return NativeCalls.godot_icall_1_691(method_bind_15, ptr, RID.GetPtr(texture));
+            return NativeCalls.godot_icall_1_694(method_bind_15, ptr, RID.GetPtr(texture));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1320,7 +1320,7 @@ namespace Godot
         [GodotMethod("texture_get_height")]
         public static uint TextureGetHeight(RID texture)
         {
-            return NativeCalls.godot_icall_1_691(method_bind_16, ptr, RID.GetPtr(texture));
+            return NativeCalls.godot_icall_1_694(method_bind_16, ptr, RID.GetPtr(texture));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1332,7 +1332,7 @@ namespace Godot
         [GodotMethod("texture_get_depth")]
         public static uint TextureGetDepth(RID texture)
         {
-            return NativeCalls.godot_icall_1_691(method_bind_17, ptr, RID.GetPtr(texture));
+            return NativeCalls.godot_icall_1_694(method_bind_17, ptr, RID.GetPtr(texture));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1344,7 +1344,7 @@ namespace Godot
         [GodotMethod("texture_set_size_override")]
         public static void TextureSetSizeOverride(RID texture, int width, int height, int depth)
         {
-            NativeCalls.godot_icall_4_937(method_bind_18, ptr, RID.GetPtr(texture), width, height, depth);
+            NativeCalls.godot_icall_4_940(method_bind_18, ptr, RID.GetPtr(texture), width, height, depth);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1356,7 +1356,7 @@ namespace Godot
         [GodotMethod("texture_set_path")]
         public static void TextureSetPath(RID texture, string path)
         {
-            NativeCalls.godot_icall_2_938(method_bind_19, ptr, RID.GetPtr(texture), path);
+            NativeCalls.godot_icall_2_941(method_bind_19, ptr, RID.GetPtr(texture), path);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1368,7 +1368,7 @@ namespace Godot
         [GodotMethod("texture_get_path")]
         public static string TextureGetPath(RID texture)
         {
-            return NativeCalls.godot_icall_1_939(method_bind_20, ptr, RID.GetPtr(texture));
+            return NativeCalls.godot_icall_1_942(method_bind_20, ptr, RID.GetPtr(texture));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1392,7 +1392,7 @@ namespace Godot
         [GodotMethod("texture_bind")]
         public static void TextureBind(RID texture, uint number)
         {
-            NativeCalls.godot_icall_2_681(method_bind_22, ptr, RID.GetPtr(texture), number);
+            NativeCalls.godot_icall_2_684(method_bind_22, ptr, RID.GetPtr(texture), number);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1441,7 +1441,7 @@ namespace Godot
         [GodotMethod("sky_set_texture")]
         public static void SkySetTexture(RID sky, RID cubeMap, int radianceSize)
         {
-            NativeCalls.godot_icall_3_940(method_bind_26, ptr, RID.GetPtr(sky), RID.GetPtr(cubeMap), radianceSize);
+            NativeCalls.godot_icall_3_943(method_bind_26, ptr, RID.GetPtr(sky), RID.GetPtr(cubeMap), radianceSize);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1466,7 +1466,7 @@ namespace Godot
         [GodotMethod("shader_set_code")]
         public static void ShaderSetCode(RID shader, string code)
         {
-            NativeCalls.godot_icall_2_938(method_bind_28, ptr, RID.GetPtr(shader), code);
+            NativeCalls.godot_icall_2_941(method_bind_28, ptr, RID.GetPtr(shader), code);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1478,7 +1478,7 @@ namespace Godot
         [GodotMethod("shader_get_code")]
         public static string ShaderGetCode(RID shader)
         {
-            return NativeCalls.godot_icall_1_939(method_bind_29, ptr, RID.GetPtr(shader));
+            return NativeCalls.godot_icall_1_942(method_bind_29, ptr, RID.GetPtr(shader));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1490,7 +1490,7 @@ namespace Godot
         [GodotMethod("shader_get_param_list")]
         public static Godot.Collections.Array ShaderGetParamList(RID shader)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_1_941(method_bind_30, ptr, RID.GetPtr(shader)));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_1_944(method_bind_30, ptr, RID.GetPtr(shader)));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1502,7 +1502,7 @@ namespace Godot
         [GodotMethod("shader_set_default_texture_param")]
         public static void ShaderSetDefaultTextureParam(RID shader, string name, RID texture)
         {
-            NativeCalls.godot_icall_3_942(method_bind_31, ptr, RID.GetPtr(shader), name, RID.GetPtr(texture));
+            NativeCalls.godot_icall_3_945(method_bind_31, ptr, RID.GetPtr(shader), name, RID.GetPtr(texture));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1514,7 +1514,7 @@ namespace Godot
         [GodotMethod("shader_get_default_texture_param")]
         public static RID ShaderGetDefaultTextureParam(RID shader, string name)
         {
-            return new RID(NativeCalls.godot_icall_2_943(method_bind_32, ptr, RID.GetPtr(shader), name));
+            return new RID(NativeCalls.godot_icall_2_946(method_bind_32, ptr, RID.GetPtr(shader), name));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1539,7 +1539,7 @@ namespace Godot
         [GodotMethod("material_set_shader")]
         public static void MaterialSetShader(RID shaderMaterial, RID shader)
         {
-            NativeCalls.godot_icall_2_670(method_bind_34, ptr, RID.GetPtr(shaderMaterial), RID.GetPtr(shader));
+            NativeCalls.godot_icall_2_673(method_bind_34, ptr, RID.GetPtr(shaderMaterial), RID.GetPtr(shader));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1551,7 +1551,7 @@ namespace Godot
         [GodotMethod("material_get_shader")]
         public static RID MaterialGetShader(RID shaderMaterial)
         {
-            return new RID(NativeCalls.godot_icall_1_671(method_bind_35, ptr, RID.GetPtr(shaderMaterial)));
+            return new RID(NativeCalls.godot_icall_1_674(method_bind_35, ptr, RID.GetPtr(shaderMaterial)));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1563,7 +1563,7 @@ namespace Godot
         [GodotMethod("material_set_param")]
         public static void MaterialSetParam(RID material, string parameter, object value)
         {
-            NativeCalls.godot_icall_3_944(method_bind_36, ptr, RID.GetPtr(material), parameter, value);
+            NativeCalls.godot_icall_3_947(method_bind_36, ptr, RID.GetPtr(material), parameter, value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1575,7 +1575,7 @@ namespace Godot
         [GodotMethod("material_get_param")]
         public static object MaterialGetParam(RID material, string parameter)
         {
-            return NativeCalls.godot_icall_2_945(method_bind_37, ptr, RID.GetPtr(material), parameter);
+            return NativeCalls.godot_icall_2_948(method_bind_37, ptr, RID.GetPtr(material), parameter);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1587,7 +1587,7 @@ namespace Godot
         [GodotMethod("material_get_param_default")]
         public static object MaterialGetParamDefault(RID material, string parameter)
         {
-            return NativeCalls.godot_icall_2_945(method_bind_38, ptr, RID.GetPtr(material), parameter);
+            return NativeCalls.godot_icall_2_948(method_bind_38, ptr, RID.GetPtr(material), parameter);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1599,7 +1599,7 @@ namespace Godot
         [GodotMethod("material_set_render_priority")]
         public static void MaterialSetRenderPriority(RID material, int priority)
         {
-            NativeCalls.godot_icall_2_672(method_bind_39, ptr, RID.GetPtr(material), priority);
+            NativeCalls.godot_icall_2_675(method_bind_39, ptr, RID.GetPtr(material), priority);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1611,7 +1611,7 @@ namespace Godot
         [GodotMethod("material_set_line_width")]
         public static void MaterialSetLineWidth(RID material, float width)
         {
-            NativeCalls.godot_icall_2_694(method_bind_40, ptr, RID.GetPtr(material), width);
+            NativeCalls.godot_icall_2_697(method_bind_40, ptr, RID.GetPtr(material), width);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1623,7 +1623,7 @@ namespace Godot
         [GodotMethod("material_set_next_pass")]
         public static void MaterialSetNextPass(RID material, RID nextMaterial)
         {
-            NativeCalls.godot_icall_2_670(method_bind_41, ptr, RID.GetPtr(material), RID.GetPtr(nextMaterial));
+            NativeCalls.godot_icall_2_673(method_bind_41, ptr, RID.GetPtr(material), RID.GetPtr(nextMaterial));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1649,7 +1649,7 @@ namespace Godot
         [GodotMethod("mesh_surface_get_format_offset")]
         public static uint MeshSurfaceGetFormatOffset(uint format, int vertexLen, int indexLen, int arrayIndex)
         {
-            return NativeCalls.godot_icall_4_946(method_bind_43, ptr, format, vertexLen, indexLen, arrayIndex);
+            return NativeCalls.godot_icall_4_949(method_bind_43, ptr, format, vertexLen, indexLen, arrayIndex);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1658,7 +1658,7 @@ namespace Godot
         [GodotMethod("mesh_surface_get_format_stride")]
         public static uint MeshSurfaceGetFormatStride(uint format, int vertexLen, int indexLen, int arrayIndex)
         {
-            return NativeCalls.godot_icall_4_946(method_bind_44, ptr, format, vertexLen, indexLen, arrayIndex);
+            return NativeCalls.godot_icall_4_949(method_bind_44, ptr, format, vertexLen, indexLen, arrayIndex);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1672,7 +1672,7 @@ namespace Godot
         public static void MeshAddSurfaceFromArrays(RID mesh, VisualServer.PrimitiveType primitive, Godot.Collections.Array arrays, Godot.Collections.Array blendShapes = null, uint compressFormat = (uint)2194432)
         {
             Godot.Collections.Array blendShapes_in = blendShapes != null ? blendShapes : new Godot.Collections.Array { };
-            NativeCalls.godot_icall_5_947(method_bind_45, ptr, RID.GetPtr(mesh), (int)primitive, arrays.GetPtr(), blendShapes_in.GetPtr(), compressFormat);
+            NativeCalls.godot_icall_5_950(method_bind_45, ptr, RID.GetPtr(mesh), (int)primitive, arrays.GetPtr(), blendShapes_in.GetPtr(), compressFormat);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1684,7 +1684,7 @@ namespace Godot
         [GodotMethod("mesh_set_blend_shape_count")]
         public static void MeshSetBlendShapeCount(RID mesh, int amount)
         {
-            NativeCalls.godot_icall_2_672(method_bind_46, ptr, RID.GetPtr(mesh), amount);
+            NativeCalls.godot_icall_2_675(method_bind_46, ptr, RID.GetPtr(mesh), amount);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1696,7 +1696,7 @@ namespace Godot
         [GodotMethod("mesh_get_blend_shape_count")]
         public static int MeshGetBlendShapeCount(RID mesh)
         {
-            return NativeCalls.godot_icall_1_678(method_bind_47, ptr, RID.GetPtr(mesh));
+            return NativeCalls.godot_icall_1_681(method_bind_47, ptr, RID.GetPtr(mesh));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1708,7 +1708,7 @@ namespace Godot
         [GodotMethod("mesh_set_blend_shape_mode")]
         public static void MeshSetBlendShapeMode(RID mesh, VisualServer.BlendShapeMode mode)
         {
-            NativeCalls.godot_icall_2_672(method_bind_48, ptr, RID.GetPtr(mesh), (int)mode);
+            NativeCalls.godot_icall_2_675(method_bind_48, ptr, RID.GetPtr(mesh), (int)mode);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1720,7 +1720,7 @@ namespace Godot
         [GodotMethod("mesh_get_blend_shape_mode")]
         public static VisualServer.BlendShapeMode MeshGetBlendShapeMode(RID mesh)
         {
-            return (VisualServer.BlendShapeMode)NativeCalls.godot_icall_1_948(method_bind_49, ptr, RID.GetPtr(mesh));
+            return (VisualServer.BlendShapeMode)NativeCalls.godot_icall_1_951(method_bind_49, ptr, RID.GetPtr(mesh));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1732,7 +1732,7 @@ namespace Godot
         [GodotMethod("mesh_surface_update_region")]
         public static void MeshSurfaceUpdateRegion(RID mesh, int surface, int offset, byte[] data)
         {
-            NativeCalls.godot_icall_4_949(method_bind_50, ptr, RID.GetPtr(mesh), surface, offset, data);
+            NativeCalls.godot_icall_4_952(method_bind_50, ptr, RID.GetPtr(mesh), surface, offset, data);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1744,7 +1744,7 @@ namespace Godot
         [GodotMethod("mesh_surface_set_material")]
         public static void MeshSurfaceSetMaterial(RID mesh, int surface, RID material)
         {
-            NativeCalls.godot_icall_3_675(method_bind_51, ptr, RID.GetPtr(mesh), surface, RID.GetPtr(material));
+            NativeCalls.godot_icall_3_678(method_bind_51, ptr, RID.GetPtr(mesh), surface, RID.GetPtr(material));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1756,7 +1756,7 @@ namespace Godot
         [GodotMethod("mesh_surface_get_material")]
         public static RID MeshSurfaceGetMaterial(RID mesh, int surface)
         {
-            return new RID(NativeCalls.godot_icall_2_679(method_bind_52, ptr, RID.GetPtr(mesh), surface));
+            return new RID(NativeCalls.godot_icall_2_682(method_bind_52, ptr, RID.GetPtr(mesh), surface));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1768,7 +1768,7 @@ namespace Godot
         [GodotMethod("mesh_surface_get_array_len")]
         public static int MeshSurfaceGetArrayLen(RID mesh, int surface)
         {
-            return NativeCalls.godot_icall_2_950(method_bind_53, ptr, RID.GetPtr(mesh), surface);
+            return NativeCalls.godot_icall_2_953(method_bind_53, ptr, RID.GetPtr(mesh), surface);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1780,7 +1780,7 @@ namespace Godot
         [GodotMethod("mesh_surface_get_array_index_len")]
         public static int MeshSurfaceGetArrayIndexLen(RID mesh, int surface)
         {
-            return NativeCalls.godot_icall_2_950(method_bind_54, ptr, RID.GetPtr(mesh), surface);
+            return NativeCalls.godot_icall_2_953(method_bind_54, ptr, RID.GetPtr(mesh), surface);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1792,7 +1792,7 @@ namespace Godot
         [GodotMethod("mesh_surface_get_array")]
         public static byte[] MeshSurfaceGetArray(RID mesh, int surface)
         {
-            return NativeCalls.godot_icall_2_951(method_bind_55, ptr, RID.GetPtr(mesh), surface);
+            return NativeCalls.godot_icall_2_954(method_bind_55, ptr, RID.GetPtr(mesh), surface);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1804,7 +1804,7 @@ namespace Godot
         [GodotMethod("mesh_surface_get_index_array")]
         public static byte[] MeshSurfaceGetIndexArray(RID mesh, int surface)
         {
-            return NativeCalls.godot_icall_2_951(method_bind_56, ptr, RID.GetPtr(mesh), surface);
+            return NativeCalls.godot_icall_2_954(method_bind_56, ptr, RID.GetPtr(mesh), surface);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1816,7 +1816,7 @@ namespace Godot
         [GodotMethod("mesh_surface_get_arrays")]
         public static Godot.Collections.Array MeshSurfaceGetArrays(RID mesh, int surface)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_2_952(method_bind_57, ptr, RID.GetPtr(mesh), surface));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_2_955(method_bind_57, ptr, RID.GetPtr(mesh), surface));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1828,7 +1828,7 @@ namespace Godot
         [GodotMethod("mesh_surface_get_blend_shape_arrays")]
         public static Godot.Collections.Array MeshSurfaceGetBlendShapeArrays(RID mesh, int surface)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_2_952(method_bind_58, ptr, RID.GetPtr(mesh), surface));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_2_955(method_bind_58, ptr, RID.GetPtr(mesh), surface));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1840,7 +1840,7 @@ namespace Godot
         [GodotMethod("mesh_surface_get_format")]
         public static uint MeshSurfaceGetFormat(RID mesh, int surface)
         {
-            return NativeCalls.godot_icall_2_953(method_bind_59, ptr, RID.GetPtr(mesh), surface);
+            return NativeCalls.godot_icall_2_956(method_bind_59, ptr, RID.GetPtr(mesh), surface);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1852,7 +1852,7 @@ namespace Godot
         [GodotMethod("mesh_surface_get_primitive_type")]
         public static VisualServer.PrimitiveType MeshSurfaceGetPrimitiveType(RID mesh, int surface)
         {
-            return (VisualServer.PrimitiveType)NativeCalls.godot_icall_2_954(method_bind_60, ptr, RID.GetPtr(mesh), surface);
+            return (VisualServer.PrimitiveType)NativeCalls.godot_icall_2_957(method_bind_60, ptr, RID.GetPtr(mesh), surface);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1864,7 +1864,7 @@ namespace Godot
         [GodotMethod("mesh_surface_get_aabb")]
         public static AABB MeshSurfaceGetAabb(RID mesh, int surface)
         {
-            NativeCalls.godot_icall_2_955(method_bind_61, ptr, RID.GetPtr(mesh), surface, out AABB argRet); return (AABB)argRet;
+            NativeCalls.godot_icall_2_958(method_bind_61, ptr, RID.GetPtr(mesh), surface, out AABB argRet); return (AABB)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1876,7 +1876,7 @@ namespace Godot
         [GodotMethod("mesh_surface_get_skeleton_aabb")]
         public static Godot.Collections.Array MeshSurfaceGetSkeletonAabb(RID mesh, int surface)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_2_952(method_bind_62, ptr, RID.GetPtr(mesh), surface));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_2_955(method_bind_62, ptr, RID.GetPtr(mesh), surface));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1888,7 +1888,7 @@ namespace Godot
         [GodotMethod("mesh_remove_surface")]
         public static void MeshRemoveSurface(RID mesh, int index)
         {
-            NativeCalls.godot_icall_2_672(method_bind_63, ptr, RID.GetPtr(mesh), index);
+            NativeCalls.godot_icall_2_675(method_bind_63, ptr, RID.GetPtr(mesh), index);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1900,7 +1900,7 @@ namespace Godot
         [GodotMethod("mesh_get_surface_count")]
         public static int MeshGetSurfaceCount(RID mesh)
         {
-            return NativeCalls.godot_icall_1_678(method_bind_64, ptr, RID.GetPtr(mesh));
+            return NativeCalls.godot_icall_1_681(method_bind_64, ptr, RID.GetPtr(mesh));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1912,7 +1912,7 @@ namespace Godot
         [GodotMethod("mesh_set_custom_aabb")]
         public static void MeshSetCustomAabb(RID mesh, AABB aabb)
         {
-            NativeCalls.godot_icall_2_956(method_bind_65, ptr, RID.GetPtr(mesh), ref aabb);
+            NativeCalls.godot_icall_2_959(method_bind_65, ptr, RID.GetPtr(mesh), ref aabb);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1924,7 +1924,7 @@ namespace Godot
         [GodotMethod("mesh_get_custom_aabb")]
         public static AABB MeshGetCustomAabb(RID mesh)
         {
-            NativeCalls.godot_icall_1_957(method_bind_66, ptr, RID.GetPtr(mesh), out AABB argRet); return (AABB)argRet;
+            NativeCalls.godot_icall_1_960(method_bind_66, ptr, RID.GetPtr(mesh), out AABB argRet); return (AABB)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1962,7 +1962,7 @@ namespace Godot
         [GodotMethod("multimesh_allocate")]
         public static void MultimeshAllocate(RID multimesh, int instances, VisualServer.MultimeshTransformFormat transformFormat, VisualServer.MultimeshColorFormat colorFormat, VisualServer.MultimeshCustomDataFormat customDataFormat = (VisualServer.MultimeshCustomDataFormat)0)
         {
-            NativeCalls.godot_icall_5_958(method_bind_69, ptr, RID.GetPtr(multimesh), instances, (int)transformFormat, (int)colorFormat, (int)customDataFormat);
+            NativeCalls.godot_icall_5_961(method_bind_69, ptr, RID.GetPtr(multimesh), instances, (int)transformFormat, (int)colorFormat, (int)customDataFormat);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1974,7 +1974,7 @@ namespace Godot
         [GodotMethod("multimesh_get_instance_count")]
         public static int MultimeshGetInstanceCount(RID multimesh)
         {
-            return NativeCalls.godot_icall_1_678(method_bind_70, ptr, RID.GetPtr(multimesh));
+            return NativeCalls.godot_icall_1_681(method_bind_70, ptr, RID.GetPtr(multimesh));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1986,7 +1986,7 @@ namespace Godot
         [GodotMethod("multimesh_set_mesh")]
         public static void MultimeshSetMesh(RID multimesh, RID mesh)
         {
-            NativeCalls.godot_icall_2_670(method_bind_71, ptr, RID.GetPtr(multimesh), RID.GetPtr(mesh));
+            NativeCalls.godot_icall_2_673(method_bind_71, ptr, RID.GetPtr(multimesh), RID.GetPtr(mesh));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1998,7 +1998,7 @@ namespace Godot
         [GodotMethod("multimesh_instance_set_transform")]
         public static void MultimeshInstanceSetTransform(RID multimesh, int index, Transform transform)
         {
-            NativeCalls.godot_icall_3_711(method_bind_72, ptr, RID.GetPtr(multimesh), index, ref transform);
+            NativeCalls.godot_icall_3_714(method_bind_72, ptr, RID.GetPtr(multimesh), index, ref transform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2010,7 +2010,7 @@ namespace Godot
         [GodotMethod("multimesh_instance_set_transform_2d")]
         public static void MultimeshInstanceSetTransform2d(RID multimesh, int index, Transform2D transform)
         {
-            NativeCalls.godot_icall_3_676(method_bind_73, ptr, RID.GetPtr(multimesh), index, ref transform);
+            NativeCalls.godot_icall_3_679(method_bind_73, ptr, RID.GetPtr(multimesh), index, ref transform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2022,7 +2022,7 @@ namespace Godot
         [GodotMethod("multimesh_instance_set_color")]
         public static void MultimeshInstanceSetColor(RID multimesh, int index, Color color)
         {
-            NativeCalls.godot_icall_3_959(method_bind_74, ptr, RID.GetPtr(multimesh), index, ref color);
+            NativeCalls.godot_icall_3_962(method_bind_74, ptr, RID.GetPtr(multimesh), index, ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2034,7 +2034,7 @@ namespace Godot
         [GodotMethod("multimesh_instance_set_custom_data")]
         public static void MultimeshInstanceSetCustomData(RID multimesh, int index, Color customData)
         {
-            NativeCalls.godot_icall_3_959(method_bind_75, ptr, RID.GetPtr(multimesh), index, ref customData);
+            NativeCalls.godot_icall_3_962(method_bind_75, ptr, RID.GetPtr(multimesh), index, ref customData);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2046,7 +2046,7 @@ namespace Godot
         [GodotMethod("multimesh_get_mesh")]
         public static RID MultimeshGetMesh(RID multimesh)
         {
-            return new RID(NativeCalls.godot_icall_1_671(method_bind_76, ptr, RID.GetPtr(multimesh)));
+            return new RID(NativeCalls.godot_icall_1_674(method_bind_76, ptr, RID.GetPtr(multimesh)));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2058,7 +2058,7 @@ namespace Godot
         [GodotMethod("multimesh_get_aabb")]
         public static AABB MultimeshGetAabb(RID multimesh)
         {
-            NativeCalls.godot_icall_1_957(method_bind_77, ptr, RID.GetPtr(multimesh), out AABB argRet); return (AABB)argRet;
+            NativeCalls.godot_icall_1_960(method_bind_77, ptr, RID.GetPtr(multimesh), out AABB argRet); return (AABB)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2070,7 +2070,7 @@ namespace Godot
         [GodotMethod("multimesh_instance_get_transform")]
         public static Transform MultimeshInstanceGetTransform(RID multimesh, int index)
         {
-            NativeCalls.godot_icall_2_712(method_bind_78, ptr, RID.GetPtr(multimesh), index, out Transform argRet); return (Transform)argRet;
+            NativeCalls.godot_icall_2_715(method_bind_78, ptr, RID.GetPtr(multimesh), index, out Transform argRet); return (Transform)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2082,7 +2082,7 @@ namespace Godot
         [GodotMethod("multimesh_instance_get_transform_2d")]
         public static Transform2D MultimeshInstanceGetTransform2d(RID multimesh, int index)
         {
-            NativeCalls.godot_icall_2_680(method_bind_79, ptr, RID.GetPtr(multimesh), index, out Transform2D argRet); return (Transform2D)argRet;
+            NativeCalls.godot_icall_2_683(method_bind_79, ptr, RID.GetPtr(multimesh), index, out Transform2D argRet); return (Transform2D)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2094,7 +2094,7 @@ namespace Godot
         [GodotMethod("multimesh_instance_get_color")]
         public static Color MultimeshInstanceGetColor(RID multimesh, int index)
         {
-            NativeCalls.godot_icall_2_960(method_bind_80, ptr, RID.GetPtr(multimesh), index, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_2_963(method_bind_80, ptr, RID.GetPtr(multimesh), index, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2106,7 +2106,7 @@ namespace Godot
         [GodotMethod("multimesh_instance_get_custom_data")]
         public static Color MultimeshInstanceGetCustomData(RID multimesh, int index)
         {
-            NativeCalls.godot_icall_2_960(method_bind_81, ptr, RID.GetPtr(multimesh), index, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_2_963(method_bind_81, ptr, RID.GetPtr(multimesh), index, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2118,7 +2118,7 @@ namespace Godot
         [GodotMethod("multimesh_set_visible_instances")]
         public static void MultimeshSetVisibleInstances(RID multimesh, int visible)
         {
-            NativeCalls.godot_icall_2_672(method_bind_82, ptr, RID.GetPtr(multimesh), visible);
+            NativeCalls.godot_icall_2_675(method_bind_82, ptr, RID.GetPtr(multimesh), visible);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2130,7 +2130,7 @@ namespace Godot
         [GodotMethod("multimesh_get_visible_instances")]
         public static int MultimeshGetVisibleInstances(RID multimesh)
         {
-            return NativeCalls.godot_icall_1_678(method_bind_83, ptr, RID.GetPtr(multimesh));
+            return NativeCalls.godot_icall_1_681(method_bind_83, ptr, RID.GetPtr(multimesh));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2146,7 +2146,7 @@ namespace Godot
         [GodotMethod("multimesh_set_as_bulk_array")]
         public static void MultimeshSetAsBulkArray(RID multimesh, float[] array)
         {
-            NativeCalls.godot_icall_2_961(method_bind_84, ptr, RID.GetPtr(multimesh), array);
+            NativeCalls.godot_icall_2_964(method_bind_84, ptr, RID.GetPtr(multimesh), array);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2172,7 +2172,7 @@ namespace Godot
         [GodotMethod("immediate_begin")]
         public static void ImmediateBegin(RID immediate, VisualServer.PrimitiveType primitive, RID texture = null)
         {
-            NativeCalls.godot_icall_3_675(method_bind_86, ptr, RID.GetPtr(immediate), (int)primitive, RID.GetPtr(texture));
+            NativeCalls.godot_icall_3_678(method_bind_86, ptr, RID.GetPtr(immediate), (int)primitive, RID.GetPtr(texture));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2184,7 +2184,7 @@ namespace Godot
         [GodotMethod("immediate_vertex")]
         public static void ImmediateVertex(RID immediate, Vector3 vertex)
         {
-            NativeCalls.godot_icall_2_718(method_bind_87, ptr, RID.GetPtr(immediate), ref vertex);
+            NativeCalls.godot_icall_2_721(method_bind_87, ptr, RID.GetPtr(immediate), ref vertex);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2196,7 +2196,7 @@ namespace Godot
         [GodotMethod("immediate_vertex_2d")]
         public static void ImmediateVertex2d(RID immediate, Vector2 vertex)
         {
-            NativeCalls.godot_icall_2_693(method_bind_88, ptr, RID.GetPtr(immediate), ref vertex);
+            NativeCalls.godot_icall_2_696(method_bind_88, ptr, RID.GetPtr(immediate), ref vertex);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2208,7 +2208,7 @@ namespace Godot
         [GodotMethod("immediate_normal")]
         public static void ImmediateNormal(RID immediate, Vector3 normal)
         {
-            NativeCalls.godot_icall_2_718(method_bind_89, ptr, RID.GetPtr(immediate), ref normal);
+            NativeCalls.godot_icall_2_721(method_bind_89, ptr, RID.GetPtr(immediate), ref normal);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2220,7 +2220,7 @@ namespace Godot
         [GodotMethod("immediate_tangent")]
         public static void ImmediateTangent(RID immediate, Plane tangent)
         {
-            NativeCalls.godot_icall_2_962(method_bind_90, ptr, RID.GetPtr(immediate), ref tangent);
+            NativeCalls.godot_icall_2_965(method_bind_90, ptr, RID.GetPtr(immediate), ref tangent);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2232,7 +2232,7 @@ namespace Godot
         [GodotMethod("immediate_color")]
         public static void ImmediateColor(RID immediate, Color color)
         {
-            NativeCalls.godot_icall_2_784(method_bind_91, ptr, RID.GetPtr(immediate), ref color);
+            NativeCalls.godot_icall_2_787(method_bind_91, ptr, RID.GetPtr(immediate), ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2244,7 +2244,7 @@ namespace Godot
         [GodotMethod("immediate_uv")]
         public static void ImmediateUv(RID immediate, Vector2 texUv)
         {
-            NativeCalls.godot_icall_2_693(method_bind_92, ptr, RID.GetPtr(immediate), ref texUv);
+            NativeCalls.godot_icall_2_696(method_bind_92, ptr, RID.GetPtr(immediate), ref texUv);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2256,7 +2256,7 @@ namespace Godot
         [GodotMethod("immediate_uv2")]
         public static void ImmediateUv2(RID immediate, Vector2 texUv)
         {
-            NativeCalls.godot_icall_2_693(method_bind_93, ptr, RID.GetPtr(immediate), ref texUv);
+            NativeCalls.godot_icall_2_696(method_bind_93, ptr, RID.GetPtr(immediate), ref texUv);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2292,7 +2292,7 @@ namespace Godot
         [GodotMethod("immediate_set_material")]
         public static void ImmediateSetMaterial(RID immediate, RID material)
         {
-            NativeCalls.godot_icall_2_670(method_bind_96, ptr, RID.GetPtr(immediate), RID.GetPtr(material));
+            NativeCalls.godot_icall_2_673(method_bind_96, ptr, RID.GetPtr(immediate), RID.GetPtr(material));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2304,7 +2304,7 @@ namespace Godot
         [GodotMethod("immediate_get_material")]
         public static RID ImmediateGetMaterial(RID immediate)
         {
-            return new RID(NativeCalls.godot_icall_1_671(method_bind_97, ptr, RID.GetPtr(immediate)));
+            return new RID(NativeCalls.godot_icall_1_674(method_bind_97, ptr, RID.GetPtr(immediate)));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2329,7 +2329,7 @@ namespace Godot
         [GodotMethod("skeleton_allocate")]
         public static void SkeletonAllocate(RID skeleton, int bones, bool is2dSkeleton = false)
         {
-            NativeCalls.godot_icall_3_677(method_bind_99, ptr, RID.GetPtr(skeleton), bones, is2dSkeleton);
+            NativeCalls.godot_icall_3_680(method_bind_99, ptr, RID.GetPtr(skeleton), bones, is2dSkeleton);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2341,7 +2341,7 @@ namespace Godot
         [GodotMethod("skeleton_get_bone_count")]
         public static int SkeletonGetBoneCount(RID skeleton)
         {
-            return NativeCalls.godot_icall_1_678(method_bind_100, ptr, RID.GetPtr(skeleton));
+            return NativeCalls.godot_icall_1_681(method_bind_100, ptr, RID.GetPtr(skeleton));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2353,7 +2353,7 @@ namespace Godot
         [GodotMethod("skeleton_bone_set_transform")]
         public static void SkeletonBoneSetTransform(RID skeleton, int bone, Transform transform)
         {
-            NativeCalls.godot_icall_3_711(method_bind_101, ptr, RID.GetPtr(skeleton), bone, ref transform);
+            NativeCalls.godot_icall_3_714(method_bind_101, ptr, RID.GetPtr(skeleton), bone, ref transform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2365,7 +2365,7 @@ namespace Godot
         [GodotMethod("skeleton_bone_get_transform")]
         public static Transform SkeletonBoneGetTransform(RID skeleton, int bone)
         {
-            NativeCalls.godot_icall_2_712(method_bind_102, ptr, RID.GetPtr(skeleton), bone, out Transform argRet); return (Transform)argRet;
+            NativeCalls.godot_icall_2_715(method_bind_102, ptr, RID.GetPtr(skeleton), bone, out Transform argRet); return (Transform)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2377,7 +2377,7 @@ namespace Godot
         [GodotMethod("skeleton_bone_set_transform_2d")]
         public static void SkeletonBoneSetTransform2d(RID skeleton, int bone, Transform2D transform)
         {
-            NativeCalls.godot_icall_3_676(method_bind_103, ptr, RID.GetPtr(skeleton), bone, ref transform);
+            NativeCalls.godot_icall_3_679(method_bind_103, ptr, RID.GetPtr(skeleton), bone, ref transform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2389,7 +2389,7 @@ namespace Godot
         [GodotMethod("skeleton_bone_get_transform_2d")]
         public static Transform2D SkeletonBoneGetTransform2d(RID skeleton, int bone)
         {
-            NativeCalls.godot_icall_2_680(method_bind_104, ptr, RID.GetPtr(skeleton), bone, out Transform2D argRet); return (Transform2D)argRet;
+            NativeCalls.godot_icall_2_683(method_bind_104, ptr, RID.GetPtr(skeleton), bone, out Transform2D argRet); return (Transform2D)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2443,7 +2443,7 @@ namespace Godot
         [GodotMethod("light_set_color")]
         public static void LightSetColor(RID light, Color color)
         {
-            NativeCalls.godot_icall_2_784(method_bind_108, ptr, RID.GetPtr(light), ref color);
+            NativeCalls.godot_icall_2_787(method_bind_108, ptr, RID.GetPtr(light), ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2455,7 +2455,7 @@ namespace Godot
         [GodotMethod("light_set_param")]
         public static void LightSetParam(RID light, VisualServer.LightParam param, float value)
         {
-            NativeCalls.godot_icall_3_667(method_bind_109, ptr, RID.GetPtr(light), (int)param, value);
+            NativeCalls.godot_icall_3_670(method_bind_109, ptr, RID.GetPtr(light), (int)param, value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2467,7 +2467,7 @@ namespace Godot
         [GodotMethod("light_set_shadow")]
         public static void LightSetShadow(RID light, bool enabled)
         {
-            NativeCalls.godot_icall_2_665(method_bind_110, ptr, RID.GetPtr(light), enabled);
+            NativeCalls.godot_icall_2_668(method_bind_110, ptr, RID.GetPtr(light), enabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2479,7 +2479,7 @@ namespace Godot
         [GodotMethod("light_set_shadow_color")]
         public static void LightSetShadowColor(RID light, Color color)
         {
-            NativeCalls.godot_icall_2_784(method_bind_111, ptr, RID.GetPtr(light), ref color);
+            NativeCalls.godot_icall_2_787(method_bind_111, ptr, RID.GetPtr(light), ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2491,7 +2491,7 @@ namespace Godot
         [GodotMethod("light_set_projector")]
         public static void LightSetProjector(RID light, RID texture)
         {
-            NativeCalls.godot_icall_2_670(method_bind_112, ptr, RID.GetPtr(light), RID.GetPtr(texture));
+            NativeCalls.godot_icall_2_673(method_bind_112, ptr, RID.GetPtr(light), RID.GetPtr(texture));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2503,7 +2503,7 @@ namespace Godot
         [GodotMethod("light_set_negative")]
         public static void LightSetNegative(RID light, bool enable)
         {
-            NativeCalls.godot_icall_2_665(method_bind_113, ptr, RID.GetPtr(light), enable);
+            NativeCalls.godot_icall_2_668(method_bind_113, ptr, RID.GetPtr(light), enable);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2515,7 +2515,7 @@ namespace Godot
         [GodotMethod("light_set_cull_mask")]
         public static void LightSetCullMask(RID light, uint mask)
         {
-            NativeCalls.godot_icall_2_681(method_bind_114, ptr, RID.GetPtr(light), mask);
+            NativeCalls.godot_icall_2_684(method_bind_114, ptr, RID.GetPtr(light), mask);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2527,7 +2527,7 @@ namespace Godot
         [GodotMethod("light_set_reverse_cull_face_mode")]
         public static void LightSetReverseCullFaceMode(RID light, bool enabled)
         {
-            NativeCalls.godot_icall_2_665(method_bind_115, ptr, RID.GetPtr(light), enabled);
+            NativeCalls.godot_icall_2_668(method_bind_115, ptr, RID.GetPtr(light), enabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2539,7 +2539,7 @@ namespace Godot
         [GodotMethod("light_set_use_gi")]
         public static void LightSetUseGi(RID light, bool enabled)
         {
-            NativeCalls.godot_icall_2_665(method_bind_116, ptr, RID.GetPtr(light), enabled);
+            NativeCalls.godot_icall_2_668(method_bind_116, ptr, RID.GetPtr(light), enabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2551,7 +2551,7 @@ namespace Godot
         [GodotMethod("light_set_bake_mode")]
         public static void LightSetBakeMode(RID light, VisualServer.LightBakeMode bakeMode)
         {
-            NativeCalls.godot_icall_2_672(method_bind_117, ptr, RID.GetPtr(light), (int)bakeMode);
+            NativeCalls.godot_icall_2_675(method_bind_117, ptr, RID.GetPtr(light), (int)bakeMode);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2563,7 +2563,7 @@ namespace Godot
         [GodotMethod("light_omni_set_shadow_mode")]
         public static void LightOmniSetShadowMode(RID light, VisualServer.LightOmniShadowMode mode)
         {
-            NativeCalls.godot_icall_2_672(method_bind_118, ptr, RID.GetPtr(light), (int)mode);
+            NativeCalls.godot_icall_2_675(method_bind_118, ptr, RID.GetPtr(light), (int)mode);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2575,7 +2575,7 @@ namespace Godot
         [GodotMethod("light_omni_set_shadow_detail")]
         public static void LightOmniSetShadowDetail(RID light, VisualServer.LightOmniShadowDetail detail)
         {
-            NativeCalls.godot_icall_2_672(method_bind_119, ptr, RID.GetPtr(light), (int)detail);
+            NativeCalls.godot_icall_2_675(method_bind_119, ptr, RID.GetPtr(light), (int)detail);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2587,7 +2587,7 @@ namespace Godot
         [GodotMethod("light_directional_set_shadow_mode")]
         public static void LightDirectionalSetShadowMode(RID light, VisualServer.LightDirectionalShadowMode mode)
         {
-            NativeCalls.godot_icall_2_672(method_bind_120, ptr, RID.GetPtr(light), (int)mode);
+            NativeCalls.godot_icall_2_675(method_bind_120, ptr, RID.GetPtr(light), (int)mode);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2599,7 +2599,7 @@ namespace Godot
         [GodotMethod("light_directional_set_blend_splits")]
         public static void LightDirectionalSetBlendSplits(RID light, bool enable)
         {
-            NativeCalls.godot_icall_2_665(method_bind_121, ptr, RID.GetPtr(light), enable);
+            NativeCalls.godot_icall_2_668(method_bind_121, ptr, RID.GetPtr(light), enable);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2611,7 +2611,7 @@ namespace Godot
         [GodotMethod("light_directional_set_shadow_depth_range_mode")]
         public static void LightDirectionalSetShadowDepthRangeMode(RID light, VisualServer.LightDirectionalShadowDepthRangeMode rangeMode)
         {
-            NativeCalls.godot_icall_2_672(method_bind_122, ptr, RID.GetPtr(light), (int)rangeMode);
+            NativeCalls.godot_icall_2_675(method_bind_122, ptr, RID.GetPtr(light), (int)rangeMode);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2637,7 +2637,7 @@ namespace Godot
         [GodotMethod("reflection_probe_set_update_mode")]
         public static void ReflectionProbeSetUpdateMode(RID probe, VisualServer.ReflectionProbeUpdateMode mode)
         {
-            NativeCalls.godot_icall_2_672(method_bind_124, ptr, RID.GetPtr(probe), (int)mode);
+            NativeCalls.godot_icall_2_675(method_bind_124, ptr, RID.GetPtr(probe), (int)mode);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2649,7 +2649,7 @@ namespace Godot
         [GodotMethod("reflection_probe_set_intensity")]
         public static void ReflectionProbeSetIntensity(RID probe, float intensity)
         {
-            NativeCalls.godot_icall_2_694(method_bind_125, ptr, RID.GetPtr(probe), intensity);
+            NativeCalls.godot_icall_2_697(method_bind_125, ptr, RID.GetPtr(probe), intensity);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2661,7 +2661,7 @@ namespace Godot
         [GodotMethod("reflection_probe_set_interior_ambient")]
         public static void ReflectionProbeSetInteriorAmbient(RID probe, Color color)
         {
-            NativeCalls.godot_icall_2_784(method_bind_126, ptr, RID.GetPtr(probe), ref color);
+            NativeCalls.godot_icall_2_787(method_bind_126, ptr, RID.GetPtr(probe), ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2673,7 +2673,7 @@ namespace Godot
         [GodotMethod("reflection_probe_set_interior_ambient_energy")]
         public static void ReflectionProbeSetInteriorAmbientEnergy(RID probe, float energy)
         {
-            NativeCalls.godot_icall_2_694(method_bind_127, ptr, RID.GetPtr(probe), energy);
+            NativeCalls.godot_icall_2_697(method_bind_127, ptr, RID.GetPtr(probe), energy);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2685,7 +2685,7 @@ namespace Godot
         [GodotMethod("reflection_probe_set_interior_ambient_probe_contribution")]
         public static void ReflectionProbeSetInteriorAmbientProbeContribution(RID probe, float contrib)
         {
-            NativeCalls.godot_icall_2_694(method_bind_128, ptr, RID.GetPtr(probe), contrib);
+            NativeCalls.godot_icall_2_697(method_bind_128, ptr, RID.GetPtr(probe), contrib);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2697,7 +2697,7 @@ namespace Godot
         [GodotMethod("reflection_probe_set_max_distance")]
         public static void ReflectionProbeSetMaxDistance(RID probe, float distance)
         {
-            NativeCalls.godot_icall_2_694(method_bind_129, ptr, RID.GetPtr(probe), distance);
+            NativeCalls.godot_icall_2_697(method_bind_129, ptr, RID.GetPtr(probe), distance);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2709,7 +2709,7 @@ namespace Godot
         [GodotMethod("reflection_probe_set_extents")]
         public static void ReflectionProbeSetExtents(RID probe, Vector3 extents)
         {
-            NativeCalls.godot_icall_2_718(method_bind_130, ptr, RID.GetPtr(probe), ref extents);
+            NativeCalls.godot_icall_2_721(method_bind_130, ptr, RID.GetPtr(probe), ref extents);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2721,7 +2721,7 @@ namespace Godot
         [GodotMethod("reflection_probe_set_origin_offset")]
         public static void ReflectionProbeSetOriginOffset(RID probe, Vector3 offset)
         {
-            NativeCalls.godot_icall_2_718(method_bind_131, ptr, RID.GetPtr(probe), ref offset);
+            NativeCalls.godot_icall_2_721(method_bind_131, ptr, RID.GetPtr(probe), ref offset);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2733,7 +2733,7 @@ namespace Godot
         [GodotMethod("reflection_probe_set_as_interior")]
         public static void ReflectionProbeSetAsInterior(RID probe, bool enable)
         {
-            NativeCalls.godot_icall_2_665(method_bind_132, ptr, RID.GetPtr(probe), enable);
+            NativeCalls.godot_icall_2_668(method_bind_132, ptr, RID.GetPtr(probe), enable);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2745,7 +2745,7 @@ namespace Godot
         [GodotMethod("reflection_probe_set_enable_box_projection")]
         public static void ReflectionProbeSetEnableBoxProjection(RID probe, bool enable)
         {
-            NativeCalls.godot_icall_2_665(method_bind_133, ptr, RID.GetPtr(probe), enable);
+            NativeCalls.godot_icall_2_668(method_bind_133, ptr, RID.GetPtr(probe), enable);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2757,7 +2757,7 @@ namespace Godot
         [GodotMethod("reflection_probe_set_enable_shadows")]
         public static void ReflectionProbeSetEnableShadows(RID probe, bool enable)
         {
-            NativeCalls.godot_icall_2_665(method_bind_134, ptr, RID.GetPtr(probe), enable);
+            NativeCalls.godot_icall_2_668(method_bind_134, ptr, RID.GetPtr(probe), enable);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2769,7 +2769,7 @@ namespace Godot
         [GodotMethod("reflection_probe_set_cull_mask")]
         public static void ReflectionProbeSetCullMask(RID probe, uint layers)
         {
-            NativeCalls.godot_icall_2_681(method_bind_135, ptr, RID.GetPtr(probe), layers);
+            NativeCalls.godot_icall_2_684(method_bind_135, ptr, RID.GetPtr(probe), layers);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2795,7 +2795,7 @@ namespace Godot
         [GodotMethod("gi_probe_set_bounds")]
         public static void GiProbeSetBounds(RID probe, AABB bounds)
         {
-            NativeCalls.godot_icall_2_956(method_bind_137, ptr, RID.GetPtr(probe), ref bounds);
+            NativeCalls.godot_icall_2_959(method_bind_137, ptr, RID.GetPtr(probe), ref bounds);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2807,7 +2807,7 @@ namespace Godot
         [GodotMethod("gi_probe_get_bounds")]
         public static AABB GiProbeGetBounds(RID probe)
         {
-            NativeCalls.godot_icall_1_957(method_bind_138, ptr, RID.GetPtr(probe), out AABB argRet); return (AABB)argRet;
+            NativeCalls.godot_icall_1_960(method_bind_138, ptr, RID.GetPtr(probe), out AABB argRet); return (AABB)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2819,7 +2819,7 @@ namespace Godot
         [GodotMethod("gi_probe_set_cell_size")]
         public static void GiProbeSetCellSize(RID probe, float range)
         {
-            NativeCalls.godot_icall_2_694(method_bind_139, ptr, RID.GetPtr(probe), range);
+            NativeCalls.godot_icall_2_697(method_bind_139, ptr, RID.GetPtr(probe), range);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2831,7 +2831,7 @@ namespace Godot
         [GodotMethod("gi_probe_get_cell_size")]
         public static float GiProbeGetCellSize(RID probe)
         {
-            return NativeCalls.godot_icall_1_717(method_bind_140, ptr, RID.GetPtr(probe));
+            return NativeCalls.godot_icall_1_720(method_bind_140, ptr, RID.GetPtr(probe));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2843,7 +2843,7 @@ namespace Godot
         [GodotMethod("gi_probe_set_to_cell_xform")]
         public static void GiProbeSetToCellXform(RID probe, Transform xform)
         {
-            NativeCalls.godot_icall_2_713(method_bind_141, ptr, RID.GetPtr(probe), ref xform);
+            NativeCalls.godot_icall_2_716(method_bind_141, ptr, RID.GetPtr(probe), ref xform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2855,7 +2855,7 @@ namespace Godot
         [GodotMethod("gi_probe_get_to_cell_xform")]
         public static Transform GiProbeGetToCellXform(RID probe)
         {
-            NativeCalls.godot_icall_1_714(method_bind_142, ptr, RID.GetPtr(probe), out Transform argRet); return (Transform)argRet;
+            NativeCalls.godot_icall_1_717(method_bind_142, ptr, RID.GetPtr(probe), out Transform argRet); return (Transform)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2867,7 +2867,7 @@ namespace Godot
         [GodotMethod("gi_probe_set_dynamic_data")]
         public static void GiProbeSetDynamicData(RID probe, int[] data)
         {
-            NativeCalls.godot_icall_2_963(method_bind_143, ptr, RID.GetPtr(probe), data);
+            NativeCalls.godot_icall_2_966(method_bind_143, ptr, RID.GetPtr(probe), data);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2879,7 +2879,7 @@ namespace Godot
         [GodotMethod("gi_probe_get_dynamic_data")]
         public static int[] GiProbeGetDynamicData(RID probe)
         {
-            return NativeCalls.godot_icall_1_964(method_bind_144, ptr, RID.GetPtr(probe));
+            return NativeCalls.godot_icall_1_967(method_bind_144, ptr, RID.GetPtr(probe));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2891,7 +2891,7 @@ namespace Godot
         [GodotMethod("gi_probe_set_dynamic_range")]
         public static void GiProbeSetDynamicRange(RID probe, int range)
         {
-            NativeCalls.godot_icall_2_672(method_bind_145, ptr, RID.GetPtr(probe), range);
+            NativeCalls.godot_icall_2_675(method_bind_145, ptr, RID.GetPtr(probe), range);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2903,7 +2903,7 @@ namespace Godot
         [GodotMethod("gi_probe_get_dynamic_range")]
         public static int GiProbeGetDynamicRange(RID probe)
         {
-            return NativeCalls.godot_icall_1_678(method_bind_146, ptr, RID.GetPtr(probe));
+            return NativeCalls.godot_icall_1_681(method_bind_146, ptr, RID.GetPtr(probe));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2915,7 +2915,7 @@ namespace Godot
         [GodotMethod("gi_probe_set_energy")]
         public static void GiProbeSetEnergy(RID probe, float energy)
         {
-            NativeCalls.godot_icall_2_694(method_bind_147, ptr, RID.GetPtr(probe), energy);
+            NativeCalls.godot_icall_2_697(method_bind_147, ptr, RID.GetPtr(probe), energy);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2927,7 +2927,7 @@ namespace Godot
         [GodotMethod("gi_probe_get_energy")]
         public static float GiProbeGetEnergy(RID probe)
         {
-            return NativeCalls.godot_icall_1_717(method_bind_148, ptr, RID.GetPtr(probe));
+            return NativeCalls.godot_icall_1_720(method_bind_148, ptr, RID.GetPtr(probe));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2939,7 +2939,7 @@ namespace Godot
         [GodotMethod("gi_probe_set_bias")]
         public static void GiProbeSetBias(RID probe, float bias)
         {
-            NativeCalls.godot_icall_2_694(method_bind_149, ptr, RID.GetPtr(probe), bias);
+            NativeCalls.godot_icall_2_697(method_bind_149, ptr, RID.GetPtr(probe), bias);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2951,7 +2951,7 @@ namespace Godot
         [GodotMethod("gi_probe_get_bias")]
         public static float GiProbeGetBias(RID probe)
         {
-            return NativeCalls.godot_icall_1_717(method_bind_150, ptr, RID.GetPtr(probe));
+            return NativeCalls.godot_icall_1_720(method_bind_150, ptr, RID.GetPtr(probe));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2963,7 +2963,7 @@ namespace Godot
         [GodotMethod("gi_probe_set_normal_bias")]
         public static void GiProbeSetNormalBias(RID probe, float bias)
         {
-            NativeCalls.godot_icall_2_694(method_bind_151, ptr, RID.GetPtr(probe), bias);
+            NativeCalls.godot_icall_2_697(method_bind_151, ptr, RID.GetPtr(probe), bias);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2975,7 +2975,7 @@ namespace Godot
         [GodotMethod("gi_probe_get_normal_bias")]
         public static float GiProbeGetNormalBias(RID probe)
         {
-            return NativeCalls.godot_icall_1_717(method_bind_152, ptr, RID.GetPtr(probe));
+            return NativeCalls.godot_icall_1_720(method_bind_152, ptr, RID.GetPtr(probe));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2987,7 +2987,7 @@ namespace Godot
         [GodotMethod("gi_probe_set_propagation")]
         public static void GiProbeSetPropagation(RID probe, float propagation)
         {
-            NativeCalls.godot_icall_2_694(method_bind_153, ptr, RID.GetPtr(probe), propagation);
+            NativeCalls.godot_icall_2_697(method_bind_153, ptr, RID.GetPtr(probe), propagation);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2999,7 +2999,7 @@ namespace Godot
         [GodotMethod("gi_probe_get_propagation")]
         public static float GiProbeGetPropagation(RID probe)
         {
-            return NativeCalls.godot_icall_1_717(method_bind_154, ptr, RID.GetPtr(probe));
+            return NativeCalls.godot_icall_1_720(method_bind_154, ptr, RID.GetPtr(probe));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3011,7 +3011,7 @@ namespace Godot
         [GodotMethod("gi_probe_set_interior")]
         public static void GiProbeSetInterior(RID probe, bool enable)
         {
-            NativeCalls.godot_icall_2_665(method_bind_155, ptr, RID.GetPtr(probe), enable);
+            NativeCalls.godot_icall_2_668(method_bind_155, ptr, RID.GetPtr(probe), enable);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3023,7 +3023,7 @@ namespace Godot
         [GodotMethod("gi_probe_is_interior")]
         public static bool GiProbeIsInterior(RID probe)
         {
-            return NativeCalls.godot_icall_1_666(method_bind_156, ptr, RID.GetPtr(probe));
+            return NativeCalls.godot_icall_1_669(method_bind_156, ptr, RID.GetPtr(probe));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3035,7 +3035,7 @@ namespace Godot
         [GodotMethod("gi_probe_set_compress")]
         public static void GiProbeSetCompress(RID probe, bool enable)
         {
-            NativeCalls.godot_icall_2_665(method_bind_157, ptr, RID.GetPtr(probe), enable);
+            NativeCalls.godot_icall_2_668(method_bind_157, ptr, RID.GetPtr(probe), enable);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3047,7 +3047,7 @@ namespace Godot
         [GodotMethod("gi_probe_is_compressed")]
         public static bool GiProbeIsCompressed(RID probe)
         {
-            return NativeCalls.godot_icall_1_666(method_bind_158, ptr, RID.GetPtr(probe));
+            return NativeCalls.godot_icall_1_669(method_bind_158, ptr, RID.GetPtr(probe));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3073,7 +3073,7 @@ namespace Godot
         [GodotMethod("lightmap_capture_set_bounds")]
         public static void LightmapCaptureSetBounds(RID capture, AABB bounds)
         {
-            NativeCalls.godot_icall_2_956(method_bind_160, ptr, RID.GetPtr(capture), ref bounds);
+            NativeCalls.godot_icall_2_959(method_bind_160, ptr, RID.GetPtr(capture), ref bounds);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3085,7 +3085,7 @@ namespace Godot
         [GodotMethod("lightmap_capture_get_bounds")]
         public static AABB LightmapCaptureGetBounds(RID capture)
         {
-            NativeCalls.godot_icall_1_957(method_bind_161, ptr, RID.GetPtr(capture), out AABB argRet); return (AABB)argRet;
+            NativeCalls.godot_icall_1_960(method_bind_161, ptr, RID.GetPtr(capture), out AABB argRet); return (AABB)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3097,7 +3097,7 @@ namespace Godot
         [GodotMethod("lightmap_capture_set_octree")]
         public static void LightmapCaptureSetOctree(RID capture, byte[] octree)
         {
-            NativeCalls.godot_icall_2_965(method_bind_162, ptr, RID.GetPtr(capture), octree);
+            NativeCalls.godot_icall_2_968(method_bind_162, ptr, RID.GetPtr(capture), octree);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3109,7 +3109,7 @@ namespace Godot
         [GodotMethod("lightmap_capture_set_octree_cell_transform")]
         public static void LightmapCaptureSetOctreeCellTransform(RID capture, Transform xform)
         {
-            NativeCalls.godot_icall_2_713(method_bind_163, ptr, RID.GetPtr(capture), ref xform);
+            NativeCalls.godot_icall_2_716(method_bind_163, ptr, RID.GetPtr(capture), ref xform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3121,7 +3121,7 @@ namespace Godot
         [GodotMethod("lightmap_capture_get_octree_cell_transform")]
         public static Transform LightmapCaptureGetOctreeCellTransform(RID capture)
         {
-            NativeCalls.godot_icall_1_714(method_bind_164, ptr, RID.GetPtr(capture), out Transform argRet); return (Transform)argRet;
+            NativeCalls.godot_icall_1_717(method_bind_164, ptr, RID.GetPtr(capture), out Transform argRet); return (Transform)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3133,7 +3133,7 @@ namespace Godot
         [GodotMethod("lightmap_capture_set_octree_cell_subdiv")]
         public static void LightmapCaptureSetOctreeCellSubdiv(RID capture, int subdiv)
         {
-            NativeCalls.godot_icall_2_672(method_bind_165, ptr, RID.GetPtr(capture), subdiv);
+            NativeCalls.godot_icall_2_675(method_bind_165, ptr, RID.GetPtr(capture), subdiv);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3145,7 +3145,7 @@ namespace Godot
         [GodotMethod("lightmap_capture_get_octree_cell_subdiv")]
         public static int LightmapCaptureGetOctreeCellSubdiv(RID capture)
         {
-            return NativeCalls.godot_icall_1_678(method_bind_166, ptr, RID.GetPtr(capture));
+            return NativeCalls.godot_icall_1_681(method_bind_166, ptr, RID.GetPtr(capture));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3157,7 +3157,7 @@ namespace Godot
         [GodotMethod("lightmap_capture_get_octree")]
         public static byte[] LightmapCaptureGetOctree(RID capture)
         {
-            return NativeCalls.godot_icall_1_966(method_bind_167, ptr, RID.GetPtr(capture));
+            return NativeCalls.godot_icall_1_969(method_bind_167, ptr, RID.GetPtr(capture));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3169,7 +3169,7 @@ namespace Godot
         [GodotMethod("lightmap_capture_set_energy")]
         public static void LightmapCaptureSetEnergy(RID capture, float energy)
         {
-            NativeCalls.godot_icall_2_694(method_bind_168, ptr, RID.GetPtr(capture), energy);
+            NativeCalls.godot_icall_2_697(method_bind_168, ptr, RID.GetPtr(capture), energy);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3181,7 +3181,7 @@ namespace Godot
         [GodotMethod("lightmap_capture_get_energy")]
         public static float LightmapCaptureGetEnergy(RID capture)
         {
-            return NativeCalls.godot_icall_1_717(method_bind_169, ptr, RID.GetPtr(capture));
+            return NativeCalls.godot_icall_1_720(method_bind_169, ptr, RID.GetPtr(capture));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3193,7 +3193,7 @@ namespace Godot
         [GodotMethod("lightmap_capture_set_interior")]
         public static void LightmapCaptureSetInterior(RID capture, bool interior)
         {
-            NativeCalls.godot_icall_2_665(method_bind_170, ptr, RID.GetPtr(capture), interior);
+            NativeCalls.godot_icall_2_668(method_bind_170, ptr, RID.GetPtr(capture), interior);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3205,7 +3205,7 @@ namespace Godot
         [GodotMethod("lightmap_capture_is_interior")]
         public static bool LightmapCaptureIsInterior(RID capture)
         {
-            return NativeCalls.godot_icall_1_666(method_bind_171, ptr, RID.GetPtr(capture));
+            return NativeCalls.godot_icall_1_669(method_bind_171, ptr, RID.GetPtr(capture));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3231,7 +3231,7 @@ namespace Godot
         [GodotMethod("particles_set_emitting")]
         public static void ParticlesSetEmitting(RID particles, bool emitting)
         {
-            NativeCalls.godot_icall_2_665(method_bind_173, ptr, RID.GetPtr(particles), emitting);
+            NativeCalls.godot_icall_2_668(method_bind_173, ptr, RID.GetPtr(particles), emitting);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3243,7 +3243,7 @@ namespace Godot
         [GodotMethod("particles_get_emitting")]
         public static bool ParticlesGetEmitting(RID particles)
         {
-            return NativeCalls.godot_icall_1_666(method_bind_174, ptr, RID.GetPtr(particles));
+            return NativeCalls.godot_icall_1_669(method_bind_174, ptr, RID.GetPtr(particles));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3255,7 +3255,7 @@ namespace Godot
         [GodotMethod("particles_set_amount")]
         public static void ParticlesSetAmount(RID particles, int amount)
         {
-            NativeCalls.godot_icall_2_672(method_bind_175, ptr, RID.GetPtr(particles), amount);
+            NativeCalls.godot_icall_2_675(method_bind_175, ptr, RID.GetPtr(particles), amount);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3267,7 +3267,7 @@ namespace Godot
         [GodotMethod("particles_set_lifetime")]
         public static void ParticlesSetLifetime(RID particles, float lifetime)
         {
-            NativeCalls.godot_icall_2_694(method_bind_176, ptr, RID.GetPtr(particles), lifetime);
+            NativeCalls.godot_icall_2_697(method_bind_176, ptr, RID.GetPtr(particles), lifetime);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3279,7 +3279,7 @@ namespace Godot
         [GodotMethod("particles_set_one_shot")]
         public static void ParticlesSetOneShot(RID particles, bool oneShot)
         {
-            NativeCalls.godot_icall_2_665(method_bind_177, ptr, RID.GetPtr(particles), oneShot);
+            NativeCalls.godot_icall_2_668(method_bind_177, ptr, RID.GetPtr(particles), oneShot);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3291,7 +3291,7 @@ namespace Godot
         [GodotMethod("particles_set_pre_process_time")]
         public static void ParticlesSetPreProcessTime(RID particles, float time)
         {
-            NativeCalls.godot_icall_2_694(method_bind_178, ptr, RID.GetPtr(particles), time);
+            NativeCalls.godot_icall_2_697(method_bind_178, ptr, RID.GetPtr(particles), time);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3303,7 +3303,7 @@ namespace Godot
         [GodotMethod("particles_set_explosiveness_ratio")]
         public static void ParticlesSetExplosivenessRatio(RID particles, float ratio)
         {
-            NativeCalls.godot_icall_2_694(method_bind_179, ptr, RID.GetPtr(particles), ratio);
+            NativeCalls.godot_icall_2_697(method_bind_179, ptr, RID.GetPtr(particles), ratio);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3315,7 +3315,7 @@ namespace Godot
         [GodotMethod("particles_set_randomness_ratio")]
         public static void ParticlesSetRandomnessRatio(RID particles, float ratio)
         {
-            NativeCalls.godot_icall_2_694(method_bind_180, ptr, RID.GetPtr(particles), ratio);
+            NativeCalls.godot_icall_2_697(method_bind_180, ptr, RID.GetPtr(particles), ratio);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3327,7 +3327,7 @@ namespace Godot
         [GodotMethod("particles_set_custom_aabb")]
         public static void ParticlesSetCustomAabb(RID particles, AABB aabb)
         {
-            NativeCalls.godot_icall_2_956(method_bind_181, ptr, RID.GetPtr(particles), ref aabb);
+            NativeCalls.godot_icall_2_959(method_bind_181, ptr, RID.GetPtr(particles), ref aabb);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3339,7 +3339,7 @@ namespace Godot
         [GodotMethod("particles_set_speed_scale")]
         public static void ParticlesSetSpeedScale(RID particles, float scale)
         {
-            NativeCalls.godot_icall_2_694(method_bind_182, ptr, RID.GetPtr(particles), scale);
+            NativeCalls.godot_icall_2_697(method_bind_182, ptr, RID.GetPtr(particles), scale);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3351,7 +3351,7 @@ namespace Godot
         [GodotMethod("particles_set_use_local_coordinates")]
         public static void ParticlesSetUseLocalCoordinates(RID particles, bool enable)
         {
-            NativeCalls.godot_icall_2_665(method_bind_183, ptr, RID.GetPtr(particles), enable);
+            NativeCalls.godot_icall_2_668(method_bind_183, ptr, RID.GetPtr(particles), enable);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3364,7 +3364,7 @@ namespace Godot
         [GodotMethod("particles_set_process_material")]
         public static void ParticlesSetProcessMaterial(RID particles, RID material)
         {
-            NativeCalls.godot_icall_2_670(method_bind_184, ptr, RID.GetPtr(particles), RID.GetPtr(material));
+            NativeCalls.godot_icall_2_673(method_bind_184, ptr, RID.GetPtr(particles), RID.GetPtr(material));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3376,7 +3376,7 @@ namespace Godot
         [GodotMethod("particles_set_fixed_fps")]
         public static void ParticlesSetFixedFps(RID particles, int fps)
         {
-            NativeCalls.godot_icall_2_672(method_bind_185, ptr, RID.GetPtr(particles), fps);
+            NativeCalls.godot_icall_2_675(method_bind_185, ptr, RID.GetPtr(particles), fps);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3388,7 +3388,7 @@ namespace Godot
         [GodotMethod("particles_set_fractional_delta")]
         public static void ParticlesSetFractionalDelta(RID particles, bool enable)
         {
-            NativeCalls.godot_icall_2_665(method_bind_186, ptr, RID.GetPtr(particles), enable);
+            NativeCalls.godot_icall_2_668(method_bind_186, ptr, RID.GetPtr(particles), enable);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3400,7 +3400,7 @@ namespace Godot
         [GodotMethod("particles_is_inactive")]
         public static bool ParticlesIsInactive(RID particles)
         {
-            return NativeCalls.godot_icall_1_666(method_bind_187, ptr, RID.GetPtr(particles));
+            return NativeCalls.godot_icall_1_669(method_bind_187, ptr, RID.GetPtr(particles));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3436,7 +3436,7 @@ namespace Godot
         [GodotMethod("particles_set_draw_order")]
         public static void ParticlesSetDrawOrder(RID particles, VisualServer.ParticlesDrawOrder order)
         {
-            NativeCalls.godot_icall_2_672(method_bind_190, ptr, RID.GetPtr(particles), (int)order);
+            NativeCalls.godot_icall_2_675(method_bind_190, ptr, RID.GetPtr(particles), (int)order);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3448,7 +3448,7 @@ namespace Godot
         [GodotMethod("particles_set_draw_passes")]
         public static void ParticlesSetDrawPasses(RID particles, int count)
         {
-            NativeCalls.godot_icall_2_672(method_bind_191, ptr, RID.GetPtr(particles), count);
+            NativeCalls.godot_icall_2_675(method_bind_191, ptr, RID.GetPtr(particles), count);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3460,7 +3460,7 @@ namespace Godot
         [GodotMethod("particles_set_draw_pass_mesh")]
         public static void ParticlesSetDrawPassMesh(RID particles, int pass, RID mesh)
         {
-            NativeCalls.godot_icall_3_675(method_bind_192, ptr, RID.GetPtr(particles), pass, RID.GetPtr(mesh));
+            NativeCalls.godot_icall_3_678(method_bind_192, ptr, RID.GetPtr(particles), pass, RID.GetPtr(mesh));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3472,7 +3472,7 @@ namespace Godot
         [GodotMethod("particles_get_current_aabb")]
         public static AABB ParticlesGetCurrentAabb(RID particles)
         {
-            NativeCalls.godot_icall_1_957(method_bind_193, ptr, RID.GetPtr(particles), out AABB argRet); return (AABB)argRet;
+            NativeCalls.godot_icall_1_960(method_bind_193, ptr, RID.GetPtr(particles), out AABB argRet); return (AABB)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3484,7 +3484,7 @@ namespace Godot
         [GodotMethod("particles_set_emission_transform")]
         public static void ParticlesSetEmissionTransform(RID particles, Transform transform)
         {
-            NativeCalls.godot_icall_2_713(method_bind_194, ptr, RID.GetPtr(particles), ref transform);
+            NativeCalls.godot_icall_2_716(method_bind_194, ptr, RID.GetPtr(particles), ref transform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3509,7 +3509,7 @@ namespace Godot
         [GodotMethod("camera_set_perspective")]
         public static void CameraSetPerspective(RID camera, float fovyDegrees, float zNear, float zFar)
         {
-            NativeCalls.godot_icall_4_967(method_bind_196, ptr, RID.GetPtr(camera), fovyDegrees, zNear, zFar);
+            NativeCalls.godot_icall_4_970(method_bind_196, ptr, RID.GetPtr(camera), fovyDegrees, zNear, zFar);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3521,7 +3521,7 @@ namespace Godot
         [GodotMethod("camera_set_orthogonal")]
         public static void CameraSetOrthogonal(RID camera, float size, float zNear, float zFar)
         {
-            NativeCalls.godot_icall_4_967(method_bind_197, ptr, RID.GetPtr(camera), size, zNear, zFar);
+            NativeCalls.godot_icall_4_970(method_bind_197, ptr, RID.GetPtr(camera), size, zNear, zFar);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3533,7 +3533,7 @@ namespace Godot
         [GodotMethod("camera_set_frustum")]
         public static void CameraSetFrustum(RID camera, float size, Vector2 offset, float zNear, float zFar)
         {
-            NativeCalls.godot_icall_5_968(method_bind_198, ptr, RID.GetPtr(camera), size, ref offset, zNear, zFar);
+            NativeCalls.godot_icall_5_971(method_bind_198, ptr, RID.GetPtr(camera), size, ref offset, zNear, zFar);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3545,7 +3545,7 @@ namespace Godot
         [GodotMethod("camera_set_transform")]
         public static void CameraSetTransform(RID camera, Transform transform)
         {
-            NativeCalls.godot_icall_2_713(method_bind_199, ptr, RID.GetPtr(camera), ref transform);
+            NativeCalls.godot_icall_2_716(method_bind_199, ptr, RID.GetPtr(camera), ref transform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3557,7 +3557,7 @@ namespace Godot
         [GodotMethod("camera_set_cull_mask")]
         public static void CameraSetCullMask(RID camera, uint layers)
         {
-            NativeCalls.godot_icall_2_681(method_bind_200, ptr, RID.GetPtr(camera), layers);
+            NativeCalls.godot_icall_2_684(method_bind_200, ptr, RID.GetPtr(camera), layers);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3569,7 +3569,7 @@ namespace Godot
         [GodotMethod("camera_set_environment")]
         public static void CameraSetEnvironment(RID camera, RID env)
         {
-            NativeCalls.godot_icall_2_670(method_bind_201, ptr, RID.GetPtr(camera), RID.GetPtr(env));
+            NativeCalls.godot_icall_2_673(method_bind_201, ptr, RID.GetPtr(camera), RID.GetPtr(env));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3581,7 +3581,7 @@ namespace Godot
         [GodotMethod("camera_set_use_vertical_aspect")]
         public static void CameraSetUseVerticalAspect(RID camera, bool enable)
         {
-            NativeCalls.godot_icall_2_665(method_bind_202, ptr, RID.GetPtr(camera), enable);
+            NativeCalls.godot_icall_2_668(method_bind_202, ptr, RID.GetPtr(camera), enable);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3606,7 +3606,7 @@ namespace Godot
         [GodotMethod("viewport_set_use_arvr")]
         public static void ViewportSetUseArvr(RID viewport, bool useArvr)
         {
-            NativeCalls.godot_icall_2_665(method_bind_204, ptr, RID.GetPtr(viewport), useArvr);
+            NativeCalls.godot_icall_2_668(method_bind_204, ptr, RID.GetPtr(viewport), useArvr);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3618,7 +3618,7 @@ namespace Godot
         [GodotMethod("viewport_set_size")]
         public static void ViewportSetSize(RID viewport, int width, int height)
         {
-            NativeCalls.godot_icall_3_969(method_bind_205, ptr, RID.GetPtr(viewport), width, height);
+            NativeCalls.godot_icall_3_972(method_bind_205, ptr, RID.GetPtr(viewport), width, height);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3630,7 +3630,7 @@ namespace Godot
         [GodotMethod("viewport_set_active")]
         public static void ViewportSetActive(RID viewport, bool active)
         {
-            NativeCalls.godot_icall_2_665(method_bind_206, ptr, RID.GetPtr(viewport), active);
+            NativeCalls.godot_icall_2_668(method_bind_206, ptr, RID.GetPtr(viewport), active);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3642,7 +3642,7 @@ namespace Godot
         [GodotMethod("viewport_set_parent_viewport")]
         public static void ViewportSetParentViewport(RID viewport, RID parentViewport)
         {
-            NativeCalls.godot_icall_2_670(method_bind_207, ptr, RID.GetPtr(viewport), RID.GetPtr(parentViewport));
+            NativeCalls.godot_icall_2_673(method_bind_207, ptr, RID.GetPtr(viewport), RID.GetPtr(parentViewport));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3663,7 +3663,7 @@ namespace Godot
         public static void ViewportAttachToScreen(RID viewport, Nullable<Rect2> rect = null, int screen = 0)
         {
             Rect2 rect_in = rect.HasValue ? rect.Value : new Rect2(new Vector2(0, 0), new Vector2(0, 0));
-            NativeCalls.godot_icall_3_970(method_bind_208, ptr, RID.GetPtr(viewport), ref rect_in, screen);
+            NativeCalls.godot_icall_3_973(method_bind_208, ptr, RID.GetPtr(viewport), ref rect_in, screen);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3675,7 +3675,7 @@ namespace Godot
         [GodotMethod("viewport_set_render_direct_to_screen")]
         public static void ViewportSetRenderDirectToScreen(RID viewport, bool enabled)
         {
-            NativeCalls.godot_icall_2_665(method_bind_209, ptr, RID.GetPtr(viewport), enabled);
+            NativeCalls.godot_icall_2_668(method_bind_209, ptr, RID.GetPtr(viewport), enabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3699,7 +3699,7 @@ namespace Godot
         [GodotMethod("viewport_set_update_mode")]
         public static void ViewportSetUpdateMode(RID viewport, VisualServer.ViewportUpdateMode updateMode)
         {
-            NativeCalls.godot_icall_2_672(method_bind_211, ptr, RID.GetPtr(viewport), (int)updateMode);
+            NativeCalls.godot_icall_2_675(method_bind_211, ptr, RID.GetPtr(viewport), (int)updateMode);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3711,7 +3711,7 @@ namespace Godot
         [GodotMethod("viewport_set_vflip")]
         public static void ViewportSetVflip(RID viewport, bool enabled)
         {
-            NativeCalls.godot_icall_2_665(method_bind_212, ptr, RID.GetPtr(viewport), enabled);
+            NativeCalls.godot_icall_2_668(method_bind_212, ptr, RID.GetPtr(viewport), enabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3723,7 +3723,7 @@ namespace Godot
         [GodotMethod("viewport_set_clear_mode")]
         public static void ViewportSetClearMode(RID viewport, VisualServer.ViewportClearMode clearMode)
         {
-            NativeCalls.godot_icall_2_672(method_bind_213, ptr, RID.GetPtr(viewport), (int)clearMode);
+            NativeCalls.godot_icall_2_675(method_bind_213, ptr, RID.GetPtr(viewport), (int)clearMode);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3735,7 +3735,7 @@ namespace Godot
         [GodotMethod("viewport_get_texture")]
         public static RID ViewportGetTexture(RID viewport)
         {
-            return new RID(NativeCalls.godot_icall_1_671(method_bind_214, ptr, RID.GetPtr(viewport)));
+            return new RID(NativeCalls.godot_icall_1_674(method_bind_214, ptr, RID.GetPtr(viewport)));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3747,7 +3747,7 @@ namespace Godot
         [GodotMethod("viewport_set_hide_scenario")]
         public static void ViewportSetHideScenario(RID viewport, bool hidden)
         {
-            NativeCalls.godot_icall_2_665(method_bind_215, ptr, RID.GetPtr(viewport), hidden);
+            NativeCalls.godot_icall_2_668(method_bind_215, ptr, RID.GetPtr(viewport), hidden);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3759,7 +3759,7 @@ namespace Godot
         [GodotMethod("viewport_set_hide_canvas")]
         public static void ViewportSetHideCanvas(RID viewport, bool hidden)
         {
-            NativeCalls.godot_icall_2_665(method_bind_216, ptr, RID.GetPtr(viewport), hidden);
+            NativeCalls.godot_icall_2_668(method_bind_216, ptr, RID.GetPtr(viewport), hidden);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3771,7 +3771,7 @@ namespace Godot
         [GodotMethod("viewport_set_disable_environment")]
         public static void ViewportSetDisableEnvironment(RID viewport, bool disabled)
         {
-            NativeCalls.godot_icall_2_665(method_bind_217, ptr, RID.GetPtr(viewport), disabled);
+            NativeCalls.godot_icall_2_668(method_bind_217, ptr, RID.GetPtr(viewport), disabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3783,7 +3783,7 @@ namespace Godot
         [GodotMethod("viewport_set_disable_3d")]
         public static void ViewportSetDisable3d(RID viewport, bool disabled)
         {
-            NativeCalls.godot_icall_2_665(method_bind_218, ptr, RID.GetPtr(viewport), disabled);
+            NativeCalls.godot_icall_2_668(method_bind_218, ptr, RID.GetPtr(viewport), disabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3795,7 +3795,7 @@ namespace Godot
         [GodotMethod("viewport_attach_camera")]
         public static void ViewportAttachCamera(RID viewport, RID camera)
         {
-            NativeCalls.godot_icall_2_670(method_bind_219, ptr, RID.GetPtr(viewport), RID.GetPtr(camera));
+            NativeCalls.godot_icall_2_673(method_bind_219, ptr, RID.GetPtr(viewport), RID.GetPtr(camera));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3808,7 +3808,7 @@ namespace Godot
         [GodotMethod("viewport_set_scenario")]
         public static void ViewportSetScenario(RID viewport, RID scenario)
         {
-            NativeCalls.godot_icall_2_670(method_bind_220, ptr, RID.GetPtr(viewport), RID.GetPtr(scenario));
+            NativeCalls.godot_icall_2_673(method_bind_220, ptr, RID.GetPtr(viewport), RID.GetPtr(scenario));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3820,7 +3820,7 @@ namespace Godot
         [GodotMethod("viewport_attach_canvas")]
         public static void ViewportAttachCanvas(RID viewport, RID canvas)
         {
-            NativeCalls.godot_icall_2_670(method_bind_221, ptr, RID.GetPtr(viewport), RID.GetPtr(canvas));
+            NativeCalls.godot_icall_2_673(method_bind_221, ptr, RID.GetPtr(viewport), RID.GetPtr(canvas));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3832,7 +3832,7 @@ namespace Godot
         [GodotMethod("viewport_remove_canvas")]
         public static void ViewportRemoveCanvas(RID viewport, RID canvas)
         {
-            NativeCalls.godot_icall_2_670(method_bind_222, ptr, RID.GetPtr(viewport), RID.GetPtr(canvas));
+            NativeCalls.godot_icall_2_673(method_bind_222, ptr, RID.GetPtr(viewport), RID.GetPtr(canvas));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3844,7 +3844,7 @@ namespace Godot
         [GodotMethod("viewport_set_canvas_transform")]
         public static void ViewportSetCanvasTransform(RID viewport, RID canvas, Transform2D offset)
         {
-            NativeCalls.godot_icall_3_971(method_bind_223, ptr, RID.GetPtr(viewport), RID.GetPtr(canvas), ref offset);
+            NativeCalls.godot_icall_3_974(method_bind_223, ptr, RID.GetPtr(viewport), RID.GetPtr(canvas), ref offset);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3856,7 +3856,7 @@ namespace Godot
         [GodotMethod("viewport_set_transparent_background")]
         public static void ViewportSetTransparentBackground(RID viewport, bool enabled)
         {
-            NativeCalls.godot_icall_2_665(method_bind_224, ptr, RID.GetPtr(viewport), enabled);
+            NativeCalls.godot_icall_2_668(method_bind_224, ptr, RID.GetPtr(viewport), enabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3868,7 +3868,7 @@ namespace Godot
         [GodotMethod("viewport_set_global_canvas_transform")]
         public static void ViewportSetGlobalCanvasTransform(RID viewport, Transform2D transform)
         {
-            NativeCalls.godot_icall_2_683(method_bind_225, ptr, RID.GetPtr(viewport), ref transform);
+            NativeCalls.godot_icall_2_686(method_bind_225, ptr, RID.GetPtr(viewport), ref transform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3881,7 +3881,7 @@ namespace Godot
         [GodotMethod("viewport_set_canvas_stacking")]
         public static void ViewportSetCanvasStacking(RID viewport, RID canvas, int layer, int sublayer)
         {
-            NativeCalls.godot_icall_4_972(method_bind_226, ptr, RID.GetPtr(viewport), RID.GetPtr(canvas), layer, sublayer);
+            NativeCalls.godot_icall_4_975(method_bind_226, ptr, RID.GetPtr(viewport), RID.GetPtr(canvas), layer, sublayer);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3893,7 +3893,7 @@ namespace Godot
         [GodotMethod("viewport_set_shadow_atlas_size")]
         public static void ViewportSetShadowAtlasSize(RID viewport, int size)
         {
-            NativeCalls.godot_icall_2_672(method_bind_227, ptr, RID.GetPtr(viewport), size);
+            NativeCalls.godot_icall_2_675(method_bind_227, ptr, RID.GetPtr(viewport), size);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3905,7 +3905,7 @@ namespace Godot
         [GodotMethod("viewport_set_shadow_atlas_quadrant_subdivision")]
         public static void ViewportSetShadowAtlasQuadrantSubdivision(RID viewport, int quadrant, int subdivision)
         {
-            NativeCalls.godot_icall_3_969(method_bind_228, ptr, RID.GetPtr(viewport), quadrant, subdivision);
+            NativeCalls.godot_icall_3_972(method_bind_228, ptr, RID.GetPtr(viewport), quadrant, subdivision);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3917,7 +3917,7 @@ namespace Godot
         [GodotMethod("viewport_set_msaa")]
         public static void ViewportSetMsaa(RID viewport, VisualServer.ViewportMSAA msaa)
         {
-            NativeCalls.godot_icall_2_672(method_bind_229, ptr, RID.GetPtr(viewport), (int)msaa);
+            NativeCalls.godot_icall_2_675(method_bind_229, ptr, RID.GetPtr(viewport), (int)msaa);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3929,7 +3929,7 @@ namespace Godot
         [GodotMethod("viewport_set_use_fxaa")]
         public static void ViewportSetUseFxaa(RID viewport, bool fxaa)
         {
-            NativeCalls.godot_icall_2_665(method_bind_230, ptr, RID.GetPtr(viewport), fxaa);
+            NativeCalls.godot_icall_2_668(method_bind_230, ptr, RID.GetPtr(viewport), fxaa);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3942,7 +3942,7 @@ namespace Godot
         [GodotMethod("viewport_set_use_debanding")]
         public static void ViewportSetUseDebanding(RID viewport, bool debanding)
         {
-            NativeCalls.godot_icall_2_665(method_bind_231, ptr, RID.GetPtr(viewport), debanding);
+            NativeCalls.godot_icall_2_668(method_bind_231, ptr, RID.GetPtr(viewport), debanding);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3954,7 +3954,7 @@ namespace Godot
         [GodotMethod("viewport_set_sharpen_intensity")]
         public static void ViewportSetSharpenIntensity(RID viewport, float intensity)
         {
-            NativeCalls.godot_icall_2_694(method_bind_232, ptr, RID.GetPtr(viewport), intensity);
+            NativeCalls.godot_icall_2_697(method_bind_232, ptr, RID.GetPtr(viewport), intensity);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3966,7 +3966,7 @@ namespace Godot
         [GodotMethod("viewport_set_hdr")]
         public static void ViewportSetHdr(RID viewport, bool enabled)
         {
-            NativeCalls.godot_icall_2_665(method_bind_233, ptr, RID.GetPtr(viewport), enabled);
+            NativeCalls.godot_icall_2_668(method_bind_233, ptr, RID.GetPtr(viewport), enabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3978,7 +3978,7 @@ namespace Godot
         [GodotMethod("viewport_set_usage")]
         public static void ViewportSetUsage(RID viewport, VisualServer.ViewportUsage usage)
         {
-            NativeCalls.godot_icall_2_672(method_bind_234, ptr, RID.GetPtr(viewport), (int)usage);
+            NativeCalls.godot_icall_2_675(method_bind_234, ptr, RID.GetPtr(viewport), (int)usage);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3990,7 +3990,7 @@ namespace Godot
         [GodotMethod("viewport_get_render_info")]
         public static int ViewportGetRenderInfo(RID viewport, VisualServer.ViewportRenderInfo info)
         {
-            return NativeCalls.godot_icall_2_950(method_bind_235, ptr, RID.GetPtr(viewport), (int)info);
+            return NativeCalls.godot_icall_2_953(method_bind_235, ptr, RID.GetPtr(viewport), (int)info);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4002,7 +4002,7 @@ namespace Godot
         [GodotMethod("viewport_set_debug_draw")]
         public static void ViewportSetDebugDraw(RID viewport, VisualServer.ViewportDebugDraw draw)
         {
-            NativeCalls.godot_icall_2_672(method_bind_236, ptr, RID.GetPtr(viewport), (int)draw);
+            NativeCalls.godot_icall_2_675(method_bind_236, ptr, RID.GetPtr(viewport), (int)draw);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4027,7 +4027,7 @@ namespace Godot
         [GodotMethod("environment_set_background")]
         public static void EnvironmentSetBackground(RID env, VisualServer.EnvironmentBG bg)
         {
-            NativeCalls.godot_icall_2_672(method_bind_238, ptr, RID.GetPtr(env), (int)bg);
+            NativeCalls.godot_icall_2_675(method_bind_238, ptr, RID.GetPtr(env), (int)bg);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4039,7 +4039,7 @@ namespace Godot
         [GodotMethod("environment_set_sky")]
         public static void EnvironmentSetSky(RID env, RID sky)
         {
-            NativeCalls.godot_icall_2_670(method_bind_239, ptr, RID.GetPtr(env), RID.GetPtr(sky));
+            NativeCalls.godot_icall_2_673(method_bind_239, ptr, RID.GetPtr(env), RID.GetPtr(sky));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4051,7 +4051,7 @@ namespace Godot
         [GodotMethod("environment_set_sky_custom_fov")]
         public static void EnvironmentSetSkyCustomFov(RID env, float scale)
         {
-            NativeCalls.godot_icall_2_694(method_bind_240, ptr, RID.GetPtr(env), scale);
+            NativeCalls.godot_icall_2_697(method_bind_240, ptr, RID.GetPtr(env), scale);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4063,7 +4063,7 @@ namespace Godot
         [GodotMethod("environment_set_sky_orientation")]
         public static void EnvironmentSetSkyOrientation(RID env, Basis orientation)
         {
-            NativeCalls.godot_icall_2_973(method_bind_241, ptr, RID.GetPtr(env), ref orientation);
+            NativeCalls.godot_icall_2_976(method_bind_241, ptr, RID.GetPtr(env), ref orientation);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4075,7 +4075,7 @@ namespace Godot
         [GodotMethod("environment_set_bg_color")]
         public static void EnvironmentSetBgColor(RID env, Color color)
         {
-            NativeCalls.godot_icall_2_784(method_bind_242, ptr, RID.GetPtr(env), ref color);
+            NativeCalls.godot_icall_2_787(method_bind_242, ptr, RID.GetPtr(env), ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4087,7 +4087,7 @@ namespace Godot
         [GodotMethod("environment_set_bg_energy")]
         public static void EnvironmentSetBgEnergy(RID env, float energy)
         {
-            NativeCalls.godot_icall_2_694(method_bind_243, ptr, RID.GetPtr(env), energy);
+            NativeCalls.godot_icall_2_697(method_bind_243, ptr, RID.GetPtr(env), energy);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4099,7 +4099,7 @@ namespace Godot
         [GodotMethod("environment_set_canvas_max_layer")]
         public static void EnvironmentSetCanvasMaxLayer(RID env, int maxLayer)
         {
-            NativeCalls.godot_icall_2_672(method_bind_244, ptr, RID.GetPtr(env), maxLayer);
+            NativeCalls.godot_icall_2_675(method_bind_244, ptr, RID.GetPtr(env), maxLayer);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4111,7 +4111,7 @@ namespace Godot
         [GodotMethod("environment_set_ambient_light")]
         public static void EnvironmentSetAmbientLight(RID env, Color color, float energy = 1f, float skyContibution = 0f)
         {
-            NativeCalls.godot_icall_4_974(method_bind_245, ptr, RID.GetPtr(env), ref color, energy, skyContibution);
+            NativeCalls.godot_icall_4_977(method_bind_245, ptr, RID.GetPtr(env), ref color, energy, skyContibution);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4123,7 +4123,7 @@ namespace Godot
         [GodotMethod("environment_set_dof_blur_near")]
         public static void EnvironmentSetDofBlurNear(RID env, bool enable, float distance, float transition, float farAmount, VisualServer.EnvironmentDOFBlurQuality quality)
         {
-            NativeCalls.godot_icall_6_975(method_bind_246, ptr, RID.GetPtr(env), enable, distance, transition, farAmount, (int)quality);
+            NativeCalls.godot_icall_6_978(method_bind_246, ptr, RID.GetPtr(env), enable, distance, transition, farAmount, (int)quality);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4135,7 +4135,7 @@ namespace Godot
         [GodotMethod("environment_set_dof_blur_far")]
         public static void EnvironmentSetDofBlurFar(RID env, bool enable, float distance, float transition, float farAmount, VisualServer.EnvironmentDOFBlurQuality quality)
         {
-            NativeCalls.godot_icall_6_975(method_bind_247, ptr, RID.GetPtr(env), enable, distance, transition, farAmount, (int)quality);
+            NativeCalls.godot_icall_6_978(method_bind_247, ptr, RID.GetPtr(env), enable, distance, transition, farAmount, (int)quality);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4147,7 +4147,7 @@ namespace Godot
         [GodotMethod("environment_set_glow")]
         public static void EnvironmentSetGlow(RID env, bool enable, int levelFlags, float intensity, float strength, float bloomThreshold, VisualServer.EnvironmentGlowBlendMode blendMode, float hdrBleedThreshold, float hdrBleedScale, float hdrLuminanceCap, bool bicubicUpscale, bool highQuality)
         {
-            NativeCalls.godot_icall_12_976(method_bind_248, ptr, RID.GetPtr(env), enable, levelFlags, intensity, strength, bloomThreshold, (int)blendMode, hdrBleedThreshold, hdrBleedScale, hdrLuminanceCap, bicubicUpscale, highQuality);
+            NativeCalls.godot_icall_12_979(method_bind_248, ptr, RID.GetPtr(env), enable, levelFlags, intensity, strength, bloomThreshold, (int)blendMode, hdrBleedThreshold, hdrBleedScale, hdrLuminanceCap, bicubicUpscale, highQuality);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4159,7 +4159,7 @@ namespace Godot
         [GodotMethod("environment_set_tonemap")]
         public static void EnvironmentSetTonemap(RID env, VisualServer.EnvironmentToneMapper toneMapper, float exposure, float white, bool autoExposure, float minLuminance, float maxLuminance, float autoExpSpeed, float autoExpGrey)
         {
-            NativeCalls.godot_icall_9_977(method_bind_249, ptr, RID.GetPtr(env), (int)toneMapper, exposure, white, autoExposure, minLuminance, maxLuminance, autoExpSpeed, autoExpGrey);
+            NativeCalls.godot_icall_9_980(method_bind_249, ptr, RID.GetPtr(env), (int)toneMapper, exposure, white, autoExposure, minLuminance, maxLuminance, autoExpSpeed, autoExpGrey);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4171,7 +4171,7 @@ namespace Godot
         [GodotMethod("environment_set_adjustment")]
         public static void EnvironmentSetAdjustment(RID env, bool enable, float brightness, float contrast, float saturation, RID ramp)
         {
-            NativeCalls.godot_icall_6_978(method_bind_250, ptr, RID.GetPtr(env), enable, brightness, contrast, saturation, RID.GetPtr(ramp));
+            NativeCalls.godot_icall_6_981(method_bind_250, ptr, RID.GetPtr(env), enable, brightness, contrast, saturation, RID.GetPtr(ramp));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4183,7 +4183,7 @@ namespace Godot
         [GodotMethod("environment_set_ssr")]
         public static void EnvironmentSetSsr(RID env, bool enable, int maxSteps, float fadeIn, float fadeOut, float depthTolerance, bool roughness)
         {
-            NativeCalls.godot_icall_7_979(method_bind_251, ptr, RID.GetPtr(env), enable, maxSteps, fadeIn, fadeOut, depthTolerance, roughness);
+            NativeCalls.godot_icall_7_982(method_bind_251, ptr, RID.GetPtr(env), enable, maxSteps, fadeIn, fadeOut, depthTolerance, roughness);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4195,7 +4195,7 @@ namespace Godot
         [GodotMethod("environment_set_ssao")]
         public static void EnvironmentSetSsao(RID env, bool enable, float radius, float intensity, float radius2, float intensity2, float bias, float lightAffect, float aoChannelAffect, Color color, VisualServer.EnvironmentSSAOQuality quality, VisualServer.EnvironmentSSAOBlur blur, float bilateralSharpness)
         {
-            NativeCalls.godot_icall_13_980(method_bind_252, ptr, RID.GetPtr(env), enable, radius, intensity, radius2, intensity2, bias, lightAffect, aoChannelAffect, ref color, (int)quality, (int)blur, bilateralSharpness);
+            NativeCalls.godot_icall_13_983(method_bind_252, ptr, RID.GetPtr(env), enable, radius, intensity, radius2, intensity2, bias, lightAffect, aoChannelAffect, ref color, (int)quality, (int)blur, bilateralSharpness);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4207,7 +4207,7 @@ namespace Godot
         [GodotMethod("environment_set_fog")]
         public static void EnvironmentSetFog(RID env, bool enable, Color color, Color sunColor, float sunAmount)
         {
-            NativeCalls.godot_icall_5_981(method_bind_253, ptr, RID.GetPtr(env), enable, ref color, ref sunColor, sunAmount);
+            NativeCalls.godot_icall_5_984(method_bind_253, ptr, RID.GetPtr(env), enable, ref color, ref sunColor, sunAmount);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4219,7 +4219,7 @@ namespace Godot
         [GodotMethod("environment_set_fog_depth")]
         public static void EnvironmentSetFogDepth(RID env, bool enable, float depthBegin, float depthEnd, float depthCurve, bool transmit, float transmitCurve)
         {
-            NativeCalls.godot_icall_7_982(method_bind_254, ptr, RID.GetPtr(env), enable, depthBegin, depthEnd, depthCurve, transmit, transmitCurve);
+            NativeCalls.godot_icall_7_985(method_bind_254, ptr, RID.GetPtr(env), enable, depthBegin, depthEnd, depthCurve, transmit, transmitCurve);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4231,7 +4231,7 @@ namespace Godot
         [GodotMethod("environment_set_fog_height")]
         public static void EnvironmentSetFogHeight(RID env, bool enable, float minHeight, float maxHeight, float heightCurve)
         {
-            NativeCalls.godot_icall_5_983(method_bind_255, ptr, RID.GetPtr(env), enable, minHeight, maxHeight, heightCurve);
+            NativeCalls.godot_icall_5_986(method_bind_255, ptr, RID.GetPtr(env), enable, minHeight, maxHeight, heightCurve);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4257,7 +4257,7 @@ namespace Godot
         [GodotMethod("scenario_set_debug")]
         public static void ScenarioSetDebug(RID scenario, VisualServer.ScenarioDebugMode debugMode)
         {
-            NativeCalls.godot_icall_2_672(method_bind_257, ptr, RID.GetPtr(scenario), (int)debugMode);
+            NativeCalls.godot_icall_2_675(method_bind_257, ptr, RID.GetPtr(scenario), (int)debugMode);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4269,7 +4269,7 @@ namespace Godot
         [GodotMethod("scenario_set_environment")]
         public static void ScenarioSetEnvironment(RID scenario, RID environment)
         {
-            NativeCalls.godot_icall_2_670(method_bind_258, ptr, RID.GetPtr(scenario), RID.GetPtr(environment));
+            NativeCalls.godot_icall_2_673(method_bind_258, ptr, RID.GetPtr(scenario), RID.GetPtr(environment));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4281,7 +4281,7 @@ namespace Godot
         [GodotMethod("scenario_set_reflection_atlas_size")]
         public static void ScenarioSetReflectionAtlasSize(RID scenario, int size, int subdiv)
         {
-            NativeCalls.godot_icall_3_969(method_bind_259, ptr, RID.GetPtr(scenario), size, subdiv);
+            NativeCalls.godot_icall_3_972(method_bind_259, ptr, RID.GetPtr(scenario), size, subdiv);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4293,7 +4293,7 @@ namespace Godot
         [GodotMethod("scenario_set_fallback_environment")]
         public static void ScenarioSetFallbackEnvironment(RID scenario, RID environment)
         {
-            NativeCalls.godot_icall_2_670(method_bind_260, ptr, RID.GetPtr(scenario), RID.GetPtr(environment));
+            NativeCalls.godot_icall_2_673(method_bind_260, ptr, RID.GetPtr(scenario), RID.GetPtr(environment));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4306,7 +4306,7 @@ namespace Godot
         [GodotMethod("instance_create2")]
         public static RID InstanceCreate2(RID @base, RID scenario)
         {
-            return new RID(NativeCalls.godot_icall_2_984(method_bind_261, ptr, RID.GetPtr(@base), RID.GetPtr(scenario)));
+            return new RID(NativeCalls.godot_icall_2_987(method_bind_261, ptr, RID.GetPtr(@base), RID.GetPtr(scenario)));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4332,7 +4332,7 @@ namespace Godot
         [GodotMethod("instance_set_base")]
         public static void InstanceSetBase(RID instance, RID @base)
         {
-            NativeCalls.godot_icall_2_670(method_bind_263, ptr, RID.GetPtr(instance), RID.GetPtr(@base));
+            NativeCalls.godot_icall_2_673(method_bind_263, ptr, RID.GetPtr(instance), RID.GetPtr(@base));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4344,7 +4344,7 @@ namespace Godot
         [GodotMethod("instance_set_scenario")]
         public static void InstanceSetScenario(RID instance, RID scenario)
         {
-            NativeCalls.godot_icall_2_670(method_bind_264, ptr, RID.GetPtr(instance), RID.GetPtr(scenario));
+            NativeCalls.godot_icall_2_673(method_bind_264, ptr, RID.GetPtr(instance), RID.GetPtr(scenario));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4356,7 +4356,7 @@ namespace Godot
         [GodotMethod("instance_set_layer_mask")]
         public static void InstanceSetLayerMask(RID instance, uint mask)
         {
-            NativeCalls.godot_icall_2_681(method_bind_265, ptr, RID.GetPtr(instance), mask);
+            NativeCalls.godot_icall_2_684(method_bind_265, ptr, RID.GetPtr(instance), mask);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4368,7 +4368,7 @@ namespace Godot
         [GodotMethod("instance_set_transform")]
         public static void InstanceSetTransform(RID instance, Transform transform)
         {
-            NativeCalls.godot_icall_2_713(method_bind_266, ptr, RID.GetPtr(instance), ref transform);
+            NativeCalls.godot_icall_2_716(method_bind_266, ptr, RID.GetPtr(instance), ref transform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4380,7 +4380,7 @@ namespace Godot
         [GodotMethod("instance_attach_object_instance_id")]
         public static void InstanceAttachObjectInstanceId(RID instance, ulong id)
         {
-            NativeCalls.godot_icall_2_686(method_bind_267, ptr, RID.GetPtr(instance), id);
+            NativeCalls.godot_icall_2_689(method_bind_267, ptr, RID.GetPtr(instance), id);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4392,7 +4392,7 @@ namespace Godot
         [GodotMethod("instance_set_blend_shape_weight")]
         public static void InstanceSetBlendShapeWeight(RID instance, int shape, float weight)
         {
-            NativeCalls.godot_icall_3_667(method_bind_268, ptr, RID.GetPtr(instance), shape, weight);
+            NativeCalls.godot_icall_3_670(method_bind_268, ptr, RID.GetPtr(instance), shape, weight);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4404,7 +4404,7 @@ namespace Godot
         [GodotMethod("instance_set_surface_material")]
         public static void InstanceSetSurfaceMaterial(RID instance, int surface, RID material)
         {
-            NativeCalls.godot_icall_3_675(method_bind_269, ptr, RID.GetPtr(instance), surface, RID.GetPtr(material));
+            NativeCalls.godot_icall_3_678(method_bind_269, ptr, RID.GetPtr(instance), surface, RID.GetPtr(material));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4416,7 +4416,7 @@ namespace Godot
         [GodotMethod("instance_set_visible")]
         public static void InstanceSetVisible(RID instance, bool visible)
         {
-            NativeCalls.godot_icall_2_665(method_bind_270, ptr, RID.GetPtr(instance), visible);
+            NativeCalls.godot_icall_2_668(method_bind_270, ptr, RID.GetPtr(instance), visible);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4430,7 +4430,7 @@ namespace Godot
         public static void InstanceSetUseLightmap(RID instance, RID lightmapInstance, RID lightmap, int lightmapSlice = -1, Nullable<Rect2> lightmapUvRect = null)
         {
             Rect2 lightmapUvRect_in = lightmapUvRect.HasValue ? lightmapUvRect.Value : new Rect2(new Vector2(0, 0), new Vector2(1, 1));
-            NativeCalls.godot_icall_5_985(method_bind_271, ptr, RID.GetPtr(instance), RID.GetPtr(lightmapInstance), RID.GetPtr(lightmap), lightmapSlice, ref lightmapUvRect_in);
+            NativeCalls.godot_icall_5_988(method_bind_271, ptr, RID.GetPtr(instance), RID.GetPtr(lightmapInstance), RID.GetPtr(lightmap), lightmapSlice, ref lightmapUvRect_in);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4442,7 +4442,7 @@ namespace Godot
         [GodotMethod("instance_set_custom_aabb")]
         public static void InstanceSetCustomAabb(RID instance, AABB aabb)
         {
-            NativeCalls.godot_icall_2_956(method_bind_272, ptr, RID.GetPtr(instance), ref aabb);
+            NativeCalls.godot_icall_2_959(method_bind_272, ptr, RID.GetPtr(instance), ref aabb);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4454,7 +4454,7 @@ namespace Godot
         [GodotMethod("instance_attach_skeleton")]
         public static void InstanceAttachSkeleton(RID instance, RID skeleton)
         {
-            NativeCalls.godot_icall_2_670(method_bind_273, ptr, RID.GetPtr(instance), RID.GetPtr(skeleton));
+            NativeCalls.godot_icall_2_673(method_bind_273, ptr, RID.GetPtr(instance), RID.GetPtr(skeleton));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4466,7 +4466,7 @@ namespace Godot
         [GodotMethod("instance_set_exterior")]
         public static void InstanceSetExterior(RID instance, bool enabled)
         {
-            NativeCalls.godot_icall_2_665(method_bind_274, ptr, RID.GetPtr(instance), enabled);
+            NativeCalls.godot_icall_2_668(method_bind_274, ptr, RID.GetPtr(instance), enabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4478,7 +4478,7 @@ namespace Godot
         [GodotMethod("instance_set_extra_visibility_margin")]
         public static void InstanceSetExtraVisibilityMargin(RID instance, float margin)
         {
-            NativeCalls.godot_icall_2_694(method_bind_275, ptr, RID.GetPtr(instance), margin);
+            NativeCalls.godot_icall_2_697(method_bind_275, ptr, RID.GetPtr(instance), margin);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4490,7 +4490,7 @@ namespace Godot
         [GodotMethod("instance_geometry_set_flag")]
         public static void InstanceGeometrySetFlag(RID instance, VisualServer.InstanceFlags flag, bool enabled)
         {
-            NativeCalls.godot_icall_3_677(method_bind_276, ptr, RID.GetPtr(instance), (int)flag, enabled);
+            NativeCalls.godot_icall_3_680(method_bind_276, ptr, RID.GetPtr(instance), (int)flag, enabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4502,7 +4502,7 @@ namespace Godot
         [GodotMethod("instance_geometry_set_cast_shadows_setting")]
         public static void InstanceGeometrySetCastShadowsSetting(RID instance, VisualServer.ShadowCastingSetting shadowCastingSetting)
         {
-            NativeCalls.godot_icall_2_672(method_bind_277, ptr, RID.GetPtr(instance), (int)shadowCastingSetting);
+            NativeCalls.godot_icall_2_675(method_bind_277, ptr, RID.GetPtr(instance), (int)shadowCastingSetting);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4514,7 +4514,7 @@ namespace Godot
         [GodotMethod("instance_geometry_set_material_override")]
         public static void InstanceGeometrySetMaterialOverride(RID instance, RID material)
         {
-            NativeCalls.godot_icall_2_670(method_bind_278, ptr, RID.GetPtr(instance), RID.GetPtr(material));
+            NativeCalls.godot_icall_2_673(method_bind_278, ptr, RID.GetPtr(instance), RID.GetPtr(material));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4526,7 +4526,7 @@ namespace Godot
         [GodotMethod("instance_geometry_set_draw_range")]
         public static void InstanceGeometrySetDrawRange(RID instance, float min, float max, float minMargin, float maxMargin)
         {
-            NativeCalls.godot_icall_5_986(method_bind_279, ptr, RID.GetPtr(instance), min, max, minMargin, maxMargin);
+            NativeCalls.godot_icall_5_989(method_bind_279, ptr, RID.GetPtr(instance), min, max, minMargin, maxMargin);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4538,7 +4538,7 @@ namespace Godot
         [GodotMethod("instance_geometry_set_as_instance_lod")]
         public static void InstanceGeometrySetAsInstanceLod(RID instance, RID asLodOfInstance)
         {
-            NativeCalls.godot_icall_2_670(method_bind_280, ptr, RID.GetPtr(instance), RID.GetPtr(asLodOfInstance));
+            NativeCalls.godot_icall_2_673(method_bind_280, ptr, RID.GetPtr(instance), RID.GetPtr(asLodOfInstance));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4551,7 +4551,7 @@ namespace Godot
         [GodotMethod("instances_cull_aabb")]
         public static Godot.Collections.Array InstancesCullAabb(AABB aabb, RID scenario = null)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_2_987(method_bind_281, ptr, ref aabb, RID.GetPtr(scenario)));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_2_990(method_bind_281, ptr, ref aabb, RID.GetPtr(scenario)));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4564,7 +4564,7 @@ namespace Godot
         [GodotMethod("instances_cull_ray")]
         public static Godot.Collections.Array InstancesCullRay(Vector3 from, Vector3 to, RID scenario = null)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_3_988(method_bind_282, ptr, ref from, ref to, RID.GetPtr(scenario)));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_3_991(method_bind_282, ptr, ref from, ref to, RID.GetPtr(scenario)));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4577,7 +4577,7 @@ namespace Godot
         [GodotMethod("instances_cull_convex")]
         public static Godot.Collections.Array InstancesCullConvex(Godot.Collections.Array convex, RID scenario = null)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_2_989(method_bind_283, ptr, convex.GetPtr(), RID.GetPtr(scenario)));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_2_992(method_bind_283, ptr, convex.GetPtr(), RID.GetPtr(scenario)));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4602,7 +4602,7 @@ namespace Godot
         [GodotMethod("canvas_set_item_mirroring")]
         public static void CanvasSetItemMirroring(RID canvas, RID item, Vector2 mirroring)
         {
-            NativeCalls.godot_icall_3_990(method_bind_285, ptr, RID.GetPtr(canvas), RID.GetPtr(item), ref mirroring);
+            NativeCalls.godot_icall_3_993(method_bind_285, ptr, RID.GetPtr(canvas), RID.GetPtr(item), ref mirroring);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4614,7 +4614,7 @@ namespace Godot
         [GodotMethod("canvas_set_modulate")]
         public static void CanvasSetModulate(RID canvas, Color color)
         {
-            NativeCalls.godot_icall_2_784(method_bind_286, ptr, RID.GetPtr(canvas), ref color);
+            NativeCalls.godot_icall_2_787(method_bind_286, ptr, RID.GetPtr(canvas), ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4639,7 +4639,7 @@ namespace Godot
         [GodotMethod("canvas_item_set_parent")]
         public static void CanvasItemSetParent(RID item, RID parent)
         {
-            NativeCalls.godot_icall_2_670(method_bind_288, ptr, RID.GetPtr(item), RID.GetPtr(parent));
+            NativeCalls.godot_icall_2_673(method_bind_288, ptr, RID.GetPtr(item), RID.GetPtr(parent));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4651,7 +4651,7 @@ namespace Godot
         [GodotMethod("canvas_item_set_visible")]
         public static void CanvasItemSetVisible(RID item, bool visible)
         {
-            NativeCalls.godot_icall_2_665(method_bind_289, ptr, RID.GetPtr(item), visible);
+            NativeCalls.godot_icall_2_668(method_bind_289, ptr, RID.GetPtr(item), visible);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4663,7 +4663,7 @@ namespace Godot
         [GodotMethod("canvas_item_set_light_mask")]
         public static void CanvasItemSetLightMask(RID item, int mask)
         {
-            NativeCalls.godot_icall_2_672(method_bind_290, ptr, RID.GetPtr(item), mask);
+            NativeCalls.godot_icall_2_675(method_bind_290, ptr, RID.GetPtr(item), mask);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4675,7 +4675,7 @@ namespace Godot
         [GodotMethod("canvas_item_set_transform")]
         public static void CanvasItemSetTransform(RID item, Transform2D transform)
         {
-            NativeCalls.godot_icall_2_683(method_bind_291, ptr, RID.GetPtr(item), ref transform);
+            NativeCalls.godot_icall_2_686(method_bind_291, ptr, RID.GetPtr(item), ref transform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4687,7 +4687,7 @@ namespace Godot
         [GodotMethod("canvas_item_set_clip")]
         public static void CanvasItemSetClip(RID item, bool clip)
         {
-            NativeCalls.godot_icall_2_665(method_bind_292, ptr, RID.GetPtr(item), clip);
+            NativeCalls.godot_icall_2_668(method_bind_292, ptr, RID.GetPtr(item), clip);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4699,7 +4699,7 @@ namespace Godot
         [GodotMethod("canvas_item_set_distance_field_mode")]
         public static void CanvasItemSetDistanceFieldMode(RID item, bool enabled)
         {
-            NativeCalls.godot_icall_2_665(method_bind_293, ptr, RID.GetPtr(item), enabled);
+            NativeCalls.godot_icall_2_668(method_bind_293, ptr, RID.GetPtr(item), enabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4713,7 +4713,7 @@ namespace Godot
         public static void CanvasItemSetCustomRect(RID item, bool useCustomRect, Nullable<Rect2> rect = null)
         {
             Rect2 rect_in = rect.HasValue ? rect.Value : new Rect2(new Vector2(0, 0), new Vector2(0, 0));
-            NativeCalls.godot_icall_3_991(method_bind_294, ptr, RID.GetPtr(item), useCustomRect, ref rect_in);
+            NativeCalls.godot_icall_3_994(method_bind_294, ptr, RID.GetPtr(item), useCustomRect, ref rect_in);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4725,7 +4725,7 @@ namespace Godot
         [GodotMethod("canvas_item_set_modulate")]
         public static void CanvasItemSetModulate(RID item, Color color)
         {
-            NativeCalls.godot_icall_2_784(method_bind_295, ptr, RID.GetPtr(item), ref color);
+            NativeCalls.godot_icall_2_787(method_bind_295, ptr, RID.GetPtr(item), ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4737,7 +4737,7 @@ namespace Godot
         [GodotMethod("canvas_item_set_self_modulate")]
         public static void CanvasItemSetSelfModulate(RID item, Color color)
         {
-            NativeCalls.godot_icall_2_784(method_bind_296, ptr, RID.GetPtr(item), ref color);
+            NativeCalls.godot_icall_2_787(method_bind_296, ptr, RID.GetPtr(item), ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4749,7 +4749,7 @@ namespace Godot
         [GodotMethod("canvas_item_set_draw_behind_parent")]
         public static void CanvasItemSetDrawBehindParent(RID item, bool enabled)
         {
-            NativeCalls.godot_icall_2_665(method_bind_297, ptr, RID.GetPtr(item), enabled);
+            NativeCalls.godot_icall_2_668(method_bind_297, ptr, RID.GetPtr(item), enabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4761,7 +4761,7 @@ namespace Godot
         [GodotMethod("canvas_item_add_line")]
         public static void CanvasItemAddLine(RID item, Vector2 from, Vector2 to, Color color, float width = 1f, bool antialiased = false)
         {
-            NativeCalls.godot_icall_6_992(method_bind_298, ptr, RID.GetPtr(item), ref from, ref to, ref color, width, antialiased);
+            NativeCalls.godot_icall_6_995(method_bind_298, ptr, RID.GetPtr(item), ref from, ref to, ref color, width, antialiased);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4773,7 +4773,7 @@ namespace Godot
         [GodotMethod("canvas_item_add_polyline")]
         public static void CanvasItemAddPolyline(RID item, Vector2[] points, Color[] colors, float width = 1f, bool antialiased = false)
         {
-            NativeCalls.godot_icall_5_993(method_bind_299, ptr, RID.GetPtr(item), points, colors, width, antialiased);
+            NativeCalls.godot_icall_5_996(method_bind_299, ptr, RID.GetPtr(item), points, colors, width, antialiased);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4785,7 +4785,7 @@ namespace Godot
         [GodotMethod("canvas_item_add_rect")]
         public static void CanvasItemAddRect(RID item, Rect2 rect, Color color)
         {
-            NativeCalls.godot_icall_3_994(method_bind_300, ptr, RID.GetPtr(item), ref rect, ref color);
+            NativeCalls.godot_icall_3_997(method_bind_300, ptr, RID.GetPtr(item), ref rect, ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4797,7 +4797,7 @@ namespace Godot
         [GodotMethod("canvas_item_add_circle")]
         public static void CanvasItemAddCircle(RID item, Vector2 pos, float radius, Color color)
         {
-            NativeCalls.godot_icall_4_995(method_bind_301, ptr, RID.GetPtr(item), ref pos, radius, ref color);
+            NativeCalls.godot_icall_4_998(method_bind_301, ptr, RID.GetPtr(item), ref pos, radius, ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4811,7 +4811,7 @@ namespace Godot
         public static void CanvasItemAddTextureRect(RID item, Rect2 rect, RID texture, bool tile = false, Nullable<Color> modulate = null, bool transpose = false, RID normalMap = null)
         {
             Color modulate_in = modulate.HasValue ? modulate.Value : new Color(1, 1, 1, 1);
-            NativeCalls.godot_icall_7_996(method_bind_302, ptr, RID.GetPtr(item), ref rect, RID.GetPtr(texture), tile, ref modulate_in, transpose, RID.GetPtr(normalMap));
+            NativeCalls.godot_icall_7_999(method_bind_302, ptr, RID.GetPtr(item), ref rect, RID.GetPtr(texture), tile, ref modulate_in, transpose, RID.GetPtr(normalMap));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4825,7 +4825,7 @@ namespace Godot
         public static void CanvasItemAddTextureRectRegion(RID item, Rect2 rect, RID texture, Rect2 srcRect, Nullable<Color> modulate = null, bool transpose = false, RID normalMap = null, bool clipUv = true)
         {
             Color modulate_in = modulate.HasValue ? modulate.Value : new Color(1, 1, 1, 1);
-            NativeCalls.godot_icall_8_997(method_bind_303, ptr, RID.GetPtr(item), ref rect, RID.GetPtr(texture), ref srcRect, ref modulate_in, transpose, RID.GetPtr(normalMap), clipUv);
+            NativeCalls.godot_icall_8_1000(method_bind_303, ptr, RID.GetPtr(item), ref rect, RID.GetPtr(texture), ref srcRect, ref modulate_in, transpose, RID.GetPtr(normalMap), clipUv);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4840,7 +4840,7 @@ namespace Godot
         public static void CanvasItemAddNinePatch(RID item, Rect2 rect, Rect2 source, RID texture, Vector2 topleft, Vector2 bottomright, VisualServer.NinePatchAxisMode xAxisMode = (VisualServer.NinePatchAxisMode)0, VisualServer.NinePatchAxisMode yAxisMode = (VisualServer.NinePatchAxisMode)0, bool drawCenter = true, Nullable<Color> modulate = null, RID normalMap = null)
         {
             Color modulate_in = modulate.HasValue ? modulate.Value : new Color(1, 1, 1, 1);
-            NativeCalls.godot_icall_11_998(method_bind_304, ptr, RID.GetPtr(item), ref rect, ref source, RID.GetPtr(texture), ref topleft, ref bottomright, (int)xAxisMode, (int)yAxisMode, drawCenter, ref modulate_in, RID.GetPtr(normalMap));
+            NativeCalls.godot_icall_11_1001(method_bind_304, ptr, RID.GetPtr(item), ref rect, ref source, RID.GetPtr(texture), ref topleft, ref bottomright, (int)xAxisMode, (int)yAxisMode, drawCenter, ref modulate_in, RID.GetPtr(normalMap));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4852,7 +4852,7 @@ namespace Godot
         [GodotMethod("canvas_item_add_primitive")]
         public static void CanvasItemAddPrimitive(RID item, Vector2[] points, Color[] colors, Vector2[] uvs, RID texture, float width = 1f, RID normalMap = null)
         {
-            NativeCalls.godot_icall_7_999(method_bind_305, ptr, RID.GetPtr(item), points, colors, uvs, RID.GetPtr(texture), width, RID.GetPtr(normalMap));
+            NativeCalls.godot_icall_7_1002(method_bind_305, ptr, RID.GetPtr(item), points, colors, uvs, RID.GetPtr(texture), width, RID.GetPtr(normalMap));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4866,7 +4866,7 @@ namespace Godot
         public static void CanvasItemAddPolygon(RID item, Vector2[] points, Color[] colors, Vector2[] uvs = null, RID texture = null, RID normalMap = null, bool antialiased = false)
         {
             Vector2[] uvs_in = uvs != null ? uvs : Array.Empty<Vector2>();
-            NativeCalls.godot_icall_7_1000(method_bind_306, ptr, RID.GetPtr(item), points, colors, uvs_in, RID.GetPtr(texture), RID.GetPtr(normalMap), antialiased);
+            NativeCalls.godot_icall_7_1003(method_bind_306, ptr, RID.GetPtr(item), points, colors, uvs_in, RID.GetPtr(texture), RID.GetPtr(normalMap), antialiased);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4884,7 +4884,7 @@ namespace Godot
             Vector2[] uvs_in = uvs != null ? uvs : Array.Empty<Vector2>();
             int[] bones_in = bones != null ? bones : Array.Empty<int>();
             float[] weights_in = weights != null ? weights : Array.Empty<float>();
-            NativeCalls.godot_icall_12_1001(method_bind_307, ptr, RID.GetPtr(item), indices, points, colors, uvs_in, bones_in, weights_in, RID.GetPtr(texture), count, RID.GetPtr(normalMap), antialiased, antialiasingUseIndices);
+            NativeCalls.godot_icall_12_1004(method_bind_307, ptr, RID.GetPtr(item), indices, points, colors, uvs_in, bones_in, weights_in, RID.GetPtr(texture), count, RID.GetPtr(normalMap), antialiased, antialiasingUseIndices);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4900,7 +4900,7 @@ namespace Godot
         {
             Transform2D transform_in = transform.HasValue ? transform.Value : Transform2D.Identity;
             Color modulate_in = modulate.HasValue ? modulate.Value : new Color(1, 1, 1, 1);
-            NativeCalls.godot_icall_6_1002(method_bind_308, ptr, RID.GetPtr(item), RID.GetPtr(mesh), ref transform_in, ref modulate_in, RID.GetPtr(texture), RID.GetPtr(normalMap));
+            NativeCalls.godot_icall_6_1005(method_bind_308, ptr, RID.GetPtr(item), RID.GetPtr(mesh), ref transform_in, ref modulate_in, RID.GetPtr(texture), RID.GetPtr(normalMap));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4912,7 +4912,7 @@ namespace Godot
         [GodotMethod("canvas_item_add_multimesh")]
         public static void CanvasItemAddMultimesh(RID item, RID mesh, RID texture, RID normalMap = null)
         {
-            NativeCalls.godot_icall_4_1003(method_bind_309, ptr, RID.GetPtr(item), RID.GetPtr(mesh), RID.GetPtr(texture), RID.GetPtr(normalMap));
+            NativeCalls.godot_icall_4_1006(method_bind_309, ptr, RID.GetPtr(item), RID.GetPtr(mesh), RID.GetPtr(texture), RID.GetPtr(normalMap));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4924,7 +4924,7 @@ namespace Godot
         [GodotMethod("canvas_item_add_particles")]
         public static void CanvasItemAddParticles(RID item, RID particles, RID texture, RID normalMap)
         {
-            NativeCalls.godot_icall_4_1003(method_bind_310, ptr, RID.GetPtr(item), RID.GetPtr(particles), RID.GetPtr(texture), RID.GetPtr(normalMap));
+            NativeCalls.godot_icall_4_1006(method_bind_310, ptr, RID.GetPtr(item), RID.GetPtr(particles), RID.GetPtr(texture), RID.GetPtr(normalMap));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4937,7 +4937,7 @@ namespace Godot
         [GodotMethod("canvas_item_add_set_transform")]
         public static void CanvasItemAddSetTransform(RID item, Transform2D transform)
         {
-            NativeCalls.godot_icall_2_683(method_bind_311, ptr, RID.GetPtr(item), ref transform);
+            NativeCalls.godot_icall_2_686(method_bind_311, ptr, RID.GetPtr(item), ref transform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4949,7 +4949,7 @@ namespace Godot
         [GodotMethod("canvas_item_add_clip_ignore")]
         public static void CanvasItemAddClipIgnore(RID item, bool ignore)
         {
-            NativeCalls.godot_icall_2_665(method_bind_312, ptr, RID.GetPtr(item), ignore);
+            NativeCalls.godot_icall_2_668(method_bind_312, ptr, RID.GetPtr(item), ignore);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4961,7 +4961,7 @@ namespace Godot
         [GodotMethod("canvas_item_set_sort_children_by_y")]
         public static void CanvasItemSetSortChildrenByY(RID item, bool enabled)
         {
-            NativeCalls.godot_icall_2_665(method_bind_313, ptr, RID.GetPtr(item), enabled);
+            NativeCalls.godot_icall_2_668(method_bind_313, ptr, RID.GetPtr(item), enabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4973,7 +4973,7 @@ namespace Godot
         [GodotMethod("canvas_item_set_z_index")]
         public static void CanvasItemSetZIndex(RID item, int zIndex)
         {
-            NativeCalls.godot_icall_2_672(method_bind_314, ptr, RID.GetPtr(item), zIndex);
+            NativeCalls.godot_icall_2_675(method_bind_314, ptr, RID.GetPtr(item), zIndex);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4985,7 +4985,7 @@ namespace Godot
         [GodotMethod("canvas_item_set_z_as_relative_to_parent")]
         public static void CanvasItemSetZAsRelativeToParent(RID item, bool enabled)
         {
-            NativeCalls.godot_icall_2_665(method_bind_315, ptr, RID.GetPtr(item), enabled);
+            NativeCalls.godot_icall_2_668(method_bind_315, ptr, RID.GetPtr(item), enabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -4997,7 +4997,7 @@ namespace Godot
         [GodotMethod("canvas_item_set_copy_to_backbuffer")]
         public static void CanvasItemSetCopyToBackbuffer(RID item, bool enabled, Rect2 rect)
         {
-            NativeCalls.godot_icall_3_991(method_bind_316, ptr, RID.GetPtr(item), enabled, ref rect);
+            NativeCalls.godot_icall_3_994(method_bind_316, ptr, RID.GetPtr(item), enabled, ref rect);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5021,7 +5021,7 @@ namespace Godot
         [GodotMethod("canvas_item_set_draw_index")]
         public static void CanvasItemSetDrawIndex(RID item, int index)
         {
-            NativeCalls.godot_icall_2_672(method_bind_318, ptr, RID.GetPtr(item), index);
+            NativeCalls.godot_icall_2_675(method_bind_318, ptr, RID.GetPtr(item), index);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5033,7 +5033,7 @@ namespace Godot
         [GodotMethod("canvas_item_set_material")]
         public static void CanvasItemSetMaterial(RID item, RID material)
         {
-            NativeCalls.godot_icall_2_670(method_bind_319, ptr, RID.GetPtr(item), RID.GetPtr(material));
+            NativeCalls.godot_icall_2_673(method_bind_319, ptr, RID.GetPtr(item), RID.GetPtr(material));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5045,7 +5045,7 @@ namespace Godot
         [GodotMethod("canvas_item_set_use_parent_material")]
         public static void CanvasItemSetUseParentMaterial(RID item, bool enabled)
         {
-            NativeCalls.godot_icall_2_665(method_bind_320, ptr, RID.GetPtr(item), enabled);
+            NativeCalls.godot_icall_2_668(method_bind_320, ptr, RID.GetPtr(item), enabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5070,7 +5070,7 @@ namespace Godot
         [GodotMethod("canvas_light_attach_to_canvas")]
         public static void CanvasLightAttachToCanvas(RID light, RID canvas)
         {
-            NativeCalls.godot_icall_2_670(method_bind_322, ptr, RID.GetPtr(light), RID.GetPtr(canvas));
+            NativeCalls.godot_icall_2_673(method_bind_322, ptr, RID.GetPtr(light), RID.GetPtr(canvas));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5082,7 +5082,7 @@ namespace Godot
         [GodotMethod("canvas_light_set_enabled")]
         public static void CanvasLightSetEnabled(RID light, bool enabled)
         {
-            NativeCalls.godot_icall_2_665(method_bind_323, ptr, RID.GetPtr(light), enabled);
+            NativeCalls.godot_icall_2_668(method_bind_323, ptr, RID.GetPtr(light), enabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5094,7 +5094,7 @@ namespace Godot
         [GodotMethod("canvas_light_set_scale")]
         public static void CanvasLightSetScale(RID light, float scale)
         {
-            NativeCalls.godot_icall_2_694(method_bind_324, ptr, RID.GetPtr(light), scale);
+            NativeCalls.godot_icall_2_697(method_bind_324, ptr, RID.GetPtr(light), scale);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5106,7 +5106,7 @@ namespace Godot
         [GodotMethod("canvas_light_set_transform")]
         public static void CanvasLightSetTransform(RID light, Transform2D transform)
         {
-            NativeCalls.godot_icall_2_683(method_bind_325, ptr, RID.GetPtr(light), ref transform);
+            NativeCalls.godot_icall_2_686(method_bind_325, ptr, RID.GetPtr(light), ref transform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5118,7 +5118,7 @@ namespace Godot
         [GodotMethod("canvas_light_set_texture")]
         public static void CanvasLightSetTexture(RID light, RID texture)
         {
-            NativeCalls.godot_icall_2_670(method_bind_326, ptr, RID.GetPtr(light), RID.GetPtr(texture));
+            NativeCalls.godot_icall_2_673(method_bind_326, ptr, RID.GetPtr(light), RID.GetPtr(texture));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5130,7 +5130,7 @@ namespace Godot
         [GodotMethod("canvas_light_set_texture_offset")]
         public static void CanvasLightSetTextureOffset(RID light, Vector2 offset)
         {
-            NativeCalls.godot_icall_2_693(method_bind_327, ptr, RID.GetPtr(light), ref offset);
+            NativeCalls.godot_icall_2_696(method_bind_327, ptr, RID.GetPtr(light), ref offset);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5142,7 +5142,7 @@ namespace Godot
         [GodotMethod("canvas_light_set_color")]
         public static void CanvasLightSetColor(RID light, Color color)
         {
-            NativeCalls.godot_icall_2_784(method_bind_328, ptr, RID.GetPtr(light), ref color);
+            NativeCalls.godot_icall_2_787(method_bind_328, ptr, RID.GetPtr(light), ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5154,7 +5154,7 @@ namespace Godot
         [GodotMethod("canvas_light_set_height")]
         public static void CanvasLightSetHeight(RID light, float height)
         {
-            NativeCalls.godot_icall_2_694(method_bind_329, ptr, RID.GetPtr(light), height);
+            NativeCalls.godot_icall_2_697(method_bind_329, ptr, RID.GetPtr(light), height);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5166,7 +5166,7 @@ namespace Godot
         [GodotMethod("canvas_light_set_energy")]
         public static void CanvasLightSetEnergy(RID light, float energy)
         {
-            NativeCalls.godot_icall_2_694(method_bind_330, ptr, RID.GetPtr(light), energy);
+            NativeCalls.godot_icall_2_697(method_bind_330, ptr, RID.GetPtr(light), energy);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5178,7 +5178,7 @@ namespace Godot
         [GodotMethod("canvas_light_set_z_range")]
         public static void CanvasLightSetZRange(RID light, int minZ, int maxZ)
         {
-            NativeCalls.godot_icall_3_969(method_bind_331, ptr, RID.GetPtr(light), minZ, maxZ);
+            NativeCalls.godot_icall_3_972(method_bind_331, ptr, RID.GetPtr(light), minZ, maxZ);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5190,7 +5190,7 @@ namespace Godot
         [GodotMethod("canvas_light_set_layer_range")]
         public static void CanvasLightSetLayerRange(RID light, int minLayer, int maxLayer)
         {
-            NativeCalls.godot_icall_3_969(method_bind_332, ptr, RID.GetPtr(light), minLayer, maxLayer);
+            NativeCalls.godot_icall_3_972(method_bind_332, ptr, RID.GetPtr(light), minLayer, maxLayer);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5202,7 +5202,7 @@ namespace Godot
         [GodotMethod("canvas_light_set_item_cull_mask")]
         public static void CanvasLightSetItemCullMask(RID light, int mask)
         {
-            NativeCalls.godot_icall_2_672(method_bind_333, ptr, RID.GetPtr(light), mask);
+            NativeCalls.godot_icall_2_675(method_bind_333, ptr, RID.GetPtr(light), mask);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5214,7 +5214,7 @@ namespace Godot
         [GodotMethod("canvas_light_set_item_shadow_cull_mask")]
         public static void CanvasLightSetItemShadowCullMask(RID light, int mask)
         {
-            NativeCalls.godot_icall_2_672(method_bind_334, ptr, RID.GetPtr(light), mask);
+            NativeCalls.godot_icall_2_675(method_bind_334, ptr, RID.GetPtr(light), mask);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5226,7 +5226,7 @@ namespace Godot
         [GodotMethod("canvas_light_set_mode")]
         public static void CanvasLightSetMode(RID light, VisualServer.CanvasLightMode mode)
         {
-            NativeCalls.godot_icall_2_672(method_bind_335, ptr, RID.GetPtr(light), (int)mode);
+            NativeCalls.godot_icall_2_675(method_bind_335, ptr, RID.GetPtr(light), (int)mode);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5238,7 +5238,7 @@ namespace Godot
         [GodotMethod("canvas_light_set_shadow_enabled")]
         public static void CanvasLightSetShadowEnabled(RID light, bool enabled)
         {
-            NativeCalls.godot_icall_2_665(method_bind_336, ptr, RID.GetPtr(light), enabled);
+            NativeCalls.godot_icall_2_668(method_bind_336, ptr, RID.GetPtr(light), enabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5250,7 +5250,7 @@ namespace Godot
         [GodotMethod("canvas_light_set_shadow_buffer_size")]
         public static void CanvasLightSetShadowBufferSize(RID light, int size)
         {
-            NativeCalls.godot_icall_2_672(method_bind_337, ptr, RID.GetPtr(light), size);
+            NativeCalls.godot_icall_2_675(method_bind_337, ptr, RID.GetPtr(light), size);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5262,7 +5262,7 @@ namespace Godot
         [GodotMethod("canvas_light_set_shadow_gradient_length")]
         public static void CanvasLightSetShadowGradientLength(RID light, float length)
         {
-            NativeCalls.godot_icall_2_694(method_bind_338, ptr, RID.GetPtr(light), length);
+            NativeCalls.godot_icall_2_697(method_bind_338, ptr, RID.GetPtr(light), length);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5274,7 +5274,7 @@ namespace Godot
         [GodotMethod("canvas_light_set_shadow_filter")]
         public static void CanvasLightSetShadowFilter(RID light, VisualServer.CanvasLightShadowFilter filter)
         {
-            NativeCalls.godot_icall_2_672(method_bind_339, ptr, RID.GetPtr(light), (int)filter);
+            NativeCalls.godot_icall_2_675(method_bind_339, ptr, RID.GetPtr(light), (int)filter);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5286,7 +5286,7 @@ namespace Godot
         [GodotMethod("canvas_light_set_shadow_color")]
         public static void CanvasLightSetShadowColor(RID light, Color color)
         {
-            NativeCalls.godot_icall_2_784(method_bind_340, ptr, RID.GetPtr(light), ref color);
+            NativeCalls.godot_icall_2_787(method_bind_340, ptr, RID.GetPtr(light), ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5298,7 +5298,7 @@ namespace Godot
         [GodotMethod("canvas_light_set_shadow_smooth")]
         public static void CanvasLightSetShadowSmooth(RID light, float smooth)
         {
-            NativeCalls.godot_icall_2_694(method_bind_341, ptr, RID.GetPtr(light), smooth);
+            NativeCalls.godot_icall_2_697(method_bind_341, ptr, RID.GetPtr(light), smooth);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5323,7 +5323,7 @@ namespace Godot
         [GodotMethod("canvas_light_occluder_attach_to_canvas")]
         public static void CanvasLightOccluderAttachToCanvas(RID occluder, RID canvas)
         {
-            NativeCalls.godot_icall_2_670(method_bind_343, ptr, RID.GetPtr(occluder), RID.GetPtr(canvas));
+            NativeCalls.godot_icall_2_673(method_bind_343, ptr, RID.GetPtr(occluder), RID.GetPtr(canvas));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5335,7 +5335,7 @@ namespace Godot
         [GodotMethod("canvas_light_occluder_set_enabled")]
         public static void CanvasLightOccluderSetEnabled(RID occluder, bool enabled)
         {
-            NativeCalls.godot_icall_2_665(method_bind_344, ptr, RID.GetPtr(occluder), enabled);
+            NativeCalls.godot_icall_2_668(method_bind_344, ptr, RID.GetPtr(occluder), enabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5347,7 +5347,7 @@ namespace Godot
         [GodotMethod("canvas_light_occluder_set_polygon")]
         public static void CanvasLightOccluderSetPolygon(RID occluder, RID polygon)
         {
-            NativeCalls.godot_icall_2_670(method_bind_345, ptr, RID.GetPtr(occluder), RID.GetPtr(polygon));
+            NativeCalls.godot_icall_2_673(method_bind_345, ptr, RID.GetPtr(occluder), RID.GetPtr(polygon));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5359,7 +5359,7 @@ namespace Godot
         [GodotMethod("canvas_light_occluder_set_transform")]
         public static void CanvasLightOccluderSetTransform(RID occluder, Transform2D transform)
         {
-            NativeCalls.godot_icall_2_683(method_bind_346, ptr, RID.GetPtr(occluder), ref transform);
+            NativeCalls.godot_icall_2_686(method_bind_346, ptr, RID.GetPtr(occluder), ref transform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5371,7 +5371,7 @@ namespace Godot
         [GodotMethod("canvas_light_occluder_set_light_mask")]
         public static void CanvasLightOccluderSetLightMask(RID occluder, int mask)
         {
-            NativeCalls.godot_icall_2_672(method_bind_347, ptr, RID.GetPtr(occluder), mask);
+            NativeCalls.godot_icall_2_675(method_bind_347, ptr, RID.GetPtr(occluder), mask);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5396,7 +5396,7 @@ namespace Godot
         [GodotMethod("canvas_occluder_polygon_set_shape")]
         public static void CanvasOccluderPolygonSetShape(RID occluderPolygon, Vector2[] shape, bool closed)
         {
-            NativeCalls.godot_icall_3_1004(method_bind_349, ptr, RID.GetPtr(occluderPolygon), shape, closed);
+            NativeCalls.godot_icall_3_1007(method_bind_349, ptr, RID.GetPtr(occluderPolygon), shape, closed);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5408,7 +5408,7 @@ namespace Godot
         [GodotMethod("canvas_occluder_polygon_set_shape_as_lines")]
         public static void CanvasOccluderPolygonSetShapeAsLines(RID occluderPolygon, Vector2[] shape)
         {
-            NativeCalls.godot_icall_2_1005(method_bind_350, ptr, RID.GetPtr(occluderPolygon), shape);
+            NativeCalls.godot_icall_2_1008(method_bind_350, ptr, RID.GetPtr(occluderPolygon), shape);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5420,7 +5420,7 @@ namespace Godot
         [GodotMethod("canvas_occluder_polygon_set_cull_mode")]
         public static void CanvasOccluderPolygonSetCullMode(RID occluderPolygon, VisualServer.CanvasOccluderPolygonCullMode mode)
         {
-            NativeCalls.godot_icall_2_672(method_bind_351, ptr, RID.GetPtr(occluderPolygon), (int)mode);
+            NativeCalls.godot_icall_2_675(method_bind_351, ptr, RID.GetPtr(occluderPolygon), (int)mode);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5444,7 +5444,7 @@ namespace Godot
         [GodotMethod("black_bars_set_images")]
         public static void BlackBarsSetImages(RID left, RID top, RID right, RID bottom)
         {
-            NativeCalls.godot_icall_4_1003(method_bind_353, ptr, RID.GetPtr(left), RID.GetPtr(top), RID.GetPtr(right), RID.GetPtr(bottom));
+            NativeCalls.godot_icall_4_1006(method_bind_353, ptr, RID.GetPtr(left), RID.GetPtr(top), RID.GetPtr(right), RID.GetPtr(bottom));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5469,7 +5469,7 @@ namespace Godot
         [GodotMethod("request_frame_drawn_callback")]
         public static void RequestFrameDrawnCallback(Object where, string method, object userdata)
         {
-            NativeCalls.godot_icall_3_918(method_bind_355, ptr, Object.GetPtr(where), method, userdata);
+            NativeCalls.godot_icall_3_921(method_bind_355, ptr, Object.GetPtr(where), method, userdata);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5517,7 +5517,7 @@ namespace Godot
         [GodotMethod("get_render_info")]
         public static ulong GetRenderInfo(VisualServer.RenderInfo info)
         {
-            return NativeCalls.godot_icall_1_653(method_bind_359, ptr, (int)info);
+            return NativeCalls.godot_icall_1_656(method_bind_359, ptr, (int)info);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5555,7 +5555,7 @@ namespace Godot
         [GodotMethod("make_sphere_mesh")]
         public static RID MakeSphereMesh(int latitudes, int longitudes, float radius)
         {
-            return new RID(NativeCalls.godot_icall_3_1006(method_bind_362, ptr, latitudes, longitudes, radius));
+            return new RID(NativeCalls.godot_icall_3_1009(method_bind_362, ptr, latitudes, longitudes, radius));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -5603,7 +5603,7 @@ namespace Godot
         [GodotMethod("set_boot_image")]
         public static void SetBootImage(Image image, Color color, bool scale, bool useFilter = true)
         {
-            NativeCalls.godot_icall_4_1007(method_bind_366, ptr, Object.GetPtr(image), ref color, scale, useFilter);
+            NativeCalls.godot_icall_4_1010(method_bind_366, ptr, Object.GetPtr(image), ref color, scale, useFilter);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

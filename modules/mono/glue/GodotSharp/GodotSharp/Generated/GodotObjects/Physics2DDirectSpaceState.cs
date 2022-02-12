@@ -36,7 +36,7 @@ namespace Godot
         public Godot.Collections.Array IntersectPoint(Vector2 point, int maxResults = 32, Godot.Collections.Array exclude = null, uint collisionLayer = (uint)2147483647, bool collideWithBodies = true, bool collideWithAreas = false)
         {
             Godot.Collections.Array exclude_in = exclude != null ? exclude : new Godot.Collections.Array { };
-            return new Godot.Collections.Array(NativeCalls.godot_icall_6_656(method_bind_0, Object.GetPtr(this), ref point, maxResults, exclude_in.GetPtr(), collisionLayer, collideWithBodies, collideWithAreas));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_6_659(method_bind_0, Object.GetPtr(this), ref point, maxResults, exclude_in.GetPtr(), collisionLayer, collideWithBodies, collideWithAreas));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -58,7 +58,7 @@ namespace Godot
         public Godot.Collections.Array IntersectPointOnCanvas(Vector2 point, ulong canvasInstanceId, int maxResults = 32, Godot.Collections.Array exclude = null, uint collisionLayer = (uint)2147483647, bool collideWithBodies = true, bool collideWithAreas = false)
         {
             Godot.Collections.Array exclude_in = exclude != null ? exclude : new Godot.Collections.Array { };
-            return new Godot.Collections.Array(NativeCalls.godot_icall_7_657(method_bind_1, Object.GetPtr(this), ref point, canvasInstanceId, maxResults, exclude_in.GetPtr(), collisionLayer, collideWithBodies, collideWithAreas));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_7_660(method_bind_1, Object.GetPtr(this), ref point, canvasInstanceId, maxResults, exclude_in.GetPtr(), collisionLayer, collideWithBodies, collideWithAreas));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -81,7 +81,7 @@ namespace Godot
         public Godot.Collections.Dictionary IntersectRay(Vector2 from, Vector2 to, Godot.Collections.Array exclude = null, uint collisionLayer = (uint)2147483647, bool collideWithBodies = true, bool collideWithAreas = false)
         {
             Godot.Collections.Array exclude_in = exclude != null ? exclude : new Godot.Collections.Array { };
-            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_6_658(method_bind_2, Object.GetPtr(this), ref from, ref to, exclude_in.GetPtr(), collisionLayer, collideWithBodies, collideWithAreas));
+            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_6_661(method_bind_2, Object.GetPtr(this), ref from, ref to, exclude_in.GetPtr(), collisionLayer, collideWithBodies, collideWithAreas));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -100,7 +100,7 @@ namespace Godot
         [GodotMethod("intersect_shape")]
         public Godot.Collections.Array IntersectShape(Physics2DShapeQueryParameters shape, int maxResults = 32)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_2_659(method_bind_3, Object.GetPtr(this), Object.GetPtr(shape), maxResults));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_2_662(method_bind_3, Object.GetPtr(this), Object.GetPtr(shape), maxResults));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -114,7 +114,7 @@ namespace Godot
         [GodotMethod("cast_motion")]
         public Godot.Collections.Array CastMotion(Physics2DShapeQueryParameters shape)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_1_660(method_bind_4, Object.GetPtr(this), Object.GetPtr(shape)));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_1_663(method_bind_4, Object.GetPtr(this), Object.GetPtr(shape)));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -126,7 +126,7 @@ namespace Godot
         [GodotMethod("collide_shape")]
         public Godot.Collections.Array CollideShape(Physics2DShapeQueryParameters shape, int maxResults = 32)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_2_659(method_bind_5, Object.GetPtr(this), Object.GetPtr(shape), maxResults));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_2_662(method_bind_5, Object.GetPtr(this), Object.GetPtr(shape), maxResults));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -146,7 +146,7 @@ namespace Godot
         [GodotMethod("get_rest_info")]
         public Godot.Collections.Dictionary GetRestInfo(Physics2DShapeQueryParameters shape)
         {
-            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_1_661(method_bind_6, Object.GetPtr(this), Object.GetPtr(shape)));
+            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_1_664(method_bind_6, Object.GetPtr(this), Object.GetPtr(shape)));
         }
     }
 }

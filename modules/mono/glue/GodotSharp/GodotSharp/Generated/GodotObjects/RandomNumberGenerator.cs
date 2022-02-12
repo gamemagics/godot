@@ -158,7 +158,7 @@ namespace Godot
         [GodotMethod("randfn")]
         public float Randfn(float mean = 0f, float deviation = 1f)
         {
-            return NativeCalls.godot_icall_2_625(method_bind_6, Object.GetPtr(this), mean, deviation);
+            return NativeCalls.godot_icall_2_628(method_bind_6, Object.GetPtr(this), mean, deviation);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -170,7 +170,7 @@ namespace Godot
         [GodotMethod("randf_range")]
         public float RandfRange(float from, float to)
         {
-            return NativeCalls.godot_icall_2_625(method_bind_7, Object.GetPtr(this), from, to);
+            return NativeCalls.godot_icall_2_628(method_bind_7, Object.GetPtr(this), from, to);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

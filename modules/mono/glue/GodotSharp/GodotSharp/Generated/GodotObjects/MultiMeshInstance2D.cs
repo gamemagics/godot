@@ -97,7 +97,7 @@ namespace Godot
         [Obsolete("GetMultimesh is deprecated. Use the Multimesh property instead.")]
         public MultiMesh GetMultimesh()
         {
-            return NativeCalls.godot_icall_0_575(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_578(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

@@ -516,7 +516,7 @@ namespace Godot
         [Obsolete("GetMode is deprecated. Use the Mode property instead.")]
         public RigidBody.ModeEnum GetMode()
         {
-            return (RigidBody.ModeEnum)NativeCalls.godot_icall_0_759(method_bind_1, Object.GetPtr(this));
+            return (RigidBody.ModeEnum)NativeCalls.godot_icall_0_762(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -616,7 +616,7 @@ namespace Godot
         [Obsolete("GetPhysicsMaterialOverride is deprecated. Use the PhysicsMaterialOverride property instead.")]
         public PhysicsMaterial GetPhysicsMaterialOverride()
         {
-            return NativeCalls.godot_icall_0_760(method_bind_11, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_763(method_bind_11, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -846,7 +846,7 @@ namespace Godot
         [GodotMethod("add_force")]
         public void AddForce(Vector3 force, Vector3 position)
         {
-            NativeCalls.godot_icall_2_649(method_bind_33, Object.GetPtr(this), ref force, ref position);
+            NativeCalls.godot_icall_2_652(method_bind_33, Object.GetPtr(this), ref force, ref position);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -883,7 +883,7 @@ namespace Godot
         [GodotMethod("apply_impulse")]
         public void ApplyImpulse(Vector3 position, Vector3 impulse)
         {
-            NativeCalls.godot_icall_2_649(method_bind_36, Object.GetPtr(this), ref position, ref impulse);
+            NativeCalls.godot_icall_2_652(method_bind_36, Object.GetPtr(this), ref position, ref impulse);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

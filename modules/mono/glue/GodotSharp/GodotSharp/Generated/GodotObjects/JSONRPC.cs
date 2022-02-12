@@ -53,7 +53,7 @@ namespace Godot
         [GodotMethod("process_action")]
         public object ProcessAction(object action, bool recurse = false)
         {
-            return NativeCalls.godot_icall_2_515(method_bind_1, Object.GetPtr(this), action, recurse);
+            return NativeCalls.godot_icall_2_518(method_bind_1, Object.GetPtr(this), action, recurse);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -77,7 +77,7 @@ namespace Godot
         [GodotMethod("make_request")]
         public Godot.Collections.Dictionary MakeRequest(string method, object @params, object id)
         {
-            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_3_516(method_bind_3, Object.GetPtr(this), method, @params, id));
+            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_3_519(method_bind_3, Object.GetPtr(this), method, @params, id));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -91,7 +91,7 @@ namespace Godot
         [GodotMethod("make_response")]
         public Godot.Collections.Dictionary MakeResponse(object result, object id)
         {
-            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_2_517(method_bind_4, Object.GetPtr(this), result, id));
+            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_2_520(method_bind_4, Object.GetPtr(this), result, id));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -105,7 +105,7 @@ namespace Godot
         [GodotMethod("make_notification")]
         public Godot.Collections.Dictionary MakeNotification(string method, object @params)
         {
-            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_2_518(method_bind_5, Object.GetPtr(this), method, @params));
+            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_2_521(method_bind_5, Object.GetPtr(this), method, @params));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -120,7 +120,7 @@ namespace Godot
         [GodotMethod("make_response_error")]
         public Godot.Collections.Dictionary MakeResponseError(int code, string message, object id = null)
         {
-            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_3_519(method_bind_6, Object.GetPtr(this), code, message, id));
+            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_3_522(method_bind_6, Object.GetPtr(this), code, message, id));
         }
     }
 }

@@ -118,7 +118,7 @@ namespace Godot
         [Obsolete("GetWriteMode is deprecated. Use the WriteMode property instead.")]
         public WebRTCDataChannel.WriteModeEnum GetWriteMode()
         {
-            return (WebRTCDataChannel.WriteModeEnum)NativeCalls.godot_icall_0_1035(method_bind_4, Object.GetPtr(this));
+            return (WebRTCDataChannel.WriteModeEnum)NativeCalls.godot_icall_0_1038(method_bind_4, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -130,7 +130,7 @@ namespace Godot
         [GodotMethod("get_ready_state")]
         public WebRTCDataChannel.ChannelState GetReadyState()
         {
-            return (WebRTCDataChannel.ChannelState)NativeCalls.godot_icall_0_1036(method_bind_5, Object.GetPtr(this));
+            return (WebRTCDataChannel.ChannelState)NativeCalls.godot_icall_0_1039(method_bind_5, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

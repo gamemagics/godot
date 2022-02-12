@@ -171,7 +171,7 @@ namespace Godot
         [GodotMethod("apply_impulse")]
         public void ApplyImpulse(Vector3 position, Vector3 impulse)
         {
-            NativeCalls.godot_icall_2_649(method_bind_1, Object.GetPtr(this), ref position, ref impulse);
+            NativeCalls.godot_icall_2_652(method_bind_1, Object.GetPtr(this), ref position, ref impulse);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -191,7 +191,7 @@ namespace Godot
         [Obsolete("GetJointType is deprecated. Use the JointType property instead.")]
         public PhysicalBone.JointTypeEnum GetJointType()
         {
-            return (PhysicalBone.JointTypeEnum)NativeCalls.godot_icall_0_650(method_bind_3, Object.GetPtr(this));
+            return (PhysicalBone.JointTypeEnum)NativeCalls.godot_icall_0_653(method_bind_3, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

@@ -355,7 +355,7 @@ namespace Godot
         [GodotMethod("add_force")]
         public void AddForce(Vector3 force, Vector3 position)
         {
-            NativeCalls.godot_icall_2_649(method_bind_15, Object.GetPtr(this), ref force, ref position);
+            NativeCalls.godot_icall_2_652(method_bind_15, Object.GetPtr(this), ref force, ref position);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -392,7 +392,7 @@ namespace Godot
         [GodotMethod("apply_impulse")]
         public void ApplyImpulse(Vector3 position, Vector3 j)
         {
-            NativeCalls.godot_icall_2_649(method_bind_18, Object.GetPtr(this), ref position, ref j);
+            NativeCalls.godot_icall_2_652(method_bind_18, Object.GetPtr(this), ref position, ref j);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -497,7 +497,7 @@ namespace Godot
         [GodotMethod("get_contact_collider")]
         public RID GetContactCollider(int contactIdx)
         {
-            return new RID(NativeCalls.godot_icall_1_652(method_bind_27, Object.GetPtr(this), contactIdx));
+            return new RID(NativeCalls.godot_icall_1_655(method_bind_27, Object.GetPtr(this), contactIdx));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -521,7 +521,7 @@ namespace Godot
         [GodotMethod("get_contact_collider_id")]
         public ulong GetContactColliderId(int contactIdx)
         {
-            return NativeCalls.godot_icall_1_653(method_bind_29, Object.GetPtr(this), contactIdx);
+            return NativeCalls.godot_icall_1_656(method_bind_29, Object.GetPtr(this), contactIdx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -533,7 +533,7 @@ namespace Godot
         [GodotMethod("get_contact_collider_object")]
         public Object GetContactColliderObject(int contactIdx)
         {
-            return NativeCalls.godot_icall_1_654(method_bind_30, Object.GetPtr(this), contactIdx);
+            return NativeCalls.godot_icall_1_657(method_bind_30, Object.GetPtr(this), contactIdx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -591,7 +591,7 @@ namespace Godot
         [GodotMethod("get_space_state")]
         public PhysicsDirectSpaceState GetSpaceState()
         {
-            return NativeCalls.godot_icall_0_703(method_bind_35, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_706(method_bind_35, Object.GetPtr(this));
         }
     }
 }

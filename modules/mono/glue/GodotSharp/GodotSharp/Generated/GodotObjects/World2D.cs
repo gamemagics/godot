@@ -87,7 +87,7 @@ namespace Godot
         [Obsolete("GetDirectSpaceState is deprecated. Use the DirectSpaceState property instead.")]
         public Physics2DDirectSpaceState GetDirectSpaceState()
         {
-            return NativeCalls.godot_icall_0_655(method_bind_2, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_658(method_bind_2, Object.GetPtr(this));
         }
     }
 }

@@ -37,7 +37,7 @@ namespace Godot
         [GodotMethod("eval")]
         public static object Eval(string code, bool useGlobalExecutionContext = false)
         {
-            return NativeCalls.godot_icall_2_521(method_bind_0, ptr, code, useGlobalExecutionContext);
+            return NativeCalls.godot_icall_2_524(method_bind_0, ptr, code, useGlobalExecutionContext);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -49,7 +49,7 @@ namespace Godot
         [GodotMethod("get_interface")]
         public static JavaScriptObject GetInterface(string @interface)
         {
-            return NativeCalls.godot_icall_1_522(method_bind_1, ptr, @interface);
+            return NativeCalls.godot_icall_1_525(method_bind_1, ptr, @interface);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -61,7 +61,7 @@ namespace Godot
         [GodotMethod("create_callback")]
         public static JavaScriptObject CreateCallback(Object @object, string method)
         {
-            return NativeCalls.godot_icall_2_523(method_bind_2, ptr, Object.GetPtr(@object), method);
+            return NativeCalls.godot_icall_2_526(method_bind_2, ptr, Object.GetPtr(@object), method);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -73,7 +73,7 @@ namespace Godot
         [GodotMethod("create_object")]
         public static object CreateObject(string @object, params object[] @args)
         {
-            return NativeCalls.godot_icall_2_524(method_bind_3, ptr, @object, @args);
+            return NativeCalls.godot_icall_2_527(method_bind_3, ptr, @object, @args);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -88,7 +88,7 @@ namespace Godot
         [GodotMethod("download_buffer")]
         public static void DownloadBuffer(byte[] buffer, string name, string mime = "application/octet-stream")
         {
-            NativeCalls.godot_icall_3_525(method_bind_4, ptr, buffer, name, mime);
+            NativeCalls.godot_icall_3_528(method_bind_4, ptr, buffer, name, mime);
         }
     }
 }

@@ -671,7 +671,7 @@ namespace Godot
         [Obsolete("GetTextureSize is deprecated. Use the TextureSize property instead.")]
         public ProceduralSky.TextureSizeEnum GetTextureSize()
         {
-            return (ProceduralSky.TextureSizeEnum)NativeCalls.godot_icall_0_744(method_bind_31, Object.GetPtr(this));
+            return (ProceduralSky.TextureSizeEnum)NativeCalls.godot_icall_0_747(method_bind_31, Object.GetPtr(this));
         }
     }
 }

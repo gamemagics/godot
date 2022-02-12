@@ -68,7 +68,7 @@ namespace Godot
         [GodotMethod("get_popup")]
         public PopupMenu GetPopup()
         {
-            return NativeCalls.godot_icall_0_550(method_bind_0, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_553(method_bind_0, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

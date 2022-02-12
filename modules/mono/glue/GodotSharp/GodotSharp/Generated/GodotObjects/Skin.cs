@@ -42,7 +42,7 @@ namespace Godot
         [GodotMethod("add_bind")]
         public void AddBind(int bone, Transform pose)
         {
-            NativeCalls.godot_icall_2_565(method_bind_2, Object.GetPtr(this), bone, ref pose);
+            NativeCalls.godot_icall_2_568(method_bind_2, Object.GetPtr(this), bone, ref pose);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -51,7 +51,7 @@ namespace Godot
         [GodotMethod("set_bind_pose")]
         public void SetBindPose(int bindIndex, Transform pose)
         {
-            NativeCalls.godot_icall_2_565(method_bind_3, Object.GetPtr(this), bindIndex, ref pose);
+            NativeCalls.godot_icall_2_568(method_bind_3, Object.GetPtr(this), bindIndex, ref pose);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -60,7 +60,7 @@ namespace Godot
         [GodotMethod("get_bind_pose")]
         public Transform GetBindPose(int bindIndex)
         {
-            NativeCalls.godot_icall_1_568(method_bind_4, Object.GetPtr(this), bindIndex, out Transform argRet); return (Transform)argRet;
+            NativeCalls.godot_icall_1_571(method_bind_4, Object.GetPtr(this), bindIndex, out Transform argRet); return (Transform)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

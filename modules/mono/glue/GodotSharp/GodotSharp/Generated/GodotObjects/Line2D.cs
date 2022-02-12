@@ -384,7 +384,7 @@ namespace Godot
         [GodotMethod("add_point")]
         public void AddPoint(Vector2 position, int atPosition = -1)
         {
-            NativeCalls.godot_icall_2_545(method_bind_5, Object.GetPtr(this), ref position, atPosition);
+            NativeCalls.godot_icall_2_548(method_bind_5, Object.GetPtr(this), ref position, atPosition);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -528,7 +528,7 @@ namespace Godot
         [Obsolete("GetTextureMode is deprecated. Use the TextureMode property instead.")]
         public Line2D.LineTextureMode GetTextureMode()
         {
-            return (Line2D.LineTextureMode)NativeCalls.godot_icall_0_546(method_bind_19, Object.GetPtr(this));
+            return (Line2D.LineTextureMode)NativeCalls.godot_icall_0_549(method_bind_19, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -548,7 +548,7 @@ namespace Godot
         [Obsolete("GetJointMode is deprecated. Use the JointMode property instead.")]
         public Line2D.LineJointMode GetJointMode()
         {
-            return (Line2D.LineJointMode)NativeCalls.godot_icall_0_547(method_bind_21, Object.GetPtr(this));
+            return (Line2D.LineJointMode)NativeCalls.godot_icall_0_550(method_bind_21, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -568,7 +568,7 @@ namespace Godot
         [Obsolete("GetBeginCapMode is deprecated. Use the BeginCapMode property instead.")]
         public Line2D.LineCapMode GetBeginCapMode()
         {
-            return (Line2D.LineCapMode)NativeCalls.godot_icall_0_548(method_bind_23, Object.GetPtr(this));
+            return (Line2D.LineCapMode)NativeCalls.godot_icall_0_551(method_bind_23, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -588,7 +588,7 @@ namespace Godot
         [Obsolete("GetEndCapMode is deprecated. Use the EndCapMode property instead.")]
         public Line2D.LineCapMode GetEndCapMode()
         {
-            return (Line2D.LineCapMode)NativeCalls.godot_icall_0_548(method_bind_25, Object.GetPtr(this));
+            return (Line2D.LineCapMode)NativeCalls.godot_icall_0_551(method_bind_25, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

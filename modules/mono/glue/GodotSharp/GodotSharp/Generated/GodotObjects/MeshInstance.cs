@@ -155,7 +155,7 @@ namespace Godot
         [Obsolete("GetSkin is deprecated. Use the Skin property instead.")]
         public Skin GetSkin()
         {
-            return NativeCalls.godot_icall_0_438(method_bind_5, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_441(method_bind_5, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -191,7 +191,7 @@ namespace Godot
         [GodotMethod("get_surface_material")]
         public Material GetSurfaceMaterial(int surface)
         {
-            return NativeCalls.godot_icall_1_553(method_bind_8, Object.GetPtr(this), surface);
+            return NativeCalls.godot_icall_1_556(method_bind_8, Object.GetPtr(this), surface);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -203,7 +203,7 @@ namespace Godot
         [GodotMethod("get_active_material")]
         public Material GetActiveMaterial(int surface)
         {
-            return NativeCalls.godot_icall_1_553(method_bind_9, Object.GetPtr(this), surface);
+            return NativeCalls.godot_icall_1_556(method_bind_9, Object.GetPtr(this), surface);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -261,7 +261,7 @@ namespace Godot
         [GodotMethod("create_convex_collision")]
         public void CreateConvexCollision(bool clean = true, bool simplify = false)
         {
-            NativeCalls.godot_icall_2_564(method_bind_14, Object.GetPtr(this), clean, simplify);
+            NativeCalls.godot_icall_2_567(method_bind_14, Object.GetPtr(this), clean, simplify);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

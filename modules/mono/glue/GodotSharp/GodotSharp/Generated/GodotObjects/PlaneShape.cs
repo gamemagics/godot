@@ -47,7 +47,7 @@ namespace Godot
         [Obsolete("SetPlane is deprecated. Use the Plane property instead.")]
         public void SetPlane(Plane plane)
         {
-            NativeCalls.godot_icall_1_487(method_bind_0, Object.GetPtr(this), ref plane);
+            NativeCalls.godot_icall_1_490(method_bind_0, Object.GetPtr(this), ref plane);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

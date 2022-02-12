@@ -177,7 +177,7 @@ namespace Godot
         [GodotMethod("remove_excluded_object")]
         public bool RemoveExcludedObject(RID RID)
         {
-            return NativeCalls.godot_icall_1_666(method_bind_6, Object.GetPtr(this), RID.GetPtr(RID));
+            return NativeCalls.godot_icall_1_669(method_bind_6, Object.GetPtr(this), RID.GetPtr(RID));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

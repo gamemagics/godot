@@ -109,7 +109,7 @@ namespace Godot
         [Obsolete("GetOperator is deprecated. Use the Operator property instead.")]
         public VisualShaderNodeVectorOp.OperatorEnum GetOperator()
         {
-            return (VisualShaderNodeVectorOp.OperatorEnum)NativeCalls.godot_icall_0_1034(method_bind_1, Object.GetPtr(this));
+            return (VisualShaderNodeVectorOp.OperatorEnum)NativeCalls.godot_icall_0_1037(method_bind_1, Object.GetPtr(this));
         }
     }
 }

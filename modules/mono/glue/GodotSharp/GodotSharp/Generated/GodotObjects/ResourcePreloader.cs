@@ -113,7 +113,7 @@ namespace Godot
         [GodotMethod("get_resource")]
         public Resource GetResource(string name)
         {
-            return NativeCalls.godot_icall_1_755(method_bind_6, Object.GetPtr(this), name);
+            return NativeCalls.godot_icall_1_758(method_bind_6, Object.GetPtr(this), name);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

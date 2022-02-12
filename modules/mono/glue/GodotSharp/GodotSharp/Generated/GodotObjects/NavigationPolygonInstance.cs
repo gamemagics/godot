@@ -67,7 +67,7 @@ namespace Godot
         [Obsolete("GetNavigationPolygon is deprecated. Use the Navpoly property instead.")]
         public NavigationPolygon GetNavigationPolygon()
         {
-            return NativeCalls.godot_icall_0_591(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_594(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

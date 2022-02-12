@@ -63,7 +63,7 @@ namespace Godot
         [GodotMethod("list_dir_begin")]
         public Error ListDirBegin(bool skipNavigational = false, bool skipHidden = false)
         {
-            return (Error)NativeCalls.godot_icall_2_1061(method_bind_1, Object.GetPtr(this), skipNavigational, skipHidden);
+            return (Error)NativeCalls.godot_icall_2_1064(method_bind_1, Object.GetPtr(this), skipNavigational, skipHidden);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

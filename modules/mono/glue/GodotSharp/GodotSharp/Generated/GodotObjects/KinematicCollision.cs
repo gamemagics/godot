@@ -309,7 +309,7 @@ namespace Godot
         [Obsolete("GetColliderMetadata is deprecated. Use the ColliderMetadata property instead.")]
         public object GetColliderMetadata()
         {
-            return NativeCalls.godot_icall_0_513(method_bind_12, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_516(method_bind_12, Object.GetPtr(this));
         }
     }
 }

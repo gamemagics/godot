@@ -920,7 +920,7 @@ namespace Godot
         [Obsolete("GetWorld is deprecated. Use the World property instead.")]
         public World GetWorld()
         {
-            return NativeCalls.godot_icall_0_791(method_bind_8, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_794(method_bind_8, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -932,7 +932,7 @@ namespace Godot
         [GodotMethod("find_world")]
         public World FindWorld()
         {
-            return NativeCalls.godot_icall_0_791(method_bind_9, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_794(method_bind_9, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1032,7 +1032,7 @@ namespace Godot
         {
             Vector2 size_in = size.HasValue ? size.Value : new Vector2(-1, -1);
             Vector2 margin_in = margin.HasValue ? margin.Value : new Vector2(0, 0);
-            NativeCalls.godot_icall_3_920(method_bind_18, Object.GetPtr(this), enable, ref size_in, ref margin_in);
+            NativeCalls.godot_icall_3_923(method_bind_18, Object.GetPtr(this), enable, ref size_in, ref margin_in);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1116,7 +1116,7 @@ namespace Godot
         [Obsolete("GetClearMode is deprecated. Use the RenderTargetClearMode property instead.")]
         public Viewport.ClearMode GetClearMode()
         {
-            return (Viewport.ClearMode)NativeCalls.godot_icall_0_921(method_bind_26, Object.GetPtr(this));
+            return (Viewport.ClearMode)NativeCalls.godot_icall_0_924(method_bind_26, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1136,7 +1136,7 @@ namespace Godot
         [Obsolete("GetUpdateMode is deprecated. Use the RenderTargetUpdateMode property instead.")]
         public Viewport.UpdateMode GetUpdateMode()
         {
-            return (Viewport.UpdateMode)NativeCalls.godot_icall_0_922(method_bind_28, Object.GetPtr(this));
+            return (Viewport.UpdateMode)NativeCalls.godot_icall_0_925(method_bind_28, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1156,7 +1156,7 @@ namespace Godot
         [Obsolete("GetMsaa is deprecated. Use the Msaa property instead.")]
         public Viewport.MSAA GetMsaa()
         {
-            return (Viewport.MSAA)NativeCalls.godot_icall_0_923(method_bind_30, Object.GetPtr(this));
+            return (Viewport.MSAA)NativeCalls.godot_icall_0_926(method_bind_30, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1256,7 +1256,7 @@ namespace Godot
         [Obsolete("GetUsage is deprecated. Use the Usage property instead.")]
         public Viewport.UsageEnum GetUsage()
         {
-            return (Viewport.UsageEnum)NativeCalls.godot_icall_0_924(method_bind_40, Object.GetPtr(this));
+            return (Viewport.UsageEnum)NativeCalls.godot_icall_0_927(method_bind_40, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1276,7 +1276,7 @@ namespace Godot
         [Obsolete("GetDebugDraw is deprecated. Use the DebugDraw property instead.")]
         public Viewport.DebugDrawEnum GetDebugDraw()
         {
-            return (Viewport.DebugDrawEnum)NativeCalls.godot_icall_0_925(method_bind_42, Object.GetPtr(this));
+            return (Viewport.DebugDrawEnum)NativeCalls.godot_icall_0_928(method_bind_42, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1305,7 +1305,7 @@ namespace Godot
         [GodotMethod("get_texture")]
         public ViewportTexture GetTexture()
         {
-            return NativeCalls.godot_icall_0_926(method_bind_44, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_929(method_bind_44, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1399,7 +1399,7 @@ namespace Godot
         [GodotMethod("get_camera")]
         public Camera GetCamera()
         {
-            return NativeCalls.godot_icall_0_927(method_bind_53, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_930(method_bind_53, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1519,7 +1519,7 @@ namespace Godot
         [GodotMethod("gui_get_drag_data")]
         public object GuiGetDragData()
         {
-            return NativeCalls.godot_icall_0_513(method_bind_64, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_516(method_bind_64, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1669,7 +1669,7 @@ namespace Godot
         [Obsolete("GetShadowAtlasQuadrantSubdiv is deprecated. Use the ShadowAtlasQuad3 property instead.")]
         public Viewport.ShadowAtlasQuadrantSubdiv GetShadowAtlasQuadrantSubdiv(int quadrant)
         {
-            return (Viewport.ShadowAtlasQuadrantSubdiv)NativeCalls.godot_icall_1_928(method_bind_78, Object.GetPtr(this), quadrant);
+            return (Viewport.ShadowAtlasQuadrantSubdiv)NativeCalls.godot_icall_1_931(method_bind_78, Object.GetPtr(this), quadrant);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

@@ -65,7 +65,7 @@ namespace Godot
         [GodotMethod("get_current_script")]
         public Script GetCurrentScript()
         {
-            return NativeCalls.godot_icall_0_774(method_bind_4, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_777(method_bind_4, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

@@ -399,7 +399,7 @@ namespace Godot
         [GodotMethod("get_parent_skeleton")]
         public Skeleton GetParentSkeleton()
         {
-            return NativeCalls.godot_icall_0_436(method_bind_16, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_439(method_bind_16, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

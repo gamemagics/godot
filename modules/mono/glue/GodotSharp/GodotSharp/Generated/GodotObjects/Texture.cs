@@ -157,7 +157,7 @@ namespace Godot
         public void Draw(RID canvasItem, Vector2 position, Nullable<Color> modulate = null, bool transpose = false, Texture normalMap = null)
         {
             Color modulate_in = modulate.HasValue ? modulate.Value : new Color(1, 1, 1, 1);
-            NativeCalls.godot_icall_5_849(method_bind_6, Object.GetPtr(this), RID.GetPtr(canvasItem), ref position, ref modulate_in, transpose, Object.GetPtr(normalMap));
+            NativeCalls.godot_icall_5_852(method_bind_6, Object.GetPtr(this), RID.GetPtr(canvasItem), ref position, ref modulate_in, transpose, Object.GetPtr(normalMap));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -171,7 +171,7 @@ namespace Godot
         public void DrawRect(RID canvasItem, Rect2 rect, bool tile, Nullable<Color> modulate = null, bool transpose = false, Texture normalMap = null)
         {
             Color modulate_in = modulate.HasValue ? modulate.Value : new Color(1, 1, 1, 1);
-            NativeCalls.godot_icall_6_850(method_bind_7, Object.GetPtr(this), RID.GetPtr(canvasItem), ref rect, tile, ref modulate_in, transpose, Object.GetPtr(normalMap));
+            NativeCalls.godot_icall_6_853(method_bind_7, Object.GetPtr(this), RID.GetPtr(canvasItem), ref rect, tile, ref modulate_in, transpose, Object.GetPtr(normalMap));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -185,7 +185,7 @@ namespace Godot
         public void DrawRectRegion(RID canvasItem, Rect2 rect, Rect2 srcRect, Nullable<Color> modulate = null, bool transpose = false, Texture normalMap = null, bool clipUv = true)
         {
             Color modulate_in = modulate.HasValue ? modulate.Value : new Color(1, 1, 1, 1);
-            NativeCalls.godot_icall_7_851(method_bind_8, Object.GetPtr(this), RID.GetPtr(canvasItem), ref rect, ref srcRect, ref modulate_in, transpose, Object.GetPtr(normalMap), clipUv);
+            NativeCalls.godot_icall_7_854(method_bind_8, Object.GetPtr(this), RID.GetPtr(canvasItem), ref rect, ref srcRect, ref modulate_in, transpose, Object.GetPtr(normalMap), clipUv);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -197,7 +197,7 @@ namespace Godot
         [GodotMethod("get_data")]
         public Image GetData()
         {
-            return NativeCalls.godot_icall_0_439(method_bind_9, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_442(method_bind_9, Object.GetPtr(this));
         }
     }
 }

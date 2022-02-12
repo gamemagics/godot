@@ -67,7 +67,7 @@ namespace Godot
         [GodotMethod("is_action")]
         public bool IsAction(string action, bool exactMatch = false)
         {
-            return NativeCalls.godot_icall_2_489(method_bind_2, Object.GetPtr(this), action, exactMatch);
+            return NativeCalls.godot_icall_2_492(method_bind_2, Object.GetPtr(this), action, exactMatch);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -80,7 +80,7 @@ namespace Godot
         [GodotMethod("is_action_pressed")]
         public bool IsActionPressed(string action, bool allowEcho = false, bool exactMatch = false)
         {
-            return NativeCalls.godot_icall_3_497(method_bind_3, Object.GetPtr(this), action, allowEcho, exactMatch);
+            return NativeCalls.godot_icall_3_500(method_bind_3, Object.GetPtr(this), action, allowEcho, exactMatch);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -93,7 +93,7 @@ namespace Godot
         [GodotMethod("is_action_released")]
         public bool IsActionReleased(string action, bool exactMatch = false)
         {
-            return NativeCalls.godot_icall_2_489(method_bind_4, Object.GetPtr(this), action, exactMatch);
+            return NativeCalls.godot_icall_2_492(method_bind_4, Object.GetPtr(this), action, exactMatch);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -106,7 +106,7 @@ namespace Godot
         [GodotMethod("get_action_strength")]
         public float GetActionStrength(string action, bool exactMatch = false)
         {
-            return NativeCalls.godot_icall_2_490(method_bind_5, Object.GetPtr(this), action, exactMatch);
+            return NativeCalls.godot_icall_2_493(method_bind_5, Object.GetPtr(this), action, exactMatch);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -155,7 +155,7 @@ namespace Godot
         [GodotMethod("shortcut_match")]
         public bool ShortcutMatch(InputEvent @event, bool exactMatch = true)
         {
-            return NativeCalls.godot_icall_2_498(method_bind_9, Object.GetPtr(this), Object.GetPtr(@event), exactMatch);
+            return NativeCalls.godot_icall_2_501(method_bind_9, Object.GetPtr(this), Object.GetPtr(@event), exactMatch);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -180,7 +180,7 @@ namespace Godot
         [GodotMethod("accumulate")]
         public bool Accumulate(InputEvent withEvent)
         {
-            return NativeCalls.godot_icall_1_499(method_bind_11, Object.GetPtr(this), Object.GetPtr(withEvent));
+            return NativeCalls.godot_icall_1_502(method_bind_11, Object.GetPtr(this), Object.GetPtr(withEvent));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -194,7 +194,7 @@ namespace Godot
         public InputEvent XformedBy(Transform2D xform, Nullable<Vector2> localOfs = null)
         {
             Vector2 localOfs_in = localOfs.HasValue ? localOfs.Value : new Vector2(0, 0);
-            return NativeCalls.godot_icall_2_500(method_bind_12, Object.GetPtr(this), ref xform, ref localOfs_in);
+            return NativeCalls.godot_icall_2_503(method_bind_12, Object.GetPtr(this), ref xform, ref localOfs_in);
         }
     }
 }

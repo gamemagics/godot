@@ -698,7 +698,7 @@ namespace Godot
         [GodotMethod("get_line_wrapped_text")]
         public string[] GetLineWrappedText(int line)
         {
-            return NativeCalls.godot_icall_1_767(method_bind_6, Object.GetPtr(this), line);
+            return NativeCalls.godot_icall_1_770(method_bind_6, Object.GetPtr(this), line);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -785,7 +785,7 @@ namespace Godot
         [GodotMethod("cursor_set_line")]
         public void CursorSetLine(int line, bool adjustViewport = true, bool canBeHidden = true, int wrapIndex = 0)
         {
-            NativeCalls.godot_icall_4_844(method_bind_13, Object.GetPtr(this), line, adjustViewport, canBeHidden, wrapIndex);
+            NativeCalls.godot_icall_4_847(method_bind_13, Object.GetPtr(this), line, adjustViewport, canBeHidden, wrapIndex);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -915,7 +915,7 @@ namespace Godot
         [GodotMethod("get_rect_at_line_column")]
         public Rect2 GetRectAtLineColumn(int line, int column)
         {
-            NativeCalls.godot_icall_2_845(method_bind_25, Object.GetPtr(this), line, column, out Rect2 argRet); return (Rect2)argRet;
+            NativeCalls.godot_icall_2_848(method_bind_25, Object.GetPtr(this), line, column, out Rect2 argRet); return (Rect2)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1299,7 +1299,7 @@ namespace Godot
         [GodotMethod("search")]
         public int[] Search(string key, uint flags, int fromLine, int fromColumn)
         {
-            return NativeCalls.godot_icall_4_846(method_bind_58, Object.GetPtr(this), key, flags, fromLine, fromColumn);
+            return NativeCalls.godot_icall_4_849(method_bind_58, Object.GetPtr(this), key, flags, fromLine, fromColumn);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1749,7 +1749,7 @@ namespace Godot
         [Obsolete("SetVScroll is deprecated. Use the ScrollVertical property instead.")]
         public void SetVScroll(double value)
         {
-            NativeCalls.godot_icall_1_747(method_bind_100, Object.GetPtr(this), value);
+            NativeCalls.godot_icall_1_750(method_bind_100, Object.GetPtr(this), value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1815,7 +1815,7 @@ namespace Godot
         [GodotMethod("get_keyword_color")]
         public Color GetKeywordColor(string keyword)
         {
-            NativeCalls.godot_icall_1_847(method_bind_106, Object.GetPtr(this), keyword, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_1_850(method_bind_106, Object.GetPtr(this), keyword, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1827,7 +1827,7 @@ namespace Godot
         [GodotMethod("add_color_region")]
         public void AddColorRegion(string beginKey, string endKey, Color color, bool lineOnly = false)
         {
-            NativeCalls.godot_icall_4_848(method_bind_107, Object.GetPtr(this), beginKey, endKey, ref color, lineOnly);
+            NativeCalls.godot_icall_4_851(method_bind_107, Object.GetPtr(this), beginKey, endKey, ref color, lineOnly);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1864,7 +1864,7 @@ namespace Godot
         [GodotMethod("get_menu")]
         public PopupMenu GetMenu()
         {
-            return NativeCalls.godot_icall_0_550(method_bind_110, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_553(method_bind_110, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

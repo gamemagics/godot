@@ -432,7 +432,7 @@ namespace Godot
         [GodotMethod("connect_to_host")]
         public Error ConnectToHost(string host, int port = -1, bool useSsl = false, bool verifyHost = true)
         {
-            return (Error)NativeCalls.godot_icall_4_457(method_bind_0, Object.GetPtr(this), host, port, useSsl, verifyHost);
+            return (Error)NativeCalls.godot_icall_4_460(method_bind_0, Object.GetPtr(this), host, port, useSsl, verifyHost);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -452,7 +452,7 @@ namespace Godot
         [Obsolete("GetConnection is deprecated. Use the Connection property instead.")]
         public StreamPeer GetConnection()
         {
-            return NativeCalls.godot_icall_0_458(method_bind_2, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_461(method_bind_2, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -467,7 +467,7 @@ namespace Godot
         [GodotMethod("request_raw")]
         public Error RequestRaw(HTTPClient.Method method, string url, string[] headers, byte[] body)
         {
-            return (Error)NativeCalls.godot_icall_4_459(method_bind_3, Object.GetPtr(this), (int)method, url, headers, body);
+            return (Error)NativeCalls.godot_icall_4_462(method_bind_3, Object.GetPtr(this), (int)method, url, headers, body);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -489,7 +489,7 @@ namespace Godot
         [GodotMethod("request")]
         public Error Request(HTTPClient.Method method, string url, string[] headers, string body = "")
         {
-            return (Error)NativeCalls.godot_icall_4_460(method_bind_4, Object.GetPtr(this), (int)method, url, headers, body);
+            return (Error)NativeCalls.godot_icall_4_463(method_bind_4, Object.GetPtr(this), (int)method, url, headers, body);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -645,7 +645,7 @@ namespace Godot
         [GodotMethod("get_status")]
         public HTTPClient.Status GetStatus()
         {
-            return (HTTPClient.Status)NativeCalls.godot_icall_0_461(method_bind_17, Object.GetPtr(this));
+            return (HTTPClient.Status)NativeCalls.godot_icall_0_464(method_bind_17, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -680,7 +680,7 @@ namespace Godot
         [GodotMethod("query_string_from_dict")]
         public string QueryStringFromDict(Godot.Collections.Dictionary fields)
         {
-            return NativeCalls.godot_icall_1_462(method_bind_19, Object.GetPtr(this), fields.GetPtr());
+            return NativeCalls.godot_icall_1_465(method_bind_19, Object.GetPtr(this), fields.GetPtr());
         }
     }
 }

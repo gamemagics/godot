@@ -89,7 +89,7 @@ namespace Godot
         [Obsolete("GetStreamPeer is deprecated. Use the StreamPeer property instead.")]
         public StreamPeer GetStreamPeer()
         {
-            return NativeCalls.godot_icall_0_458(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_461(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

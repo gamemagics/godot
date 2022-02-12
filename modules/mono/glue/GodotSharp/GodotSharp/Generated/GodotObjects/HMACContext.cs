@@ -73,7 +73,7 @@ namespace Godot
         [GodotMethod("start")]
         public Error Start(HashingContext.HashType hashType, byte[] key)
         {
-            return (Error)NativeCalls.godot_icall_2_455(method_bind_0, Object.GetPtr(this), (int)hashType, key);
+            return (Error)NativeCalls.godot_icall_2_458(method_bind_0, Object.GetPtr(this), (int)hashType, key);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -85,7 +85,7 @@ namespace Godot
         [GodotMethod("update")]
         public Error Update(byte[] data)
         {
-            return (Error)NativeCalls.godot_icall_1_456(method_bind_1, Object.GetPtr(this), data);
+            return (Error)NativeCalls.godot_icall_1_459(method_bind_1, Object.GetPtr(this), data);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

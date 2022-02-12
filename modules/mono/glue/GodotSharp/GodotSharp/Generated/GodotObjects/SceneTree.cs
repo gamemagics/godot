@@ -298,7 +298,7 @@ namespace Godot
         [Obsolete("GetRoot is deprecated. Use the Root property instead.")]
         public Viewport GetRoot()
         {
-            return NativeCalls.godot_icall_0_605(method_bind_0, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_608(method_bind_0, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -460,7 +460,7 @@ namespace Godot
         [GodotMethod("create_timer")]
         public SceneTreeTimer CreateTimer(float timeSec, bool pauseModeProcess = true)
         {
-            return NativeCalls.godot_icall_2_768(method_bind_14, Object.GetPtr(this), timeSec, pauseModeProcess);
+            return NativeCalls.godot_icall_2_771(method_bind_14, Object.GetPtr(this), timeSec, pauseModeProcess);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -509,7 +509,7 @@ namespace Godot
         [GodotMethod("set_screen_stretch")]
         public void SetScreenStretch(SceneTree.StretchMode mode, SceneTree.StretchAspect aspect, Vector2 minsize, float scale = (float)1)
         {
-            NativeCalls.godot_icall_4_769(method_bind_18, Object.GetPtr(this), (int)mode, (int)aspect, ref minsize, scale);
+            NativeCalls.godot_icall_4_772(method_bind_18, Object.GetPtr(this), (int)mode, (int)aspect, ref minsize, scale);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -539,7 +539,7 @@ namespace Godot
         [GodotMethod("call_group_flags")]
         public object CallGroupFlags(int flags, string group, string method, params object[] @args)
         {
-            return NativeCalls.godot_icall_4_770(method_bind_20, Object.GetPtr(this), flags, group, method, @args);
+            return NativeCalls.godot_icall_4_773(method_bind_20, Object.GetPtr(this), flags, group, method, @args);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -551,7 +551,7 @@ namespace Godot
         [GodotMethod("notify_group_flags")]
         public void NotifyGroupFlags(uint callFlags, string group, int notification)
         {
-            NativeCalls.godot_icall_3_771(method_bind_21, Object.GetPtr(this), callFlags, group, notification);
+            NativeCalls.godot_icall_3_774(method_bind_21, Object.GetPtr(this), callFlags, group, notification);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -563,7 +563,7 @@ namespace Godot
         [GodotMethod("set_group_flags")]
         public void SetGroupFlags(uint callFlags, string group, string property, object value)
         {
-            NativeCalls.godot_icall_4_772(method_bind_22, Object.GetPtr(this), callFlags, group, property, value);
+            NativeCalls.godot_icall_4_775(method_bind_22, Object.GetPtr(this), callFlags, group, property, value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -578,7 +578,7 @@ namespace Godot
         [GodotMethod("call_group")]
         public object CallGroup(string group, string method, params object[] @args)
         {
-            return NativeCalls.godot_icall_3_773(method_bind_23, Object.GetPtr(this), group, method, @args);
+            return NativeCalls.godot_icall_3_776(method_bind_23, Object.GetPtr(this), group, method, @args);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -662,7 +662,7 @@ namespace Godot
         [GodotMethod("change_scene_to")]
         public Error ChangeSceneTo(PackedScene packedScene)
         {
-            return (Error)NativeCalls.godot_icall_1_558(method_bind_30, Object.GetPtr(this), Object.GetPtr(packedScene));
+            return (Error)NativeCalls.godot_icall_1_561(method_bind_30, Object.GetPtr(this), Object.GetPtr(packedScene));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -695,7 +695,7 @@ namespace Godot
         [Obsolete("GetMultiplayer is deprecated. Use the Multiplayer property instead.")]
         public MultiplayerAPI GetMultiplayer()
         {
-            return NativeCalls.godot_icall_0_606(method_bind_33, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_609(method_bind_33, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -735,7 +735,7 @@ namespace Godot
         [Obsolete("GetNetworkPeer is deprecated. Use the NetworkPeer property instead.")]
         public NetworkedMultiplayerPeer GetNetworkPeer()
         {
-            return NativeCalls.godot_icall_0_577(method_bind_37, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_580(method_bind_37, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

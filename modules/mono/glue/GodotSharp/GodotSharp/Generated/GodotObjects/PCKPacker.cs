@@ -37,7 +37,7 @@ namespace Godot
         [GodotMethod("pck_start")]
         public Error PckStart(string pckName, int alignment = 0)
         {
-            return (Error)NativeCalls.godot_icall_2_629(method_bind_0, Object.GetPtr(this), pckName, alignment);
+            return (Error)NativeCalls.godot_icall_2_632(method_bind_0, Object.GetPtr(this), pckName, alignment);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -61,7 +61,7 @@ namespace Godot
         [GodotMethod("flush")]
         public Error Flush(bool verbose = false)
         {
-            return (Error)NativeCalls.godot_icall_1_472(method_bind_2, Object.GetPtr(this), verbose);
+            return (Error)NativeCalls.godot_icall_1_475(method_bind_2, Object.GetPtr(this), verbose);
         }
     }
 }

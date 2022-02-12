@@ -24,7 +24,7 @@ namespace Godot
         [GodotMethod("get_stored_values")]
         public Godot.Collections.Dictionary GetStoredValues(bool withOrder = false)
         {
-            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_1_503(method_bind_0, Object.GetPtr(this), withOrder));
+            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_1_506(method_bind_0, Object.GetPtr(this), withOrder));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -36,7 +36,7 @@ namespace Godot
         [GodotMethod("create_instance")]
         public Node CreateInstance(bool replace = false, PackedScene customScene = null)
         {
-            return NativeCalls.godot_icall_2_504(method_bind_1, Object.GetPtr(this), replace, Object.GetPtr(customScene));
+            return NativeCalls.godot_icall_2_507(method_bind_1, Object.GetPtr(this), replace, Object.GetPtr(customScene));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

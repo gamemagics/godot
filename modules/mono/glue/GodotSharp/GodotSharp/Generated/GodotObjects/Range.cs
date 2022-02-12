@@ -274,7 +274,7 @@ namespace Godot
         [Obsolete("SetValue is deprecated. Use the Value property instead.")]
         public void SetValue(double value)
         {
-            NativeCalls.godot_icall_1_747(method_bind_6, Object.GetPtr(this), value);
+            NativeCalls.godot_icall_1_750(method_bind_6, Object.GetPtr(this), value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -284,7 +284,7 @@ namespace Godot
         [Obsolete("SetMin is deprecated. Use the MinValue property instead.")]
         public void SetMin(double minimum)
         {
-            NativeCalls.godot_icall_1_747(method_bind_7, Object.GetPtr(this), minimum);
+            NativeCalls.godot_icall_1_750(method_bind_7, Object.GetPtr(this), minimum);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -294,7 +294,7 @@ namespace Godot
         [Obsolete("SetMax is deprecated. Use the MaxValue property instead.")]
         public void SetMax(double maximum)
         {
-            NativeCalls.godot_icall_1_747(method_bind_8, Object.GetPtr(this), maximum);
+            NativeCalls.godot_icall_1_750(method_bind_8, Object.GetPtr(this), maximum);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -304,7 +304,7 @@ namespace Godot
         [Obsolete("SetStep is deprecated. Use the Step property instead.")]
         public void SetStep(double step)
         {
-            NativeCalls.godot_icall_1_747(method_bind_9, Object.GetPtr(this), step);
+            NativeCalls.godot_icall_1_750(method_bind_9, Object.GetPtr(this), step);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -314,7 +314,7 @@ namespace Godot
         [Obsolete("SetPage is deprecated. Use the Page property instead.")]
         public void SetPage(double pagesize)
         {
-            NativeCalls.godot_icall_1_747(method_bind_10, Object.GetPtr(this), pagesize);
+            NativeCalls.godot_icall_1_750(method_bind_10, Object.GetPtr(this), pagesize);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -324,7 +324,7 @@ namespace Godot
         [Obsolete("SetAsRatio is deprecated. Use the Ratio property instead.")]
         public void SetAsRatio(double value)
         {
-            NativeCalls.godot_icall_1_747(method_bind_11, Object.GetPtr(this), value);
+            NativeCalls.godot_icall_1_750(method_bind_11, Object.GetPtr(this), value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

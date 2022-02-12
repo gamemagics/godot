@@ -289,7 +289,7 @@ namespace Godot
         [Obsolete("GetTimerProcessMode is deprecated. Use the ProcessMode property instead.")]
         public Timer.TimerProcessMode GetTimerProcessMode()
         {
-            return (Timer.TimerProcessMode)NativeCalls.godot_icall_0_888(method_bind_13, Object.GetPtr(this));
+            return (Timer.TimerProcessMode)NativeCalls.godot_icall_0_891(method_bind_13, Object.GetPtr(this));
         }
     }
 }

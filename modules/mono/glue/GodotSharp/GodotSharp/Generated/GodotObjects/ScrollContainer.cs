@@ -262,7 +262,7 @@ namespace Godot
         [GodotMethod("get_h_scrollbar")]
         public HScrollBar GetHScrollbar()
         {
-            return NativeCalls.godot_icall_0_776(method_bind_12, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_779(method_bind_12, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -275,7 +275,7 @@ namespace Godot
         [GodotMethod("get_v_scrollbar")]
         public VScrollBar GetVScrollbar()
         {
-            return NativeCalls.godot_icall_0_512(method_bind_13, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_515(method_bind_13, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

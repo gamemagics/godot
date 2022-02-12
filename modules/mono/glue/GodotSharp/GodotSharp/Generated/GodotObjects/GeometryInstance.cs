@@ -335,7 +335,7 @@ namespace Godot
         [Obsolete("GetCastShadowsSetting is deprecated. Use the CastShadow property instead.")]
         public GeometryInstance.ShadowCastingSetting GetCastShadowsSetting()
         {
-            return (GeometryInstance.ShadowCastingSetting)NativeCalls.godot_icall_0_442(method_bind_5, Object.GetPtr(this));
+            return (GeometryInstance.ShadowCastingSetting)NativeCalls.godot_icall_0_445(method_bind_5, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -375,7 +375,7 @@ namespace Godot
         [Obsolete("GetLightmapScale is deprecated. Use the LightmapScale property instead.")]
         public GeometryInstance.LightmapScaleEnum GetLightmapScale()
         {
-            return (GeometryInstance.LightmapScaleEnum)NativeCalls.godot_icall_0_443(method_bind_9, Object.GetPtr(this));
+            return (GeometryInstance.LightmapScaleEnum)NativeCalls.godot_icall_0_446(method_bind_9, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

@@ -24,7 +24,7 @@ namespace Godot
         [GodotMethod("export_gltf")]
         public Error ExportGltf(Node node, string path, int flags = 0, float bakeFps = 1000f)
         {
-            return (Error)NativeCalls.godot_icall_4_633(method_bind_0, Object.GetPtr(this), Object.GetPtr(node), path, flags, bakeFps);
+            return (Error)NativeCalls.godot_icall_4_636(method_bind_0, Object.GetPtr(this), Object.GetPtr(node), path, flags, bakeFps);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -33,7 +33,7 @@ namespace Godot
         [GodotMethod("pack_gltf")]
         public void PackGltf(string path, int flags = 0, float bakeFps = 1000f, uint compressFlags = (uint)2194432, GLTFState state = null)
         {
-            NativeCalls.godot_icall_5_634(method_bind_1, Object.GetPtr(this), path, flags, bakeFps, compressFlags, Object.GetPtr(state));
+            NativeCalls.godot_icall_5_637(method_bind_1, Object.GetPtr(this), path, flags, bakeFps, compressFlags, Object.GetPtr(state));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -42,7 +42,7 @@ namespace Godot
         [GodotMethod("import_gltf_scene")]
         public Node ImportGltfScene(string path, uint flags = (uint)0, float bakeFps = 1000f, uint compressFlags = (uint)2194432, GLTFState state = null)
         {
-            return NativeCalls.godot_icall_5_635(method_bind_2, Object.GetPtr(this), path, flags, bakeFps, compressFlags, Object.GetPtr(state));
+            return NativeCalls.godot_icall_5_638(method_bind_2, Object.GetPtr(this), path, flags, bakeFps, compressFlags, Object.GetPtr(state));
         }
     }
 }

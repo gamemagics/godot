@@ -128,7 +128,7 @@ namespace Godot
         [GodotMethod("get_godot_skeleton")]
         public Skeleton GetGodotSkeleton()
         {
-            return NativeCalls.godot_icall_0_436(method_bind_4, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_439(method_bind_4, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -186,7 +186,7 @@ namespace Godot
         [GodotMethod("get_bone_attachment")]
         public BoneAttachment GetBoneAttachment(int idx)
         {
-            return NativeCalls.godot_icall_1_437(method_bind_10, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_440(method_bind_10, Object.GetPtr(this), idx);
         }
     }
 }

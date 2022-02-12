@@ -37,7 +37,7 @@ namespace Godot
         [GodotMethod("load_interactive")]
         public static ResourceInteractiveLoader LoadInteractive(string path, string typeHint = "")
         {
-            return NativeCalls.godot_icall_2_1109(method_bind_0, ptr, path, typeHint);
+            return NativeCalls.godot_icall_2_1112(method_bind_0, ptr, path, typeHint);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -54,7 +54,7 @@ namespace Godot
         [GodotMethod("load")]
         public static Resource Load(string path, string typeHint = "", bool noCache = false)
         {
-            return NativeCalls.godot_icall_3_1110(method_bind_1, ptr, path, typeHint, noCache);
+            return NativeCalls.godot_icall_3_1113(method_bind_1, ptr, path, typeHint, noCache);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

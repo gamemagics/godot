@@ -375,7 +375,7 @@ namespace Godot
         [Obsolete("GetPvsMode is deprecated. Use the PvsMode property instead.")]
         public RoomManager.PVSMode GetPvsMode()
         {
-            return (RoomManager.PVSMode)NativeCalls.godot_icall_0_764(method_bind_3, Object.GetPtr(this));
+            return (RoomManager.PVSMode)NativeCalls.godot_icall_0_767(method_bind_3, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

@@ -278,7 +278,7 @@ namespace Godot
         [Obsolete("GetRotationMode is deprecated. Use the RotationMode property instead.")]
         public PathFollow.RotationModeEnum GetRotationMode()
         {
-            return (PathFollow.RotationModeEnum)NativeCalls.godot_icall_0_648(method_bind_9, Object.GetPtr(this));
+            return (PathFollow.RotationModeEnum)NativeCalls.godot_icall_0_651(method_bind_9, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

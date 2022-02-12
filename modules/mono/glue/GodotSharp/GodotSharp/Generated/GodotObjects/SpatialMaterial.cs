@@ -2734,7 +2734,7 @@ namespace Godot
         [Obsolete("GetDetailUv is deprecated. Use the DetailUvLayer property instead.")]
         public SpatialMaterial.DetailUV GetDetailUv()
         {
-            return (SpatialMaterial.DetailUV)NativeCalls.godot_icall_0_795(method_bind_37, Object.GetPtr(this));
+            return (SpatialMaterial.DetailUV)NativeCalls.godot_icall_0_798(method_bind_37, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2754,7 +2754,7 @@ namespace Godot
         [Obsolete("GetBlendMode is deprecated. Use the ParamsBlendMode property instead.")]
         public SpatialMaterial.BlendMode GetBlendMode()
         {
-            return (SpatialMaterial.BlendMode)NativeCalls.godot_icall_0_796(method_bind_39, Object.GetPtr(this));
+            return (SpatialMaterial.BlendMode)NativeCalls.godot_icall_0_799(method_bind_39, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2774,7 +2774,7 @@ namespace Godot
         [Obsolete("GetDepthDrawMode is deprecated. Use the ParamsDepthDrawMode property instead.")]
         public SpatialMaterial.DepthDrawMode GetDepthDrawMode()
         {
-            return (SpatialMaterial.DepthDrawMode)NativeCalls.godot_icall_0_797(method_bind_41, Object.GetPtr(this));
+            return (SpatialMaterial.DepthDrawMode)NativeCalls.godot_icall_0_800(method_bind_41, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2794,7 +2794,7 @@ namespace Godot
         [Obsolete("GetCullMode is deprecated. Use the ParamsCullMode property instead.")]
         public SpatialMaterial.CullMode GetCullMode()
         {
-            return (SpatialMaterial.CullMode)NativeCalls.godot_icall_0_798(method_bind_43, Object.GetPtr(this));
+            return (SpatialMaterial.CullMode)NativeCalls.godot_icall_0_801(method_bind_43, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2814,7 +2814,7 @@ namespace Godot
         [Obsolete("GetDiffuseMode is deprecated. Use the ParamsDiffuseMode property instead.")]
         public SpatialMaterial.DiffuseMode GetDiffuseMode()
         {
-            return (SpatialMaterial.DiffuseMode)NativeCalls.godot_icall_0_799(method_bind_45, Object.GetPtr(this));
+            return (SpatialMaterial.DiffuseMode)NativeCalls.godot_icall_0_802(method_bind_45, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2834,7 +2834,7 @@ namespace Godot
         [Obsolete("GetSpecularMode is deprecated. Use the ParamsSpecularMode property instead.")]
         public SpatialMaterial.SpecularMode GetSpecularMode()
         {
-            return (SpatialMaterial.SpecularMode)NativeCalls.godot_icall_0_800(method_bind_47, Object.GetPtr(this));
+            return (SpatialMaterial.SpecularMode)NativeCalls.godot_icall_0_803(method_bind_47, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -2932,7 +2932,7 @@ namespace Godot
         [Obsolete("GetDetailBlendMode is deprecated. Use the DetailBlendMode property instead.")]
         public SpatialMaterial.BlendMode GetDetailBlendMode()
         {
-            return (SpatialMaterial.BlendMode)NativeCalls.godot_icall_0_796(method_bind_55, Object.GetPtr(this));
+            return (SpatialMaterial.BlendMode)NativeCalls.godot_icall_0_799(method_bind_55, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3072,7 +3072,7 @@ namespace Godot
         [Obsolete("GetBillboardMode is deprecated. Use the ParamsBillboardMode property instead.")]
         public SpatialMaterial.BillboardMode GetBillboardMode()
         {
-            return (SpatialMaterial.BillboardMode)NativeCalls.godot_icall_0_801(method_bind_69, Object.GetPtr(this));
+            return (SpatialMaterial.BillboardMode)NativeCalls.godot_icall_0_804(method_bind_69, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3272,7 +3272,7 @@ namespace Godot
         [Obsolete("GetEmissionOperator is deprecated. Use the EmissionOperator property instead.")]
         public SpatialMaterial.EmissionOperatorEnum GetEmissionOperator()
         {
-            return (SpatialMaterial.EmissionOperatorEnum)NativeCalls.godot_icall_0_802(method_bind_89, Object.GetPtr(this));
+            return (SpatialMaterial.EmissionOperatorEnum)NativeCalls.godot_icall_0_805(method_bind_89, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3352,7 +3352,7 @@ namespace Godot
         [Obsolete("GetMetallicTextureChannel is deprecated. Use the MetallicTextureChannel property instead.")]
         public SpatialMaterial.TextureChannel GetMetallicTextureChannel()
         {
-            return (SpatialMaterial.TextureChannel)NativeCalls.godot_icall_0_803(method_bind_97, Object.GetPtr(this));
+            return (SpatialMaterial.TextureChannel)NativeCalls.godot_icall_0_806(method_bind_97, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3372,7 +3372,7 @@ namespace Godot
         [Obsolete("GetRoughnessTextureChannel is deprecated. Use the RoughnessTextureChannel property instead.")]
         public SpatialMaterial.TextureChannel GetRoughnessTextureChannel()
         {
-            return (SpatialMaterial.TextureChannel)NativeCalls.godot_icall_0_803(method_bind_99, Object.GetPtr(this));
+            return (SpatialMaterial.TextureChannel)NativeCalls.godot_icall_0_806(method_bind_99, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3392,7 +3392,7 @@ namespace Godot
         [Obsolete("GetAoTextureChannel is deprecated. Use the AoTextureChannel property instead.")]
         public SpatialMaterial.TextureChannel GetAoTextureChannel()
         {
-            return (SpatialMaterial.TextureChannel)NativeCalls.godot_icall_0_803(method_bind_101, Object.GetPtr(this));
+            return (SpatialMaterial.TextureChannel)NativeCalls.godot_icall_0_806(method_bind_101, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3412,7 +3412,7 @@ namespace Godot
         [Obsolete("GetRefractionTextureChannel is deprecated. Use the RefractionTextureChannel property instead.")]
         public SpatialMaterial.TextureChannel GetRefractionTextureChannel()
         {
-            return (SpatialMaterial.TextureChannel)NativeCalls.godot_icall_0_803(method_bind_103, Object.GetPtr(this));
+            return (SpatialMaterial.TextureChannel)NativeCalls.godot_icall_0_806(method_bind_103, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -3472,7 +3472,7 @@ namespace Godot
         [Obsolete("GetDistanceFade is deprecated. Use the DistanceFadeMode property instead.")]
         public SpatialMaterial.DistanceFadeModeEnum GetDistanceFade()
         {
-            return (SpatialMaterial.DistanceFadeModeEnum)NativeCalls.godot_icall_0_804(method_bind_109, Object.GetPtr(this));
+            return (SpatialMaterial.DistanceFadeModeEnum)NativeCalls.godot_icall_0_807(method_bind_109, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

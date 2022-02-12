@@ -114,7 +114,7 @@ namespace Godot
         [Obsolete("GetTransferMode is deprecated. Use the TransferMode property instead.")]
         public NetworkedMultiplayerPeer.TransferModeEnum GetTransferMode()
         {
-            return (NetworkedMultiplayerPeer.TransferModeEnum)NativeCalls.godot_icall_0_592(method_bind_1, Object.GetPtr(this));
+            return (NetworkedMultiplayerPeer.TransferModeEnum)NativeCalls.godot_icall_0_595(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -163,7 +163,7 @@ namespace Godot
         [GodotMethod("get_connection_status")]
         public NetworkedMultiplayerPeer.ConnectionStatus GetConnectionStatus()
         {
-            return (NetworkedMultiplayerPeer.ConnectionStatus)NativeCalls.godot_icall_0_593(method_bind_5, Object.GetPtr(this));
+            return (NetworkedMultiplayerPeer.ConnectionStatus)NativeCalls.godot_icall_0_596(method_bind_5, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

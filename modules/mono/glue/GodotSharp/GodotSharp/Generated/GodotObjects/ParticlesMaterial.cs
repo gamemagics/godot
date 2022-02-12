@@ -1476,7 +1476,7 @@ namespace Godot
         [Obsolete("GetEmissionShape is deprecated. Use the EmissionShape property instead.")]
         public ParticlesMaterial.EmissionShapeEnum GetEmissionShape()
         {
-            return (ParticlesMaterial.EmissionShapeEnum)NativeCalls.godot_icall_0_643(method_bind_19, Object.GetPtr(this));
+            return (ParticlesMaterial.EmissionShapeEnum)NativeCalls.godot_icall_0_646(method_bind_19, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1716,7 +1716,7 @@ namespace Godot
         [Obsolete("GetTrailSizeModifier is deprecated. Use the TrailSizeModifier property instead.")]
         public CurveTexture GetTrailSizeModifier()
         {
-            return NativeCalls.godot_icall_0_644(method_bind_43, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_647(method_bind_43, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1736,7 +1736,7 @@ namespace Godot
         [Obsolete("GetTrailColorModifier is deprecated. Use the TrailColorModifier property instead.")]
         public GradientTexture GetTrailColorModifier()
         {
-            return NativeCalls.godot_icall_0_645(method_bind_45, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_648(method_bind_45, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

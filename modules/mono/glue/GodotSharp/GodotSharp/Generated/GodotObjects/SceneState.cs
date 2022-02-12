@@ -83,7 +83,7 @@ namespace Godot
         [GodotMethod("get_node_path")]
         public NodePath GetNodePath(int idx, bool forParent = false)
         {
-            return new NodePath(NativeCalls.godot_icall_2_765(method_bind_3, Object.GetPtr(this), idx, forParent));
+            return new NodePath(NativeCalls.godot_icall_2_768(method_bind_3, Object.GetPtr(this), idx, forParent));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -131,7 +131,7 @@ namespace Godot
         [GodotMethod("get_node_instance")]
         public PackedScene GetNodeInstance(int idx)
         {
-            return NativeCalls.godot_icall_1_766(method_bind_7, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_769(method_bind_7, Object.GetPtr(this), idx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -143,7 +143,7 @@ namespace Godot
         [GodotMethod("get_node_groups")]
         public string[] GetNodeGroups(int idx)
         {
-            return NativeCalls.godot_icall_1_767(method_bind_8, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_770(method_bind_8, Object.GetPtr(this), idx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -277,7 +277,7 @@ namespace Godot
         [GodotMethod("get_connection_binds")]
         public Godot.Collections.Array GetConnectionBinds(int idx)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_1_469(method_bind_19, Object.GetPtr(this), idx));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_1_472(method_bind_19, Object.GetPtr(this), idx));
         }
     }
 }

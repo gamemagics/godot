@@ -29,7 +29,7 @@ namespace Godot
         [GodotMethod("get_skin")]
         public Skin GetSkin()
         {
-            return NativeCalls.godot_icall_0_438(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_441(method_bind_1, Object.GetPtr(this));
         }
     }
 }

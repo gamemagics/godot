@@ -102,7 +102,7 @@ namespace Godot
         [GodotMethod("reload")]
         public Error Reload(bool keepState = false)
         {
-            return (Error)NativeCalls.godot_icall_1_472(method_bind_5, Object.GetPtr(this), keepState);
+            return (Error)NativeCalls.godot_icall_1_475(method_bind_5, Object.GetPtr(this), keepState);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -114,7 +114,7 @@ namespace Godot
         [GodotMethod("get_base_script")]
         public Script GetBaseScript()
         {
-            return NativeCalls.godot_icall_0_774(method_bind_6, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_777(method_bind_6, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

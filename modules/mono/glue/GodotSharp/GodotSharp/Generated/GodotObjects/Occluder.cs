@@ -67,7 +67,7 @@ namespace Godot
         [Obsolete("GetShape is deprecated. Use the Shape property instead.")]
         public OccluderShape GetShape()
         {
-            return NativeCalls.godot_icall_0_620(method_bind_2, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_623(method_bind_2, Object.GetPtr(this));
         }
     }
 }

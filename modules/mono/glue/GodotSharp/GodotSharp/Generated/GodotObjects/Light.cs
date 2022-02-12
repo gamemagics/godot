@@ -556,7 +556,7 @@ namespace Godot
         [Obsolete("GetBakeMode is deprecated. Use the LightBakeMode property instead.")]
         public Light.BakeMode GetBakeMode()
         {
-            return (Light.BakeMode)NativeCalls.godot_icall_0_541(method_bind_17, Object.GetPtr(this));
+            return (Light.BakeMode)NativeCalls.godot_icall_0_544(method_bind_17, Object.GetPtr(this));
         }
     }
 }

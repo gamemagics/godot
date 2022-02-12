@@ -601,7 +601,7 @@ namespace Godot
         [GodotMethod("get_animation_player")]
         public AnimationPlayer GetAnimationPlayer(int idx)
         {
-            return NativeCalls.godot_icall_1_440(method_bind_21, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_443(method_bind_21, Object.GetPtr(this), idx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -870,7 +870,7 @@ namespace Godot
         [GodotMethod("get_scene_node")]
         public Node GetSceneNode(int idx)
         {
-            return NativeCalls.godot_icall_1_441(method_bind_48, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_444(method_bind_48, Object.GetPtr(this), idx);
         }
     }
 }

@@ -50,7 +50,7 @@ namespace Godot
         [GodotMethod("connect_to_host")]
         public Error ConnectToHost(string host, int port)
         {
-            return (Error)NativeCalls.godot_icall_2_629(method_bind_0, Object.GetPtr(this), host, port);
+            return (Error)NativeCalls.godot_icall_2_632(method_bind_0, Object.GetPtr(this), host, port);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -74,7 +74,7 @@ namespace Godot
         [GodotMethod("get_status")]
         public StreamPeerTCP.Status GetStatus()
         {
-            return (StreamPeerTCP.Status)NativeCalls.godot_icall_0_825(method_bind_2, Object.GetPtr(this));
+            return (StreamPeerTCP.Status)NativeCalls.godot_icall_0_828(method_bind_2, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -98,7 +98,7 @@ namespace Godot
         [GodotMethod("get_connected_port")]
         public ushort GetConnectedPort()
         {
-            return NativeCalls.godot_icall_0_821(method_bind_4, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_824(method_bind_4, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

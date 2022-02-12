@@ -77,7 +77,7 @@ namespace Godot
         [Obsolete("GetOperator is deprecated. Use the Operator property instead.")]
         public VisualShaderNodeTransformMult.OperatorEnum GetOperator()
         {
-            return (VisualShaderNodeTransformMult.OperatorEnum)NativeCalls.godot_icall_0_1030(method_bind_1, Object.GetPtr(this));
+            return (VisualShaderNodeTransformMult.OperatorEnum)NativeCalls.godot_icall_0_1033(method_bind_1, Object.GetPtr(this));
         }
     }
 }

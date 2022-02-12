@@ -142,7 +142,7 @@ namespace Godot
         [GodotMethod("add_item")]
         public void AddItem(string label, int id = -1, uint accel = (uint)0)
         {
-            NativeCalls.godot_icall_3_735(method_bind_0, Object.GetPtr(this), label, id, accel);
+            NativeCalls.godot_icall_3_738(method_bind_0, Object.GetPtr(this), label, id, accel);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -155,7 +155,7 @@ namespace Godot
         [GodotMethod("add_icon_item")]
         public void AddIconItem(Texture texture, string label, int id = -1, uint accel = (uint)0)
         {
-            NativeCalls.godot_icall_4_736(method_bind_1, Object.GetPtr(this), Object.GetPtr(texture), label, id, accel);
+            NativeCalls.godot_icall_4_739(method_bind_1, Object.GetPtr(this), Object.GetPtr(texture), label, id, accel);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -169,7 +169,7 @@ namespace Godot
         [GodotMethod("add_check_item")]
         public void AddCheckItem(string label, int id = -1, uint accel = (uint)0)
         {
-            NativeCalls.godot_icall_3_735(method_bind_2, Object.GetPtr(this), label, id, accel);
+            NativeCalls.godot_icall_3_738(method_bind_2, Object.GetPtr(this), label, id, accel);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -183,7 +183,7 @@ namespace Godot
         [GodotMethod("add_icon_check_item")]
         public void AddIconCheckItem(Texture texture, string label, int id = -1, uint accel = (uint)0)
         {
-            NativeCalls.godot_icall_4_736(method_bind_3, Object.GetPtr(this), Object.GetPtr(texture), label, id, accel);
+            NativeCalls.godot_icall_4_739(method_bind_3, Object.GetPtr(this), Object.GetPtr(texture), label, id, accel);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -197,7 +197,7 @@ namespace Godot
         [GodotMethod("add_radio_check_item")]
         public void AddRadioCheckItem(string label, int id = -1, uint accel = (uint)0)
         {
-            NativeCalls.godot_icall_3_735(method_bind_4, Object.GetPtr(this), label, id, accel);
+            NativeCalls.godot_icall_3_738(method_bind_4, Object.GetPtr(this), label, id, accel);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -209,7 +209,7 @@ namespace Godot
         [GodotMethod("add_icon_radio_check_item")]
         public void AddIconRadioCheckItem(Texture texture, string label, int id = -1, uint accel = (uint)0)
         {
-            NativeCalls.godot_icall_4_736(method_bind_5, Object.GetPtr(this), Object.GetPtr(texture), label, id, accel);
+            NativeCalls.godot_icall_4_739(method_bind_5, Object.GetPtr(this), Object.GetPtr(texture), label, id, accel);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -223,7 +223,7 @@ namespace Godot
         [GodotMethod("add_multistate_item")]
         public void AddMultistateItem(string label, int maxStates, int defaultState = 0, int id = -1, uint accel = (uint)0)
         {
-            NativeCalls.godot_icall_5_737(method_bind_6, Object.GetPtr(this), label, maxStates, defaultState, id, accel);
+            NativeCalls.godot_icall_5_740(method_bind_6, Object.GetPtr(this), label, maxStates, defaultState, id, accel);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -236,7 +236,7 @@ namespace Godot
         [GodotMethod("add_shortcut")]
         public void AddShortcut(ShortCut shortcut, int id = -1, bool global = false)
         {
-            NativeCalls.godot_icall_3_738(method_bind_7, Object.GetPtr(this), Object.GetPtr(shortcut), id, global);
+            NativeCalls.godot_icall_3_741(method_bind_7, Object.GetPtr(this), Object.GetPtr(shortcut), id, global);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -249,7 +249,7 @@ namespace Godot
         [GodotMethod("add_icon_shortcut")]
         public void AddIconShortcut(Texture texture, ShortCut shortcut, int id = -1, bool global = false)
         {
-            NativeCalls.godot_icall_4_739(method_bind_8, Object.GetPtr(this), Object.GetPtr(texture), Object.GetPtr(shortcut), id, global);
+            NativeCalls.godot_icall_4_742(method_bind_8, Object.GetPtr(this), Object.GetPtr(texture), Object.GetPtr(shortcut), id, global);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -263,7 +263,7 @@ namespace Godot
         [GodotMethod("add_check_shortcut")]
         public void AddCheckShortcut(ShortCut shortcut, int id = -1, bool global = false)
         {
-            NativeCalls.godot_icall_3_738(method_bind_9, Object.GetPtr(this), Object.GetPtr(shortcut), id, global);
+            NativeCalls.godot_icall_3_741(method_bind_9, Object.GetPtr(this), Object.GetPtr(shortcut), id, global);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -277,7 +277,7 @@ namespace Godot
         [GodotMethod("add_icon_check_shortcut")]
         public void AddIconCheckShortcut(Texture texture, ShortCut shortcut, int id = -1, bool global = false)
         {
-            NativeCalls.godot_icall_4_739(method_bind_10, Object.GetPtr(this), Object.GetPtr(texture), Object.GetPtr(shortcut), id, global);
+            NativeCalls.godot_icall_4_742(method_bind_10, Object.GetPtr(this), Object.GetPtr(texture), Object.GetPtr(shortcut), id, global);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -291,7 +291,7 @@ namespace Godot
         [GodotMethod("add_radio_check_shortcut")]
         public void AddRadioCheckShortcut(ShortCut shortcut, int id = -1, bool global = false)
         {
-            NativeCalls.godot_icall_3_738(method_bind_11, Object.GetPtr(this), Object.GetPtr(shortcut), id, global);
+            NativeCalls.godot_icall_3_741(method_bind_11, Object.GetPtr(this), Object.GetPtr(shortcut), id, global);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -303,7 +303,7 @@ namespace Godot
         [GodotMethod("add_icon_radio_check_shortcut")]
         public void AddIconRadioCheckShortcut(Texture texture, ShortCut shortcut, int id = -1, bool global = false)
         {
-            NativeCalls.godot_icall_4_739(method_bind_12, Object.GetPtr(this), Object.GetPtr(texture), Object.GetPtr(shortcut), id, global);
+            NativeCalls.godot_icall_4_742(method_bind_12, Object.GetPtr(this), Object.GetPtr(texture), Object.GetPtr(shortcut), id, global);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -316,7 +316,7 @@ namespace Godot
         [GodotMethod("add_submenu_item")]
         public void AddSubmenuItem(string label, string submenu, int id = -1)
         {
-            NativeCalls.godot_icall_3_740(method_bind_13, Object.GetPtr(this), label, submenu, id);
+            NativeCalls.godot_icall_3_743(method_bind_13, Object.GetPtr(this), label, submenu, id);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -376,7 +376,7 @@ namespace Godot
         [GodotMethod("set_item_accelerator")]
         public void SetItemAccelerator(int idx, uint accel)
         {
-            NativeCalls.godot_icall_2_741(method_bind_18, Object.GetPtr(this), idx, accel);
+            NativeCalls.godot_icall_2_744(method_bind_18, Object.GetPtr(this), idx, accel);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -388,7 +388,7 @@ namespace Godot
         [GodotMethod("set_item_metadata")]
         public void SetItemMetadata(int idx, object metadata)
         {
-            NativeCalls.godot_icall_2_508(method_bind_19, Object.GetPtr(this), idx, metadata);
+            NativeCalls.godot_icall_2_511(method_bind_19, Object.GetPtr(this), idx, metadata);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -473,7 +473,7 @@ namespace Godot
         [GodotMethod("set_item_shortcut")]
         public void SetItemShortcut(int idx, ShortCut shortcut, bool global = false)
         {
-            NativeCalls.godot_icall_3_742(method_bind_26, Object.GetPtr(this), idx, Object.GetPtr(shortcut), global);
+            NativeCalls.godot_icall_3_745(method_bind_26, Object.GetPtr(this), idx, Object.GetPtr(shortcut), global);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -605,7 +605,7 @@ namespace Godot
         [GodotMethod("get_item_metadata")]
         public object GetItemMetadata(int idx)
         {
-            return NativeCalls.godot_icall_1_509(method_bind_37, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_512(method_bind_37, Object.GetPtr(this), idx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -704,7 +704,7 @@ namespace Godot
         [GodotMethod("get_item_shortcut")]
         public ShortCut GetItemShortcut(int idx)
         {
-            return NativeCalls.godot_icall_1_743(method_bind_45, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_746(method_bind_45, Object.GetPtr(this), idx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

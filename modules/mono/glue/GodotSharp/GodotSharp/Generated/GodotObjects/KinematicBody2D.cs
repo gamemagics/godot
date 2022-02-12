@@ -74,7 +74,7 @@ namespace Godot
         [GodotMethod("move_and_collide")]
         public KinematicCollision2D MoveAndCollide(Vector2 relVec, bool infiniteInertia = true, bool excludeRaycastShapes = true, bool testOnly = false)
         {
-            return NativeCalls.godot_icall_4_532(method_bind_0, Object.GetPtr(this), ref relVec, infiniteInertia, excludeRaycastShapes, testOnly);
+            return NativeCalls.godot_icall_4_535(method_bind_0, Object.GetPtr(this), ref relVec, infiniteInertia, excludeRaycastShapes, testOnly);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -97,7 +97,7 @@ namespace Godot
         public Vector2 MoveAndSlide(Vector2 linearVelocity, Nullable<Vector2> upDirection = null, bool stopOnSlope = false, int maxSlides = 4, float floorMaxAngle = 0.785398f, bool infiniteInertia = true)
         {
             Vector2 upDirection_in = upDirection.HasValue ? upDirection.Value : new Vector2(0, 0);
-            NativeCalls.godot_icall_6_533(method_bind_1, Object.GetPtr(this), ref linearVelocity, ref upDirection_in, stopOnSlope, maxSlides, floorMaxAngle, infiniteInertia, out Vector2 argRet); return (Vector2)argRet;
+            NativeCalls.godot_icall_6_536(method_bind_1, Object.GetPtr(this), ref linearVelocity, ref upDirection_in, stopOnSlope, maxSlides, floorMaxAngle, infiniteInertia, out Vector2 argRet); return (Vector2)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -112,7 +112,7 @@ namespace Godot
         public Vector2 MoveAndSlideWithSnap(Vector2 linearVelocity, Vector2 snap, Nullable<Vector2> upDirection = null, bool stopOnSlope = false, int maxSlides = 4, float floorMaxAngle = 0.785398f, bool infiniteInertia = true)
         {
             Vector2 upDirection_in = upDirection.HasValue ? upDirection.Value : new Vector2(0, 0);
-            NativeCalls.godot_icall_7_534(method_bind_2, Object.GetPtr(this), ref linearVelocity, ref snap, ref upDirection_in, stopOnSlope, maxSlides, floorMaxAngle, infiniteInertia, out Vector2 argRet); return (Vector2)argRet;
+            NativeCalls.godot_icall_7_537(method_bind_2, Object.GetPtr(this), ref linearVelocity, ref snap, ref upDirection_in, stopOnSlope, maxSlides, floorMaxAngle, infiniteInertia, out Vector2 argRet); return (Vector2)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -125,7 +125,7 @@ namespace Godot
         [GodotMethod("test_move")]
         public bool TestMove(Transform2D from, Vector2 relVec, bool infiniteInertia = true)
         {
-            return NativeCalls.godot_icall_3_535(method_bind_3, Object.GetPtr(this), ref from, ref relVec, infiniteInertia);
+            return NativeCalls.godot_icall_3_538(method_bind_3, Object.GetPtr(this), ref from, ref relVec, infiniteInertia);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -249,7 +249,7 @@ namespace Godot
         [GodotMethod("get_slide_collision")]
         public KinematicCollision2D GetSlideCollision(int slideIdx)
         {
-            return NativeCalls.godot_icall_1_536(method_bind_13, Object.GetPtr(this), slideIdx);
+            return NativeCalls.godot_icall_1_539(method_bind_13, Object.GetPtr(this), slideIdx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -261,7 +261,7 @@ namespace Godot
         [GodotMethod("get_last_slide_collision")]
         public KinematicCollision2D GetLastSlideCollision()
         {
-            return NativeCalls.godot_icall_0_537(method_bind_14, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_540(method_bind_14, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

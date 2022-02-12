@@ -82,7 +82,7 @@ namespace Godot
         [GodotMethod("accept_stream")]
         public Error AcceptStream(StreamPeer stream, CryptoKey privateKey, X509Certificate certificate, X509Certificate chain = null)
         {
-            return (Error)NativeCalls.godot_icall_4_823(method_bind_1, Object.GetPtr(this), Object.GetPtr(stream), Object.GetPtr(privateKey), Object.GetPtr(certificate), Object.GetPtr(chain));
+            return (Error)NativeCalls.godot_icall_4_826(method_bind_1, Object.GetPtr(this), Object.GetPtr(stream), Object.GetPtr(privateKey), Object.GetPtr(certificate), Object.GetPtr(chain));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -95,7 +95,7 @@ namespace Godot
         [GodotMethod("connect_to_stream")]
         public Error ConnectToStream(StreamPeer stream, bool validateCerts = false, string forHostname = "", X509Certificate validCertificate = null)
         {
-            return (Error)NativeCalls.godot_icall_4_638(method_bind_2, Object.GetPtr(this), Object.GetPtr(stream), validateCerts, forHostname, Object.GetPtr(validCertificate));
+            return (Error)NativeCalls.godot_icall_4_641(method_bind_2, Object.GetPtr(this), Object.GetPtr(stream), validateCerts, forHostname, Object.GetPtr(validCertificate));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -107,7 +107,7 @@ namespace Godot
         [GodotMethod("get_status")]
         public StreamPeerSSL.Status GetStatus()
         {
-            return (StreamPeerSSL.Status)NativeCalls.godot_icall_0_824(method_bind_3, Object.GetPtr(this));
+            return (StreamPeerSSL.Status)NativeCalls.godot_icall_0_827(method_bind_3, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

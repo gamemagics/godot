@@ -442,7 +442,7 @@ namespace Godot
         [Obsolete("GetAxis is deprecated. Use the Axis property instead.")]
         public Vector3.Axis GetAxis()
         {
-            return (Vector3.Axis)NativeCalls.godot_icall_0_806(method_bind_15, Object.GetPtr(this));
+            return (Vector3.Axis)NativeCalls.godot_icall_0_809(method_bind_15, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -488,7 +488,7 @@ namespace Godot
         [Obsolete("GetAlphaCutMode is deprecated. Use the AlphaCut property instead.")]
         public SpriteBase3D.AlphaCutMode GetAlphaCutMode()
         {
-            return (SpriteBase3D.AlphaCutMode)NativeCalls.godot_icall_0_807(method_bind_19, Object.GetPtr(this));
+            return (SpriteBase3D.AlphaCutMode)NativeCalls.godot_icall_0_810(method_bind_19, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -508,7 +508,7 @@ namespace Godot
         [Obsolete("GetBillboardMode is deprecated. Use the Billboard property instead.")]
         public SpatialMaterial.BillboardMode GetBillboardMode()
         {
-            return (SpatialMaterial.BillboardMode)NativeCalls.godot_icall_0_801(method_bind_21, Object.GetPtr(this));
+            return (SpatialMaterial.BillboardMode)NativeCalls.godot_icall_0_804(method_bind_21, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -529,7 +529,7 @@ namespace Godot
         [GodotMethod("generate_triangle_mesh")]
         public TriangleMesh GenerateTriangleMesh()
         {
-            return NativeCalls.godot_icall_0_556(method_bind_23, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_559(method_bind_23, Object.GetPtr(this));
         }
     }
 }

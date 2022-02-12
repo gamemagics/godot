@@ -34,7 +34,7 @@ namespace Godot
         [GodotMethod("initialize")]
         public Error Initialize(int peerId, bool serverCompatibility = false)
         {
-            return (Error)NativeCalls.godot_icall_2_1037(method_bind_0, Object.GetPtr(this), peerId, serverCompatibility);
+            return (Error)NativeCalls.godot_icall_2_1040(method_bind_0, Object.GetPtr(this), peerId, serverCompatibility);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -47,7 +47,7 @@ namespace Godot
         [GodotMethod("add_peer")]
         public Error AddPeer(WebRTCPeerConnection peer, int peerId, int unreliableLifetime = 1)
         {
-            return (Error)NativeCalls.godot_icall_3_1038(method_bind_1, Object.GetPtr(this), Object.GetPtr(peer), peerId, unreliableLifetime);
+            return (Error)NativeCalls.godot_icall_3_1041(method_bind_1, Object.GetPtr(this), Object.GetPtr(peer), peerId, unreliableLifetime);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -83,7 +83,7 @@ namespace Godot
         [GodotMethod("get_peer")]
         public Godot.Collections.Dictionary GetPeer(int peerId)
         {
-            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_1_900(method_bind_4, Object.GetPtr(this), peerId));
+            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_1_903(method_bind_4, Object.GetPtr(this), peerId));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

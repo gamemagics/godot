@@ -422,7 +422,7 @@ namespace Godot
         [Obsolete("GetClickMask is deprecated. Use the TextureClickMask property instead.")]
         public BitMap GetClickMask()
         {
-            return NativeCalls.godot_icall_0_853(method_bind_17, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_856(method_bind_17, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -442,7 +442,7 @@ namespace Godot
         [Obsolete("GetStretchMode is deprecated. Use the StretchMode property instead.")]
         public TextureButton.StretchModeEnum GetStretchMode()
         {
-            return (TextureButton.StretchModeEnum)NativeCalls.godot_icall_0_854(method_bind_19, Object.GetPtr(this));
+            return (TextureButton.StretchModeEnum)NativeCalls.godot_icall_0_857(method_bind_19, Object.GetPtr(this));
         }
     }
 }

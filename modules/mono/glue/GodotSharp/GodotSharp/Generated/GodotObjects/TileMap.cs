@@ -464,7 +464,7 @@ namespace Godot
         [Obsolete("GetTileset is deprecated. Use the TileSet property instead.")]
         public TileSet GetTileset()
         {
-            return NativeCalls.godot_icall_0_865(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_868(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -484,7 +484,7 @@ namespace Godot
         [Obsolete("GetMode is deprecated. Use the Mode property instead.")]
         public TileMap.ModeEnum GetMode()
         {
-            return (TileMap.ModeEnum)NativeCalls.godot_icall_0_866(method_bind_3, Object.GetPtr(this));
+            return (TileMap.ModeEnum)NativeCalls.godot_icall_0_869(method_bind_3, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -504,7 +504,7 @@ namespace Godot
         [Obsolete("GetHalfOffset is deprecated. Use the CellHalfOffset property instead.")]
         public TileMap.HalfOffset GetHalfOffset()
         {
-            return (TileMap.HalfOffset)NativeCalls.godot_icall_0_867(method_bind_5, Object.GetPtr(this));
+            return (TileMap.HalfOffset)NativeCalls.godot_icall_0_870(method_bind_5, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -584,7 +584,7 @@ namespace Godot
         [Obsolete("GetTileOrigin is deprecated. Use the CellTileOrigin property instead.")]
         public TileMap.TileOrigin GetTileOrigin()
         {
-            return (TileMap.TileOrigin)NativeCalls.godot_icall_0_868(method_bind_13, Object.GetPtr(this));
+            return (TileMap.TileOrigin)NativeCalls.godot_icall_0_871(method_bind_13, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -897,7 +897,7 @@ namespace Godot
         public void SetCell(int x, int y, int tile, bool flipX = false, bool flipY = false, bool transpose = false, Nullable<Vector2> autotileCoord = null)
         {
             Vector2 autotileCoord_in = autotileCoord.HasValue ? autotileCoord.Value : new Vector2(0, 0);
-            NativeCalls.godot_icall_7_869(method_bind_42, Object.GetPtr(this), x, y, tile, flipX, flipY, transpose, ref autotileCoord_in);
+            NativeCalls.godot_icall_7_872(method_bind_42, Object.GetPtr(this), x, y, tile, flipX, flipY, transpose, ref autotileCoord_in);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -913,7 +913,7 @@ namespace Godot
         [GodotMethod("set_cellv")]
         public void SetCellv(Vector2 position, int tile, bool flipX = false, bool flipY = false, bool transpose = false)
         {
-            NativeCalls.godot_icall_5_870(method_bind_43, Object.GetPtr(this), ref position, tile, flipX, flipY, transpose);
+            NativeCalls.godot_icall_5_873(method_bind_43, Object.GetPtr(this), ref position, tile, flipX, flipY, transpose);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -937,7 +937,7 @@ namespace Godot
         [GodotMethod("get_cellv")]
         public int GetCellv(Vector2 position)
         {
-            return NativeCalls.godot_icall_1_840(method_bind_45, Object.GetPtr(this), ref position);
+            return NativeCalls.godot_icall_1_843(method_bind_45, Object.GetPtr(this), ref position);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1033,7 +1033,7 @@ namespace Godot
         [GodotMethod("get_used_cells_by_id")]
         public Godot.Collections.Array GetUsedCellsById(int id)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_1_469(method_bind_53, Object.GetPtr(this), id));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_1_472(method_bind_53, Object.GetPtr(this), id));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1063,7 +1063,7 @@ namespace Godot
         [GodotMethod("map_to_world")]
         public Vector2 MapToWorld(Vector2 mapPosition, bool ignoreHalfOfs = false)
         {
-            NativeCalls.godot_icall_2_871(method_bind_55, Object.GetPtr(this), ref mapPosition, ignoreHalfOfs, out Vector2 argRet); return (Vector2)argRet;
+            NativeCalls.godot_icall_2_874(method_bind_55, Object.GetPtr(this), ref mapPosition, ignoreHalfOfs, out Vector2 argRet); return (Vector2)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1121,7 +1121,7 @@ namespace Godot
         {
             Vector2 start_in = start.HasValue ? start.Value : new Vector2(0, 0);
             Vector2 end_in = end.HasValue ? end.Value : new Vector2(0, 0);
-            NativeCalls.godot_icall_2_651(method_bind_59, Object.GetPtr(this), ref start_in, ref end_in);
+            NativeCalls.godot_icall_2_654(method_bind_59, Object.GetPtr(this), ref start_in, ref end_in);
         }
     }
 }

@@ -210,7 +210,7 @@ namespace Godot
         [GodotMethod("set_slot")]
         public void SetSlot(int idx, bool enableLeft, int typeLeft, Color colorLeft, bool enableRight, int typeRight, Color colorRight, Texture customLeft = null, Texture customRight = null)
         {
-            NativeCalls.godot_icall_9_453(method_bind_2, Object.GetPtr(this), idx, enableLeft, typeLeft, ref colorLeft, enableRight, typeRight, ref colorRight, Object.GetPtr(customLeft), Object.GetPtr(customRight));
+            NativeCalls.godot_icall_9_456(method_bind_2, Object.GetPtr(this), idx, enableLeft, typeLeft, ref colorLeft, enableRight, typeRight, ref colorRight, Object.GetPtr(customLeft), Object.GetPtr(customRight));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -294,7 +294,7 @@ namespace Godot
         [GodotMethod("set_slot_color_left")]
         public void SetSlotColorLeft(int idx, Color colorLeft)
         {
-            NativeCalls.godot_icall_2_445(method_bind_9, Object.GetPtr(this), idx, ref colorLeft);
+            NativeCalls.godot_icall_2_448(method_bind_9, Object.GetPtr(this), idx, ref colorLeft);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -306,7 +306,7 @@ namespace Godot
         [GodotMethod("get_slot_color_left")]
         public Color GetSlotColorLeft(int idx)
         {
-            NativeCalls.godot_icall_1_446(method_bind_10, Object.GetPtr(this), idx, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_1_449(method_bind_10, Object.GetPtr(this), idx, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -366,7 +366,7 @@ namespace Godot
         [GodotMethod("set_slot_color_right")]
         public void SetSlotColorRight(int idx, Color colorRight)
         {
-            NativeCalls.godot_icall_2_445(method_bind_15, Object.GetPtr(this), idx, ref colorRight);
+            NativeCalls.godot_icall_2_448(method_bind_15, Object.GetPtr(this), idx, ref colorRight);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -378,7 +378,7 @@ namespace Godot
         [GodotMethod("get_slot_color_right")]
         public Color GetSlotColorRight(int idx)
         {
-            NativeCalls.godot_icall_1_446(method_bind_16, Object.GetPtr(this), idx, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_1_449(method_bind_16, Object.GetPtr(this), idx, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -518,7 +518,7 @@ namespace Godot
         [GodotMethod("get_connection_output_color")]
         public Color GetConnectionOutputColor(int idx)
         {
-            NativeCalls.godot_icall_1_446(method_bind_29, Object.GetPtr(this), idx, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_1_449(method_bind_29, Object.GetPtr(this), idx, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -554,7 +554,7 @@ namespace Godot
         [GodotMethod("get_connection_input_color")]
         public Color GetConnectionInputColor(int idx)
         {
-            NativeCalls.godot_icall_1_446(method_bind_32, Object.GetPtr(this), idx, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_1_449(method_bind_32, Object.GetPtr(this), idx, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -594,7 +594,7 @@ namespace Godot
         [Obsolete("GetOverlay is deprecated. Use the Overlay property instead.")]
         public GraphNode.OverlayEnum GetOverlay()
         {
-            return (GraphNode.OverlayEnum)NativeCalls.godot_icall_0_454(method_bind_36, Object.GetPtr(this));
+            return (GraphNode.OverlayEnum)NativeCalls.godot_icall_0_457(method_bind_36, Object.GetPtr(this));
         }
     }
 }

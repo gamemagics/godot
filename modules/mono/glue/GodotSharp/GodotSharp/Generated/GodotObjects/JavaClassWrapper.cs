@@ -29,7 +29,7 @@ namespace Godot
         [GodotMethod("wrap")]
         public static JavaClass Wrap(string name)
         {
-            return NativeCalls.godot_icall_1_520(method_bind_0, ptr, name);
+            return NativeCalls.godot_icall_1_523(method_bind_0, ptr, name);
         }
     }
 }

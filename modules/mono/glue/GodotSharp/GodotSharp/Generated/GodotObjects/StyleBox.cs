@@ -109,7 +109,7 @@ namespace Godot
         [GodotMethod("test_mask")]
         public bool TestMask(Vector2 point, Rect2 rect)
         {
-            return NativeCalls.godot_icall_2_826(method_bind_0, Object.GetPtr(this), ref point, ref rect);
+            return NativeCalls.godot_icall_2_829(method_bind_0, Object.GetPtr(this), ref point, ref rect);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -196,7 +196,7 @@ namespace Godot
         [GodotMethod("get_current_item_drawn")]
         public CanvasItem GetCurrentItemDrawn()
         {
-            return NativeCalls.godot_icall_0_827(method_bind_7, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_830(method_bind_7, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -209,7 +209,7 @@ namespace Godot
         [GodotMethod("draw")]
         public void Draw(RID canvasItem, Rect2 rect)
         {
-            NativeCalls.godot_icall_2_828(method_bind_8, Object.GetPtr(this), RID.GetPtr(canvasItem), ref rect);
+            NativeCalls.godot_icall_2_831(method_bind_8, Object.GetPtr(this), RID.GetPtr(canvasItem), ref rect);
         }
     }
 }

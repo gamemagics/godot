@@ -74,7 +74,7 @@ namespace Godot
         [GodotMethod("get_node_type")]
         public XMLParser.NodeType GetNodeType()
         {
-            return (XMLParser.NodeType)NativeCalls.godot_icall_0_1051(method_bind_1, Object.GetPtr(this));
+            return (XMLParser.NodeType)NativeCalls.godot_icall_0_1054(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -230,7 +230,7 @@ namespace Godot
         [GodotMethod("seek")]
         public Error Seek(ulong position)
         {
-            return (Error)NativeCalls.godot_icall_1_1052(method_bind_14, Object.GetPtr(this), position);
+            return (Error)NativeCalls.godot_icall_1_1055(method_bind_14, Object.GetPtr(this), position);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -254,7 +254,7 @@ namespace Godot
         [GodotMethod("open_buffer")]
         public Error OpenBuffer(byte[] buffer)
         {
-            return (Error)NativeCalls.godot_icall_1_456(method_bind_16, Object.GetPtr(this), buffer);
+            return (Error)NativeCalls.godot_icall_1_459(method_bind_16, Object.GetPtr(this), buffer);
         }
     }
 }

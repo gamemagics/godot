@@ -537,7 +537,7 @@ namespace Godot
         [Obsolete("GetSamplePartitionType is deprecated. Use the SamplePartitionType__samplePartitionType property instead.")]
         public NavigationMesh.SamplePartitionType GetSamplePartitionType()
         {
-            return (NavigationMesh.SamplePartitionType)NativeCalls.godot_icall_0_585(method_bind_1, Object.GetPtr(this));
+            return (NavigationMesh.SamplePartitionType)NativeCalls.godot_icall_0_588(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -557,7 +557,7 @@ namespace Godot
         [Obsolete("GetParsedGeometryType is deprecated. Use the Geometry__parsedGeometryType property instead.")]
         public NavigationMesh.ParsedGeometryType GetParsedGeometryType()
         {
-            return (NavigationMesh.ParsedGeometryType)NativeCalls.godot_icall_0_586(method_bind_3, Object.GetPtr(this));
+            return (NavigationMesh.ParsedGeometryType)NativeCalls.godot_icall_0_589(method_bind_3, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -622,7 +622,7 @@ namespace Godot
         [Obsolete("GetSourceGeometryMode is deprecated. Use the Geometry__sourceGeometryMode property instead.")]
         public NavigationMesh.SourceGeometryMode GetSourceGeometryMode()
         {
-            return (NavigationMesh.SourceGeometryMode)NativeCalls.godot_icall_0_587(method_bind_9, Object.GetPtr(this));
+            return (NavigationMesh.SourceGeometryMode)NativeCalls.godot_icall_0_590(method_bind_9, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

@@ -623,7 +623,7 @@ namespace Godot
         [GodotMethod("add_bone")]
         public void AddBone(NodePath path, float[] weights)
         {
-            NativeCalls.godot_icall_2_731(method_bind_28, Object.GetPtr(this), NodePath.GetPtr(path), weights);
+            NativeCalls.godot_icall_2_734(method_bind_28, Object.GetPtr(this), NodePath.GetPtr(path), weights);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -659,7 +659,7 @@ namespace Godot
         [GodotMethod("get_bone_weights")]
         public float[] GetBoneWeights(int index)
         {
-            return NativeCalls.godot_icall_1_563(method_bind_31, Object.GetPtr(this), index);
+            return NativeCalls.godot_icall_1_566(method_bind_31, Object.GetPtr(this), index);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -707,7 +707,7 @@ namespace Godot
         [GodotMethod("set_bone_weights")]
         public void SetBoneWeights(int index, float[] weights)
         {
-            NativeCalls.godot_icall_2_562(method_bind_35, Object.GetPtr(this), index, weights);
+            NativeCalls.godot_icall_2_565(method_bind_35, Object.GetPtr(this), index, weights);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

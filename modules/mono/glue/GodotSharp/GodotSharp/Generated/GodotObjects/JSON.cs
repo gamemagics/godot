@@ -58,7 +58,7 @@ namespace Godot
         [GodotMethod("print")]
         public static string Print(object value, string indent = "", bool sortKeys = false)
         {
-            return NativeCalls.godot_icall_3_1093(method_bind_0, ptr, value, indent, sortKeys);
+            return NativeCalls.godot_icall_3_1096(method_bind_0, ptr, value, indent, sortKeys);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -70,7 +70,7 @@ namespace Godot
         [GodotMethod("parse")]
         public static JSONParseResult Parse(string json)
         {
-            return NativeCalls.godot_icall_1_1094(method_bind_1, ptr, json);
+            return NativeCalls.godot_icall_1_1097(method_bind_1, ptr, json);
         }
     }
 }

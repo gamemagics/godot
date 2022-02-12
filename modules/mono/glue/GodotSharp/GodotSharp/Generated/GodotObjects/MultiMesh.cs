@@ -283,7 +283,7 @@ namespace Godot
         [Obsolete("GetColorFormat is deprecated. Use the ColorFormat property instead.")]
         public MultiMesh.ColorFormatEnum GetColorFormat()
         {
-            return (MultiMesh.ColorFormatEnum)NativeCalls.godot_icall_0_570(method_bind_3, Object.GetPtr(this));
+            return (MultiMesh.ColorFormatEnum)NativeCalls.godot_icall_0_573(method_bind_3, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -303,7 +303,7 @@ namespace Godot
         [Obsolete("GetCustomDataFormat is deprecated. Use the CustomDataFormat property instead.")]
         public MultiMesh.CustomDataFormatEnum GetCustomDataFormat()
         {
-            return (MultiMesh.CustomDataFormatEnum)NativeCalls.godot_icall_0_571(method_bind_5, Object.GetPtr(this));
+            return (MultiMesh.CustomDataFormatEnum)NativeCalls.godot_icall_0_574(method_bind_5, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -323,7 +323,7 @@ namespace Godot
         [Obsolete("GetTransformFormat is deprecated. Use the TransformFormat property instead.")]
         public MultiMesh.TransformFormatEnum GetTransformFormat()
         {
-            return (MultiMesh.TransformFormatEnum)NativeCalls.godot_icall_0_572(method_bind_7, Object.GetPtr(this));
+            return (MultiMesh.TransformFormatEnum)NativeCalls.godot_icall_0_575(method_bind_7, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -375,7 +375,7 @@ namespace Godot
         [GodotMethod("set_instance_transform")]
         public void SetInstanceTransform(int instance, Transform transform)
         {
-            NativeCalls.godot_icall_2_565(method_bind_12, Object.GetPtr(this), instance, ref transform);
+            NativeCalls.godot_icall_2_568(method_bind_12, Object.GetPtr(this), instance, ref transform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -387,7 +387,7 @@ namespace Godot
         [GodotMethod("set_instance_transform_2d")]
         public void SetInstanceTransform2d(int instance, Transform2D transform)
         {
-            NativeCalls.godot_icall_2_573(method_bind_13, Object.GetPtr(this), instance, ref transform);
+            NativeCalls.godot_icall_2_576(method_bind_13, Object.GetPtr(this), instance, ref transform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -399,7 +399,7 @@ namespace Godot
         [GodotMethod("get_instance_transform")]
         public Transform GetInstanceTransform(int instance)
         {
-            NativeCalls.godot_icall_1_568(method_bind_14, Object.GetPtr(this), instance, out Transform argRet); return (Transform)argRet;
+            NativeCalls.godot_icall_1_571(method_bind_14, Object.GetPtr(this), instance, out Transform argRet); return (Transform)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -411,7 +411,7 @@ namespace Godot
         [GodotMethod("get_instance_transform_2d")]
         public Transform2D GetInstanceTransform2d(int instance)
         {
-            NativeCalls.godot_icall_1_574(method_bind_15, Object.GetPtr(this), instance, out Transform2D argRet); return (Transform2D)argRet;
+            NativeCalls.godot_icall_1_577(method_bind_15, Object.GetPtr(this), instance, out Transform2D argRet); return (Transform2D)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -424,7 +424,7 @@ namespace Godot
         [GodotMethod("set_instance_color")]
         public void SetInstanceColor(int instance, Color color)
         {
-            NativeCalls.godot_icall_2_445(method_bind_16, Object.GetPtr(this), instance, ref color);
+            NativeCalls.godot_icall_2_448(method_bind_16, Object.GetPtr(this), instance, ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -436,7 +436,7 @@ namespace Godot
         [GodotMethod("get_instance_color")]
         public Color GetInstanceColor(int instance)
         {
-            NativeCalls.godot_icall_1_446(method_bind_17, Object.GetPtr(this), instance, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_1_449(method_bind_17, Object.GetPtr(this), instance, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -448,7 +448,7 @@ namespace Godot
         [GodotMethod("set_instance_custom_data")]
         public void SetInstanceCustomData(int instance, Color customData)
         {
-            NativeCalls.godot_icall_2_445(method_bind_18, Object.GetPtr(this), instance, ref customData);
+            NativeCalls.godot_icall_2_448(method_bind_18, Object.GetPtr(this), instance, ref customData);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -460,7 +460,7 @@ namespace Godot
         [GodotMethod("get_instance_custom_data")]
         public Color GetInstanceCustomData(int instance)
         {
-            NativeCalls.godot_icall_1_446(method_bind_19, Object.GetPtr(this), instance, out Color argRet); return (Color)argRet;
+            NativeCalls.godot_icall_1_449(method_bind_19, Object.GetPtr(this), instance, out Color argRet); return (Color)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -474,7 +474,7 @@ namespace Godot
         [GodotMethod("set_as_bulk_array")]
         public void SetAsBulkArray(float[] array)
         {
-            NativeCalls.godot_icall_1_432(method_bind_20, Object.GetPtr(this), array);
+            NativeCalls.godot_icall_1_435(method_bind_20, Object.GetPtr(this), array);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

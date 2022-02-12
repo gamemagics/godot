@@ -126,7 +126,7 @@ namespace Godot
         [GodotMethod("get_bone_rest")]
         public Transform GetBoneRest(int boneIdx)
         {
-            NativeCalls.godot_icall_1_568(method_bind_8, Object.GetPtr(this), boneIdx, out Transform argRet); return (Transform)argRet;
+            NativeCalls.godot_icall_1_571(method_bind_8, Object.GetPtr(this), boneIdx, out Transform argRet); return (Transform)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -138,7 +138,7 @@ namespace Godot
         [GodotMethod("set_bone_rest")]
         public void SetBoneRest(int boneIdx, Transform rest)
         {
-            NativeCalls.godot_icall_2_565(method_bind_9, Object.GetPtr(this), boneIdx, ref rest);
+            NativeCalls.godot_icall_2_568(method_bind_9, Object.GetPtr(this), boneIdx, ref rest);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -147,7 +147,7 @@ namespace Godot
         [GodotMethod("register_skin")]
         public SkinReference RegisterSkin(Skin skin)
         {
-            return NativeCalls.godot_icall_1_786(method_bind_10, Object.GetPtr(this), Object.GetPtr(skin));
+            return NativeCalls.godot_icall_1_789(method_bind_10, Object.GetPtr(this), Object.GetPtr(skin));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -210,7 +210,7 @@ namespace Godot
         [GodotMethod("get_bound_child_nodes_to_bone")]
         public Godot.Collections.Array GetBoundChildNodesToBone(int boneIdx)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_1_469(method_bind_16, Object.GetPtr(this), boneIdx));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_1_472(method_bind_16, Object.GetPtr(this), boneIdx));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -234,7 +234,7 @@ namespace Godot
         [GodotMethod("get_bone_pose")]
         public Transform GetBonePose(int boneIdx)
         {
-            NativeCalls.godot_icall_1_568(method_bind_18, Object.GetPtr(this), boneIdx, out Transform argRet); return (Transform)argRet;
+            NativeCalls.godot_icall_1_571(method_bind_18, Object.GetPtr(this), boneIdx, out Transform argRet); return (Transform)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -246,7 +246,7 @@ namespace Godot
         [GodotMethod("set_bone_pose")]
         public void SetBonePose(int boneIdx, Transform pose)
         {
-            NativeCalls.godot_icall_2_565(method_bind_19, Object.GetPtr(this), boneIdx, ref pose);
+            NativeCalls.godot_icall_2_568(method_bind_19, Object.GetPtr(this), boneIdx, ref pose);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -264,7 +264,7 @@ namespace Godot
         [GodotMethod("set_bone_global_pose_override")]
         public void SetBoneGlobalPoseOverride(int boneIdx, Transform pose, float amount, bool persistent = false)
         {
-            NativeCalls.godot_icall_4_787(method_bind_21, Object.GetPtr(this), boneIdx, ref pose, amount, persistent);
+            NativeCalls.godot_icall_4_790(method_bind_21, Object.GetPtr(this), boneIdx, ref pose, amount, persistent);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -276,7 +276,7 @@ namespace Godot
         [GodotMethod("get_bone_global_pose")]
         public Transform GetBoneGlobalPose(int boneIdx)
         {
-            NativeCalls.godot_icall_1_568(method_bind_22, Object.GetPtr(this), boneIdx, out Transform argRet); return (Transform)argRet;
+            NativeCalls.godot_icall_1_571(method_bind_22, Object.GetPtr(this), boneIdx, out Transform argRet); return (Transform)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -288,7 +288,7 @@ namespace Godot
         [GodotMethod("get_bone_global_pose_no_override")]
         public Transform GetBoneGlobalPoseNoOverride(int boneIdx)
         {
-            NativeCalls.godot_icall_1_568(method_bind_23, Object.GetPtr(this), boneIdx, out Transform argRet); return (Transform)argRet;
+            NativeCalls.godot_icall_1_571(method_bind_23, Object.GetPtr(this), boneIdx, out Transform argRet); return (Transform)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -300,7 +300,7 @@ namespace Godot
         [GodotMethod("get_bone_custom_pose")]
         public Transform GetBoneCustomPose(int boneIdx)
         {
-            NativeCalls.godot_icall_1_568(method_bind_24, Object.GetPtr(this), boneIdx, out Transform argRet); return (Transform)argRet;
+            NativeCalls.godot_icall_1_571(method_bind_24, Object.GetPtr(this), boneIdx, out Transform argRet); return (Transform)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -309,7 +309,7 @@ namespace Godot
         [GodotMethod("set_bone_custom_pose")]
         public void SetBoneCustomPose(int boneIdx, Transform customPose)
         {
-            NativeCalls.godot_icall_2_565(method_bind_25, Object.GetPtr(this), boneIdx, ref customPose);
+            NativeCalls.godot_icall_2_568(method_bind_25, Object.GetPtr(this), boneIdx, ref customPose);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

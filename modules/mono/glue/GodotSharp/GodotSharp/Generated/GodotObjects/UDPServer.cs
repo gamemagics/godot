@@ -95,7 +95,7 @@ namespace Godot
         [GodotMethod("listen")]
         public Error Listen(ushort port, string bindAddress = "*")
         {
-            return (Error)NativeCalls.godot_icall_2_836(method_bind_0, Object.GetPtr(this), port, bindAddress);
+            return (Error)NativeCalls.godot_icall_2_839(method_bind_0, Object.GetPtr(this), port, bindAddress);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -143,7 +143,7 @@ namespace Godot
         [GodotMethod("take_connection")]
         public PacketPeerUDP TakeConnection()
         {
-            return NativeCalls.godot_icall_0_916(method_bind_4, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_919(method_bind_4, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

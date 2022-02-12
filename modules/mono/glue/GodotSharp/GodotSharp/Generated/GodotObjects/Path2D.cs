@@ -58,7 +58,7 @@ namespace Godot
         [Obsolete("GetCurve is deprecated. Use the Curve property instead.")]
         public Curve2D GetCurve()
         {
-            return NativeCalls.godot_icall_0_647(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_650(method_bind_1, Object.GetPtr(this));
         }
     }
 }

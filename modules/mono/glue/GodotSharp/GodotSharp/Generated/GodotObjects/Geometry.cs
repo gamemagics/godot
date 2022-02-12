@@ -95,7 +95,7 @@ namespace Godot
         [GodotMethod("build_box_planes")]
         public static Godot.Collections.Array BuildBoxPlanes(Vector3 extents)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_1_1069(method_bind_0, ptr, ref extents));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_1_1072(method_bind_0, ptr, ref extents));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -107,7 +107,7 @@ namespace Godot
         [GodotMethod("build_cylinder_planes")]
         public static Godot.Collections.Array BuildCylinderPlanes(float radius, float height, int sides, Vector3.Axis axis = (Vector3.Axis)2)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_4_1070(method_bind_1, ptr, radius, height, sides, (int)axis));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_4_1073(method_bind_1, ptr, radius, height, sides, (int)axis));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -119,7 +119,7 @@ namespace Godot
         [GodotMethod("build_capsule_planes")]
         public static Godot.Collections.Array BuildCapsulePlanes(float radius, float height, int sides, int lats, Vector3.Axis axis = (Vector3.Axis)2)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_5_1071(method_bind_2, ptr, radius, height, sides, lats, (int)axis));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_5_1074(method_bind_2, ptr, radius, height, sides, lats, (int)axis));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -131,7 +131,7 @@ namespace Godot
         [GodotMethod("is_point_in_circle")]
         public static bool IsPointInCircle(Vector2 point, Vector2 circlePosition, float circleRadius)
         {
-            return NativeCalls.godot_icall_3_1072(method_bind_3, ptr, ref point, ref circlePosition, circleRadius);
+            return NativeCalls.godot_icall_3_1075(method_bind_3, ptr, ref point, ref circlePosition, circleRadius);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -143,7 +143,7 @@ namespace Godot
         [GodotMethod("segment_intersects_circle")]
         public static float SegmentIntersectsCircle(Vector2 segmentFrom, Vector2 segmentTo, Vector2 circlePosition, float circleRadius)
         {
-            return NativeCalls.godot_icall_4_1073(method_bind_4, ptr, ref segmentFrom, ref segmentTo, ref circlePosition, circleRadius);
+            return NativeCalls.godot_icall_4_1076(method_bind_4, ptr, ref segmentFrom, ref segmentTo, ref circlePosition, circleRadius);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -155,7 +155,7 @@ namespace Godot
         [GodotMethod("segment_intersects_segment_2d")]
         public static object SegmentIntersectsSegment2d(Vector2 fromA, Vector2 toA, Vector2 fromB, Vector2 toB)
         {
-            return NativeCalls.godot_icall_4_1074(method_bind_5, ptr, ref fromA, ref toA, ref fromB, ref toB);
+            return NativeCalls.godot_icall_4_1077(method_bind_5, ptr, ref fromA, ref toA, ref fromB, ref toB);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -168,7 +168,7 @@ namespace Godot
         [GodotMethod("line_intersects_line_2d")]
         public static object LineIntersectsLine2d(Vector2 fromA, Vector2 dirA, Vector2 fromB, Vector2 dirB)
         {
-            return NativeCalls.godot_icall_4_1074(method_bind_6, ptr, ref fromA, ref dirA, ref fromB, ref dirB);
+            return NativeCalls.godot_icall_4_1077(method_bind_6, ptr, ref fromA, ref dirA, ref fromB, ref dirB);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -180,7 +180,7 @@ namespace Godot
         [GodotMethod("get_closest_points_between_segments_2d")]
         public static Vector2[] GetClosestPointsBetweenSegments2d(Vector2 p1, Vector2 q1, Vector2 p2, Vector2 q2)
         {
-            return NativeCalls.godot_icall_4_1075(method_bind_7, ptr, ref p1, ref q1, ref p2, ref q2);
+            return NativeCalls.godot_icall_4_1078(method_bind_7, ptr, ref p1, ref q1, ref p2, ref q2);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -192,7 +192,7 @@ namespace Godot
         [GodotMethod("get_closest_points_between_segments")]
         public static Vector3[] GetClosestPointsBetweenSegments(Vector3 p1, Vector3 p2, Vector3 q1, Vector3 q2)
         {
-            return NativeCalls.godot_icall_4_1076(method_bind_8, ptr, ref p1, ref p2, ref q1, ref q2);
+            return NativeCalls.godot_icall_4_1079(method_bind_8, ptr, ref p1, ref p2, ref q1, ref q2);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -204,7 +204,7 @@ namespace Godot
         [GodotMethod("get_closest_point_to_segment_2d")]
         public static Vector2 GetClosestPointToSegment2d(Vector2 point, Vector2 s1, Vector2 s2)
         {
-            NativeCalls.godot_icall_3_1077(method_bind_9, ptr, ref point, ref s1, ref s2, out Vector2 argRet); return (Vector2)argRet;
+            NativeCalls.godot_icall_3_1080(method_bind_9, ptr, ref point, ref s1, ref s2, out Vector2 argRet); return (Vector2)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -216,7 +216,7 @@ namespace Godot
         [GodotMethod("get_closest_point_to_segment")]
         public static Vector3 GetClosestPointToSegment(Vector3 point, Vector3 s1, Vector3 s2)
         {
-            NativeCalls.godot_icall_3_1078(method_bind_10, ptr, ref point, ref s1, ref s2, out Vector3 argRet); return (Vector3)argRet;
+            NativeCalls.godot_icall_3_1081(method_bind_10, ptr, ref point, ref s1, ref s2, out Vector3 argRet); return (Vector3)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -228,7 +228,7 @@ namespace Godot
         [GodotMethod("get_closest_point_to_segment_uncapped_2d")]
         public static Vector2 GetClosestPointToSegmentUncapped2d(Vector2 point, Vector2 s1, Vector2 s2)
         {
-            NativeCalls.godot_icall_3_1077(method_bind_11, ptr, ref point, ref s1, ref s2, out Vector2 argRet); return (Vector2)argRet;
+            NativeCalls.godot_icall_3_1080(method_bind_11, ptr, ref point, ref s1, ref s2, out Vector2 argRet); return (Vector2)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -240,7 +240,7 @@ namespace Godot
         [GodotMethod("get_closest_point_to_segment_uncapped")]
         public static Vector3 GetClosestPointToSegmentUncapped(Vector3 point, Vector3 s1, Vector3 s2)
         {
-            NativeCalls.godot_icall_3_1078(method_bind_12, ptr, ref point, ref s1, ref s2, out Vector3 argRet); return (Vector3)argRet;
+            NativeCalls.godot_icall_3_1081(method_bind_12, ptr, ref point, ref s1, ref s2, out Vector3 argRet); return (Vector3)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -252,7 +252,7 @@ namespace Godot
         [GodotMethod("get_uv84_normal_bit")]
         public static int GetUv84NormalBit(Vector3 normal)
         {
-            return NativeCalls.godot_icall_1_1079(method_bind_13, ptr, ref normal);
+            return NativeCalls.godot_icall_1_1082(method_bind_13, ptr, ref normal);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -264,7 +264,7 @@ namespace Godot
         [GodotMethod("ray_intersects_triangle")]
         public static object RayIntersectsTriangle(Vector3 from, Vector3 dir, Vector3 a, Vector3 b, Vector3 c)
         {
-            return NativeCalls.godot_icall_5_1080(method_bind_14, ptr, ref from, ref dir, ref a, ref b, ref c);
+            return NativeCalls.godot_icall_5_1083(method_bind_14, ptr, ref from, ref dir, ref a, ref b, ref c);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -276,7 +276,7 @@ namespace Godot
         [GodotMethod("segment_intersects_triangle")]
         public static object SegmentIntersectsTriangle(Vector3 from, Vector3 to, Vector3 a, Vector3 b, Vector3 c)
         {
-            return NativeCalls.godot_icall_5_1080(method_bind_15, ptr, ref from, ref to, ref a, ref b, ref c);
+            return NativeCalls.godot_icall_5_1083(method_bind_15, ptr, ref from, ref to, ref a, ref b, ref c);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -288,7 +288,7 @@ namespace Godot
         [GodotMethod("segment_intersects_sphere")]
         public static Vector3[] SegmentIntersectsSphere(Vector3 from, Vector3 to, Vector3 spherePosition, float sphereRadius)
         {
-            return NativeCalls.godot_icall_4_1081(method_bind_16, ptr, ref from, ref to, ref spherePosition, sphereRadius);
+            return NativeCalls.godot_icall_4_1084(method_bind_16, ptr, ref from, ref to, ref spherePosition, sphereRadius);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -300,7 +300,7 @@ namespace Godot
         [GodotMethod("segment_intersects_cylinder")]
         public static Vector3[] SegmentIntersectsCylinder(Vector3 from, Vector3 to, float height, float radius)
         {
-            return NativeCalls.godot_icall_4_1082(method_bind_17, ptr, ref from, ref to, height, radius);
+            return NativeCalls.godot_icall_4_1085(method_bind_17, ptr, ref from, ref to, height, radius);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -312,7 +312,7 @@ namespace Godot
         [GodotMethod("segment_intersects_convex")]
         public static Vector3[] SegmentIntersectsConvex(Vector3 from, Vector3 to, Godot.Collections.Array planes)
         {
-            return NativeCalls.godot_icall_3_1083(method_bind_18, ptr, ref from, ref to, planes.GetPtr());
+            return NativeCalls.godot_icall_3_1086(method_bind_18, ptr, ref from, ref to, planes.GetPtr());
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -324,7 +324,7 @@ namespace Godot
         [GodotMethod("point_is_inside_triangle")]
         public static bool PointIsInsideTriangle(Vector2 point, Vector2 a, Vector2 b, Vector2 c)
         {
-            return NativeCalls.godot_icall_4_1084(method_bind_19, ptr, ref point, ref a, ref b, ref c);
+            return NativeCalls.godot_icall_4_1087(method_bind_19, ptr, ref point, ref a, ref b, ref c);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -348,7 +348,7 @@ namespace Godot
         [GodotMethod("is_point_in_polygon")]
         public static bool IsPointInPolygon(Vector2 point, Vector2[] polygon)
         {
-            return NativeCalls.godot_icall_2_1085(method_bind_21, ptr, ref point, polygon);
+            return NativeCalls.godot_icall_2_1088(method_bind_21, ptr, ref point, polygon);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -360,7 +360,7 @@ namespace Godot
         [GodotMethod("triangulate_polygon")]
         public static int[] TriangulatePolygon(Vector2[] polygon)
         {
-            return NativeCalls.godot_icall_1_1086(method_bind_22, ptr, polygon);
+            return NativeCalls.godot_icall_1_1089(method_bind_22, ptr, polygon);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -372,7 +372,7 @@ namespace Godot
         [GodotMethod("triangulate_delaunay_2d")]
         public static int[] TriangulateDelaunay2d(Vector2[] points)
         {
-            return NativeCalls.godot_icall_1_1086(method_bind_23, ptr, points);
+            return NativeCalls.godot_icall_1_1089(method_bind_23, ptr, points);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -384,7 +384,7 @@ namespace Godot
         [GodotMethod("convex_hull_2d")]
         public static Vector2[] ConvexHull2d(Vector2[] points)
         {
-            return NativeCalls.godot_icall_1_1087(method_bind_24, ptr, points);
+            return NativeCalls.godot_icall_1_1090(method_bind_24, ptr, points);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -396,7 +396,7 @@ namespace Godot
         [GodotMethod("clip_polygon")]
         public static Vector3[] ClipPolygon(Vector3[] points, Plane plane)
         {
-            return NativeCalls.godot_icall_2_1088(method_bind_25, ptr, points, ref plane);
+            return NativeCalls.godot_icall_2_1091(method_bind_25, ptr, points, ref plane);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -409,7 +409,7 @@ namespace Godot
         [GodotMethod("merge_polygons_2d")]
         public static Godot.Collections.Array MergePolygons2d(Vector2[] polygonA, Vector2[] polygonB)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_2_1089(method_bind_26, ptr, polygonA, polygonB));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_2_1092(method_bind_26, ptr, polygonA, polygonB));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -422,7 +422,7 @@ namespace Godot
         [GodotMethod("clip_polygons_2d")]
         public static Godot.Collections.Array ClipPolygons2d(Vector2[] polygonA, Vector2[] polygonB)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_2_1089(method_bind_27, ptr, polygonA, polygonB));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_2_1092(method_bind_27, ptr, polygonA, polygonB));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -435,7 +435,7 @@ namespace Godot
         [GodotMethod("intersect_polygons_2d")]
         public static Godot.Collections.Array IntersectPolygons2d(Vector2[] polygonA, Vector2[] polygonB)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_2_1089(method_bind_28, ptr, polygonA, polygonB));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_2_1092(method_bind_28, ptr, polygonA, polygonB));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -448,7 +448,7 @@ namespace Godot
         [GodotMethod("exclude_polygons_2d")]
         public static Godot.Collections.Array ExcludePolygons2d(Vector2[] polygonA, Vector2[] polygonB)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_2_1089(method_bind_29, ptr, polygonA, polygonB));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_2_1092(method_bind_29, ptr, polygonA, polygonB));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -460,7 +460,7 @@ namespace Godot
         [GodotMethod("clip_polyline_with_polygon_2d")]
         public static Godot.Collections.Array ClipPolylineWithPolygon2d(Vector2[] polyline, Vector2[] polygon)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_2_1089(method_bind_30, ptr, polyline, polygon));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_2_1092(method_bind_30, ptr, polyline, polygon));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -472,7 +472,7 @@ namespace Godot
         [GodotMethod("intersect_polyline_with_polygon_2d")]
         public static Godot.Collections.Array IntersectPolylineWithPolygon2d(Vector2[] polyline, Vector2[] polygon)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_2_1089(method_bind_31, ptr, polyline, polygon));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_2_1092(method_bind_31, ptr, polyline, polygon));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -493,7 +493,7 @@ namespace Godot
         [GodotMethod("offset_polygon_2d")]
         public static Godot.Collections.Array OffsetPolygon2d(Vector2[] polygon, float delta, Geometry.PolyJoinType joinType = (Geometry.PolyJoinType)0)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_3_1090(method_bind_32, ptr, polygon, delta, (int)joinType));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_3_1093(method_bind_32, ptr, polygon, delta, (int)joinType));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -508,7 +508,7 @@ namespace Godot
         [GodotMethod("offset_polyline_2d")]
         public static Godot.Collections.Array OffsetPolyline2d(Vector2[] polyline, float delta, Geometry.PolyJoinType joinType = (Geometry.PolyJoinType)0, Geometry.PolyEndType endType = (Geometry.PolyEndType)3)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_4_1091(method_bind_33, ptr, polyline, delta, (int)joinType, (int)endType));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_4_1094(method_bind_33, ptr, polyline, delta, (int)joinType, (int)endType));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -520,7 +520,7 @@ namespace Godot
         [GodotMethod("make_atlas")]
         public static Godot.Collections.Dictionary MakeAtlas(Vector2[] sizes)
         {
-            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_1_1092(method_bind_34, ptr, sizes));
+            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_1_1095(method_bind_34, ptr, sizes));
         }
     }
 }

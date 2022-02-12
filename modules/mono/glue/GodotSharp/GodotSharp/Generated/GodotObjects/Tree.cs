@@ -228,7 +228,7 @@ namespace Godot
         [GodotMethod("create_item")]
         public TreeItem CreateItem(Object parent = null, int idx = -1)
         {
-            return NativeCalls.godot_icall_2_890(method_bind_1, Object.GetPtr(this), Object.GetPtr(parent), idx);
+            return NativeCalls.godot_icall_2_893(method_bind_1, Object.GetPtr(this), Object.GetPtr(parent), idx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -240,7 +240,7 @@ namespace Godot
         [GodotMethod("get_root")]
         public TreeItem GetRoot()
         {
-            return NativeCalls.godot_icall_0_891(method_bind_2, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_894(method_bind_2, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -309,7 +309,7 @@ namespace Godot
         [GodotMethod("get_next_selected")]
         public TreeItem GetNextSelected(Object from)
         {
-            return NativeCalls.godot_icall_1_892(method_bind_8, Object.GetPtr(this), Object.GetPtr(from));
+            return NativeCalls.godot_icall_1_895(method_bind_8, Object.GetPtr(this), Object.GetPtr(from));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -323,7 +323,7 @@ namespace Godot
         [GodotMethod("get_selected")]
         public TreeItem GetSelected()
         {
-            return NativeCalls.godot_icall_0_891(method_bind_9, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_894(method_bind_9, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -369,7 +369,7 @@ namespace Godot
         [Obsolete("GetSelectMode is deprecated. Use the SelectMode property instead.")]
         public Tree.SelectModeEnum GetSelectMode()
         {
-            return (Tree.SelectModeEnum)NativeCalls.godot_icall_0_893(method_bind_13, Object.GetPtr(this));
+            return (Tree.SelectModeEnum)NativeCalls.godot_icall_0_896(method_bind_13, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -408,7 +408,7 @@ namespace Godot
         [GodotMethod("get_edited")]
         public TreeItem GetEdited()
         {
-            return NativeCalls.godot_icall_0_891(method_bind_16, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_894(method_bind_16, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -456,7 +456,7 @@ namespace Godot
         [GodotMethod("get_item_area_rect")]
         public Rect2 GetItemAreaRect(Object item, int column = -1)
         {
-            NativeCalls.godot_icall_2_894(method_bind_20, Object.GetPtr(this), Object.GetPtr(item), column, out Rect2 argRet); return (Rect2)argRet;
+            NativeCalls.godot_icall_2_897(method_bind_20, Object.GetPtr(this), Object.GetPtr(item), column, out Rect2 argRet); return (Rect2)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -468,7 +468,7 @@ namespace Godot
         [GodotMethod("get_item_at_position")]
         public TreeItem GetItemAtPosition(Vector2 position)
         {
-            return NativeCalls.godot_icall_1_895(method_bind_21, Object.GetPtr(this), ref position);
+            return NativeCalls.godot_icall_1_898(method_bind_21, Object.GetPtr(this), ref position);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -480,7 +480,7 @@ namespace Godot
         [GodotMethod("get_column_at_position")]
         public int GetColumnAtPosition(Vector2 position)
         {
-            return NativeCalls.godot_icall_1_840(method_bind_22, Object.GetPtr(this), ref position);
+            return NativeCalls.godot_icall_1_843(method_bind_22, Object.GetPtr(this), ref position);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -494,7 +494,7 @@ namespace Godot
         [GodotMethod("get_drop_section_at_position")]
         public int GetDropSectionAtPosition(Vector2 position)
         {
-            return NativeCalls.godot_icall_1_840(method_bind_23, Object.GetPtr(this), ref position);
+            return NativeCalls.godot_icall_1_843(method_bind_23, Object.GetPtr(this), ref position);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

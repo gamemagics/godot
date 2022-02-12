@@ -36,7 +36,7 @@ namespace Godot
         [GodotMethod("config")]
         public void Config(string inherits, string path, bool builtInEnabled = true, bool loadEnabled = true)
         {
-            EditorNativeCalls.godot_icall_4_775(method_bind_0, Object.GetPtr(this), inherits, path, builtInEnabled, loadEnabled);
+            EditorNativeCalls.godot_icall_4_778(method_bind_0, Object.GetPtr(this), inherits, path, builtInEnabled, loadEnabled);
         }
     }
 }

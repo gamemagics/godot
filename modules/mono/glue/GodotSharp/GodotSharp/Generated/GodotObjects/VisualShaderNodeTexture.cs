@@ -139,7 +139,7 @@ namespace Godot
         [Obsolete("GetSource is deprecated. Use the Source property instead.")]
         public VisualShaderNodeTexture.SourceEnum GetSource()
         {
-            return (VisualShaderNodeTexture.SourceEnum)NativeCalls.godot_icall_0_1025(method_bind_1, Object.GetPtr(this));
+            return (VisualShaderNodeTexture.SourceEnum)NativeCalls.godot_icall_0_1028(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -179,7 +179,7 @@ namespace Godot
         [Obsolete("GetTextureType is deprecated. Use the TextureType property instead.")]
         public VisualShaderNodeTexture.TextureTypeEnum GetTextureType()
         {
-            return (VisualShaderNodeTexture.TextureTypeEnum)NativeCalls.godot_icall_0_1026(method_bind_5, Object.GetPtr(this));
+            return (VisualShaderNodeTexture.TextureTypeEnum)NativeCalls.godot_icall_0_1029(method_bind_5, Object.GetPtr(this));
         }
     }
 }

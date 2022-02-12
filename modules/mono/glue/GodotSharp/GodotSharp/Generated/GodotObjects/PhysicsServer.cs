@@ -586,7 +586,7 @@ namespace Godot
         [GodotMethod("shape_create")]
         public static RID ShapeCreate(PhysicsServer.ShapeType type)
         {
-            return new RID(NativeCalls.godot_icall_1_652(method_bind_0, ptr, (int)type));
+            return new RID(NativeCalls.godot_icall_1_655(method_bind_0, ptr, (int)type));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -598,7 +598,7 @@ namespace Godot
         [GodotMethod("shape_set_data")]
         public static void ShapeSetData(RID shape, object data)
         {
-            NativeCalls.godot_icall_2_662(method_bind_1, ptr, RID.GetPtr(shape), data);
+            NativeCalls.godot_icall_2_665(method_bind_1, ptr, RID.GetPtr(shape), data);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -610,7 +610,7 @@ namespace Godot
         [GodotMethod("shape_get_type")]
         public static PhysicsServer.ShapeType ShapeGetType(RID shape)
         {
-            return (PhysicsServer.ShapeType)NativeCalls.godot_icall_1_707(method_bind_2, ptr, RID.GetPtr(shape));
+            return (PhysicsServer.ShapeType)NativeCalls.godot_icall_1_710(method_bind_2, ptr, RID.GetPtr(shape));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -622,7 +622,7 @@ namespace Godot
         [GodotMethod("shape_get_data")]
         public static object ShapeGetData(RID shape)
         {
-            return NativeCalls.godot_icall_1_664(method_bind_3, ptr, RID.GetPtr(shape));
+            return NativeCalls.godot_icall_1_667(method_bind_3, ptr, RID.GetPtr(shape));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -646,7 +646,7 @@ namespace Godot
         [GodotMethod("space_set_active")]
         public static void SpaceSetActive(RID space, bool active)
         {
-            NativeCalls.godot_icall_2_665(method_bind_5, ptr, RID.GetPtr(space), active);
+            NativeCalls.godot_icall_2_668(method_bind_5, ptr, RID.GetPtr(space), active);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -658,7 +658,7 @@ namespace Godot
         [GodotMethod("space_is_active")]
         public static bool SpaceIsActive(RID space)
         {
-            return NativeCalls.godot_icall_1_666(method_bind_6, ptr, RID.GetPtr(space));
+            return NativeCalls.godot_icall_1_669(method_bind_6, ptr, RID.GetPtr(space));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -670,7 +670,7 @@ namespace Godot
         [GodotMethod("space_set_param")]
         public static void SpaceSetParam(RID space, PhysicsServer.SpaceParameter param, float value)
         {
-            NativeCalls.godot_icall_3_667(method_bind_7, ptr, RID.GetPtr(space), (int)param, value);
+            NativeCalls.godot_icall_3_670(method_bind_7, ptr, RID.GetPtr(space), (int)param, value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -682,7 +682,7 @@ namespace Godot
         [GodotMethod("space_get_param")]
         public static float SpaceGetParam(RID space, PhysicsServer.SpaceParameter param)
         {
-            return NativeCalls.godot_icall_2_668(method_bind_8, ptr, RID.GetPtr(space), (int)param);
+            return NativeCalls.godot_icall_2_671(method_bind_8, ptr, RID.GetPtr(space), (int)param);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -694,7 +694,7 @@ namespace Godot
         [GodotMethod("space_get_direct_state")]
         public static PhysicsDirectSpaceState SpaceGetDirectState(RID space)
         {
-            return NativeCalls.godot_icall_1_708(method_bind_9, ptr, RID.GetPtr(space));
+            return NativeCalls.godot_icall_1_711(method_bind_9, ptr, RID.GetPtr(space));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -718,7 +718,7 @@ namespace Godot
         [GodotMethod("area_set_space")]
         public static void AreaSetSpace(RID area, RID space)
         {
-            NativeCalls.godot_icall_2_670(method_bind_11, ptr, RID.GetPtr(area), RID.GetPtr(space));
+            NativeCalls.godot_icall_2_673(method_bind_11, ptr, RID.GetPtr(area), RID.GetPtr(space));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -730,7 +730,7 @@ namespace Godot
         [GodotMethod("area_get_space")]
         public static RID AreaGetSpace(RID area)
         {
-            return new RID(NativeCalls.godot_icall_1_671(method_bind_12, ptr, RID.GetPtr(area)));
+            return new RID(NativeCalls.godot_icall_1_674(method_bind_12, ptr, RID.GetPtr(area)));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -742,7 +742,7 @@ namespace Godot
         [GodotMethod("area_set_space_override_mode")]
         public static void AreaSetSpaceOverrideMode(RID area, PhysicsServer.AreaSpaceOverrideMode mode)
         {
-            NativeCalls.godot_icall_2_672(method_bind_13, ptr, RID.GetPtr(area), (int)mode);
+            NativeCalls.godot_icall_2_675(method_bind_13, ptr, RID.GetPtr(area), (int)mode);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -754,7 +754,7 @@ namespace Godot
         [GodotMethod("area_get_space_override_mode")]
         public static PhysicsServer.AreaSpaceOverrideMode AreaGetSpaceOverrideMode(RID area)
         {
-            return (PhysicsServer.AreaSpaceOverrideMode)NativeCalls.godot_icall_1_709(method_bind_14, ptr, RID.GetPtr(area));
+            return (PhysicsServer.AreaSpaceOverrideMode)NativeCalls.godot_icall_1_712(method_bind_14, ptr, RID.GetPtr(area));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -768,7 +768,7 @@ namespace Godot
         public static void AreaAddShape(RID area, RID shape, Nullable<Transform> transform = null, bool disabled = false)
         {
             Transform transform_in = transform.HasValue ? transform.Value : Transform.Identity;
-            NativeCalls.godot_icall_4_710(method_bind_15, ptr, RID.GetPtr(area), RID.GetPtr(shape), ref transform_in, disabled);
+            NativeCalls.godot_icall_4_713(method_bind_15, ptr, RID.GetPtr(area), RID.GetPtr(shape), ref transform_in, disabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -780,7 +780,7 @@ namespace Godot
         [GodotMethod("area_set_shape")]
         public static void AreaSetShape(RID area, int shapeIdx, RID shape)
         {
-            NativeCalls.godot_icall_3_675(method_bind_16, ptr, RID.GetPtr(area), shapeIdx, RID.GetPtr(shape));
+            NativeCalls.godot_icall_3_678(method_bind_16, ptr, RID.GetPtr(area), shapeIdx, RID.GetPtr(shape));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -792,7 +792,7 @@ namespace Godot
         [GodotMethod("area_set_shape_transform")]
         public static void AreaSetShapeTransform(RID area, int shapeIdx, Transform transform)
         {
-            NativeCalls.godot_icall_3_711(method_bind_17, ptr, RID.GetPtr(area), shapeIdx, ref transform);
+            NativeCalls.godot_icall_3_714(method_bind_17, ptr, RID.GetPtr(area), shapeIdx, ref transform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -801,7 +801,7 @@ namespace Godot
         [GodotMethod("area_set_shape_disabled")]
         public static void AreaSetShapeDisabled(RID area, int shapeIdx, bool disabled)
         {
-            NativeCalls.godot_icall_3_677(method_bind_18, ptr, RID.GetPtr(area), shapeIdx, disabled);
+            NativeCalls.godot_icall_3_680(method_bind_18, ptr, RID.GetPtr(area), shapeIdx, disabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -813,7 +813,7 @@ namespace Godot
         [GodotMethod("area_get_shape_count")]
         public static int AreaGetShapeCount(RID area)
         {
-            return NativeCalls.godot_icall_1_678(method_bind_19, ptr, RID.GetPtr(area));
+            return NativeCalls.godot_icall_1_681(method_bind_19, ptr, RID.GetPtr(area));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -825,7 +825,7 @@ namespace Godot
         [GodotMethod("area_get_shape")]
         public static RID AreaGetShape(RID area, int shapeIdx)
         {
-            return new RID(NativeCalls.godot_icall_2_679(method_bind_20, ptr, RID.GetPtr(area), shapeIdx));
+            return new RID(NativeCalls.godot_icall_2_682(method_bind_20, ptr, RID.GetPtr(area), shapeIdx));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -837,7 +837,7 @@ namespace Godot
         [GodotMethod("area_get_shape_transform")]
         public static Transform AreaGetShapeTransform(RID area, int shapeIdx)
         {
-            NativeCalls.godot_icall_2_712(method_bind_21, ptr, RID.GetPtr(area), shapeIdx, out Transform argRet); return (Transform)argRet;
+            NativeCalls.godot_icall_2_715(method_bind_21, ptr, RID.GetPtr(area), shapeIdx, out Transform argRet); return (Transform)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -849,7 +849,7 @@ namespace Godot
         [GodotMethod("area_remove_shape")]
         public static void AreaRemoveShape(RID area, int shapeIdx)
         {
-            NativeCalls.godot_icall_2_672(method_bind_22, ptr, RID.GetPtr(area), shapeIdx);
+            NativeCalls.godot_icall_2_675(method_bind_22, ptr, RID.GetPtr(area), shapeIdx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -873,7 +873,7 @@ namespace Godot
         [GodotMethod("area_set_collision_layer")]
         public static void AreaSetCollisionLayer(RID area, uint layer)
         {
-            NativeCalls.godot_icall_2_681(method_bind_24, ptr, RID.GetPtr(area), layer);
+            NativeCalls.godot_icall_2_684(method_bind_24, ptr, RID.GetPtr(area), layer);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -885,7 +885,7 @@ namespace Godot
         [GodotMethod("area_set_collision_mask")]
         public static void AreaSetCollisionMask(RID area, uint mask)
         {
-            NativeCalls.godot_icall_2_681(method_bind_25, ptr, RID.GetPtr(area), mask);
+            NativeCalls.godot_icall_2_684(method_bind_25, ptr, RID.GetPtr(area), mask);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -897,7 +897,7 @@ namespace Godot
         [GodotMethod("area_set_param")]
         public static void AreaSetParam(RID area, PhysicsServer.AreaParameter param, object value)
         {
-            NativeCalls.godot_icall_3_682(method_bind_26, ptr, RID.GetPtr(area), (int)param, value);
+            NativeCalls.godot_icall_3_685(method_bind_26, ptr, RID.GetPtr(area), (int)param, value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -909,7 +909,7 @@ namespace Godot
         [GodotMethod("area_set_transform")]
         public static void AreaSetTransform(RID area, Transform transform)
         {
-            NativeCalls.godot_icall_2_713(method_bind_27, ptr, RID.GetPtr(area), ref transform);
+            NativeCalls.godot_icall_2_716(method_bind_27, ptr, RID.GetPtr(area), ref transform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -921,7 +921,7 @@ namespace Godot
         [GodotMethod("area_get_param")]
         public static object AreaGetParam(RID area, PhysicsServer.AreaParameter param)
         {
-            return NativeCalls.godot_icall_2_684(method_bind_28, ptr, RID.GetPtr(area), (int)param);
+            return NativeCalls.godot_icall_2_687(method_bind_28, ptr, RID.GetPtr(area), (int)param);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -933,7 +933,7 @@ namespace Godot
         [GodotMethod("area_get_transform")]
         public static Transform AreaGetTransform(RID area)
         {
-            NativeCalls.godot_icall_1_714(method_bind_29, ptr, RID.GetPtr(area), out Transform argRet); return (Transform)argRet;
+            NativeCalls.godot_icall_1_717(method_bind_29, ptr, RID.GetPtr(area), out Transform argRet); return (Transform)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -945,7 +945,7 @@ namespace Godot
         [GodotMethod("area_attach_object_instance_id")]
         public static void AreaAttachObjectInstanceId(RID area, ulong id)
         {
-            NativeCalls.godot_icall_2_686(method_bind_30, ptr, RID.GetPtr(area), id);
+            NativeCalls.godot_icall_2_689(method_bind_30, ptr, RID.GetPtr(area), id);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -957,7 +957,7 @@ namespace Godot
         [GodotMethod("area_get_object_instance_id")]
         public static ulong AreaGetObjectInstanceId(RID area)
         {
-            return NativeCalls.godot_icall_1_687(method_bind_31, ptr, RID.GetPtr(area));
+            return NativeCalls.godot_icall_1_690(method_bind_31, ptr, RID.GetPtr(area));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -974,7 +974,7 @@ namespace Godot
         [GodotMethod("area_set_monitor_callback")]
         public static void AreaSetMonitorCallback(RID area, Object receiver, string method)
         {
-            NativeCalls.godot_icall_3_688(method_bind_32, ptr, RID.GetPtr(area), Object.GetPtr(receiver), method);
+            NativeCalls.godot_icall_3_691(method_bind_32, ptr, RID.GetPtr(area), Object.GetPtr(receiver), method);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -983,7 +983,7 @@ namespace Godot
         [GodotMethod("area_set_area_monitor_callback")]
         public static void AreaSetAreaMonitorCallback(RID area, Object receiver, string method)
         {
-            NativeCalls.godot_icall_3_688(method_bind_33, ptr, RID.GetPtr(area), Object.GetPtr(receiver), method);
+            NativeCalls.godot_icall_3_691(method_bind_33, ptr, RID.GetPtr(area), Object.GetPtr(receiver), method);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -992,7 +992,7 @@ namespace Godot
         [GodotMethod("area_set_monitorable")]
         public static void AreaSetMonitorable(RID area, bool monitorable)
         {
-            NativeCalls.godot_icall_2_665(method_bind_34, ptr, RID.GetPtr(area), monitorable);
+            NativeCalls.godot_icall_2_668(method_bind_34, ptr, RID.GetPtr(area), monitorable);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1004,7 +1004,7 @@ namespace Godot
         [GodotMethod("area_set_ray_pickable")]
         public static void AreaSetRayPickable(RID area, bool enable)
         {
-            NativeCalls.godot_icall_2_665(method_bind_35, ptr, RID.GetPtr(area), enable);
+            NativeCalls.godot_icall_2_668(method_bind_35, ptr, RID.GetPtr(area), enable);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1016,7 +1016,7 @@ namespace Godot
         [GodotMethod("area_is_ray_pickable")]
         public static bool AreaIsRayPickable(RID area)
         {
-            return NativeCalls.godot_icall_1_666(method_bind_36, ptr, RID.GetPtr(area));
+            return NativeCalls.godot_icall_1_669(method_bind_36, ptr, RID.GetPtr(area));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1028,7 +1028,7 @@ namespace Godot
         [GodotMethod("body_create")]
         public static RID BodyCreate(PhysicsServer.BodyMode mode = (PhysicsServer.BodyMode)2, bool initSleeping = false)
         {
-            return new RID(NativeCalls.godot_icall_2_715(method_bind_37, ptr, (int)mode, initSleeping));
+            return new RID(NativeCalls.godot_icall_2_718(method_bind_37, ptr, (int)mode, initSleeping));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1040,7 +1040,7 @@ namespace Godot
         [GodotMethod("body_set_space")]
         public static void BodySetSpace(RID body, RID space)
         {
-            NativeCalls.godot_icall_2_670(method_bind_38, ptr, RID.GetPtr(body), RID.GetPtr(space));
+            NativeCalls.godot_icall_2_673(method_bind_38, ptr, RID.GetPtr(body), RID.GetPtr(space));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1052,7 +1052,7 @@ namespace Godot
         [GodotMethod("body_get_space")]
         public static RID BodyGetSpace(RID body)
         {
-            return new RID(NativeCalls.godot_icall_1_671(method_bind_39, ptr, RID.GetPtr(body)));
+            return new RID(NativeCalls.godot_icall_1_674(method_bind_39, ptr, RID.GetPtr(body)));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1064,7 +1064,7 @@ namespace Godot
         [GodotMethod("body_set_mode")]
         public static void BodySetMode(RID body, PhysicsServer.BodyMode mode)
         {
-            NativeCalls.godot_icall_2_672(method_bind_40, ptr, RID.GetPtr(body), (int)mode);
+            NativeCalls.godot_icall_2_675(method_bind_40, ptr, RID.GetPtr(body), (int)mode);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1076,7 +1076,7 @@ namespace Godot
         [GodotMethod("body_get_mode")]
         public static PhysicsServer.BodyMode BodyGetMode(RID body)
         {
-            return (PhysicsServer.BodyMode)NativeCalls.godot_icall_1_716(method_bind_41, ptr, RID.GetPtr(body));
+            return (PhysicsServer.BodyMode)NativeCalls.godot_icall_1_719(method_bind_41, ptr, RID.GetPtr(body));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1088,7 +1088,7 @@ namespace Godot
         [GodotMethod("body_set_collision_layer")]
         public static void BodySetCollisionLayer(RID body, uint layer)
         {
-            NativeCalls.godot_icall_2_681(method_bind_42, ptr, RID.GetPtr(body), layer);
+            NativeCalls.godot_icall_2_684(method_bind_42, ptr, RID.GetPtr(body), layer);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1100,7 +1100,7 @@ namespace Godot
         [GodotMethod("body_get_collision_layer")]
         public static uint BodyGetCollisionLayer(RID body)
         {
-            return NativeCalls.godot_icall_1_691(method_bind_43, ptr, RID.GetPtr(body));
+            return NativeCalls.godot_icall_1_694(method_bind_43, ptr, RID.GetPtr(body));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1112,7 +1112,7 @@ namespace Godot
         [GodotMethod("body_set_collision_mask")]
         public static void BodySetCollisionMask(RID body, uint mask)
         {
-            NativeCalls.godot_icall_2_681(method_bind_44, ptr, RID.GetPtr(body), mask);
+            NativeCalls.godot_icall_2_684(method_bind_44, ptr, RID.GetPtr(body), mask);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1124,7 +1124,7 @@ namespace Godot
         [GodotMethod("body_get_collision_mask")]
         public static uint BodyGetCollisionMask(RID body)
         {
-            return NativeCalls.godot_icall_1_691(method_bind_45, ptr, RID.GetPtr(body));
+            return NativeCalls.godot_icall_1_694(method_bind_45, ptr, RID.GetPtr(body));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1138,7 +1138,7 @@ namespace Godot
         public static void BodyAddShape(RID body, RID shape, Nullable<Transform> transform = null, bool disabled = false)
         {
             Transform transform_in = transform.HasValue ? transform.Value : Transform.Identity;
-            NativeCalls.godot_icall_4_710(method_bind_46, ptr, RID.GetPtr(body), RID.GetPtr(shape), ref transform_in, disabled);
+            NativeCalls.godot_icall_4_713(method_bind_46, ptr, RID.GetPtr(body), RID.GetPtr(shape), ref transform_in, disabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1150,7 +1150,7 @@ namespace Godot
         [GodotMethod("body_set_shape")]
         public static void BodySetShape(RID body, int shapeIdx, RID shape)
         {
-            NativeCalls.godot_icall_3_675(method_bind_47, ptr, RID.GetPtr(body), shapeIdx, RID.GetPtr(shape));
+            NativeCalls.godot_icall_3_678(method_bind_47, ptr, RID.GetPtr(body), shapeIdx, RID.GetPtr(shape));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1162,7 +1162,7 @@ namespace Godot
         [GodotMethod("body_set_shape_transform")]
         public static void BodySetShapeTransform(RID body, int shapeIdx, Transform transform)
         {
-            NativeCalls.godot_icall_3_711(method_bind_48, ptr, RID.GetPtr(body), shapeIdx, ref transform);
+            NativeCalls.godot_icall_3_714(method_bind_48, ptr, RID.GetPtr(body), shapeIdx, ref transform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1171,7 +1171,7 @@ namespace Godot
         [GodotMethod("body_set_shape_disabled")]
         public static void BodySetShapeDisabled(RID body, int shapeIdx, bool disabled)
         {
-            NativeCalls.godot_icall_3_677(method_bind_49, ptr, RID.GetPtr(body), shapeIdx, disabled);
+            NativeCalls.godot_icall_3_680(method_bind_49, ptr, RID.GetPtr(body), shapeIdx, disabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1183,7 +1183,7 @@ namespace Godot
         [GodotMethod("body_get_shape_count")]
         public static int BodyGetShapeCount(RID body)
         {
-            return NativeCalls.godot_icall_1_678(method_bind_50, ptr, RID.GetPtr(body));
+            return NativeCalls.godot_icall_1_681(method_bind_50, ptr, RID.GetPtr(body));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1195,7 +1195,7 @@ namespace Godot
         [GodotMethod("body_get_shape")]
         public static RID BodyGetShape(RID body, int shapeIdx)
         {
-            return new RID(NativeCalls.godot_icall_2_679(method_bind_51, ptr, RID.GetPtr(body), shapeIdx));
+            return new RID(NativeCalls.godot_icall_2_682(method_bind_51, ptr, RID.GetPtr(body), shapeIdx));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1207,7 +1207,7 @@ namespace Godot
         [GodotMethod("body_get_shape_transform")]
         public static Transform BodyGetShapeTransform(RID body, int shapeIdx)
         {
-            NativeCalls.godot_icall_2_712(method_bind_52, ptr, RID.GetPtr(body), shapeIdx, out Transform argRet); return (Transform)argRet;
+            NativeCalls.godot_icall_2_715(method_bind_52, ptr, RID.GetPtr(body), shapeIdx, out Transform argRet); return (Transform)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1219,7 +1219,7 @@ namespace Godot
         [GodotMethod("body_remove_shape")]
         public static void BodyRemoveShape(RID body, int shapeIdx)
         {
-            NativeCalls.godot_icall_2_672(method_bind_53, ptr, RID.GetPtr(body), shapeIdx);
+            NativeCalls.godot_icall_2_675(method_bind_53, ptr, RID.GetPtr(body), shapeIdx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1243,7 +1243,7 @@ namespace Godot
         [GodotMethod("body_attach_object_instance_id")]
         public static void BodyAttachObjectInstanceId(RID body, uint id)
         {
-            NativeCalls.godot_icall_2_681(method_bind_55, ptr, RID.GetPtr(body), id);
+            NativeCalls.godot_icall_2_684(method_bind_55, ptr, RID.GetPtr(body), id);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1255,7 +1255,7 @@ namespace Godot
         [GodotMethod("body_get_object_instance_id")]
         public static uint BodyGetObjectInstanceId(RID body)
         {
-            return NativeCalls.godot_icall_1_691(method_bind_56, ptr, RID.GetPtr(body));
+            return NativeCalls.godot_icall_1_694(method_bind_56, ptr, RID.GetPtr(body));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1268,7 +1268,7 @@ namespace Godot
         [GodotMethod("body_set_enable_continuous_collision_detection")]
         public static void BodySetEnableContinuousCollisionDetection(RID body, bool enable)
         {
-            NativeCalls.godot_icall_2_665(method_bind_57, ptr, RID.GetPtr(body), enable);
+            NativeCalls.godot_icall_2_668(method_bind_57, ptr, RID.GetPtr(body), enable);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1280,7 +1280,7 @@ namespace Godot
         [GodotMethod("body_is_continuous_collision_detection_enabled")]
         public static bool BodyIsContinuousCollisionDetectionEnabled(RID body)
         {
-            return NativeCalls.godot_icall_1_666(method_bind_58, ptr, RID.GetPtr(body));
+            return NativeCalls.godot_icall_1_669(method_bind_58, ptr, RID.GetPtr(body));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1292,7 +1292,7 @@ namespace Godot
         [GodotMethod("body_set_param")]
         public static void BodySetParam(RID body, PhysicsServer.BodyParameter param, float value)
         {
-            NativeCalls.godot_icall_3_667(method_bind_59, ptr, RID.GetPtr(body), (int)param, value);
+            NativeCalls.godot_icall_3_670(method_bind_59, ptr, RID.GetPtr(body), (int)param, value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1304,7 +1304,7 @@ namespace Godot
         [GodotMethod("body_get_param")]
         public static float BodyGetParam(RID body, PhysicsServer.BodyParameter param)
         {
-            return NativeCalls.godot_icall_2_668(method_bind_60, ptr, RID.GetPtr(body), (int)param);
+            return NativeCalls.godot_icall_2_671(method_bind_60, ptr, RID.GetPtr(body), (int)param);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1313,7 +1313,7 @@ namespace Godot
         [GodotMethod("body_set_kinematic_safe_margin")]
         public static void BodySetKinematicSafeMargin(RID body, float margin)
         {
-            NativeCalls.godot_icall_2_694(method_bind_61, ptr, RID.GetPtr(body), margin);
+            NativeCalls.godot_icall_2_697(method_bind_61, ptr, RID.GetPtr(body), margin);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1322,7 +1322,7 @@ namespace Godot
         [GodotMethod("body_get_kinematic_safe_margin")]
         public static float BodyGetKinematicSafeMargin(RID body)
         {
-            return NativeCalls.godot_icall_1_717(method_bind_62, ptr, RID.GetPtr(body));
+            return NativeCalls.godot_icall_1_720(method_bind_62, ptr, RID.GetPtr(body));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1334,7 +1334,7 @@ namespace Godot
         [GodotMethod("body_set_state")]
         public static void BodySetState(RID body, PhysicsServer.BodyState state, object value)
         {
-            NativeCalls.godot_icall_3_682(method_bind_63, ptr, RID.GetPtr(body), (int)state, value);
+            NativeCalls.godot_icall_3_685(method_bind_63, ptr, RID.GetPtr(body), (int)state, value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1346,7 +1346,7 @@ namespace Godot
         [GodotMethod("body_get_state")]
         public static object BodyGetState(RID body, PhysicsServer.BodyState state)
         {
-            return NativeCalls.godot_icall_2_684(method_bind_64, ptr, RID.GetPtr(body), (int)state);
+            return NativeCalls.godot_icall_2_687(method_bind_64, ptr, RID.GetPtr(body), (int)state);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1355,7 +1355,7 @@ namespace Godot
         [GodotMethod("body_add_central_force")]
         public static void BodyAddCentralForce(RID body, Vector3 force)
         {
-            NativeCalls.godot_icall_2_718(method_bind_65, ptr, RID.GetPtr(body), ref force);
+            NativeCalls.godot_icall_2_721(method_bind_65, ptr, RID.GetPtr(body), ref force);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1364,7 +1364,7 @@ namespace Godot
         [GodotMethod("body_add_force")]
         public static void BodyAddForce(RID body, Vector3 force, Vector3 position)
         {
-            NativeCalls.godot_icall_3_719(method_bind_66, ptr, RID.GetPtr(body), ref force, ref position);
+            NativeCalls.godot_icall_3_722(method_bind_66, ptr, RID.GetPtr(body), ref force, ref position);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1373,7 +1373,7 @@ namespace Godot
         [GodotMethod("body_add_torque")]
         public static void BodyAddTorque(RID body, Vector3 torque)
         {
-            NativeCalls.godot_icall_2_718(method_bind_67, ptr, RID.GetPtr(body), ref torque);
+            NativeCalls.godot_icall_2_721(method_bind_67, ptr, RID.GetPtr(body), ref torque);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1382,7 +1382,7 @@ namespace Godot
         [GodotMethod("body_apply_central_impulse")]
         public static void BodyApplyCentralImpulse(RID body, Vector3 impulse)
         {
-            NativeCalls.godot_icall_2_718(method_bind_68, ptr, RID.GetPtr(body), ref impulse);
+            NativeCalls.godot_icall_2_721(method_bind_68, ptr, RID.GetPtr(body), ref impulse);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1394,7 +1394,7 @@ namespace Godot
         [GodotMethod("body_apply_impulse")]
         public static void BodyApplyImpulse(RID body, Vector3 position, Vector3 impulse)
         {
-            NativeCalls.godot_icall_3_719(method_bind_69, ptr, RID.GetPtr(body), ref position, ref impulse);
+            NativeCalls.godot_icall_3_722(method_bind_69, ptr, RID.GetPtr(body), ref position, ref impulse);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1406,7 +1406,7 @@ namespace Godot
         [GodotMethod("body_apply_torque_impulse")]
         public static void BodyApplyTorqueImpulse(RID body, Vector3 impulse)
         {
-            NativeCalls.godot_icall_2_718(method_bind_70, ptr, RID.GetPtr(body), ref impulse);
+            NativeCalls.godot_icall_2_721(method_bind_70, ptr, RID.GetPtr(body), ref impulse);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1418,7 +1418,7 @@ namespace Godot
         [GodotMethod("body_set_axis_velocity")]
         public static void BodySetAxisVelocity(RID body, Vector3 axisVelocity)
         {
-            NativeCalls.godot_icall_2_718(method_bind_71, ptr, RID.GetPtr(body), ref axisVelocity);
+            NativeCalls.godot_icall_2_721(method_bind_71, ptr, RID.GetPtr(body), ref axisVelocity);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1427,7 +1427,7 @@ namespace Godot
         [GodotMethod("body_set_axis_lock")]
         public static void BodySetAxisLock(RID body, PhysicsServer.BodyAxis axis, bool @lock)
         {
-            NativeCalls.godot_icall_3_677(method_bind_72, ptr, RID.GetPtr(body), (int)axis, @lock);
+            NativeCalls.godot_icall_3_680(method_bind_72, ptr, RID.GetPtr(body), (int)axis, @lock);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1436,7 +1436,7 @@ namespace Godot
         [GodotMethod("body_is_axis_locked")]
         public static bool BodyIsAxisLocked(RID body, PhysicsServer.BodyAxis axis)
         {
-            return NativeCalls.godot_icall_2_720(method_bind_73, ptr, RID.GetPtr(body), (int)axis);
+            return NativeCalls.godot_icall_2_723(method_bind_73, ptr, RID.GetPtr(body), (int)axis);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1448,7 +1448,7 @@ namespace Godot
         [GodotMethod("body_add_collision_exception")]
         public static void BodyAddCollisionException(RID body, RID exceptedBody)
         {
-            NativeCalls.godot_icall_2_670(method_bind_74, ptr, RID.GetPtr(body), RID.GetPtr(exceptedBody));
+            NativeCalls.godot_icall_2_673(method_bind_74, ptr, RID.GetPtr(body), RID.GetPtr(exceptedBody));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1461,7 +1461,7 @@ namespace Godot
         [GodotMethod("body_remove_collision_exception")]
         public static void BodyRemoveCollisionException(RID body, RID exceptedBody)
         {
-            NativeCalls.godot_icall_2_670(method_bind_75, ptr, RID.GetPtr(body), RID.GetPtr(exceptedBody));
+            NativeCalls.godot_icall_2_673(method_bind_75, ptr, RID.GetPtr(body), RID.GetPtr(exceptedBody));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1473,7 +1473,7 @@ namespace Godot
         [GodotMethod("body_set_max_contacts_reported")]
         public static void BodySetMaxContactsReported(RID body, int amount)
         {
-            NativeCalls.godot_icall_2_672(method_bind_76, ptr, RID.GetPtr(body), amount);
+            NativeCalls.godot_icall_2_675(method_bind_76, ptr, RID.GetPtr(body), amount);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1485,7 +1485,7 @@ namespace Godot
         [GodotMethod("body_get_max_contacts_reported")]
         public static int BodyGetMaxContactsReported(RID body)
         {
-            return NativeCalls.godot_icall_1_678(method_bind_77, ptr, RID.GetPtr(body));
+            return NativeCalls.godot_icall_1_681(method_bind_77, ptr, RID.GetPtr(body));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1497,7 +1497,7 @@ namespace Godot
         [GodotMethod("body_set_omit_force_integration")]
         public static void BodySetOmitForceIntegration(RID body, bool enable)
         {
-            NativeCalls.godot_icall_2_665(method_bind_78, ptr, RID.GetPtr(body), enable);
+            NativeCalls.godot_icall_2_668(method_bind_78, ptr, RID.GetPtr(body), enable);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1509,7 +1509,7 @@ namespace Godot
         [GodotMethod("body_is_omitting_force_integration")]
         public static bool BodyIsOmittingForceIntegration(RID body)
         {
-            return NativeCalls.godot_icall_1_666(method_bind_79, ptr, RID.GetPtr(body));
+            return NativeCalls.godot_icall_1_669(method_bind_79, ptr, RID.GetPtr(body));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1521,7 +1521,7 @@ namespace Godot
         [GodotMethod("body_set_force_integration_callback")]
         public static void BodySetForceIntegrationCallback(RID body, Object receiver, string method, object userdata = null)
         {
-            NativeCalls.godot_icall_4_696(method_bind_80, ptr, RID.GetPtr(body), Object.GetPtr(receiver), method, userdata);
+            NativeCalls.godot_icall_4_699(method_bind_80, ptr, RID.GetPtr(body), Object.GetPtr(receiver), method, userdata);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1533,7 +1533,7 @@ namespace Godot
         [GodotMethod("body_set_ray_pickable")]
         public static void BodySetRayPickable(RID body, bool enable)
         {
-            NativeCalls.godot_icall_2_665(method_bind_81, ptr, RID.GetPtr(body), enable);
+            NativeCalls.godot_icall_2_668(method_bind_81, ptr, RID.GetPtr(body), enable);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1545,7 +1545,7 @@ namespace Godot
         [GodotMethod("body_is_ray_pickable")]
         public static bool BodyIsRayPickable(RID body)
         {
-            return NativeCalls.godot_icall_1_666(method_bind_82, ptr, RID.GetPtr(body));
+            return NativeCalls.godot_icall_1_669(method_bind_82, ptr, RID.GetPtr(body));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1559,7 +1559,7 @@ namespace Godot
         public static bool BodyTestMotion(RID body, Transform from, Vector3 motion, bool infiniteInertia, PhysicsTestMotionResult result = null, bool excludeRaycastShapes = true, Godot.Collections.Array exclude = null)
         {
             Godot.Collections.Array exclude_in = exclude != null ? exclude : new Godot.Collections.Array { };
-            return NativeCalls.godot_icall_7_721(method_bind_83, ptr, RID.GetPtr(body), ref from, ref motion, infiniteInertia, Object.GetPtr(result), excludeRaycastShapes, exclude_in.GetPtr());
+            return NativeCalls.godot_icall_7_724(method_bind_83, ptr, RID.GetPtr(body), ref from, ref motion, infiniteInertia, Object.GetPtr(result), excludeRaycastShapes, exclude_in.GetPtr());
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1571,7 +1571,7 @@ namespace Godot
         [GodotMethod("body_get_direct_state")]
         public static PhysicsDirectBodyState BodyGetDirectState(RID body)
         {
-            return NativeCalls.godot_icall_1_722(method_bind_84, ptr, RID.GetPtr(body));
+            return NativeCalls.godot_icall_1_725(method_bind_84, ptr, RID.GetPtr(body));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1583,7 +1583,7 @@ namespace Godot
         [GodotMethod("joint_create_pin")]
         public static RID JointCreatePin(RID bodyA, Vector3 localA, RID bodyB, Vector3 localB)
         {
-            return new RID(NativeCalls.godot_icall_4_723(method_bind_85, ptr, RID.GetPtr(bodyA), ref localA, RID.GetPtr(bodyB), ref localB));
+            return new RID(NativeCalls.godot_icall_4_726(method_bind_85, ptr, RID.GetPtr(bodyA), ref localA, RID.GetPtr(bodyB), ref localB));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1595,7 +1595,7 @@ namespace Godot
         [GodotMethod("pin_joint_set_param")]
         public static void PinJointSetParam(RID joint, PhysicsServer.PinJointParam param, float value)
         {
-            NativeCalls.godot_icall_3_667(method_bind_86, ptr, RID.GetPtr(joint), (int)param, value);
+            NativeCalls.godot_icall_3_670(method_bind_86, ptr, RID.GetPtr(joint), (int)param, value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1607,7 +1607,7 @@ namespace Godot
         [GodotMethod("pin_joint_get_param")]
         public static float PinJointGetParam(RID joint, PhysicsServer.PinJointParam param)
         {
-            return NativeCalls.godot_icall_2_668(method_bind_87, ptr, RID.GetPtr(joint), (int)param);
+            return NativeCalls.godot_icall_2_671(method_bind_87, ptr, RID.GetPtr(joint), (int)param);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1619,7 +1619,7 @@ namespace Godot
         [GodotMethod("pin_joint_set_local_a")]
         public static void PinJointSetLocalA(RID joint, Vector3 localA)
         {
-            NativeCalls.godot_icall_2_718(method_bind_88, ptr, RID.GetPtr(joint), ref localA);
+            NativeCalls.godot_icall_2_721(method_bind_88, ptr, RID.GetPtr(joint), ref localA);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1631,7 +1631,7 @@ namespace Godot
         [GodotMethod("pin_joint_get_local_a")]
         public static Vector3 PinJointGetLocalA(RID joint)
         {
-            NativeCalls.godot_icall_1_724(method_bind_89, ptr, RID.GetPtr(joint), out Vector3 argRet); return (Vector3)argRet;
+            NativeCalls.godot_icall_1_727(method_bind_89, ptr, RID.GetPtr(joint), out Vector3 argRet); return (Vector3)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1643,7 +1643,7 @@ namespace Godot
         [GodotMethod("pin_joint_set_local_b")]
         public static void PinJointSetLocalB(RID joint, Vector3 localB)
         {
-            NativeCalls.godot_icall_2_718(method_bind_90, ptr, RID.GetPtr(joint), ref localB);
+            NativeCalls.godot_icall_2_721(method_bind_90, ptr, RID.GetPtr(joint), ref localB);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1655,7 +1655,7 @@ namespace Godot
         [GodotMethod("pin_joint_get_local_b")]
         public static Vector3 PinJointGetLocalB(RID joint)
         {
-            NativeCalls.godot_icall_1_724(method_bind_91, ptr, RID.GetPtr(joint), out Vector3 argRet); return (Vector3)argRet;
+            NativeCalls.godot_icall_1_727(method_bind_91, ptr, RID.GetPtr(joint), out Vector3 argRet); return (Vector3)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1667,7 +1667,7 @@ namespace Godot
         [GodotMethod("joint_create_hinge")]
         public static RID JointCreateHinge(RID bodyA, Transform hingeA, RID bodyB, Transform hingeB)
         {
-            return new RID(NativeCalls.godot_icall_4_725(method_bind_92, ptr, RID.GetPtr(bodyA), ref hingeA, RID.GetPtr(bodyB), ref hingeB));
+            return new RID(NativeCalls.godot_icall_4_728(method_bind_92, ptr, RID.GetPtr(bodyA), ref hingeA, RID.GetPtr(bodyB), ref hingeB));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1679,7 +1679,7 @@ namespace Godot
         [GodotMethod("hinge_joint_set_param")]
         public static void HingeJointSetParam(RID joint, PhysicsServer.HingeJointParam param, float value)
         {
-            NativeCalls.godot_icall_3_667(method_bind_93, ptr, RID.GetPtr(joint), (int)param, value);
+            NativeCalls.godot_icall_3_670(method_bind_93, ptr, RID.GetPtr(joint), (int)param, value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1691,7 +1691,7 @@ namespace Godot
         [GodotMethod("hinge_joint_get_param")]
         public static float HingeJointGetParam(RID joint, PhysicsServer.HingeJointParam param)
         {
-            return NativeCalls.godot_icall_2_668(method_bind_94, ptr, RID.GetPtr(joint), (int)param);
+            return NativeCalls.godot_icall_2_671(method_bind_94, ptr, RID.GetPtr(joint), (int)param);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1703,7 +1703,7 @@ namespace Godot
         [GodotMethod("hinge_joint_set_flag")]
         public static void HingeJointSetFlag(RID joint, PhysicsServer.HingeJointFlag flag, bool enabled)
         {
-            NativeCalls.godot_icall_3_677(method_bind_95, ptr, RID.GetPtr(joint), (int)flag, enabled);
+            NativeCalls.godot_icall_3_680(method_bind_95, ptr, RID.GetPtr(joint), (int)flag, enabled);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1715,7 +1715,7 @@ namespace Godot
         [GodotMethod("hinge_joint_get_flag")]
         public static bool HingeJointGetFlag(RID joint, PhysicsServer.HingeJointFlag flag)
         {
-            return NativeCalls.godot_icall_2_720(method_bind_96, ptr, RID.GetPtr(joint), (int)flag);
+            return NativeCalls.godot_icall_2_723(method_bind_96, ptr, RID.GetPtr(joint), (int)flag);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1727,7 +1727,7 @@ namespace Godot
         [GodotMethod("joint_create_slider")]
         public static RID JointCreateSlider(RID bodyA, Transform localRefA, RID bodyB, Transform localRefB)
         {
-            return new RID(NativeCalls.godot_icall_4_725(method_bind_97, ptr, RID.GetPtr(bodyA), ref localRefA, RID.GetPtr(bodyB), ref localRefB));
+            return new RID(NativeCalls.godot_icall_4_728(method_bind_97, ptr, RID.GetPtr(bodyA), ref localRefA, RID.GetPtr(bodyB), ref localRefB));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1739,7 +1739,7 @@ namespace Godot
         [GodotMethod("slider_joint_set_param")]
         public static void SliderJointSetParam(RID joint, PhysicsServer.SliderJointParam param, float value)
         {
-            NativeCalls.godot_icall_3_667(method_bind_98, ptr, RID.GetPtr(joint), (int)param, value);
+            NativeCalls.godot_icall_3_670(method_bind_98, ptr, RID.GetPtr(joint), (int)param, value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1751,7 +1751,7 @@ namespace Godot
         [GodotMethod("slider_joint_get_param")]
         public static float SliderJointGetParam(RID joint, PhysicsServer.SliderJointParam param)
         {
-            return NativeCalls.godot_icall_2_668(method_bind_99, ptr, RID.GetPtr(joint), (int)param);
+            return NativeCalls.godot_icall_2_671(method_bind_99, ptr, RID.GetPtr(joint), (int)param);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1763,7 +1763,7 @@ namespace Godot
         [GodotMethod("joint_create_cone_twist")]
         public static RID JointCreateConeTwist(RID bodyA, Transform localRefA, RID bodyB, Transform localRefB)
         {
-            return new RID(NativeCalls.godot_icall_4_725(method_bind_100, ptr, RID.GetPtr(bodyA), ref localRefA, RID.GetPtr(bodyB), ref localRefB));
+            return new RID(NativeCalls.godot_icall_4_728(method_bind_100, ptr, RID.GetPtr(bodyA), ref localRefA, RID.GetPtr(bodyB), ref localRefB));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1775,7 +1775,7 @@ namespace Godot
         [GodotMethod("cone_twist_joint_set_param")]
         public static void ConeTwistJointSetParam(RID joint, PhysicsServer.ConeTwistJointParam param, float value)
         {
-            NativeCalls.godot_icall_3_667(method_bind_101, ptr, RID.GetPtr(joint), (int)param, value);
+            NativeCalls.godot_icall_3_670(method_bind_101, ptr, RID.GetPtr(joint), (int)param, value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1787,7 +1787,7 @@ namespace Godot
         [GodotMethod("cone_twist_joint_get_param")]
         public static float ConeTwistJointGetParam(RID joint, PhysicsServer.ConeTwistJointParam param)
         {
-            return NativeCalls.godot_icall_2_668(method_bind_102, ptr, RID.GetPtr(joint), (int)param);
+            return NativeCalls.godot_icall_2_671(method_bind_102, ptr, RID.GetPtr(joint), (int)param);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1799,7 +1799,7 @@ namespace Godot
         [GodotMethod("joint_get_type")]
         public static PhysicsServer.JointType JointGetType(RID joint)
         {
-            return (PhysicsServer.JointType)NativeCalls.godot_icall_1_726(method_bind_103, ptr, RID.GetPtr(joint));
+            return (PhysicsServer.JointType)NativeCalls.godot_icall_1_729(method_bind_103, ptr, RID.GetPtr(joint));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1811,7 +1811,7 @@ namespace Godot
         [GodotMethod("joint_set_solver_priority")]
         public static void JointSetSolverPriority(RID joint, int priority)
         {
-            NativeCalls.godot_icall_2_672(method_bind_104, ptr, RID.GetPtr(joint), priority);
+            NativeCalls.godot_icall_2_675(method_bind_104, ptr, RID.GetPtr(joint), priority);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1823,7 +1823,7 @@ namespace Godot
         [GodotMethod("joint_get_solver_priority")]
         public static int JointGetSolverPriority(RID joint)
         {
-            return NativeCalls.godot_icall_1_678(method_bind_105, ptr, RID.GetPtr(joint));
+            return NativeCalls.godot_icall_1_681(method_bind_105, ptr, RID.GetPtr(joint));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1835,7 +1835,7 @@ namespace Godot
         [GodotMethod("joint_create_generic_6dof")]
         public static RID JointCreateGeneric6dof(RID bodyA, Transform localRefA, RID bodyB, Transform localRefB)
         {
-            return new RID(NativeCalls.godot_icall_4_725(method_bind_106, ptr, RID.GetPtr(bodyA), ref localRefA, RID.GetPtr(bodyB), ref localRefB));
+            return new RID(NativeCalls.godot_icall_4_728(method_bind_106, ptr, RID.GetPtr(bodyA), ref localRefA, RID.GetPtr(bodyB), ref localRefB));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1847,7 +1847,7 @@ namespace Godot
         [GodotMethod("generic_6dof_joint_set_param")]
         public static void Generic6dofJointSetParam(RID joint, Vector3.Axis axis, PhysicsServer.G6DOFJointAxisParam param, float value)
         {
-            NativeCalls.godot_icall_4_727(method_bind_107, ptr, RID.GetPtr(joint), (int)axis, (int)param, value);
+            NativeCalls.godot_icall_4_730(method_bind_107, ptr, RID.GetPtr(joint), (int)axis, (int)param, value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1859,7 +1859,7 @@ namespace Godot
         [GodotMethod("generic_6dof_joint_get_param")]
         public static float Generic6dofJointGetParam(RID joint, Vector3.Axis axis, PhysicsServer.G6DOFJointAxisParam param)
         {
-            return NativeCalls.godot_icall_3_728(method_bind_108, ptr, RID.GetPtr(joint), (int)axis, (int)param);
+            return NativeCalls.godot_icall_3_731(method_bind_108, ptr, RID.GetPtr(joint), (int)axis, (int)param);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1871,7 +1871,7 @@ namespace Godot
         [GodotMethod("generic_6dof_joint_set_flag")]
         public static void Generic6dofJointSetFlag(RID joint, Vector3.Axis axis, PhysicsServer.G6DOFJointAxisFlag flag, bool enable)
         {
-            NativeCalls.godot_icall_4_729(method_bind_109, ptr, RID.GetPtr(joint), (int)axis, (int)flag, enable);
+            NativeCalls.godot_icall_4_732(method_bind_109, ptr, RID.GetPtr(joint), (int)axis, (int)flag, enable);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -1883,7 +1883,7 @@ namespace Godot
         [GodotMethod("generic_6dof_joint_get_flag")]
         public static bool Generic6dofJointGetFlag(RID joint, Vector3.Axis axis, PhysicsServer.G6DOFJointAxisFlag flag)
         {
-            return NativeCalls.godot_icall_3_730(method_bind_110, ptr, RID.GetPtr(joint), (int)axis, (int)flag);
+            return NativeCalls.godot_icall_3_733(method_bind_110, ptr, RID.GetPtr(joint), (int)axis, (int)flag);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

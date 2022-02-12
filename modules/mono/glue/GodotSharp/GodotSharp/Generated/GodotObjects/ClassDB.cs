@@ -131,7 +131,7 @@ namespace Godot
         [GodotMethod("class_get_signal")]
         public static Godot.Collections.Dictionary ClassGetSignal(string @class, string signal)
         {
-            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_2_1053(method_bind_8, ptr, @class, signal));
+            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_2_1056(method_bind_8, ptr, @class, signal));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -143,7 +143,7 @@ namespace Godot
         [GodotMethod("class_get_signal_list")]
         public static Godot.Collections.Array ClassGetSignalList(string @class, bool noInheritance = false)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_2_1054(method_bind_9, ptr, @class, noInheritance));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_2_1057(method_bind_9, ptr, @class, noInheritance));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -155,7 +155,7 @@ namespace Godot
         [GodotMethod("class_get_property_list")]
         public static Godot.Collections.Array ClassGetPropertyList(string @class, bool noInheritance = false)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_2_1054(method_bind_10, ptr, @class, noInheritance));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_2_1057(method_bind_10, ptr, @class, noInheritance));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -167,7 +167,7 @@ namespace Godot
         [GodotMethod("class_get_property")]
         public static object ClassGetProperty(Object @object, string property)
         {
-            return NativeCalls.godot_icall_2_1055(method_bind_11, ptr, Object.GetPtr(@object), property);
+            return NativeCalls.godot_icall_2_1058(method_bind_11, ptr, Object.GetPtr(@object), property);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -179,7 +179,7 @@ namespace Godot
         [GodotMethod("class_set_property")]
         public static Error ClassSetProperty(Object @object, string property, object value)
         {
-            return (Error)NativeCalls.godot_icall_3_1056(method_bind_12, ptr, Object.GetPtr(@object), property, value);
+            return (Error)NativeCalls.godot_icall_3_1059(method_bind_12, ptr, Object.GetPtr(@object), property, value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -191,7 +191,7 @@ namespace Godot
         [GodotMethod("class_has_method")]
         public static bool ClassHasMethod(string @class, string method, bool noInheritance = false)
         {
-            return NativeCalls.godot_icall_3_1057(method_bind_13, ptr, @class, method, noInheritance);
+            return NativeCalls.godot_icall_3_1060(method_bind_13, ptr, @class, method, noInheritance);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -204,7 +204,7 @@ namespace Godot
         [GodotMethod("class_get_method_list")]
         public static Godot.Collections.Array ClassGetMethodList(string @class, bool noInheritance = false)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_2_1054(method_bind_14, ptr, @class, noInheritance));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_2_1057(method_bind_14, ptr, @class, noInheritance));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -216,7 +216,7 @@ namespace Godot
         [GodotMethod("class_get_integer_constant_list")]
         public static string[] ClassGetIntegerConstantList(string @class, bool noInheritance = false)
         {
-            return NativeCalls.godot_icall_2_1058(method_bind_15, ptr, @class, noInheritance);
+            return NativeCalls.godot_icall_2_1061(method_bind_15, ptr, @class, noInheritance);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -252,7 +252,7 @@ namespace Godot
         [GodotMethod("class_has_enum")]
         public static bool ClassHasEnum(string @class, string name, bool noInheritance = false)
         {
-            return NativeCalls.godot_icall_3_1057(method_bind_18, ptr, @class, name, noInheritance);
+            return NativeCalls.godot_icall_3_1060(method_bind_18, ptr, @class, name, noInheritance);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -264,7 +264,7 @@ namespace Godot
         [GodotMethod("class_get_enum_list")]
         public static string[] ClassGetEnumList(string @class, bool noInheritance = false)
         {
-            return NativeCalls.godot_icall_2_1058(method_bind_19, ptr, @class, noInheritance);
+            return NativeCalls.godot_icall_2_1061(method_bind_19, ptr, @class, noInheritance);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -276,7 +276,7 @@ namespace Godot
         [GodotMethod("class_get_enum_constants")]
         public static string[] ClassGetEnumConstants(string @class, string @enum, bool noInheritance = false)
         {
-            return NativeCalls.godot_icall_3_1059(method_bind_20, ptr, @class, @enum, noInheritance);
+            return NativeCalls.godot_icall_3_1062(method_bind_20, ptr, @class, @enum, noInheritance);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -288,7 +288,7 @@ namespace Godot
         [GodotMethod("class_get_integer_constant_enum")]
         public static string ClassGetIntegerConstantEnum(string @class, string name, bool noInheritance = false)
         {
-            return NativeCalls.godot_icall_3_1060(method_bind_21, ptr, @class, name, noInheritance);
+            return NativeCalls.godot_icall_3_1063(method_bind_21, ptr, @class, name, noInheritance);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

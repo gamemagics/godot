@@ -114,7 +114,7 @@ namespace Godot
         public string GetString(object name = null)
         {
             object name_in = name != null ? name : (object)0;
-            return NativeCalls.godot_icall_1_752(method_bind_4, Object.GetPtr(this), name_in);
+            return NativeCalls.godot_icall_1_755(method_bind_4, Object.GetPtr(this), name_in);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -129,7 +129,7 @@ namespace Godot
         public int GetStart(object name = null)
         {
             object name_in = name != null ? name : (object)0;
-            return NativeCalls.godot_icall_1_753(method_bind_5, Object.GetPtr(this), name_in);
+            return NativeCalls.godot_icall_1_756(method_bind_5, Object.GetPtr(this), name_in);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -144,7 +144,7 @@ namespace Godot
         public int GetEnd(object name = null)
         {
             object name_in = name != null ? name : (object)0;
-            return NativeCalls.godot_icall_1_753(method_bind_6, Object.GetPtr(this), name_in);
+            return NativeCalls.godot_icall_1_756(method_bind_6, Object.GetPtr(this), name_in);
         }
     }
 }

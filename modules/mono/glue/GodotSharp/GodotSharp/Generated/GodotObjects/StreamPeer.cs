@@ -45,7 +45,7 @@ namespace Godot
         [GodotMethod("put_data")]
         public Error PutData(byte[] data)
         {
-            return (Error)NativeCalls.godot_icall_1_456(method_bind_0, Object.GetPtr(this), data);
+            return (Error)NativeCalls.godot_icall_1_459(method_bind_0, Object.GetPtr(this), data);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -57,7 +57,7 @@ namespace Godot
         [GodotMethod("put_partial_data")]
         public Godot.Collections.Array PutPartialData(byte[] data)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_1_811(method_bind_1, Object.GetPtr(this), data));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_1_814(method_bind_1, Object.GetPtr(this), data));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -69,7 +69,7 @@ namespace Godot
         [GodotMethod("get_data")]
         public Godot.Collections.Array GetData(int bytes)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_1_469(method_bind_2, Object.GetPtr(this), bytes));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_1_472(method_bind_2, Object.GetPtr(this), bytes));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -81,7 +81,7 @@ namespace Godot
         [GodotMethod("get_partial_data")]
         public Godot.Collections.Array GetPartialData(int bytes)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_1_469(method_bind_3, Object.GetPtr(this), bytes));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_1_472(method_bind_3, Object.GetPtr(this), bytes));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -125,7 +125,7 @@ namespace Godot
         [GodotMethod("put_8")]
         public void Put8(sbyte value)
         {
-            NativeCalls.godot_icall_1_812(method_bind_7, Object.GetPtr(this), value);
+            NativeCalls.godot_icall_1_815(method_bind_7, Object.GetPtr(this), value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -137,7 +137,7 @@ namespace Godot
         [GodotMethod("put_u8")]
         public void PutU8(byte value)
         {
-            NativeCalls.godot_icall_1_813(method_bind_8, Object.GetPtr(this), value);
+            NativeCalls.godot_icall_1_816(method_bind_8, Object.GetPtr(this), value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -149,7 +149,7 @@ namespace Godot
         [GodotMethod("put_16")]
         public void Put16(short value)
         {
-            NativeCalls.godot_icall_1_814(method_bind_9, Object.GetPtr(this), value);
+            NativeCalls.godot_icall_1_817(method_bind_9, Object.GetPtr(this), value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -161,7 +161,7 @@ namespace Godot
         [GodotMethod("put_u16")]
         public void PutU16(ushort value)
         {
-            NativeCalls.godot_icall_1_815(method_bind_10, Object.GetPtr(this), value);
+            NativeCalls.godot_icall_1_818(method_bind_10, Object.GetPtr(this), value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -197,7 +197,7 @@ namespace Godot
         [GodotMethod("put_64")]
         public void Put64(long value)
         {
-            NativeCalls.godot_icall_1_816(method_bind_13, Object.GetPtr(this), value);
+            NativeCalls.godot_icall_1_819(method_bind_13, Object.GetPtr(this), value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -233,7 +233,7 @@ namespace Godot
         [GodotMethod("put_double")]
         public void PutDouble(double value)
         {
-            NativeCalls.godot_icall_1_747(method_bind_16, Object.GetPtr(this), value);
+            NativeCalls.godot_icall_1_750(method_bind_16, Object.GetPtr(this), value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -277,7 +277,7 @@ namespace Godot
         [GodotMethod("put_var")]
         public void PutVar(object value, bool fullObjects = false)
         {
-            NativeCalls.godot_icall_2_817(method_bind_19, Object.GetPtr(this), value, fullObjects);
+            NativeCalls.godot_icall_2_820(method_bind_19, Object.GetPtr(this), value, fullObjects);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -289,7 +289,7 @@ namespace Godot
         [GodotMethod("get_8")]
         public sbyte Get8()
         {
-            return NativeCalls.godot_icall_0_818(method_bind_20, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_821(method_bind_20, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -301,7 +301,7 @@ namespace Godot
         [GodotMethod("get_u8")]
         public byte GetU8()
         {
-            return NativeCalls.godot_icall_0_819(method_bind_21, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_822(method_bind_21, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -313,7 +313,7 @@ namespace Godot
         [GodotMethod("get_16")]
         public short Get16()
         {
-            return NativeCalls.godot_icall_0_820(method_bind_22, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_823(method_bind_22, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -325,7 +325,7 @@ namespace Godot
         [GodotMethod("get_u16")]
         public ushort GetU16()
         {
-            return NativeCalls.godot_icall_0_821(method_bind_23, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_824(method_bind_23, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -434,7 +434,7 @@ namespace Godot
         [GodotMethod("get_var")]
         public object GetVar(bool allowObjects = false)
         {
-            return NativeCalls.godot_icall_1_636(method_bind_32, Object.GetPtr(this), allowObjects);
+            return NativeCalls.godot_icall_1_639(method_bind_32, Object.GetPtr(this), allowObjects);
         }
     }
 }

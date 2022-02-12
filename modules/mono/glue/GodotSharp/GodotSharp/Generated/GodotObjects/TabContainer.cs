@@ -218,7 +218,7 @@ namespace Godot
         [GodotMethod("get_tab_control")]
         public Control GetTabControl(int tabIdx)
         {
-            return NativeCalls.godot_icall_1_838(method_bind_5, Object.GetPtr(this), tabIdx);
+            return NativeCalls.godot_icall_1_841(method_bind_5, Object.GetPtr(this), tabIdx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -238,7 +238,7 @@ namespace Godot
         [Obsolete("GetTabAlign is deprecated. Use the TabAlign property instead.")]
         public TabContainer.TabAlignEnum GetTabAlign()
         {
-            return (TabContainer.TabAlignEnum)NativeCalls.godot_icall_0_839(method_bind_7, Object.GetPtr(this));
+            return (TabContainer.TabAlignEnum)NativeCalls.godot_icall_0_842(method_bind_7, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -386,7 +386,7 @@ namespace Godot
         [GodotMethod("get_tab_idx_at_point")]
         public int GetTabIdxAtPoint(Vector2 point)
         {
-            return NativeCalls.godot_icall_1_840(method_bind_20, Object.GetPtr(this), ref point);
+            return NativeCalls.godot_icall_1_843(method_bind_20, Object.GetPtr(this), ref point);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -411,7 +411,7 @@ namespace Godot
         [GodotMethod("get_popup")]
         public Popup GetPopup()
         {
-            return NativeCalls.godot_icall_0_841(method_bind_22, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_844(method_bind_22, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

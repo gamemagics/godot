@@ -365,7 +365,7 @@ namespace Godot
         [Obsolete("GetGodotSkin is deprecated. Use the GodotSkin property instead.")]
         public Skin GetGodotSkin()
         {
-            return NativeCalls.godot_icall_0_438(method_bind_18, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_441(method_bind_18, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

@@ -227,7 +227,7 @@ namespace Godot
         [GodotMethod("duplicate")]
         public Resource Duplicate(bool subresources = false)
         {
-            return NativeCalls.godot_icall_1_754(method_bind_11, Object.GetPtr(this), subresources);
+            return NativeCalls.godot_icall_1_757(method_bind_11, Object.GetPtr(this), subresources);
         }
     }
 }

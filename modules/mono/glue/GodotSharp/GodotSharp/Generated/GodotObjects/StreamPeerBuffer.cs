@@ -105,7 +105,7 @@ namespace Godot
         [GodotMethod("duplicate")]
         public StreamPeerBuffer Duplicate()
         {
-            return NativeCalls.godot_icall_0_822(method_bind_7, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_825(method_bind_7, Object.GetPtr(this));
         }
     }
 }

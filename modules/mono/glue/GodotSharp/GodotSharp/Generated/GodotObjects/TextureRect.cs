@@ -250,7 +250,7 @@ namespace Godot
         [Obsolete("GetStretchMode is deprecated. Use the StretchMode property instead.")]
         public TextureRect.StretchModeEnum GetStretchMode()
         {
-            return (TextureRect.StretchModeEnum)NativeCalls.godot_icall_0_856(method_bind_9, Object.GetPtr(this));
+            return (TextureRect.StretchModeEnum)NativeCalls.godot_icall_0_859(method_bind_9, Object.GetPtr(this));
         }
     }
 }

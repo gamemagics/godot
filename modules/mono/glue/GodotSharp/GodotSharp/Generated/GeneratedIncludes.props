@@ -6,6 +6,7 @@
     <Compile Include="Generated\GodotObjects\ARVRCamera.cs" />
     <Compile Include="Generated\GodotObjects\ARVRController.cs" />
     <Compile Include="Generated\GodotObjects\ARVRInterface.cs" />
+    <Compile Include="Generated\GodotObjects\ARVRInterfaceGDNative.cs" />
     <Compile Include="Generated\GodotObjects\ARVROrigin.cs" />
     <Compile Include="Generated\GodotObjects\ARVRPositionalTracker.cs" />
     <Compile Include="Generated\GodotObjects\ARVRServer.cs" />
@@ -160,6 +161,8 @@
     <Compile Include="Generated\GodotObjects\FileDialog.cs" />
     <Compile Include="Generated\GodotObjects\Font.cs" />
     <Compile Include="Generated\GodotObjects\FuncRef.cs" />
+    <Compile Include="Generated\GodotObjects\GDNative.cs" />
+    <Compile Include="Generated\GodotObjects\GDNativeLibrary.cs" />
     <Compile Include="Generated\GodotObjects\GIProbe.cs" />
     <Compile Include="Generated\GodotObjects\GIProbeData.cs" />
     <Compile Include="Generated\GodotObjects\GLTFAccessor.cs" />
@@ -255,6 +258,8 @@
     <Compile Include="Generated\GodotObjects\MultiMeshInstance.cs" />
     <Compile Include="Generated\GodotObjects\MultiMeshInstance2D.cs" />
     <Compile Include="Generated\GodotObjects\MultiplayerAPI.cs" />
+    <Compile Include="Generated\GodotObjects\MultiplayerPeerGDNative.cs" />
+    <Compile Include="Generated\GodotObjects\NativeScript.cs" />
     <Compile Include="Generated\GodotObjects\Navigation.cs" />
     <Compile Include="Generated\GodotObjects\Navigation2D.cs" />
     <Compile Include="Generated\GodotObjects\NavigationMesh.cs" />
@@ -282,6 +287,7 @@
     <Compile Include="Generated\GodotObjects\PackedSceneGLTF.cs" />
     <Compile Include="Generated\GodotObjects\PacketPeer.cs" />
     <Compile Include="Generated\GodotObjects\PacketPeerDTLS.cs" />
+    <Compile Include="Generated\GodotObjects\PacketPeerGDNative.cs" />
     <Compile Include="Generated\GodotObjects\PacketPeerStream.cs" />
     <Compile Include="Generated\GodotObjects\PacketPeerUDP.cs" />
     <Compile Include="Generated\GodotObjects\Panel.cs" />
@@ -315,6 +321,7 @@
     <Compile Include="Generated\GodotObjects\PinJoint2D.cs" />
     <Compile Include="Generated\GodotObjects\PlaneMesh.cs" />
     <Compile Include="Generated\GodotObjects\PlaneShape.cs" />
+    <Compile Include="Generated\GodotObjects\PluginScript.cs" />
     <Compile Include="Generated\GodotObjects\PointMesh.cs" />
     <Compile Include="Generated\GodotObjects\Polygon2D.cs" />
     <Compile Include="Generated\GodotObjects\PolygonPathFinder.cs" />
@@ -400,6 +407,7 @@
     <Compile Include="Generated\GodotObjects\StaticBody2D.cs" />
     <Compile Include="Generated\GodotObjects\StreamPeer.cs" />
     <Compile Include="Generated\GodotObjects\StreamPeerBuffer.cs" />
+    <Compile Include="Generated\GodotObjects\StreamPeerGDNative.cs" />
     <Compile Include="Generated\GodotObjects\StreamPeerSSL.cs" />
     <Compile Include="Generated\GodotObjects\StreamPeerTCP.cs" />
     <Compile Include="Generated\GodotObjects\StreamTexture.cs" />
@@ -444,6 +452,7 @@
     <Compile Include="Generated\GodotObjects\VehicleWheel.cs" />
     <Compile Include="Generated\GodotObjects\VideoPlayer.cs" />
     <Compile Include="Generated\GodotObjects\VideoStream.cs" />
+    <Compile Include="Generated\GodotObjects\VideoStreamGDNative.cs" />
     <Compile Include="Generated\GodotObjects\VideoStreamTheora.cs" />
     <Compile Include="Generated\GodotObjects\VideoStreamWebm.cs" />
     <Compile Include="Generated\GodotObjects\Viewport.cs" />
@@ -519,8 +528,10 @@
     <Compile Include="Generated\GodotObjects\VisualShaderNodeVectorSmoothStep.cs" />
     <Compile Include="Generated\GodotObjects\WeakRef.cs" />
     <Compile Include="Generated\GodotObjects\WebRTCDataChannel.cs" />
+    <Compile Include="Generated\GodotObjects\WebRTCDataChannelGDNative.cs" />
     <Compile Include="Generated\GodotObjects\WebRTCMultiplayer.cs" />
     <Compile Include="Generated\GodotObjects\WebRTCPeerConnection.cs" />
+    <Compile Include="Generated\GodotObjects\WebRTCPeerConnectionGDNative.cs" />
     <Compile Include="Generated\GodotObjects\WebSocketClient.cs" />
     <Compile Include="Generated\GodotObjects\WebSocketMultiplayerPeer.cs" />
     <Compile Include="Generated\GodotObjects\WebSocketPeer.cs" />

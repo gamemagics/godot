@@ -8,7 +8,7 @@ namespace Godot
 {
     /// <summary>
     /// <para>Control node for playing video streams using <see cref="Godot.VideoStream"/> resources.</para>
-    /// <para>Supported video formats are <a href="https://www.webmproject.org/">WebM</a> (<c>.webm</c>, <see cref="Godot.VideoStreamWebm"/>), <a href="https://www.theora.org/">Ogg Theora</a> (<c>.ogv</c>, <see cref="Godot.VideoStreamTheora"/>), and any format exposed via a GDNative plugin using [VideoStreamGDNative].</para>
+    /// <para>Supported video formats are <a href="https://www.webmproject.org/">WebM</a> (<c>.webm</c>, <see cref="Godot.VideoStreamWebm"/>), <a href="https://www.theora.org/">Ogg Theora</a> (<c>.ogv</c>, <see cref="Godot.VideoStreamTheora"/>), and any format exposed via a GDNative plugin using <see cref="Godot.VideoStreamGDNative"/>.</para>
     /// <para>Note: Due to a bug, VideoPlayer does not support localization remapping yet.</para>
     /// <para>Warning: On HTML5, video playback will perform poorly due to missing architecture-specific assembly optimizations, especially for VP8/VP9.</para>
     /// </summary>
@@ -232,7 +232,7 @@ namespace Godot
         [Obsolete("GetStream is deprecated. Use the Stream property instead.")]
         public VideoStream GetStream()
         {
-            return NativeCalls.godot_icall_0_919(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_922(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

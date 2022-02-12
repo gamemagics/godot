@@ -125,7 +125,7 @@ namespace Godot
         [Obsolete("SetMapData is deprecated. Use the MapData property instead.")]
         public void SetMapData(float[] data)
         {
-            NativeCalls.godot_icall_1_432(method_bind_4, Object.GetPtr(this), data);
+            NativeCalls.godot_icall_1_435(method_bind_4, Object.GetPtr(this), data);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

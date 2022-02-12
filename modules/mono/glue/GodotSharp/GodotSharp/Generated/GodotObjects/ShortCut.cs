@@ -59,7 +59,7 @@ namespace Godot
         [Obsolete("GetShortcut is deprecated. Use the Shortcut property instead.")]
         public InputEvent GetShortcut()
         {
-            return NativeCalls.godot_icall_0_785(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_788(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -83,7 +83,7 @@ namespace Godot
         [GodotMethod("is_shortcut")]
         public bool IsShortcut(InputEvent @event)
         {
-            return NativeCalls.godot_icall_1_499(method_bind_3, Object.GetPtr(this), Object.GetPtr(@event));
+            return NativeCalls.godot_icall_1_502(method_bind_3, Object.GetPtr(this), Object.GetPtr(@event));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

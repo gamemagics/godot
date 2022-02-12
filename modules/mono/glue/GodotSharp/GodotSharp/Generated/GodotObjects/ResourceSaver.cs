@@ -70,7 +70,7 @@ namespace Godot
         [GodotMethod("save")]
         public static Error Save(string path, Resource resource, ResourceSaver.SaverFlags flags = (ResourceSaver.SaverFlags)0)
         {
-            return (Error)NativeCalls.godot_icall_3_1111(method_bind_0, ptr, path, Object.GetPtr(resource), (int)flags);
+            return (Error)NativeCalls.godot_icall_3_1114(method_bind_0, ptr, path, Object.GetPtr(resource), (int)flags);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -82,7 +82,7 @@ namespace Godot
         [GodotMethod("get_recognized_extensions")]
         public static string[] GetRecognizedExtensions(Resource type)
         {
-            return NativeCalls.godot_icall_1_1112(method_bind_1, ptr, Object.GetPtr(type));
+            return NativeCalls.godot_icall_1_1115(method_bind_1, ptr, Object.GetPtr(type));
         }
     }
 }

@@ -476,7 +476,7 @@ namespace Godot
         [Obsolete("GetMode is deprecated. Use the Mode property instead.")]
         public RigidBody2D.ModeEnum GetMode()
         {
-            return (RigidBody2D.ModeEnum)NativeCalls.godot_icall_0_761(method_bind_1, Object.GetPtr(this));
+            return (RigidBody2D.ModeEnum)NativeCalls.godot_icall_0_764(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -596,7 +596,7 @@ namespace Godot
         [Obsolete("GetPhysicsMaterialOverride is deprecated. Use the PhysicsMaterialOverride property instead.")]
         public PhysicsMaterial GetPhysicsMaterialOverride()
         {
-            return NativeCalls.godot_icall_0_760(method_bind_13, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_763(method_bind_13, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -776,7 +776,7 @@ namespace Godot
         [Obsolete("GetContinuousCollisionDetectionMode is deprecated. Use the ContinuousCd property instead.")]
         public RigidBody2D.CCDMode GetContinuousCollisionDetectionMode()
         {
-            return (RigidBody2D.CCDMode)NativeCalls.godot_icall_0_762(method_bind_31, Object.GetPtr(this));
+            return (RigidBody2D.CCDMode)NativeCalls.godot_icall_0_765(method_bind_31, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -812,7 +812,7 @@ namespace Godot
         [GodotMethod("apply_impulse")]
         public void ApplyImpulse(Vector2 offset, Vector2 impulse)
         {
-            NativeCalls.godot_icall_2_651(method_bind_34, Object.GetPtr(this), ref offset, ref impulse);
+            NativeCalls.godot_icall_2_654(method_bind_34, Object.GetPtr(this), ref offset, ref impulse);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -888,7 +888,7 @@ namespace Godot
         [GodotMethod("add_force")]
         public void AddForce(Vector2 offset, Vector2 force)
         {
-            NativeCalls.godot_icall_2_651(method_bind_41, Object.GetPtr(this), ref offset, ref force);
+            NativeCalls.godot_icall_2_654(method_bind_41, Object.GetPtr(this), ref offset, ref force);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -952,7 +952,7 @@ namespace Godot
         [GodotMethod("test_motion")]
         public bool TestMotion(Vector2 motion, bool infiniteInertia = true, float margin = 0.08f, Physics2DTestMotionResult result = null)
         {
-            return NativeCalls.godot_icall_4_763(method_bind_47, Object.GetPtr(this), ref motion, infiniteInertia, margin, Object.GetPtr(result));
+            return NativeCalls.godot_icall_4_766(method_bind_47, Object.GetPtr(this), ref motion, infiniteInertia, margin, Object.GetPtr(result));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

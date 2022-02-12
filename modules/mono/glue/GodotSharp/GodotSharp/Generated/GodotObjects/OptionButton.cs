@@ -78,7 +78,7 @@ namespace Godot
         [GodotMethod("add_icon_item")]
         public void AddIconItem(Texture texture, string label, int id = -1)
         {
-            NativeCalls.godot_icall_3_628(method_bind_1, Object.GetPtr(this), Object.GetPtr(texture), label, id);
+            NativeCalls.godot_icall_3_631(method_bind_1, Object.GetPtr(this), Object.GetPtr(texture), label, id);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -139,7 +139,7 @@ namespace Godot
         [GodotMethod("set_item_metadata")]
         public void SetItemMetadata(int idx, object metadata)
         {
-            NativeCalls.godot_icall_2_508(method_bind_6, Object.GetPtr(this), idx, metadata);
+            NativeCalls.godot_icall_2_511(method_bind_6, Object.GetPtr(this), idx, metadata);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -199,7 +199,7 @@ namespace Godot
         [GodotMethod("get_item_metadata")]
         public object GetItemMetadata(int idx)
         {
-            return NativeCalls.godot_icall_1_509(method_bind_11, Object.GetPtr(this), idx);
+            return NativeCalls.godot_icall_1_512(method_bind_11, Object.GetPtr(this), idx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -293,7 +293,7 @@ namespace Godot
         [GodotMethod("get_selected_metadata")]
         public object GetSelectedMetadata()
         {
-            return NativeCalls.godot_icall_0_513(method_bind_19, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_516(method_bind_19, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -327,7 +327,7 @@ namespace Godot
         [GodotMethod("get_popup")]
         public PopupMenu GetPopup()
         {
-            return NativeCalls.godot_icall_0_550(method_bind_22, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_553(method_bind_22, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

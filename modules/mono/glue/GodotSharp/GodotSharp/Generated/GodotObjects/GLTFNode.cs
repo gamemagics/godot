@@ -413,7 +413,7 @@ namespace Godot
         [Obsolete("GetRotation is deprecated. Use the Rotation property instead.")]
         public Quat GetRotation()
         {
-            NativeCalls.godot_icall_0_434(method_bind_18, Object.GetPtr(this), out Quat argRet); return (Quat)argRet;
+            NativeCalls.godot_icall_0_437(method_bind_18, Object.GetPtr(this), out Quat argRet); return (Quat)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -423,7 +423,7 @@ namespace Godot
         [Obsolete("SetRotation is deprecated. Use the Rotation property instead.")]
         public void SetRotation(Quat rotation)
         {
-            NativeCalls.godot_icall_1_435(method_bind_19, Object.GetPtr(this), ref rotation);
+            NativeCalls.godot_icall_1_438(method_bind_19, Object.GetPtr(this), ref rotation);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

@@ -94,7 +94,7 @@ namespace Godot
         [GodotMethod("search")]
         public RegExMatch Search(string subject, int offset = 0, int end = -1)
         {
-            return NativeCalls.godot_icall_3_749(method_bind_2, Object.GetPtr(this), subject, offset, end);
+            return NativeCalls.godot_icall_3_752(method_bind_2, Object.GetPtr(this), subject, offset, end);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -106,7 +106,7 @@ namespace Godot
         [GodotMethod("search_all")]
         public Godot.Collections.Array SearchAll(string subject, int offset = 0, int end = -1)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_3_750(method_bind_3, Object.GetPtr(this), subject, offset, end));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_3_753(method_bind_3, Object.GetPtr(this), subject, offset, end));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -118,7 +118,7 @@ namespace Godot
         [GodotMethod("sub")]
         public string Sub(string subject, string replacement, bool all = false, int offset = 0, int end = -1)
         {
-            return NativeCalls.godot_icall_5_751(method_bind_4, Object.GetPtr(this), subject, replacement, all, offset, end);
+            return NativeCalls.godot_icall_5_754(method_bind_4, Object.GetPtr(this), subject, replacement, all, offset, end);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

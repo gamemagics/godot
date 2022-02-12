@@ -148,7 +148,7 @@ namespace Godot
         [Obsolete("GetOperator is deprecated. Use the Operator property instead.")]
         public VisualShaderNodeColorOp.OperatorEnum GetOperator()
         {
-            return (VisualShaderNodeColorOp.OperatorEnum)NativeCalls.godot_icall_0_1014(method_bind_1, Object.GetPtr(this));
+            return (VisualShaderNodeColorOp.OperatorEnum)NativeCalls.godot_icall_0_1017(method_bind_1, Object.GetPtr(this));
         }
     }
 }

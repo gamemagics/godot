@@ -313,7 +313,7 @@ namespace Godot
         [GodotMethod("get_main_loop")]
         public static MainLoop GetMainLoop()
         {
-            return NativeCalls.godot_icall_0_1062(method_bind_13, ptr);
+            return NativeCalls.godot_icall_0_1065(method_bind_13, ptr);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -444,7 +444,7 @@ namespace Godot
         [GodotMethod("get_singleton")]
         public static Object GetSingleton(string name)
         {
-            return NativeCalls.godot_icall_1_1063(method_bind_22, ptr, name);
+            return NativeCalls.godot_icall_1_1066(method_bind_22, ptr, name);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

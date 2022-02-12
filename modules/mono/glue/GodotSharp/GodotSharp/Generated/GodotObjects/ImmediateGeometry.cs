@@ -59,7 +59,7 @@ namespace Godot
         [GodotMethod("set_tangent")]
         public void SetTangent(Plane tangent)
         {
-            NativeCalls.godot_icall_1_487(method_bind_2, Object.GetPtr(this), ref tangent);
+            NativeCalls.godot_icall_1_490(method_bind_2, Object.GetPtr(this), ref tangent);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -119,7 +119,7 @@ namespace Godot
         [GodotMethod("add_sphere")]
         public void AddSphere(int lats, int lons, float radius, bool addUv = true)
         {
-            NativeCalls.godot_icall_4_488(method_bind_7, Object.GetPtr(this), lats, lons, radius, addUv);
+            NativeCalls.godot_icall_4_491(method_bind_7, Object.GetPtr(this), lats, lons, radius, addUv);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

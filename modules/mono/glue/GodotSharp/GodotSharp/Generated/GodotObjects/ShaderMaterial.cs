@@ -58,7 +58,7 @@ namespace Godot
         [Obsolete("GetShader is deprecated. Use the Shader property instead.")]
         public Shader GetShader()
         {
-            return NativeCalls.godot_icall_0_779(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_782(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

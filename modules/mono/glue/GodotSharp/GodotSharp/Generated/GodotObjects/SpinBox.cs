@@ -125,7 +125,7 @@ namespace Godot
         [Obsolete("GetAlign is deprecated. Use the Align property instead.")]
         public LineEdit.AlignEnum GetAlign()
         {
-            return (LineEdit.AlignEnum)NativeCalls.godot_icall_0_549(method_bind_1, Object.GetPtr(this));
+            return (LineEdit.AlignEnum)NativeCalls.godot_icall_0_552(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

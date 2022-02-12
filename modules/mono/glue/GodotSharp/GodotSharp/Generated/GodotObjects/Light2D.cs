@@ -766,7 +766,7 @@ namespace Godot
         [Obsolete("GetMode is deprecated. Use the Mode property instead.")]
         public Light2D.ModeEnum GetMode()
         {
-            return (Light2D.ModeEnum)NativeCalls.godot_icall_0_542(method_bind_29, Object.GetPtr(this));
+            return (Light2D.ModeEnum)NativeCalls.godot_icall_0_545(method_bind_29, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -866,7 +866,7 @@ namespace Godot
         [Obsolete("GetShadowFilter is deprecated. Use the ShadowFilter property instead.")]
         public Light2D.ShadowFilterEnum GetShadowFilter()
         {
-            return (Light2D.ShadowFilterEnum)NativeCalls.godot_icall_0_543(method_bind_39, Object.GetPtr(this));
+            return (Light2D.ShadowFilterEnum)NativeCalls.godot_icall_0_546(method_bind_39, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

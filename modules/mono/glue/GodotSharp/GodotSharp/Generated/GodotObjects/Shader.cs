@@ -85,7 +85,7 @@ namespace Godot
         [GodotMethod("get_mode")]
         public Shader.Mode GetMode()
         {
-            return (Shader.Mode)NativeCalls.godot_icall_0_777(method_bind_0, Object.GetPtr(this));
+            return (Shader.Mode)NativeCalls.godot_icall_0_780(method_bind_0, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -131,7 +131,7 @@ namespace Godot
         [GodotMethod("get_default_texture_param")]
         public Texture GetDefaultTextureParam(string param)
         {
-            return NativeCalls.godot_icall_1_778(method_bind_4, Object.GetPtr(this), param);
+            return NativeCalls.godot_icall_1_781(method_bind_4, Object.GetPtr(this), param);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

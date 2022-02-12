@@ -155,7 +155,7 @@ namespace Godot
         [Obsolete("GetComparisonType is deprecated. Use the Type property instead.")]
         public VisualShaderNodeCompare.ComparisonType GetComparisonType()
         {
-            return (VisualShaderNodeCompare.ComparisonType)NativeCalls.godot_icall_0_1015(method_bind_1, Object.GetPtr(this));
+            return (VisualShaderNodeCompare.ComparisonType)NativeCalls.godot_icall_0_1018(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -175,7 +175,7 @@ namespace Godot
         [Obsolete("GetFunction is deprecated. Use the Function property instead.")]
         public VisualShaderNodeCompare.FunctionEnum GetFunction()
         {
-            return (VisualShaderNodeCompare.FunctionEnum)NativeCalls.godot_icall_0_1016(method_bind_3, Object.GetPtr(this));
+            return (VisualShaderNodeCompare.FunctionEnum)NativeCalls.godot_icall_0_1019(method_bind_3, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -195,7 +195,7 @@ namespace Godot
         [Obsolete("GetCondition is deprecated. Use the Condition property instead.")]
         public VisualShaderNodeCompare.ConditionEnum GetCondition()
         {
-            return (VisualShaderNodeCompare.ConditionEnum)NativeCalls.godot_icall_0_1017(method_bind_5, Object.GetPtr(this));
+            return (VisualShaderNodeCompare.ConditionEnum)NativeCalls.godot_icall_0_1020(method_bind_5, Object.GetPtr(this));
         }
     }
 }

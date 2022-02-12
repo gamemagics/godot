@@ -47,7 +47,7 @@ namespace Godot
         [GodotMethod("add_piece")]
         public int AddPiece(Vector2 ofs, Texture texture)
         {
-            return NativeCalls.godot_icall_2_540(method_bind_0, Object.GetPtr(this), ref ofs, Object.GetPtr(texture));
+            return NativeCalls.godot_icall_2_543(method_bind_0, Object.GetPtr(this), ref ofs, Object.GetPtr(texture));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

@@ -599,7 +599,7 @@ namespace Godot
         [GodotMethod("get_relative_transform_to_parent")]
         public Transform2D GetRelativeTransformToParent(Node parent)
         {
-            NativeCalls.godot_icall_1_609(method_bind_32, Object.GetPtr(this), Object.GetPtr(parent), out Transform2D argRet); return (Transform2D)argRet;
+            NativeCalls.godot_icall_1_612(method_bind_32, Object.GetPtr(this), Object.GetPtr(parent), out Transform2D argRet); return (Transform2D)argRet;
         }
     }
 }

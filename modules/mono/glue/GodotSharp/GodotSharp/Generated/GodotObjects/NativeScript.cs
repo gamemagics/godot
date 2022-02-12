@@ -119,7 +119,7 @@ namespace Godot
         [Obsolete("GetLibrary is deprecated. Use the Library property instead.")]
         public GDNativeLibrary GetLibrary()
         {
-            return NativeCalls.godot_icall_0_434(method_bind_3, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_429(method_bind_3, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -220,7 +220,7 @@ namespace Godot
         [GodotMethod("new")]
         public object New(params object[] @args)
         {
-            return NativeCalls.godot_icall_1_241(method_bind_12, Object.GetPtr(this), @args);
+            return NativeCalls.godot_icall_1_236(method_bind_12, Object.GetPtr(this), @args);
         }
     }
 }

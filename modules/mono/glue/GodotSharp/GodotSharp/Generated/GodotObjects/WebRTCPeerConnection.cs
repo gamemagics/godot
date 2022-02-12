@@ -80,7 +80,7 @@ namespace Godot
         public Error Initialize(Godot.Collections.Dictionary configuration = null)
         {
             Godot.Collections.Dictionary configuration_in = configuration != null ? configuration : new Godot.Collections.Dictionary();
-            return (Error)NativeCalls.godot_icall_1_1039(method_bind_0, Object.GetPtr(this), configuration_in.GetPtr());
+            return (Error)NativeCalls.godot_icall_1_1042(method_bind_0, Object.GetPtr(this), configuration_in.GetPtr());
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -110,7 +110,7 @@ namespace Godot
         public WebRTCDataChannel CreateDataChannel(string label, Godot.Collections.Dictionary options = null)
         {
             Godot.Collections.Dictionary options_in = options != null ? options : new Godot.Collections.Dictionary();
-            return NativeCalls.godot_icall_2_1040(method_bind_1, Object.GetPtr(this), label, options_in.GetPtr());
+            return NativeCalls.godot_icall_2_1043(method_bind_1, Object.GetPtr(this), label, options_in.GetPtr());
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -162,7 +162,7 @@ namespace Godot
         [GodotMethod("add_ice_candidate")]
         public Error AddIceCandidate(string media, int index, string name)
         {
-            return (Error)NativeCalls.godot_icall_3_1041(method_bind_5, Object.GetPtr(this), media, index, name);
+            return (Error)NativeCalls.godot_icall_3_1044(method_bind_5, Object.GetPtr(this), media, index, name);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -199,7 +199,7 @@ namespace Godot
         [GodotMethod("get_connection_state")]
         public WebRTCPeerConnection.ConnectionState GetConnectionState()
         {
-            return (WebRTCPeerConnection.ConnectionState)NativeCalls.godot_icall_0_1042(method_bind_8, Object.GetPtr(this));
+            return (WebRTCPeerConnection.ConnectionState)NativeCalls.godot_icall_0_1045(method_bind_8, Object.GetPtr(this));
         }
     }
 }

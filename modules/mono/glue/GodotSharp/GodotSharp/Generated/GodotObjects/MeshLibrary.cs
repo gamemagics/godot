@@ -68,7 +68,7 @@ namespace Godot
         [GodotMethod("set_item_mesh_transform")]
         public void SetItemMeshTransform(int id, Transform meshTransform)
         {
-            NativeCalls.godot_icall_2_565(method_bind_3, Object.GetPtr(this), id, ref meshTransform);
+            NativeCalls.godot_icall_2_568(method_bind_3, Object.GetPtr(this), id, ref meshTransform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -92,7 +92,7 @@ namespace Godot
         [GodotMethod("set_item_navmesh_transform")]
         public void SetItemNavmeshTransform(int id, Transform navmesh)
         {
-            NativeCalls.godot_icall_2_565(method_bind_5, Object.GetPtr(this), id, ref navmesh);
+            NativeCalls.godot_icall_2_568(method_bind_5, Object.GetPtr(this), id, ref navmesh);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -105,7 +105,7 @@ namespace Godot
         [GodotMethod("set_item_shapes")]
         public void SetItemShapes(int id, Godot.Collections.Array shapes)
         {
-            NativeCalls.godot_icall_2_566(method_bind_6, Object.GetPtr(this), id, shapes.GetPtr());
+            NativeCalls.godot_icall_2_569(method_bind_6, Object.GetPtr(this), id, shapes.GetPtr());
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -141,7 +141,7 @@ namespace Godot
         [GodotMethod("get_item_mesh")]
         public Mesh GetItemMesh(int id)
         {
-            return NativeCalls.godot_icall_1_567(method_bind_9, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_570(method_bind_9, Object.GetPtr(this), id);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -153,7 +153,7 @@ namespace Godot
         [GodotMethod("get_item_mesh_transform")]
         public Transform GetItemMeshTransform(int id)
         {
-            NativeCalls.godot_icall_1_568(method_bind_10, Object.GetPtr(this), id, out Transform argRet); return (Transform)argRet;
+            NativeCalls.godot_icall_1_571(method_bind_10, Object.GetPtr(this), id, out Transform argRet); return (Transform)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -165,7 +165,7 @@ namespace Godot
         [GodotMethod("get_item_navmesh")]
         public NavigationMesh GetItemNavmesh(int id)
         {
-            return NativeCalls.godot_icall_1_569(method_bind_11, Object.GetPtr(this), id);
+            return NativeCalls.godot_icall_1_572(method_bind_11, Object.GetPtr(this), id);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -177,7 +177,7 @@ namespace Godot
         [GodotMethod("get_item_navmesh_transform")]
         public Transform GetItemNavmeshTransform(int id)
         {
-            NativeCalls.godot_icall_1_568(method_bind_12, Object.GetPtr(this), id, out Transform argRet); return (Transform)argRet;
+            NativeCalls.godot_icall_1_571(method_bind_12, Object.GetPtr(this), id, out Transform argRet); return (Transform)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -190,7 +190,7 @@ namespace Godot
         [GodotMethod("get_item_shapes")]
         public Godot.Collections.Array GetItemShapes(int id)
         {
-            return new Godot.Collections.Array(NativeCalls.godot_icall_1_469(method_bind_13, Object.GetPtr(this), id));
+            return new Godot.Collections.Array(NativeCalls.godot_icall_1_472(method_bind_13, Object.GetPtr(this), id));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

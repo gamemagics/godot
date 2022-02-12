@@ -50,7 +50,7 @@ namespace Godot
         [GodotMethod("navmesh_add")]
         public int NavmeshAdd(NavigationMesh mesh, Transform xform, Object owner = null)
         {
-            return NativeCalls.godot_icall_3_578(method_bind_0, Object.GetPtr(this), Object.GetPtr(mesh), ref xform, Object.GetPtr(owner));
+            return NativeCalls.godot_icall_3_581(method_bind_0, Object.GetPtr(this), Object.GetPtr(mesh), ref xform, Object.GetPtr(owner));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -62,7 +62,7 @@ namespace Godot
         [GodotMethod("navmesh_set_transform")]
         public void NavmeshSetTransform(int id, Transform xform)
         {
-            NativeCalls.godot_icall_2_565(method_bind_1, Object.GetPtr(this), id, ref xform);
+            NativeCalls.godot_icall_2_568(method_bind_1, Object.GetPtr(this), id, ref xform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -87,7 +87,7 @@ namespace Godot
         [GodotMethod("get_simple_path")]
         public Vector3[] GetSimplePath(Vector3 start, Vector3 end, bool optimize = true)
         {
-            return NativeCalls.godot_icall_3_579(method_bind_3, Object.GetPtr(this), ref start, ref end, optimize);
+            return NativeCalls.godot_icall_3_582(method_bind_3, Object.GetPtr(this), ref start, ref end, optimize);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -99,7 +99,7 @@ namespace Godot
         [GodotMethod("get_closest_point_to_segment")]
         public Vector3 GetClosestPointToSegment(Vector3 start, Vector3 end, bool useCollision = false)
         {
-            NativeCalls.godot_icall_3_580(method_bind_4, Object.GetPtr(this), ref start, ref end, useCollision, out Vector3 argRet); return (Vector3)argRet;
+            NativeCalls.godot_icall_3_583(method_bind_4, Object.GetPtr(this), ref start, ref end, useCollision, out Vector3 argRet); return (Vector3)argRet;
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -135,7 +135,7 @@ namespace Godot
         [GodotMethod("get_closest_point_owner")]
         public Object GetClosestPointOwner(Vector3 toPoint)
         {
-            return NativeCalls.godot_icall_1_581(method_bind_7, Object.GetPtr(this), ref toPoint);
+            return NativeCalls.godot_icall_1_584(method_bind_7, Object.GetPtr(this), ref toPoint);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

@@ -106,7 +106,7 @@ namespace Godot
         [GodotMethod("create")]
         public void Create(int width, int height, Image.Format format, uint flags = (uint)7)
         {
-            NativeCalls.godot_icall_4_484(method_bind_0, Object.GetPtr(this), width, height, (int)format, flags);
+            NativeCalls.godot_icall_4_487(method_bind_0, Object.GetPtr(this), width, height, (int)format, flags);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -118,7 +118,7 @@ namespace Godot
         [GodotMethod("create_from_image")]
         public void CreateFromImage(Image image, uint flags = (uint)7)
         {
-            NativeCalls.godot_icall_2_485(method_bind_1, Object.GetPtr(this), Object.GetPtr(image), flags);
+            NativeCalls.godot_icall_2_488(method_bind_1, Object.GetPtr(this), Object.GetPtr(image), flags);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -130,7 +130,7 @@ namespace Godot
         [GodotMethod("get_format")]
         public Image.Format GetFormat()
         {
-            return (Image.Format)NativeCalls.godot_icall_0_470(method_bind_2, Object.GetPtr(this));
+            return (Image.Format)NativeCalls.godot_icall_0_473(method_bind_2, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -177,7 +177,7 @@ namespace Godot
         [Obsolete("GetStorage is deprecated. Use the Storage property instead.")]
         public ImageTexture.StorageEnum GetStorage()
         {
-            return (ImageTexture.StorageEnum)NativeCalls.godot_icall_0_486(method_bind_6, Object.GetPtr(this));
+            return (ImageTexture.StorageEnum)NativeCalls.godot_icall_0_489(method_bind_6, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

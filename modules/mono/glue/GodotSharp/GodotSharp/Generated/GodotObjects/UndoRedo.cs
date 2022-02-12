@@ -105,7 +105,7 @@ namespace Godot
         [GodotMethod("add_do_method")]
         public void AddDoMethod(Object @object, string method, params object[] @args)
         {
-            NativeCalls.godot_icall_3_917(method_bind_3, Object.GetPtr(this), Object.GetPtr(@object), method, @args);
+            NativeCalls.godot_icall_3_920(method_bind_3, Object.GetPtr(this), Object.GetPtr(@object), method, @args);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -117,7 +117,7 @@ namespace Godot
         [GodotMethod("add_undo_method")]
         public void AddUndoMethod(Object @object, string method, params object[] @args)
         {
-            NativeCalls.godot_icall_3_917(method_bind_4, Object.GetPtr(this), Object.GetPtr(@object), method, @args);
+            NativeCalls.godot_icall_3_920(method_bind_4, Object.GetPtr(this), Object.GetPtr(@object), method, @args);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -129,7 +129,7 @@ namespace Godot
         [GodotMethod("add_do_property")]
         public void AddDoProperty(Object @object, string property, object value)
         {
-            NativeCalls.godot_icall_3_918(method_bind_5, Object.GetPtr(this), Object.GetPtr(@object), property, value);
+            NativeCalls.godot_icall_3_921(method_bind_5, Object.GetPtr(this), Object.GetPtr(@object), property, value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -141,7 +141,7 @@ namespace Godot
         [GodotMethod("add_undo_property")]
         public void AddUndoProperty(Object @object, string property, object value)
         {
-            NativeCalls.godot_icall_3_918(method_bind_6, Object.GetPtr(this), Object.GetPtr(@object), property, value);
+            NativeCalls.godot_icall_3_921(method_bind_6, Object.GetPtr(this), Object.GetPtr(@object), property, value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

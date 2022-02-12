@@ -108,7 +108,7 @@ namespace Godot
         [Obsolete("GetTextureType is deprecated. Use the TextureType property instead.")]
         public VisualShaderNodeTextureUniform.TextureTypeEnum GetTextureType()
         {
-            return (VisualShaderNodeTextureUniform.TextureTypeEnum)NativeCalls.godot_icall_0_1027(method_bind_1, Object.GetPtr(this));
+            return (VisualShaderNodeTextureUniform.TextureTypeEnum)NativeCalls.godot_icall_0_1030(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -128,7 +128,7 @@ namespace Godot
         [Obsolete("GetColorDefault is deprecated. Use the ColorDefault property instead.")]
         public VisualShaderNodeTextureUniform.ColorDefaultEnum GetColorDefault()
         {
-            return (VisualShaderNodeTextureUniform.ColorDefaultEnum)NativeCalls.godot_icall_0_1028(method_bind_3, Object.GetPtr(this));
+            return (VisualShaderNodeTextureUniform.ColorDefaultEnum)NativeCalls.godot_icall_0_1031(method_bind_3, Object.GetPtr(this));
         }
     }
 }

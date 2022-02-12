@@ -132,7 +132,7 @@ namespace Godot
         [Obsolete("GetCullMode is deprecated. Use the CullMode property instead.")]
         public OccluderPolygon2D.CullModeEnum GetCullMode()
         {
-            return (OccluderPolygon2D.CullModeEnum)NativeCalls.godot_icall_0_621(method_bind_3, Object.GetPtr(this));
+            return (OccluderPolygon2D.CullModeEnum)NativeCalls.godot_icall_0_624(method_bind_3, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

@@ -379,7 +379,7 @@ namespace Godot
         [Obsolete("SetMin is deprecated. Use the Min property instead.")]
         public void SetMin(float[] min)
         {
-            NativeCalls.godot_icall_1_432(method_bind_13, Object.GetPtr(this), min);
+            NativeCalls.godot_icall_1_435(method_bind_13, Object.GetPtr(this), min);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -399,7 +399,7 @@ namespace Godot
         [Obsolete("SetMax is deprecated. Use the Max property instead.")]
         public void SetMax(float[] max)
         {
-            NativeCalls.godot_icall_1_432(method_bind_15, Object.GetPtr(this), max);
+            NativeCalls.godot_icall_1_435(method_bind_15, Object.GetPtr(this), max);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

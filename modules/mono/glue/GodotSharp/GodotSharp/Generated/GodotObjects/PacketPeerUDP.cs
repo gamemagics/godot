@@ -33,7 +33,7 @@ namespace Godot
         [GodotMethod("listen")]
         public Error Listen(int port, string bindAddress = "*", int recvBufSize = 65536)
         {
-            return (Error)NativeCalls.godot_icall_3_640(method_bind_0, Object.GetPtr(this), port, bindAddress, recvBufSize);
+            return (Error)NativeCalls.godot_icall_3_643(method_bind_0, Object.GetPtr(this), port, bindAddress, recvBufSize);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -94,7 +94,7 @@ namespace Godot
         [GodotMethod("connect_to_host")]
         public Error ConnectToHost(string host, int port)
         {
-            return (Error)NativeCalls.godot_icall_2_629(method_bind_4, Object.GetPtr(this), host, port);
+            return (Error)NativeCalls.godot_icall_2_632(method_bind_4, Object.GetPtr(this), host, port);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -143,7 +143,7 @@ namespace Godot
         [GodotMethod("set_dest_address")]
         public Error SetDestAddress(string host, int port)
         {
-            return (Error)NativeCalls.godot_icall_2_629(method_bind_8, Object.GetPtr(this), host, port);
+            return (Error)NativeCalls.godot_icall_2_632(method_bind_8, Object.GetPtr(this), host, port);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

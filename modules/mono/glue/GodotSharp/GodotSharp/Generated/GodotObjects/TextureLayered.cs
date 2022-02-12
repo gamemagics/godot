@@ -113,7 +113,7 @@ namespace Godot
         [GodotMethod("get_format")]
         public Image.Format GetFormat()
         {
-            return (Image.Format)NativeCalls.godot_icall_0_470(method_bind_2, Object.GetPtr(this));
+            return (Image.Format)NativeCalls.godot_icall_0_473(method_bind_2, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -161,7 +161,7 @@ namespace Godot
         [GodotMethod("set_layer_data")]
         public void SetLayerData(Image image, int layer)
         {
-            NativeCalls.godot_icall_2_832(method_bind_6, Object.GetPtr(this), Object.GetPtr(image), layer);
+            NativeCalls.godot_icall_2_835(method_bind_6, Object.GetPtr(this), Object.GetPtr(image), layer);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -185,7 +185,7 @@ namespace Godot
         [GodotMethod("set_data_partial")]
         public void SetDataPartial(Image image, int xOffset, int yOffset, int layer, int mipmap = 0)
         {
-            NativeCalls.godot_icall_5_855(method_bind_8, Object.GetPtr(this), Object.GetPtr(image), xOffset, yOffset, layer, mipmap);
+            NativeCalls.godot_icall_5_858(method_bind_8, Object.GetPtr(this), Object.GetPtr(image), xOffset, yOffset, layer, mipmap);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

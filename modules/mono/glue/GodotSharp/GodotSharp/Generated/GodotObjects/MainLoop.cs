@@ -244,7 +244,7 @@ namespace Godot
         [GodotMethod("iteration")]
         public bool Iteration(float delta)
         {
-            return NativeCalls.godot_icall_1_552(method_bind_3, Object.GetPtr(this), delta);
+            return NativeCalls.godot_icall_1_555(method_bind_3, Object.GetPtr(this), delta);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -256,7 +256,7 @@ namespace Godot
         [GodotMethod("idle")]
         public bool Idle(float delta)
         {
-            return NativeCalls.godot_icall_1_552(method_bind_4, Object.GetPtr(this), delta);
+            return NativeCalls.godot_icall_1_555(method_bind_4, Object.GetPtr(this), delta);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

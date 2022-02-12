@@ -504,7 +504,7 @@ namespace Godot
         [Obsolete("GetUpdateMode is deprecated. Use the UpdateMode property instead.")]
         public ReflectionProbe.UpdateModeEnum GetUpdateMode()
         {
-            return (ReflectionProbe.UpdateModeEnum)NativeCalls.godot_icall_0_748(method_bind_23, Object.GetPtr(this));
+            return (ReflectionProbe.UpdateModeEnum)NativeCalls.godot_icall_0_751(method_bind_23, Object.GetPtr(this));
         }
     }
 }

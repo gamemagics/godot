@@ -143,7 +143,7 @@ namespace Godot
         [Obsolete("GetResult is deprecated. Use the Result property instead.")]
         public object GetResult()
         {
-            return NativeCalls.godot_icall_0_513(method_bind_3, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_516(method_bind_3, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -183,7 +183,7 @@ namespace Godot
         [Obsolete("SetResult is deprecated. Use the Result property instead.")]
         public void SetResult(object result)
         {
-            NativeCalls.godot_icall_1_514(method_bind_7, Object.GetPtr(this), result);
+            NativeCalls.godot_icall_1_517(method_bind_7, Object.GetPtr(this), result);
         }
     }
 }

@@ -159,7 +159,7 @@ namespace Godot
         [Obsolete("GetDraggerVisibility is deprecated. Use the DraggerVisibility property instead.")]
         public SplitContainer.DraggerVisibilityEnum GetDraggerVisibility()
         {
-            return (SplitContainer.DraggerVisibilityEnum)NativeCalls.godot_icall_0_805(method_bind_6, Object.GetPtr(this));
+            return (SplitContainer.DraggerVisibilityEnum)NativeCalls.godot_icall_0_808(method_bind_6, Object.GetPtr(this));
         }
     }
 }

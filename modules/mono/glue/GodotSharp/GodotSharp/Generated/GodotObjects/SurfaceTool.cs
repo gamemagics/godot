@@ -91,7 +91,7 @@ namespace Godot
         [GodotMethod("add_tangent")]
         public void AddTangent(Plane tangent)
         {
-            NativeCalls.godot_icall_1_487(method_bind_4, Object.GetPtr(this), ref tangent);
+            NativeCalls.godot_icall_1_490(method_bind_4, Object.GetPtr(this), ref tangent);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -139,7 +139,7 @@ namespace Godot
         [GodotMethod("add_weights")]
         public void AddWeights(float[] weights)
         {
-            NativeCalls.godot_icall_1_432(method_bind_8, Object.GetPtr(this), weights);
+            NativeCalls.godot_icall_1_435(method_bind_8, Object.GetPtr(this), weights);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -174,7 +174,7 @@ namespace Godot
             Vector2[] uv2s_in = uv2s != null ? uv2s : Array.Empty<Vector2>();
             Vector3[] normals_in = normals != null ? normals : Array.Empty<Vector3>();
             Godot.Collections.Array tangents_in = tangents != null ? tangents : new Godot.Collections.Array { };
-            NativeCalls.godot_icall_6_831(method_bind_10, Object.GetPtr(this), vertices, uvs_in, colors_in, uv2s_in, normals_in, tangents_in.GetPtr());
+            NativeCalls.godot_icall_6_834(method_bind_10, Object.GetPtr(this), vertices, uvs_in, colors_in, uv2s_in, normals_in, tangents_in.GetPtr());
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -271,7 +271,7 @@ namespace Godot
         [GodotMethod("create_from")]
         public void CreateFrom(Mesh existing, int surface)
         {
-            NativeCalls.godot_icall_2_832(method_bind_18, Object.GetPtr(this), Object.GetPtr(existing), surface);
+            NativeCalls.godot_icall_2_835(method_bind_18, Object.GetPtr(this), Object.GetPtr(existing), surface);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -283,7 +283,7 @@ namespace Godot
         [GodotMethod("create_from_blend_shape")]
         public void CreateFromBlendShape(Mesh existing, int surface, string blendShape)
         {
-            NativeCalls.godot_icall_3_833(method_bind_19, Object.GetPtr(this), Object.GetPtr(existing), surface, blendShape);
+            NativeCalls.godot_icall_3_836(method_bind_19, Object.GetPtr(this), Object.GetPtr(existing), surface, blendShape);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -296,7 +296,7 @@ namespace Godot
         [GodotMethod("append_from")]
         public void AppendFrom(Mesh existing, int surface, Transform transform)
         {
-            NativeCalls.godot_icall_3_834(method_bind_20, Object.GetPtr(this), Object.GetPtr(existing), surface, ref transform);
+            NativeCalls.godot_icall_3_837(method_bind_20, Object.GetPtr(this), Object.GetPtr(existing), surface, ref transform);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -309,7 +309,7 @@ namespace Godot
         [GodotMethod("commit")]
         public ArrayMesh Commit(ArrayMesh existing = null, uint flags = (uint)2194432)
         {
-            return NativeCalls.godot_icall_2_835(method_bind_21, Object.GetPtr(this), Object.GetPtr(existing), flags);
+            return NativeCalls.godot_icall_2_838(method_bind_21, Object.GetPtr(this), Object.GetPtr(existing), flags);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

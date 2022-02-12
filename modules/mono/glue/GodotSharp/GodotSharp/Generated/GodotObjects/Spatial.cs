@@ -403,7 +403,7 @@ namespace Godot
         [GodotMethod("get_world")]
         public World GetWorld()
         {
-            return NativeCalls.godot_icall_0_791(method_bind_18, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_794(method_bind_18, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -447,7 +447,7 @@ namespace Godot
         [Obsolete("GetGizmo is deprecated. Use the Gizmo property instead.")]
         public SpatialGizmo GetGizmo()
         {
-            return NativeCalls.godot_icall_0_792(method_bind_22, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_795(method_bind_22, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -563,7 +563,7 @@ namespace Godot
         [GodotMethod("rotate")]
         public void Rotate(Vector3 axis, float angle)
         {
-            NativeCalls.godot_icall_2_793(method_bind_32, Object.GetPtr(this), ref axis, angle);
+            NativeCalls.godot_icall_2_796(method_bind_32, Object.GetPtr(this), ref axis, angle);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -575,7 +575,7 @@ namespace Godot
         [GodotMethod("global_rotate")]
         public void GlobalRotate(Vector3 axis, float angle)
         {
-            NativeCalls.godot_icall_2_793(method_bind_33, Object.GetPtr(this), ref axis, angle);
+            NativeCalls.godot_icall_2_796(method_bind_33, Object.GetPtr(this), ref axis, angle);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -611,7 +611,7 @@ namespace Godot
         [GodotMethod("rotate_object_local")]
         public void RotateObjectLocal(Vector3 axis, float angle)
         {
-            NativeCalls.godot_icall_2_793(method_bind_36, Object.GetPtr(this), ref axis, angle);
+            NativeCalls.godot_icall_2_796(method_bind_36, Object.GetPtr(this), ref axis, angle);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -722,7 +722,7 @@ namespace Godot
         [GodotMethod("look_at")]
         public void LookAt(Vector3 target, Vector3 up)
         {
-            NativeCalls.godot_icall_2_649(method_bind_45, Object.GetPtr(this), ref target, ref up);
+            NativeCalls.godot_icall_2_652(method_bind_45, Object.GetPtr(this), ref target, ref up);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -734,7 +734,7 @@ namespace Godot
         [GodotMethod("look_at_from_position")]
         public void LookAtFromPosition(Vector3 position, Vector3 target, Vector3 up)
         {
-            NativeCalls.godot_icall_3_794(method_bind_46, Object.GetPtr(this), ref position, ref target, ref up);
+            NativeCalls.godot_icall_3_797(method_bind_46, Object.GetPtr(this), ref position, ref target, ref up);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

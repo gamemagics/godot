@@ -73,7 +73,7 @@ namespace Godot
         [Obsolete("GetMesh is deprecated. Use the Mesh property instead.")]
         public ArrayMesh GetMesh()
         {
-            return NativeCalls.godot_icall_0_433(method_bind_0, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_436(method_bind_0, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -103,7 +103,7 @@ namespace Godot
         [Obsolete("SetBlendWeights is deprecated. Use the BlendWeights property instead.")]
         public void SetBlendWeights(float[] blendWeights)
         {
-            NativeCalls.godot_icall_1_432(method_bind_3, Object.GetPtr(this), blendWeights);
+            NativeCalls.godot_icall_1_435(method_bind_3, Object.GetPtr(this), blendWeights);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

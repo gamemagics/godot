@@ -29,7 +29,7 @@ namespace Godot
         [GodotMethod("set_buffers")]
         public Error SetBuffers(int inputBufferSizeKb, int inputMaxPackets, int outputBufferSizeKb, int outputMaxPackets)
         {
-            return (Error)NativeCalls.godot_icall_4_1045(method_bind_0, Object.GetPtr(this), inputBufferSizeKb, inputMaxPackets, outputBufferSizeKb, outputMaxPackets);
+            return (Error)NativeCalls.godot_icall_4_1048(method_bind_0, Object.GetPtr(this), inputBufferSizeKb, inputMaxPackets, outputBufferSizeKb, outputMaxPackets);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -41,7 +41,7 @@ namespace Godot
         [GodotMethod("get_peer")]
         public WebSocketPeer GetPeer(int peerId)
         {
-            return NativeCalls.godot_icall_1_1046(method_bind_1, Object.GetPtr(this), peerId);
+            return NativeCalls.godot_icall_1_1049(method_bind_1, Object.GetPtr(this), peerId);
         }
     }
 }

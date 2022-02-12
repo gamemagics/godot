@@ -109,7 +109,7 @@ namespace Godot
         [GodotMethod("get_close_button")]
         public TextureButton GetCloseButton()
         {
-            return NativeCalls.godot_icall_0_1050(method_bind_4, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_1053(method_bind_4, Object.GetPtr(this));
         }
     }
 }

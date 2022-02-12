@@ -174,7 +174,7 @@ namespace Godot
         [GodotMethod("add_frame")]
         public void AddFrame(string anim, Texture frame, int atPosition = -1)
         {
-            NativeCalls.godot_icall_3_808(method_bind_9, Object.GetPtr(this), anim, Object.GetPtr(frame), atPosition);
+            NativeCalls.godot_icall_3_811(method_bind_9, Object.GetPtr(this), anim, Object.GetPtr(frame), atPosition);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -198,7 +198,7 @@ namespace Godot
         [GodotMethod("get_frame")]
         public Texture GetFrame(string anim, int idx)
         {
-            return NativeCalls.godot_icall_2_809(method_bind_11, Object.GetPtr(this), anim, idx);
+            return NativeCalls.godot_icall_2_812(method_bind_11, Object.GetPtr(this), anim, idx);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -210,7 +210,7 @@ namespace Godot
         [GodotMethod("set_frame")]
         public void SetFrame(string anim, int idx, Texture txt)
         {
-            NativeCalls.godot_icall_3_810(method_bind_12, Object.GetPtr(this), anim, idx, Object.GetPtr(txt));
+            NativeCalls.godot_icall_3_813(method_bind_12, Object.GetPtr(this), anim, idx, Object.GetPtr(txt));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

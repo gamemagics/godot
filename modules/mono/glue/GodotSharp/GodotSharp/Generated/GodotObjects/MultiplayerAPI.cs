@@ -171,7 +171,7 @@ namespace Godot
         [GodotMethod("send_bytes")]
         public Error SendBytes(byte[] bytes, int id = 0, NetworkedMultiplayerPeer.TransferModeEnum mode = (NetworkedMultiplayerPeer.TransferModeEnum)2)
         {
-            return (Error)NativeCalls.godot_icall_3_576(method_bind_2, Object.GetPtr(this), bytes, id, (int)mode);
+            return (Error)NativeCalls.godot_icall_3_579(method_bind_2, Object.GetPtr(this), bytes, id, (int)mode);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -193,7 +193,7 @@ namespace Godot
         [Obsolete("GetNetworkPeer is deprecated. Use the NetworkPeer property instead.")]
         public NetworkedMultiplayerPeer GetNetworkPeer()
         {
-            return NativeCalls.godot_icall_0_577(method_bind_4, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_580(method_bind_4, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

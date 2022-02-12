@@ -264,7 +264,7 @@ namespace Godot
         [Obsolete("GetBitmask is deprecated. Use the Bitmask property instead.")]
         public BitMap GetBitmask()
         {
-            return NativeCalls.godot_icall_0_853(method_bind_5, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_856(method_bind_5, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -364,7 +364,7 @@ namespace Godot
         [Obsolete("GetVisibilityMode is deprecated. Use the VisibilityMode property instead.")]
         public TouchScreenButton.VisibilityModeEnum GetVisibilityMode()
         {
-            return (TouchScreenButton.VisibilityModeEnum)NativeCalls.godot_icall_0_889(method_bind_15, Object.GetPtr(this));
+            return (TouchScreenButton.VisibilityModeEnum)NativeCalls.godot_icall_0_892(method_bind_15, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

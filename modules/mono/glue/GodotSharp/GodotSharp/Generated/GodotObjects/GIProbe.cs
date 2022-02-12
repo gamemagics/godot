@@ -258,7 +258,7 @@ namespace Godot
         [Obsolete("GetProbeData is deprecated. Use the Data property instead.")]
         public GIProbeData GetProbeData()
         {
-            return NativeCalls.godot_icall_0_429(method_bind_1, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_432(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -278,7 +278,7 @@ namespace Godot
         [Obsolete("GetSubdiv is deprecated. Use the Subdiv property instead.")]
         public GIProbe.SubdivEnum GetSubdiv()
         {
-            return (GIProbe.SubdivEnum)NativeCalls.godot_icall_0_430(method_bind_3, Object.GetPtr(this));
+            return (GIProbe.SubdivEnum)NativeCalls.godot_icall_0_433(method_bind_3, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -451,7 +451,7 @@ namespace Godot
         [GodotMethod("bake")]
         public void Bake(Node fromNode = null, bool createVisualDebug = false)
         {
-            NativeCalls.godot_icall_2_431(method_bind_20, Object.GetPtr(this), Object.GetPtr(fromNode), createVisualDebug);
+            NativeCalls.godot_icall_2_434(method_bind_20, Object.GetPtr(this), Object.GetPtr(fromNode), createVisualDebug);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

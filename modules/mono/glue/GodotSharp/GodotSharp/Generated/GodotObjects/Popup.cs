@@ -113,7 +113,7 @@ namespace Godot
         public void PopupCenteredClamped(Nullable<Vector2> size = null, float fallbackRatio = 0.75f)
         {
             Vector2 size_in = size.HasValue ? size.Value : new Vector2(0, 0);
-            NativeCalls.godot_icall_2_734(method_bind_4, Object.GetPtr(this), ref size_in, fallbackRatio);
+            NativeCalls.godot_icall_2_737(method_bind_4, Object.GetPtr(this), ref size_in, fallbackRatio);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

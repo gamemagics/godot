@@ -381,7 +381,7 @@ namespace Godot
         [GodotMethod("add_image")]
         public void AddImage(Texture image, int width = 0, int height = 0)
         {
-            NativeCalls.godot_icall_3_756(method_bind_3, Object.GetPtr(this), Object.GetPtr(image), width, height);
+            NativeCalls.godot_icall_3_759(method_bind_3, Object.GetPtr(this), Object.GetPtr(image), width, height);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -538,7 +538,7 @@ namespace Godot
         [GodotMethod("push_meta")]
         public void PushMeta(object data)
         {
-            NativeCalls.godot_icall_1_514(method_bind_16, Object.GetPtr(this), data);
+            NativeCalls.godot_icall_1_517(method_bind_16, Object.GetPtr(this), data);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -588,7 +588,7 @@ namespace Godot
         [GodotMethod("set_table_column_expand")]
         public void SetTableColumnExpand(int column, bool expand, int ratio)
         {
-            NativeCalls.godot_icall_3_757(method_bind_20, Object.GetPtr(this), column, expand, ratio);
+            NativeCalls.godot_icall_3_760(method_bind_20, Object.GetPtr(this), column, expand, ratio);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -717,7 +717,7 @@ namespace Godot
         [GodotMethod("get_v_scroll")]
         public VScrollBar GetVScroll()
         {
-            return NativeCalls.godot_icall_0_512(method_bind_32, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_515(method_bind_32, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -954,7 +954,7 @@ namespace Godot
         [GodotMethod("parse_expressions_for_values")]
         public Godot.Collections.Dictionary ParseExpressionsForValues(string[] expressions)
         {
-            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_1_758(method_bind_54, Object.GetPtr(this), expressions));
+            return new Godot.Collections.Dictionary(NativeCalls.godot_icall_1_761(method_bind_54, Object.GetPtr(this), expressions));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -986,7 +986,7 @@ namespace Godot
         [GodotMethod("install_effect")]
         public void InstallEffect(object effect)
         {
-            NativeCalls.godot_icall_1_514(method_bind_57, Object.GetPtr(this), effect);
+            NativeCalls.godot_icall_1_517(method_bind_57, Object.GetPtr(this), effect);
         }
     }
 }

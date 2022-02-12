@@ -117,7 +117,7 @@ namespace Godot
         [GodotMethod("rename_icon")]
         public void RenameIcon(string oldName, string name, string nodeType)
         {
-            NativeCalls.godot_icall_3_857(method_bind_3, Object.GetPtr(this), oldName, name, nodeType);
+            NativeCalls.godot_icall_3_860(method_bind_3, Object.GetPtr(this), oldName, name, nodeType);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -204,7 +204,7 @@ namespace Godot
         [GodotMethod("rename_stylebox")]
         public void RenameStylebox(string oldName, string name, string nodeType)
         {
-            NativeCalls.godot_icall_3_857(method_bind_10, Object.GetPtr(this), oldName, name, nodeType);
+            NativeCalls.godot_icall_3_860(method_bind_10, Object.GetPtr(this), oldName, name, nodeType);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -291,7 +291,7 @@ namespace Godot
         [GodotMethod("rename_font")]
         public void RenameFont(string oldName, string name, string nodeType)
         {
-            NativeCalls.godot_icall_3_857(method_bind_17, Object.GetPtr(this), oldName, name, nodeType);
+            NativeCalls.godot_icall_3_860(method_bind_17, Object.GetPtr(this), oldName, name, nodeType);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -340,7 +340,7 @@ namespace Godot
         [GodotMethod("set_color")]
         public void SetColor(string name, string nodeType, Color color)
         {
-            NativeCalls.godot_icall_3_858(method_bind_21, Object.GetPtr(this), name, nodeType, ref color);
+            NativeCalls.godot_icall_3_861(method_bind_21, Object.GetPtr(this), name, nodeType, ref color);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -377,7 +377,7 @@ namespace Godot
         [GodotMethod("rename_color")]
         public void RenameColor(string oldName, string name, string nodeType)
         {
-            NativeCalls.godot_icall_3_857(method_bind_24, Object.GetPtr(this), oldName, name, nodeType);
+            NativeCalls.godot_icall_3_860(method_bind_24, Object.GetPtr(this), oldName, name, nodeType);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -426,7 +426,7 @@ namespace Godot
         [GodotMethod("set_constant")]
         public void SetConstant(string name, string nodeType, int constant)
         {
-            NativeCalls.godot_icall_3_740(method_bind_28, Object.GetPtr(this), name, nodeType, constant);
+            NativeCalls.godot_icall_3_743(method_bind_28, Object.GetPtr(this), name, nodeType, constant);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -463,7 +463,7 @@ namespace Godot
         [GodotMethod("rename_constant")]
         public void RenameConstant(string oldName, string name, string nodeType)
         {
-            NativeCalls.godot_icall_3_857(method_bind_31, Object.GetPtr(this), oldName, name, nodeType);
+            NativeCalls.godot_icall_3_860(method_bind_31, Object.GetPtr(this), oldName, name, nodeType);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -545,7 +545,7 @@ namespace Godot
         [GodotMethod("set_theme_item")]
         public void SetThemeItem(Theme.DataType dataType, string name, string nodeType, object value)
         {
-            NativeCalls.godot_icall_4_859(method_bind_38, Object.GetPtr(this), (int)dataType, name, nodeType, value);
+            NativeCalls.godot_icall_4_862(method_bind_38, Object.GetPtr(this), (int)dataType, name, nodeType, value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -558,7 +558,7 @@ namespace Godot
         [GodotMethod("get_theme_item")]
         public object GetThemeItem(Theme.DataType dataType, string name, string nodeType)
         {
-            return NativeCalls.godot_icall_3_860(method_bind_39, Object.GetPtr(this), (int)dataType, name, nodeType);
+            return NativeCalls.godot_icall_3_863(method_bind_39, Object.GetPtr(this), (int)dataType, name, nodeType);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -571,7 +571,7 @@ namespace Godot
         [GodotMethod("has_theme_item")]
         public bool HasThemeItem(Theme.DataType dataType, string name, string nodeType)
         {
-            return NativeCalls.godot_icall_3_861(method_bind_40, Object.GetPtr(this), (int)dataType, name, nodeType);
+            return NativeCalls.godot_icall_3_864(method_bind_40, Object.GetPtr(this), (int)dataType, name, nodeType);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -583,7 +583,7 @@ namespace Godot
         [GodotMethod("rename_theme_item")]
         public void RenameThemeItem(Theme.DataType dataType, string oldName, string name, string nodeType)
         {
-            NativeCalls.godot_icall_4_862(method_bind_41, Object.GetPtr(this), (int)dataType, oldName, name, nodeType);
+            NativeCalls.godot_icall_4_865(method_bind_41, Object.GetPtr(this), (int)dataType, oldName, name, nodeType);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -595,7 +595,7 @@ namespace Godot
         [GodotMethod("clear_theme_item")]
         public void ClearThemeItem(Theme.DataType dataType, string name, string nodeType)
         {
-            NativeCalls.godot_icall_3_863(method_bind_42, Object.GetPtr(this), (int)dataType, name, nodeType);
+            NativeCalls.godot_icall_3_866(method_bind_42, Object.GetPtr(this), (int)dataType, name, nodeType);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -608,7 +608,7 @@ namespace Godot
         [GodotMethod("get_theme_item_list")]
         public string[] GetThemeItemList(Theme.DataType dataType, string nodeType)
         {
-            return NativeCalls.godot_icall_2_864(method_bind_43, Object.GetPtr(this), (int)dataType, nodeType);
+            return NativeCalls.godot_icall_2_867(method_bind_43, Object.GetPtr(this), (int)dataType, nodeType);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -620,7 +620,7 @@ namespace Godot
         [GodotMethod("get_theme_item_types")]
         public string[] GetThemeItemTypes(Theme.DataType dataType)
         {
-            return NativeCalls.godot_icall_1_767(method_bind_44, Object.GetPtr(this), (int)dataType);
+            return NativeCalls.godot_icall_1_770(method_bind_44, Object.GetPtr(this), (int)dataType);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

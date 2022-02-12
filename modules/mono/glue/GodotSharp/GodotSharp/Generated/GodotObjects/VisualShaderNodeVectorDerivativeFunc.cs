@@ -73,7 +73,7 @@ namespace Godot
         [Obsolete("GetFunction is deprecated. Use the Function property instead.")]
         public VisualShaderNodeVectorDerivativeFunc.FunctionEnum GetFunction()
         {
-            return (VisualShaderNodeVectorDerivativeFunc.FunctionEnum)NativeCalls.godot_icall_0_1032(method_bind_1, Object.GetPtr(this));
+            return (VisualShaderNodeVectorDerivativeFunc.FunctionEnum)NativeCalls.godot_icall_0_1035(method_bind_1, Object.GetPtr(this));
         }
     }
 }

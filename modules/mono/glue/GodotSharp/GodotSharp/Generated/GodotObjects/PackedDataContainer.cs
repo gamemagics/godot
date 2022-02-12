@@ -58,7 +58,7 @@ namespace Godot
         [GodotMethod("pack")]
         public Error Pack(object value)
         {
-            return (Error)NativeCalls.godot_icall_1_630(method_bind_2, Object.GetPtr(this), value);
+            return (Error)NativeCalls.godot_icall_1_633(method_bind_2, Object.GetPtr(this), value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

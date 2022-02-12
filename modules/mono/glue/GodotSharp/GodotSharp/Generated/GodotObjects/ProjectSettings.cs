@@ -211,7 +211,7 @@ namespace Godot
         [GodotMethod("load_resource_pack")]
         public static bool LoadResourcePack(string pack, bool replaceFiles = true, int offset = 0)
         {
-            return NativeCalls.godot_icall_3_745(method_bind_11, ptr, pack, replaceFiles, offset);
+            return NativeCalls.godot_icall_3_748(method_bind_11, ptr, pack, replaceFiles, offset);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

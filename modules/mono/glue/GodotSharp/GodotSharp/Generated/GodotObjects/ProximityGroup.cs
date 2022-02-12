@@ -112,7 +112,7 @@ namespace Godot
         [Obsolete("GetDispatchMode is deprecated. Use the DispatchMode property instead.")]
         public ProximityGroup.DispatchModeEnum GetDispatchMode()
         {
-            return (ProximityGroup.DispatchModeEnum)NativeCalls.godot_icall_0_746(method_bind_3, Object.GetPtr(this));
+            return (ProximityGroup.DispatchModeEnum)NativeCalls.godot_icall_0_749(method_bind_3, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

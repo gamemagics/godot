@@ -123,7 +123,7 @@ namespace Godot
         [Obsolete("GetSource is deprecated. Use the Source property instead.")]
         public VisualShaderNodeCubeMap.SourceEnum GetSource()
         {
-            return (VisualShaderNodeCubeMap.SourceEnum)NativeCalls.godot_icall_0_1018(method_bind_1, Object.GetPtr(this));
+            return (VisualShaderNodeCubeMap.SourceEnum)NativeCalls.godot_icall_0_1021(method_bind_1, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -143,7 +143,7 @@ namespace Godot
         [Obsolete("GetCubeMap is deprecated. Use the CubeMap property instead.")]
         public CubeMap GetCubeMap()
         {
-            return NativeCalls.godot_icall_0_1019(method_bind_3, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_1022(method_bind_3, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -163,7 +163,7 @@ namespace Godot
         [Obsolete("GetTextureType is deprecated. Use the TextureType property instead.")]
         public VisualShaderNodeCubeMap.TextureTypeEnum GetTextureType()
         {
-            return (VisualShaderNodeCubeMap.TextureTypeEnum)NativeCalls.godot_icall_0_1020(method_bind_5, Object.GetPtr(this));
+            return (VisualShaderNodeCubeMap.TextureTypeEnum)NativeCalls.godot_icall_0_1023(method_bind_5, Object.GetPtr(this));
         }
     }
 }

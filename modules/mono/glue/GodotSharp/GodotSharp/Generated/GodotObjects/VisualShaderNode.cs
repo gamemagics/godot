@@ -109,7 +109,7 @@ namespace Godot
         [GodotMethod("set_input_port_default_value")]
         public void SetInputPortDefaultValue(int port, object value)
         {
-            NativeCalls.godot_icall_2_508(method_bind_2, Object.GetPtr(this), port, value);
+            NativeCalls.godot_icall_2_511(method_bind_2, Object.GetPtr(this), port, value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -121,7 +121,7 @@ namespace Godot
         [GodotMethod("get_input_port_default_value")]
         public object GetInputPortDefaultValue(int port)
         {
-            return NativeCalls.godot_icall_1_509(method_bind_3, Object.GetPtr(this), port);
+            return NativeCalls.godot_icall_1_512(method_bind_3, Object.GetPtr(this), port);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

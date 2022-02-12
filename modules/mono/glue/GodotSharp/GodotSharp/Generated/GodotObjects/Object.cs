@@ -169,7 +169,7 @@ namespace Godot
         [GodotMethod("set_indexed")]
         public void SetIndexed(NodePath property, object value)
         {
-            NativeCalls.godot_icall_2_611(method_bind_4, Object.GetPtr(this), NodePath.GetPtr(property), value);
+            NativeCalls.godot_icall_2_614(method_bind_4, Object.GetPtr(this), NodePath.GetPtr(property), value);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -182,7 +182,7 @@ namespace Godot
         [GodotMethod("get_indexed")]
         public object GetIndexed(NodePath property)
         {
-            return NativeCalls.godot_icall_1_612(method_bind_5, Object.GetPtr(this), NodePath.GetPtr(property));
+            return NativeCalls.godot_icall_1_615(method_bind_5, Object.GetPtr(this), NodePath.GetPtr(property));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -258,7 +258,7 @@ namespace Godot
         [GodotMethod("get_script")]
         public Reference GetScript()
         {
-            return NativeCalls.godot_icall_0_613(method_bind_11, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_616(method_bind_11, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -333,7 +333,7 @@ namespace Godot
         public void AddUserSignal(string signal, Godot.Collections.Array arguments = null)
         {
             Godot.Collections.Array arguments_in = arguments != null ? arguments : new Godot.Collections.Array { };
-            NativeCalls.godot_icall_2_614(method_bind_17, Object.GetPtr(this), signal, arguments_in.GetPtr());
+            NativeCalls.godot_icall_2_617(method_bind_17, Object.GetPtr(this), signal, arguments_in.GetPtr());
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -361,7 +361,7 @@ namespace Godot
         [GodotMethod("emit_signal")]
         public void EmitSignal(string signal, params object[] @args)
         {
-            NativeCalls.godot_icall_2_615(method_bind_19, Object.GetPtr(this), signal, @args);
+            NativeCalls.godot_icall_2_618(method_bind_19, Object.GetPtr(this), signal, @args);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -377,7 +377,7 @@ namespace Godot
         [GodotMethod("call")]
         public object Call(string method, params object[] @args)
         {
-            return NativeCalls.godot_icall_2_524(method_bind_20, Object.GetPtr(this), method, @args);
+            return NativeCalls.godot_icall_2_527(method_bind_20, Object.GetPtr(this), method, @args);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -393,7 +393,7 @@ namespace Godot
         [GodotMethod("call_deferred")]
         public void CallDeferred(string method, params object[] @args)
         {
-            NativeCalls.godot_icall_2_615(method_bind_21, Object.GetPtr(this), method, @args);
+            NativeCalls.godot_icall_2_618(method_bind_21, Object.GetPtr(this), method, @args);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -421,7 +421,7 @@ namespace Godot
         [GodotMethod("callv")]
         public object Callv(string method, Godot.Collections.Array argArray)
         {
-            return NativeCalls.godot_icall_2_616(method_bind_23, Object.GetPtr(this), method, argArray.GetPtr());
+            return NativeCalls.godot_icall_2_619(method_bind_23, Object.GetPtr(this), method, argArray.GetPtr());
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -514,7 +514,7 @@ namespace Godot
         public Error Connect(string signal, Object target, string method, Godot.Collections.Array binds = null, uint flags = (uint)0)
         {
             Godot.Collections.Array binds_in = binds != null ? binds : new Godot.Collections.Array { };
-            return (Error)NativeCalls.godot_icall_5_617(method_bind_29, Object.GetPtr(this), signal, Object.GetPtr(target), method, binds_in.GetPtr(), flags);
+            return (Error)NativeCalls.godot_icall_5_620(method_bind_29, Object.GetPtr(this), signal, Object.GetPtr(target), method, binds_in.GetPtr(), flags);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -527,7 +527,7 @@ namespace Godot
         [GodotMethod("disconnect")]
         public void Disconnect(string signal, Object target, string method)
         {
-            NativeCalls.godot_icall_3_618(method_bind_30, Object.GetPtr(this), signal, Object.GetPtr(target), method);
+            NativeCalls.godot_icall_3_621(method_bind_30, Object.GetPtr(this), signal, Object.GetPtr(target), method);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -539,7 +539,7 @@ namespace Godot
         [GodotMethod("is_connected")]
         public bool IsConnected(string signal, Object target, string method)
         {
-            return NativeCalls.godot_icall_3_619(method_bind_31, Object.GetPtr(this), signal, Object.GetPtr(target), method);
+            return NativeCalls.godot_icall_3_622(method_bind_31, Object.GetPtr(this), signal, Object.GetPtr(target), method);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

@@ -105,7 +105,7 @@ namespace Godot
         [Obsolete("GetDiffuseImg is deprecated. Use the DiffuseImg property instead.")]
         public Image GetDiffuseImg()
         {
-            return NativeCalls.godot_icall_0_439(method_bind_0, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_442(method_bind_0, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -185,7 +185,7 @@ namespace Godot
         [Obsolete("GetSpecGlossImg is deprecated. Use the SpecGlossImg property instead.")]
         public Image GetSpecGlossImg()
         {
-            return NativeCalls.godot_icall_0_439(method_bind_8, Object.GetPtr(this));
+            return NativeCalls.godot_icall_0_442(method_bind_8, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

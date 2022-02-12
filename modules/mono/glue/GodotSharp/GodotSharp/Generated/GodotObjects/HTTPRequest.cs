@@ -257,7 +257,7 @@ namespace Godot
         {
             string[] customHeaders_in = customHeaders != null ? customHeaders : Array.Empty<string>();
             byte[] requestDataRaw_in = requestDataRaw != null ? requestDataRaw : Array.Empty<byte>();
-            return (Error)NativeCalls.godot_icall_5_463(method_bind_0, Object.GetPtr(this), url, customHeaders_in, sslValidateDomain, (int)method, requestDataRaw_in);
+            return (Error)NativeCalls.godot_icall_5_466(method_bind_0, Object.GetPtr(this), url, customHeaders_in, sslValidateDomain, (int)method, requestDataRaw_in);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -273,7 +273,7 @@ namespace Godot
         public Error Request(string url, string[] customHeaders = null, bool sslValidateDomain = true, HTTPClient.Method method = (HTTPClient.Method)0, string requestData = "")
         {
             string[] customHeaders_in = customHeaders != null ? customHeaders : Array.Empty<string>();
-            return (Error)NativeCalls.godot_icall_5_464(method_bind_1, Object.GetPtr(this), url, customHeaders_in, sslValidateDomain, (int)method, requestData);
+            return (Error)NativeCalls.godot_icall_5_467(method_bind_1, Object.GetPtr(this), url, customHeaders_in, sslValidateDomain, (int)method, requestData);
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -297,7 +297,7 @@ namespace Godot
         [GodotMethod("get_http_client_status")]
         public HTTPClient.Status GetHttpClientStatus()
         {
-            return (HTTPClient.Status)NativeCalls.godot_icall_0_461(method_bind_3, Object.GetPtr(this));
+            return (HTTPClient.Status)NativeCalls.godot_icall_0_464(method_bind_3, Object.GetPtr(this));
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
